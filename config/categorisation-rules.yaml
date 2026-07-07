@@ -1,0 +1,76 @@
+# Categorisation rules seed — THIS FILE IS YOURS TO EDIT, GREGG.
+# Morgan reads it on every run and never rewrites it without asking.
+# Add merchants, senders, and keywords as they come up; Morgan's proposals
+# only get better as this file grows. (Roadmap: Morgan will suggest edits
+# based on your approve/decline history — you accept or reject them.)
+#
+# How Morgan uses this file:
+#   1. A transaction matching an income or expense category is PROPOSED as that
+#      category (never booked — everything waits for your approval in chat).
+#   2. A transaction matching a personal indicator is proposed as personal.
+#   3. Anything matching an always_queue rule, or matching nothing at all,
+#      goes to the queue as "uncategorised — needs your call".
+
+income:
+  indicators:
+    - Stripe charges and payouts (the primary income record)
+    - emails confirming client invoices or payments received
+    - anything cross-referencing a client in the Airtable billable-hours base
+  categories:
+    - sales            # client work invoiced and paid
+
+# HMRC allowable expense categories for a sole trader (not VAT-registered,
+# so all amounts are recorded gross).
+expenses:
+  office_costs_and_software:
+    hints: [subscription, SaaS, software, licence, hosting, domain, cloud]
+    examples: [Google Workspace, GitHub, Adobe, Notion, AWS, Vercel]
+  phone_and_internet:
+    hints: [mobile, broadband, sim, data plan]
+    examples: []
+  travel:
+    hints: [train, flight, hotel, mileage, taxi, parking]
+    note: commuting to a regular workplace is NOT allowable; client travel is
+    examples: []
+  marketing_and_website:
+    hints: [advertising, ads, SEO, design, print]
+    examples: []
+  professional_fees:
+    hints: [accountant, legal, solicitor, insurance, professional indemnity]
+    examples: []
+  bank_and_payment_fees:
+    hints: [Stripe fee, bank charge, transaction fee, FX fee]
+    examples: [Stripe processing fees]
+  training_and_courses:
+    hints: [course, training, conference, workshop, book]
+    note: must maintain existing skills, not open a new trade
+    examples: []
+  use_of_home:
+    hints: []
+    note: >
+      Claimed via HMRC flat rate based on hours worked from home per month —
+      a month-end entry, not a per-transaction match. Handled at reconciliation.
+  equipment:
+    hints: [laptop, monitor, keyboard, desk, chair, hardware]
+    note: capital-ish items — flag anything over the review threshold
+    examples: []
+
+personal:
+  # Merchants and patterns that are never business. Edit freely.
+  indicators:
+    - groceries and supermarkets
+    - streaming and entertainment (Netflix, Spotify personal, gaming)
+    - restaurants and takeaways (client entertainment is not allowable anyway)
+    - clothing (unless protective/branded workwear)
+    - personal transfers between own accounts
+
+# These ALWAYS go to the pending queue for your decision, regardless of any
+# other match:
+always_queue:
+  - rule: non-GBP amount
+    reason: books are GBP-only; you decide how each foreign amount is handled
+  - rule: amount over threshold
+    threshold_gbp: 250
+    reason: large items deserve a look even when the category seems obvious
+  - rule: no rule matched
+    reason: Morgan never guesses silently — unknowns are surfaced, not buried

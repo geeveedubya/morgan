@@ -1,0 +1,35 @@
+# Review cadence and approval flow.
+# Scheduling is DISABLED — Morgan never creates schedules, triggers, or
+# routines. Only Gregg enables scheduling (see ROADMAP.md, phase 4). Until
+# then, runs happen when Gregg starts a session and asks.
+
+scheduling: disabled
+
+daily_digest:
+  what: >
+    All transactions currently pending review, each with its proposed category
+    and one-sentence reasoning, plus anything flagged by always_queue rules.
+  written_to: briefings/daily/YYYY-MM-DD.md
+  tone: plain English — explicit amounts, dates, merchant names; numbered so
+    Gregg can reply "approve 1, 3; decline 2" in chat
+
+weekly_summary:
+  what: >
+    Totals by category (booked and pending), approved vs declined counts,
+    anomalies (duplicates, unusual amounts, unmatched Stripe payouts), and
+    anything ageing in the pending queue.
+  written_to: briefings/weekly/YYYY-Www.md
+
+approval_flow:
+  # The only path into the books. Nothing skips pending.
+  states:
+    pending:   proposed by an agent, waiting for Gregg
+    approved:  Gregg approved in chat — ready to book
+    declined:  Gregg declined in chat — kept in queue history, never deleted
+    booked:    approved entry written to books/<tax-year>/<YYYY-MM>.yaml
+  mechanism: chat
+  example: 'approve 1 and 3, decline 2 — that one is personal'
+  rules:
+    - nothing is booked as business without an explicit approval from Gregg
+    - declined entries are retained with status declined (audit trail)
+    - non-GBP entries stay pending until Gregg says how to record them

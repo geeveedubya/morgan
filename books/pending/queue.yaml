@@ -1,0 +1,19 @@
+# Pending-review queue.
+# Every transaction Morgan sees is appended here with status: pending.
+# Only Gregg's chat decisions change a status (pending → approved | declined;
+# approved → booked once written to the ledger). Declined entries are kept.
+#
+# Entry schema:
+#   - id: 2026-07-07-001          # date + sequence, stable once assigned
+#     date: 2026-07-05            # transaction date
+#     source: stripe              # stripe | gmail | airtable
+#     description: ""
+#     amount: 0.00
+#     currency: GBP
+#     proposed_category: ""       # from config/categorisation-rules.yaml
+#     reasoning: ""               # one plain-English sentence
+#     evidence: []                # e.g. {stripe: po_xxx} or {gmail_thread: id}
+#     flags: []                   # non-gbp | over-threshold | no-rule-match
+#     status: pending             # pending | approved | declined | booked
+
+queue: []

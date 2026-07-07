@@ -1,0 +1,57 @@
+# Data sources Morgan monitors.
+# access is read-only for every source — Morgan never writes to any of them.
+# "verified" means a live read succeeded in a session; it is updated honestly,
+# never assumed. See docs/connector-status.md for the full access report.
+
+sources:
+  gmail:
+    connector: Gmail (Claude MCP connector)
+    access: read-only
+    verified: true            # live read succeeded 2026-07-07 (labels listed)
+    purpose: >
+      Receipts, invoices, and supplier emails. Source of expense evidence and
+      client invoice confirmations.
+    reads:
+      - receipt and invoice searches (see agents/transaction-watcher.md for queries)
+      - existing labels "Tax 2025-26" and "Tax 2026/27" as strong business signals
+    never:
+      - send or draft email
+      - apply or remove labels without Gregg asking
+
+  stripe:
+    connector: Stripe (Claude MCP connector)
+    access: read-only
+    verified: false           # connected at org level; first call needs Gregg's approval prompt
+    purpose: >
+      Business income and payment costs. Primary record of charges, payouts,
+      refunds, and Stripe fees.
+    reads:
+      - charges, payouts, refunds, balance transactions, fees
+    never:
+      - create, capture, refund, or modify anything
+      - touch payment methods, customers, or products
+
+  airtable:
+    connector: Airtable (Claude MCP connector)
+    access: read-only
+    verified: false           # connected at org level; first call needs Gregg's approval prompt
+    purpose: >
+      Billable hours per client. Used to cross-reference income against work
+      done (reconciliation, roadmap phase 2).
+    reads:
+      - the billable-hours base/tables (exact base to be identified on first run)
+    never:
+      - create, update, or delete records, tables, or bases
+
+  google_drive:
+    connector: Google Drive (Claude MCP connector)
+    access: read-only
+    verified: false           # connected at org level; first call needs Gregg's approval prompt
+    purpose: >
+      Where filed records and finished books live. Read-only for now; filing
+      the accountant handoff pack to Drive is a roadmap item that requires
+      Gregg's explicit approval before the first write.
+    reads:
+      - existing filed records, prior-year books if present
+    never:
+      - create, modify, or share files (until the roadmap gate is explicitly opened)
