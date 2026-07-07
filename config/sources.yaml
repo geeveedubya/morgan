@@ -21,7 +21,7 @@ sources:
   stripe:
     connector: Stripe (Claude MCP connector)
     access: read-only
-    verified: false           # connected at org level; first call needs Gregg's approval prompt
+    verified: true            # live read succeeded 2026-07-07 (account + last 10 charges)
     purpose: >
       Business income and payment costs. Primary record of charges, payouts,
       refunds, and Stripe fees.
