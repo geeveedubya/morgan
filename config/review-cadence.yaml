@@ -1,9 +1,20 @@
 # Review cadence and approval flow.
-# Scheduling is DISABLED — Morgan never creates schedules, triggers, or
-# routines. Only Gregg enables scheduling (see ROADMAP.md, phase 4). Until
-# then, runs happen when Gregg starts a session and asks.
+# Scheduling is owned by Gregg. The daily routine below was set up at his
+# request on 2026-07-07 (plan approved in chat). Morgan never creates or
+# changes schedules unprompted; Gregg can pause/change it any time by asking.
 
-scheduling: disabled
+scheduling:
+  daily_run:
+    trigger_id: trig_01PmYT8Ki3DzC7HqJMen6orA
+    cadence: "26 6 * * *"      # 06:26 UTC daily = 7:26am UK in summer, 6:26am in winter
+    fires: fresh cloud session running the transaction watcher
+    notifications: [push, email]   # from the Claude platform when the run completes
+    created: 2026-07-07
+    caveat: >
+      Whether a headless session can reach Stripe/Airtable is unproven until
+      the first firing — the run reports honestly if a source is unreachable
+      (see docs/connector-status.md).
+  weekly_summary_run: not yet scheduled (roadmap phase 4 remainder)
 
 daily_digest:
   what: >

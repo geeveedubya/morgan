@@ -41,10 +41,10 @@ sources:
       Billable hours per client. Used to cross-reference income against work
       done (reconciliation, roadmap phase 2).
     reads:
-      - base "Automated workflow timesheets" (appHbwQcjxL6zDcO4),
-        table "Timesheet" (tbl27RukHweE9vaIN) — fields client, task, hours, date
-      - note: a second base with the same name exists (app8sLchumplQfJYm,
-        single "Sheet1" table) and appears to be an older copy — not used
+      - 'base "Automated workflow timesheets" (appHbwQcjxL6zDcO4), table
+        "Timesheet" (tbl27RukHweE9vaIN) — fields client, task, hours, date'
+      - 'note: a second base with the same name exists (app8sLchumplQfJYm,
+        single "Sheet1" table) and appears to be an older copy — not used'
     never:
       - create, update, or delete records, tables, or bases
 
