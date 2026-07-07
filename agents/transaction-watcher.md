@@ -12,12 +12,24 @@ every external source.
 | Stripe | charges, payouts, refunds, balance transactions, fees since the last run | Stripe connector read tools (`fetch_stripe_resources`, `stripe_api_read`) |
 | Gmail  | receipts, invoices, payment confirmations since the last run | `search_threads` with the seeded queries below |
 
-Seeded Gmail queries (tune in place as real data shows what works):
+**Gmail scanning principle: scan broadly, never depend on labels.** The watcher
+searches all mail for anything transaction-shaped — Gregg does not need to
+label, file, or pre-sort anything for it to be seen. Labels like "Tax 2026/27"
+are optional *hints* only: if a matched email happens to carry one, that raises
+confidence in a business categorisation. A label is never a filter, never a
+prerequisite, and its absence means nothing.
+
+Seeded Gmail queries — all unlabelled, whole-mailbox (tune in place as real
+data shows what works):
 
 ```
-newer_than:7d (receipt OR invoice OR "payment confirmation" OR "your order")
-label:"Tax 2026/27"
+newer_than:7d (receipt OR invoice OR "payment confirmation" OR "order confirmation" OR "payment received")
+newer_than:7d (statement OR "renewal" OR "subscription" OR "billed" OR "charged")
+newer_than:7d from:(notifications@stripe.com OR invoice+statements@*)
 ```
+
+(`newer_than:7d` is the daily-cadence window; widen it to cover any gap since
+the last actual run so nothing falls through.)
 
 Config it obeys:
 - `config/sources.yaml` — what may be read

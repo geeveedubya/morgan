@@ -12,8 +12,10 @@ sources:
       Receipts, invoices, and supplier emails. Source of expense evidence and
       client invoice confirmations.
     reads:
-      - receipt and invoice searches (see agents/transaction-watcher.md for queries)
-      - existing labels "Tax 2025-26" and "Tax 2026/27" as strong business signals
+      - whole-mailbox receipt/invoice/payment searches, no label required
+        (see agents/transaction-watcher.md for queries)
+      - labels like "Tax 2026/27" are optional confidence hints on matched
+        mail — never a filter; Gregg does not need to label anything first
     never:
       - send or draft email
       - apply or remove labels without Gregg asking
