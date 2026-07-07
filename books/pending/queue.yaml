@@ -8,12 +8,859 @@
 #     date: 2026-07-05            # transaction date
 #     source: stripe              # stripe | gmail | airtable
 #     description: ""
-#     amount: 0.00
+#     amount: 0.00                # null = amount not visible in the source read so far
 #     currency: GBP
 #     proposed_category: ""       # from config/categorisation-rules.yaml
 #     reasoning: ""               # one plain-English sentence
 #     evidence: []                # e.g. {stripe: po_xxx} or {gmail_thread: id}
-#     flags: []                   # non-gbp | over-threshold | no-rule-match
+#     flags: []                   # non-gbp | over-threshold | no-rule-match | amount-unknown
 #     status: pending             # pending | approved | declined | booked
+#
+# First real run: 2026-07-07, window 2026-04-06 → 2026-07-07 (tax year to date).
 
-queue: []
+queue:
+  # ---------- INCOME (Stripe, tax year to date) ----------
+  - id: 2026-07-07-001
+    date: 2026-04-07
+    source: stripe
+    description: "Client payment — 'Payment for Invoice' (payer unnamed in Stripe, card in Mauritian rupees)"
+    amount: 125.00
+    currency: GBP
+    proposed_category: sales
+    reasoning: "Stripe invoice payment settled in GBP; matches the £435.17 payout of 7 April."
+    evidence: [{stripe: py_3TH1hiAnusPN3mWR1T7BJFP2}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-002
+    date: 2026-04-15
+    source: stripe
+    description: "Client payment — 'Payment for Invoice' (payer unnamed in Stripe, card in Mauritian rupees)"
+    amount: 58.87
+    currency: GBP
+    proposed_category: sales
+    reasoning: "Stripe invoice payment settled in GBP, same payer pattern as 7 April."
+    evidence: [{stripe: py_3TM59yAnusPN3mWR1P0qscUu}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-003
+    date: 2026-04-30
+    source: stripe
+    description: "Client payment — Stefan Brozin, charged in South African rand (R8,000.00)"
+    amount: 8000.00
+    currency: ZAR
+    proposed_category: sales
+    reasoning: "Invoice payment from a regular client, but charged in ZAR — books are GBP-only, so you decide how to record it."
+    evidence: [{stripe: py_3TRZYpAnusPN3mWR1wyxGkdp}]
+    flags: [non-gbp]
+    status: pending
+  - id: 2026-07-07-004
+    date: 2026-05-02
+    source: stripe
+    description: "Client payment — 'Payment for Invoice' via customer balance"
+    amount: 300.00
+    currency: GBP
+    proposed_category: sales
+    reasoning: "Stripe invoice payment settled in GBP; payer not named on the charge."
+    evidence: [{stripe: py_3TS0r5AnusPN3mWR1kvh241Q}]
+    flags: [over-threshold]
+    status: pending
+  - id: 2026-07-07-005
+    date: 2026-05-03
+    source: stripe
+    description: "Client payment — Craig Nerwich (Arctic Ape)"
+    amount: 458.38
+    currency: GBP
+    proposed_category: sales
+    reasoning: "Regular Arctic Ape invoice payment, paid from ZAR card, settled GBP."
+    evidence: [{stripe: ch_3TRZxHAnusPN3mWR0q7cP2ji}]
+    flags: [over-threshold]
+    status: pending
+  - id: 2026-07-07-006
+    date: 2026-05-03
+    source: stripe
+    description: "Client payment — Craig Nerwich (Arctic Ape)"
+    amount: 37.00
+    currency: GBP
+    proposed_category: sales
+    reasoning: "Small same-day Arctic Ape payment alongside the £458.38 one."
+    evidence: [{stripe: ch_3TH8tbAnusPN3mWR0DvBWMd4}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-007
+    date: 2026-05-18
+    source: stripe
+    description: "'Subscription creation' — $19.00 charged to your own card (gregg+testingpayment@…)"
+    amount: 19.00
+    currency: USD
+    proposed_category: exclude
+    reasoning: "Matches your test-event ruling of 7 July — billed to your own test address, so not income."
+    evidence: [{stripe: ch_3TYQREAnusPN3mWR0XKfuV79}]
+    flags: [non-gbp]
+    status: pending
+  - id: 2026-07-07-008
+    date: 2026-05-30
+    source: stripe
+    description: "Client payment — Craig Nerwich (Arctic Ape)"
+    amount: 712.00
+    currency: GBP
+    proposed_category: sales
+    reasoning: "Arctic Ape month-end invoice payment for May."
+    evidence: [{stripe: ch_3TcMnEAnusPN3mWR0doTYeSl}]
+    flags: [over-threshold]
+    status: pending
+  - id: 2026-07-07-009
+    date: 2026-06-02
+    source: stripe
+    description: "Client payment — Stefan Brozin"
+    amount: 837.00
+    currency: GBP
+    proposed_category: sales
+    reasoning: "Invoice payment from a regular client, paid from ZAR card, settled GBP."
+    evidence: [{stripe: ch_3Tdoo1AnusPN3mWR1hfOJWlV}]
+    flags: [over-threshold]
+    status: pending
+  - id: 2026-07-07-010
+    date: 2026-06-21
+    source: stripe
+    description: "Client payment — Craig Nerwich (Arctic Ape)"
+    amount: 600.00
+    currency: GBP
+    proposed_category: sales
+    reasoning: "Mid-month Arctic Ape invoice payment."
+    evidence: [{stripe: ch_3TiVERAnusPN3mWR0ynvi9Pq}]
+    flags: [over-threshold]
+    status: pending
+  - id: 2026-07-07-011
+    date: 2026-06-25
+    source: stripe
+    description: "Client payment — Stefan Brozin"
+    amount: 100.00
+    currency: GBP
+    proposed_category: sales
+    reasoning: "Invoice payment, likely the campaign invoice you emailed Stefan/Avi on 25 June."
+    evidence: [{stripe: ch_3TmA2vAnusPN3mWR0ovkigqM}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-012
+    date: 2026-06-28
+    source: gmail
+    description: "trAIned sale — $1.00 via Onelink/Stripe Link (receipt #2498-3493)"
+    amount: 1.00
+    currency: USD
+    proposed_category: sales
+    reasoning: "trAIned income belongs in these books per your ruling, but $1.00 paid with your own card ending 7135 looks like a payment-flow test — your call."
+    evidence: [{gmail_thread: 19f0fd17a239992b}]
+    flags: [non-gbp]
+    status: pending
+  - id: 2026-07-07-013
+    date: 2026-06-30
+    source: stripe
+    description: "Client payment — Craig Nerwich (Arctic Ape), June invoice incl. £20 WhatsApp credit"
+    amount: 757.00
+    currency: GBP
+    proposed_category: sales
+    reasoning: "Matches your 'Invoice June' email to Arctic Ape sent the same morning."
+    evidence: [{stripe: ch_3Tnwr0AnusPN3mWR0X5H6rJz}, {gmail_thread: 19f179acf513df52}]
+    flags: [over-threshold]
+    status: pending
+
+  # ---------- EXPENSES — Lovable (software subscriptions & credits) ----------
+  - id: 2026-07-07-014
+    date: 2026-05-08
+    source: gmail
+    description: "Lovable Pro 1 subscription, May (receipt #2408-4066)"
+    amount: 22.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Monthly subscription to your app-building tool."
+    evidence: [{gmail_thread: 19e08dfab78752e9}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-015
+    date: 2026-05-10
+    source: gmail
+    description: "Lovable plan upgrade Pro 1 → Pro 2, prorated (receipt #2272-1446)"
+    amount: 22.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Plan upgrade on the same business tool."
+    evidence: [{gmail_thread: 19e12dcc82727503}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-016
+    date: 2026-05-11
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2827-4520)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits for client/app work — same-day multiples are planned per your ruling."
+    evidence: [{gmail_thread: 19e17fe09bd3576e}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-017
+    date: 2026-05-13
+    source: gmail
+    description: "Lovable plan upgrade Pro 2 → Pro 3, prorated (receipt #2193-5428)"
+    amount: 44.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Plan upgrade on the same business tool."
+    evidence: [{gmail_thread: 19e21ac1f51d5f25}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-018
+    date: 2026-05-24
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2225-4218)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits, recurring pattern."
+    evidence: [{gmail_thread: 19e5872a494d3d66}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-019
+    date: 2026-05-27
+    source: gmail
+    description: "Lovable credit top-up, 150 credits (receipt #2718-6474)"
+    amount: 45.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits, recurring pattern."
+    evidence: [{gmail_thread: 19e68d8f4c2acc78}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-020
+    date: 2026-06-02
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2588-6006)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits, recurring pattern."
+    evidence: [{gmail_thread: 19e88db0809f2a22}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-021
+    date: 2026-06-05
+    source: gmail
+    description: "Lovable credit top-up, 100 credits (receipt #2307-0771)"
+    amount: 30.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits, recurring pattern."
+    evidence: [{gmail_thread: 19e97da7b5d0ab3a}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-022
+    date: 2026-06-08
+    source: gmail
+    description: "Lovable Pro 1 subscription, Jun 8–Jul 8 (receipt #2613-9128)"
+    amount: 22.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Monthly subscription renewal."
+    evidence: [{gmail_thread: 19ea8be977586bea}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-023
+    date: 2026-06-26
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2065-2553, card •1007)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits — note this one hit a different card (•1007) to the usual •7135."
+    evidence: [{gmail_thread: 19f04680fedb4cf9}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-024
+    date: 2026-06-26
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2171-7715)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Second top-up the same day — planned per your ruling."
+    evidence: [{gmail_thread: 19f039245e3122dd}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-025
+    date: 2026-06-28
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2846-7516, card •8009)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits — charged to card •8009."
+    evidence: [{gmail_thread: 19f0f99681e8c327}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-026
+    date: 2026-06-28
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2613-1279, card •8009)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Second top-up the same day — planned per your ruling."
+    evidence: [{gmail_thread: 19f0e863c3f7fde4}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-027
+    date: 2026-07-01
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2343-4554)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits, recurring pattern."
+    evidence: [{gmail_thread: 19f1c617d53ec9e1}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-028
+    date: 2026-07-02
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2966-2476)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits, recurring pattern."
+    evidence: [{gmail_thread: 19f21c98d9cbb082}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-029
+    date: 2026-07-03
+    source: gmail
+    description: "Lovable credit top-up, 100 credits (receipt #2956-6578)"
+    amount: 30.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits, recurring pattern."
+    evidence: [{gmail_thread: 19f26f421a2629e3}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-030
+    date: 2026-07-06
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2193-2752)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits, recurring pattern."
+    evidence: [{gmail_thread: 19f384a790f40c14}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-031
+    date: 2026-07-07
+    source: gmail
+    description: "Lovable credit top-up, 50 credits (receipt #2985-7589)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Build credits, recurring pattern."
+    evidence: [{gmail_thread: 19f399bcb83c1f22}]
+    flags: []
+    status: pending
+
+  # ---------- EXPENSES — Anthropic (Claude subscriptions & usage) ----------
+  - id: 2026-07-07-032
+    date: 2026-05-04
+    source: gmail
+    description: "Anthropic Claude Pro subscription, May 4–Jun 4 (receipt #2922-0612-7417)"
+    amount: 18.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Monthly Claude subscription used for client and automation work."
+    evidence: [{gmail_thread: 19df2abb8393d053}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-033
+    date: 2026-05-04
+    source: gmail
+    description: "Anthropic prepaid extra usage (receipt #2932-8384-2182)"
+    amount: 6.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Usage top-up on the Claude plan."
+    evidence: [{gmail_thread: 19df46191789b15d}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-034
+    date: 2026-05-08
+    source: gmail
+    description: "Anthropic API credit purchase — $6.00 USD (receipt #2864-1571-2603, card •4424)"
+    amount: 6.00
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "API credits in dollars — non-GBP, so it waits for your say on how to record it."
+    evidence: [{gmail_thread: 19e07f103e29444d}]
+    flags: [non-gbp]
+    status: pending
+  - id: 2026-07-07-035
+    date: 2026-05-14
+    source: gmail
+    description: "Anthropic prepaid extra usage (receipt #2223-4759-3114)"
+    amount: 6.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Usage top-up on the Claude plan."
+    evidence: [{gmail_thread: 19e2822b16e3b427}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-036
+    date: 2026-05-15
+    source: gmail
+    description: "Anthropic API credit purchase — $6.00 USD (receipt #2018-3976-7601, card •4424)"
+    amount: 6.00
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "API credits in dollars — non-GBP flag."
+    evidence: [{gmail_thread: 19e2c59723b9a90b}]
+    flags: [non-gbp]
+    status: pending
+  - id: 2026-07-07-037
+    date: 2026-05-18
+    source: gmail
+    description: "Anthropic prepaid extra usage (receipt #2805-7458-0422)"
+    amount: 6.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Usage top-up on the Claude plan."
+    evidence: [{gmail_thread: 19e3cbbcfb42ade7}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-038
+    date: 2026-05-26
+    source: gmail
+    description: "Anthropic prepaid extra usage (receipt #2695-7520-3504)"
+    amount: 12.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Usage top-up on the Claude plan."
+    evidence: [{gmail_thread: 19e6500339bce3d0}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-039
+    date: 2026-06-04
+    source: gmail
+    description: "Anthropic Claude Pro subscription, Jun 4–Jul 4 (receipt #2840-7423-0457)"
+    amount: 18.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Monthly Claude subscription renewal."
+    evidence: [{gmail_thread: 19e92894ae4b7132}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-040
+    date: 2026-06-11
+    source: gmail
+    description: "Anthropic API credit purchase — $6.00 USD (receipt #2660-0261-9361, card •4424)"
+    amount: 6.00
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "API credits in dollars — non-GBP flag."
+    evidence: [{gmail_thread: 19eb6b1d02283d42}]
+    flags: [non-gbp]
+    status: pending
+  - id: 2026-07-07-041
+    date: 2026-07-01
+    source: gmail
+    description: "Anthropic prepaid extra usage (receipt #2419-8761-0334)"
+    amount: 18.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Usage top-up on the Claude plan."
+    evidence: [{gmail_thread: 19f1d26930694164}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-042
+    date: 2026-07-03
+    source: gmail
+    description: "Anthropic prepaid extra usage (receipt #2039-4155-8320)"
+    amount: 18.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Usage top-up on the Claude plan."
+    evidence: [{gmail_thread: 19f27cd28d1c107b}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-043
+    date: 2026-07-04
+    source: gmail
+    description: "Anthropic Claude Pro subscription, Jul 4–Aug 4 (receipt #2620-8222-9548)"
+    amount: 18.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Monthly Claude subscription renewal."
+    evidence: [{gmail_thread: 19f2d07d07137128}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-044
+    date: 2026-07-05
+    source: gmail
+    description: "Anthropic prepaid extra usage (receipt #2686-3732-9762)"
+    amount: 40.50
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Larger usage top-up on the Claude plan."
+    evidence: [{gmail_thread: 19f327fcfd8eebe0}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-045
+    date: 2026-07-06
+    source: gmail
+    description: "Anthropic Claude Max 5x plan, Jul 6–Aug 6, net of unused Pro credit (receipt #2728-2993-1919)"
+    amount: 73.30
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Upgrade to the Max plan — the same-day second receipt is the separate usage top-up below."
+    evidence: [{gmail_thread: 19f3846b1d3e9d36}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-046
+    date: 2026-07-06
+    source: gmail
+    description: "Anthropic prepaid extra usage (receipt #2585-4953-6885)"
+    amount: 18.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Usage top-up alongside the Max upgrade — planned same-day pair per your ruling."
+    evidence: [{gmail_thread: 19f3947a936799d6}]
+    flags: []
+    status: pending
+
+  # ---------- EXPENSES — other business-looking ----------
+  - id: 2026-07-07-047
+    date: 2026-06-23
+    source: gmail
+    description: "Midjourney Basic plan $12.00 USD — FULLY REFUNDED on 28 June (receipts #2054-6947-3370 / #3078-2782-3731)"
+    amount: 12.00
+    currency: USD
+    proposed_category: exclude
+    reasoning: "Charged then refunded in full five days later — net zero, suggest excluding both legs from the books."
+    evidence: [{gmail_thread: 19ef42a81c44d3f9}, {gmail_thread: 19f0e9689edd39b5}]
+    flags: [non-gbp]
+    status: pending
+  - id: 2026-07-07-048
+    date: 2026-06-22
+    source: gmail
+    description: "Squarespace domain registration — ai-trained.com, 1 year"
+    amount: 16.00
+    currency: GBP
+    proposed_category: marketing_and_website
+    reasoning: "Domain for the trAIned trading name, which is in these books per your ruling."
+    evidence: [{gmail_thread: 19eefd84988d641e}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-049
+    date: 2026-07-02
+    source: gmail
+    description: "Lebara SIM-only plan renewal (10GB monthly, 07884617816)"
+    amount: 1.50
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "Monthly mobile plan — allowable if this is the business number."
+    evidence: [{gmail_thread: 19f22063dc75d10a}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-050
+    date: 2026-06-25
+    source: gmail
+    description: "RingGo parking — Jewry Street, Winchester, 07:38–09:00"
+    amount: 2.00
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Weekday morning town-centre parking, consistent with a work trip."
+    evidence: [{gmail_thread: 19efd80141957787}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-051
+    date: 2026-07-04
+    source: gmail
+    description: "RingGo parking — Jewry Street, Winchester, 08:08–09:08"
+    amount: 2.00
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Weekday morning parking; you labelled this thread Tax 2026/27, which raises confidence."
+    evidence: [{gmail_thread: 19f295d9c40d52b9}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-052
+    date: 2026-07-03
+    source: gmail
+    description: "RingGo parking — St. Peters, Winchester, two evening sessions (20:03 and 21:08)"
+    amount: 4.00
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Friday-evening town parking looks personal — pull it into travel if it was a work visit."
+    evidence: [{gmail_thread: 19f295d9c40d52b9}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-053
+    date: 2026-05-01
+    source: gmail
+    description: "Google Workspace monthly invoice — oxfordcircus.co.za (April)"
+    amount: null
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Your business email/domain workspace — the amount is in the attached PDF, which this run didn't open."
+    evidence: [{gmail_thread: 19de47c06dfaad09}]
+    flags: [amount-unknown]
+    status: pending
+  - id: 2026-07-07-054
+    date: 2026-06-02
+    source: gmail
+    description: "Google Workspace monthly invoice — oxfordcircus.co.za (May)"
+    amount: null
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Monthly workspace invoice; amount in PDF attachment."
+    evidence: [{gmail_thread: 19e8861ac99b5f69}]
+    flags: [amount-unknown]
+    status: pending
+  - id: 2026-07-07-055
+    date: 2026-07-01
+    source: gmail
+    description: "Google Workspace monthly invoice — oxfordcircus.co.za (June)"
+    amount: null
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Monthly workspace invoice; amount in PDF attachment."
+    evidence: [{gmail_thread: 19f1d8e0015d1830}]
+    flags: [amount-unknown]
+    status: pending
+  - id: 2026-07-07-056
+    date: 2026-05-02
+    source: gmail
+    description: "Google Workspace monthly invoice — samrosevalley.co.za (April)"
+    amount: null
+    currency: GBP
+    proposed_category: ""
+    reasoning: "This workspace is for the samrosevalley.co.za domain, not your business domain — is it yours to book, rebillable, or someone else's entirely?"
+    evidence: [{gmail_thread: 19de96b5c75dbe03}]
+    flags: [no-rule-match, amount-unknown]
+    status: pending
+  - id: 2026-07-07-057
+    date: 2026-06-02
+    source: gmail
+    description: "Google Workspace monthly invoice — samrosevalley.co.za (May)"
+    amount: null
+    currency: GBP
+    proposed_category: ""
+    reasoning: "Same question as the April samrosevalley invoice."
+    evidence: [{gmail_thread: 19e87ac8a23f491c}]
+    flags: [no-rule-match, amount-unknown]
+    status: pending
+  - id: 2026-07-07-058
+    date: 2026-07-01
+    source: gmail
+    description: "Google Workspace monthly invoice — samrosevalley.co.za (June)"
+    amount: null
+    currency: GBP
+    proposed_category: ""
+    reasoning: "Same question as the April samrosevalley invoice."
+    evidence: [{gmail_thread: 19f1e0a96c81d727}]
+    flags: [no-rule-match, amount-unknown]
+    status: pending
+  - id: 2026-07-07-059
+    date: 2026-05-02
+    source: gmail
+    description: "Google Ads billing document — profile 4999-3046-2651 (April)"
+    amount: null
+    currency: GBP
+    proposed_category: marketing_and_website
+    reasoning: "Ad spend — likely for client campaigns; amount is in the Google Ads dashboard PDF."
+    evidence: [{gmail_thread: 19de62f0d6b80b79}]
+    flags: [amount-unknown]
+    status: pending
+  - id: 2026-07-07-060
+    date: 2026-06-02
+    source: gmail
+    description: "Google Ads billing documents — profiles 4999-3046-2651 and 5885-7699-9163 (May)"
+    amount: null
+    currency: GBP
+    proposed_category: marketing_and_website
+    reasoning: "Two ads profiles billed for May; amounts in the dashboard PDFs — are both profiles yours or client-rebilled?"
+    evidence: [{gmail_thread: 19e8771b7eb73a4b}]
+    flags: [amount-unknown]
+    status: pending
+  - id: 2026-07-07-061
+    date: 2026-07-01
+    source: gmail
+    description: "Google Ads billing document — profile 4999-3046-2651 (June)"
+    amount: null
+    currency: GBP
+    proposed_category: marketing_and_website
+    reasoning: "Monthly ads billing; amount in the dashboard PDF."
+    evidence: [{gmail_thread: 19f1ef425cc8d1c2}]
+    flags: [amount-unknown]
+    status: pending
+  - id: 2026-07-07-062
+    date: 2026-05-05
+    source: gmail
+    description: "Stripe fees — April tax invoice (as 'Gregg van Wyk t/a Oxford Circus Marketing')"
+    amount: null
+    currency: GBP
+    proposed_category: bank_and_payment_fees
+    reasoning: "Stripe's monthly fee invoice; exact amount lives in the Stripe Dashboard — reconciliation will pin it down from balance transactions."
+    evidence: [{gmail_thread: 19df9fabcdd61a7c}]
+    flags: [amount-unknown]
+    status: pending
+  - id: 2026-07-07-063
+    date: 2026-07-05
+    source: gmail
+    description: "Stripe fees — June tax invoices (Oxford Circus Digital + trAIned + trAIned Managed Payments)"
+    amount: null
+    currency: GBP
+    proposed_category: bank_and_payment_fees
+    reasoning: "Three June fee invoices from Stripe covering both trading names; amounts in the Dashboard. (No May fee invoice email was found — reconciliation will check.)"
+    evidence: [{gmail_thread: 19f33785619f2fae}, {gmail_thread: 19f32e71e2ac873c}, {gmail_thread: 19f32e396e4bcf50}, {gmail_thread: 19f20225c8b4c1ac}]
+    flags: [amount-unknown]
+    status: pending
+  - id: 2026-07-07-064
+    date: 2026-06-09
+    source: gmail
+    description: "Shopify bill — Meds 4 Pets store, June (first attempt £80.04 failed 7 Jun, retried)"
+    amount: 80.04
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Shopify store for the Meds 4 Pets project — worth confirming whether this is yours to book or rebillable to Paul/Ted."
+    evidence: [{gmail_thread: 19ea117a3000071f}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-065
+    date: 2026-07-07
+    source: gmail
+    description: "Shopify bill — Meds 4 Pets store, July"
+    amount: 80.42
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Same Shopify store, same rebill question as June."
+    evidence: [{gmail_thread: 19f3ba5b16636654}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-066
+    date: 2026-07-01
+    source: gmail
+    description: "domains.co.za web hosting payment — invoice 3629151, addressed to 'Gregg van Wyk (York Fund Management)'"
+    amount: null
+    currency: ZAR
+    proposed_category: ""
+    reasoning: "Hosting paid on your card but the account is York Fund Management — yours, a client's, or rebillable?"
+    evidence: [{gmail_thread: 19f1d9b060bee1bd}]
+    flags: [no-rule-match, non-gbp, amount-unknown]
+    status: pending
+  - id: 2026-07-07-067
+    date: 2026-07-01
+    source: gmail
+    description: "HP Instant Ink monthly statement"
+    amount: null
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Printer ink subscription — plausibly home-office; amount is in the statement link."
+    evidence: [{gmail_thread: 19f1d31ff067055e}]
+    flags: [amount-unknown]
+    status: pending
+
+  # ---------- PROPOSED PERSONAL (confirm or pull into business) ----------
+  - id: 2026-07-07-068
+    date: 2026-07-01
+    source: gmail
+    description: "Trainline — 3 adult evening returns, Winchester to Southampton"
+    amount: 13.05
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Three tickets on an evening out reads as family travel, not a client trip."
+    evidence: [{gmail_thread: 19f1e306f541f159}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-069
+    date: 2026-06-23
+    source: gmail
+    description: "Klarna instalment — Argos"
+    amount: 37.65
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Retail instalment plan, matches your personal indicators."
+    evidence: [{gmail_thread: 19ef47838e4c287c}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-070
+    date: 2026-07-06
+    source: gmail
+    description: "Klarna instalment — Wayfair"
+    amount: 47.85
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Furniture instalment plan, personal pattern."
+    evidence: [{gmail_thread: 19f36ea27654c938}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-071
+    date: 2026-06-26
+    source: gmail
+    description: "Apple iCloud+ 2TB monthly"
+    amount: 8.99
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Personal Apple account storage — say the word if part is business use."
+    evidence: [{gmail_thread: 19f0769e499c6e40}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-072
+    date: 2026-06-25
+    source: gmail
+    description: "Josie's Winchester — card payment"
+    amount: 18.55
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Restaurant — client entertainment isn't allowable for sole traders anyway."
+    evidence: [{gmail_thread: 19efd8f88fa3841f}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-073
+    date: 2026-06-28
+    source: gmail
+    description: "Josie's Winchester — card payment"
+    amount: 33.30
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Restaurant, personal pattern."
+    evidence: [{gmail_thread: 19f0d239101d98b8}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-074
+    date: 2026-07-01
+    source: gmail
+    description: "England Athletics membership 2026/27"
+    amount: 33.00
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Sports membership, personal."
+    evidence: [{gmail_thread: 19f1bf079498a17c}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-075
+    date: 2026-07-03
+    source: gmail
+    description: "PayPal payment to trilife_uk"
+    amount: 10.00
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Small payment to a triathlon outfit, personal pattern."
+    evidence: [{gmail_thread: 19f27ec4f0207fb4}]
+    flags: []
+    status: pending
+  - id: 2026-07-07-076
+    date: 2026-06-19
+    source: gmail
+    description: "Mindful Chef gift card for Michelle"
+    amount: 120.00
+    currency: GBP
+    proposed_category: personal
+    reasoning: "A gift — personal."
+    evidence: [{gmail_thread: 19edf04c5f97d820}]
+    flags: []
+    status: pending

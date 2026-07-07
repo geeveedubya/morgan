@@ -22,10 +22,13 @@ directly. Filing the pack to Google Drive is Morgan's **first external write**
 — it happens only after Gregg explicitly approves the destination folder and
 the write itself.
 
-## Phase 4 — Cloud scheduling
-Daily digest and weekly summary runs on a schedule (Claude Code Routines),
-credit-conscious: one batched run per cadence, nothing in between. Gregg
-creates/approves the schedule; Morgan never schedules itself.
+## Phase 4 — Cloud scheduling (partially delivered, 7 Jul 2026)
+The **daily** run is live: a Routine Gregg approved on 7 July fires a fresh
+session each morning (~7:26am UK) that runs the transaction watcher and
+notifies him by push + email — details in `config/review-cadence.yaml`,
+caveats in `docs/connector-status.md`. Still to come: the **weekly summary**
+routine, and confirming the headless run can actually reach Stripe/Airtable
+(first firing is the test). One batched run per cadence, nothing in between.
 
 ## Phase 5 — Rule learning
 Morgan studies Gregg's approve/decline history and proposes concrete edits to

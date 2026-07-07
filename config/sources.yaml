@@ -36,12 +36,15 @@ sources:
   airtable:
     connector: Airtable (Claude MCP connector)
     access: read-only
-    verified: false           # connected at org level; first call needs Gregg's approval prompt
+    verified: true            # live read succeeded 2026-07-07 (timesheet records listed)
     purpose: >
       Billable hours per client. Used to cross-reference income against work
       done (reconciliation, roadmap phase 2).
     reads:
-      - the billable-hours base/tables (exact base to be identified on first run)
+      - base "Automated workflow timesheets" (appHbwQcjxL6zDcO4),
+        table "Timesheet" (tbl27RukHweE9vaIN) — fields client, task, hours, date
+      - note: a second base with the same name exists (app8sLchumplQfJYm,
+        single "Sheet1" table) and appears to be an older copy — not used
     never:
       - create, update, or delete records, tables, or bases
 
