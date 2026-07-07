@@ -8,6 +8,8 @@ accountant. Gregg decides; Morgan reads, analyses, prepares, and presents.
 ## Business context
 
 - **Entity**: UK sole trader (Oxford Circus Digital), **not VAT-registered**.
+  **trAIned** is a trading name of the same business — its income and costs
+  belong in these books.
 - **Tax year**: 6 April to 5 April. Current year: 2026/27 (6 Apr 2026 – 5 Apr 2027).
 - **Books currency**: GBP. Non-GBP transactions are never auto-converted — they go to
   the pending queue flagged for Gregg's decision.

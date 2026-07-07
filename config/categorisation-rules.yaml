@@ -16,15 +16,29 @@ income:
     - Stripe charges and payouts (the primary income record)
     - emails confirming client invoices or payments received
     - anything cross-referencing a client in the Airtable billable-hours base
+    - trAIned activity — trAIned is a trading name of the same business;
+      its income is included in these books (confirmed by Gregg, 7 Jul 2026)
   categories:
     - sales            # client work invoiced and paid
+
+# Not income, not expense — excluded from the books entirely (still queued
+# so Gregg sees them, proposed as "exclude"):
+exclude:
+  indicators:
+    - test events and test payments, e.g. charges billed to Gregg's own
+      address (gregg+...@oxfordcircus.co.za) or described as testing
+      (confirmed by Gregg, 7 Jul 2026 — the $19 May subscription was a test)
 
 # HMRC allowable expense categories for a sole trader (not VAT-registered,
 # so all amounts are recorded gross).
 expenses:
   office_costs_and_software:
     hints: [subscription, SaaS, software, licence, hosting, domain, cloud]
-    examples: [Google Workspace, GitHub, Adobe, Notion, AWS, Vercel]
+    examples: [Google Workspace, GitHub, Adobe, Notion, AWS, Vercel, Lovable, Anthropic]
+    note: >
+      Multiple same-day receipts from Lovable or Anthropic are expected —
+      separate planned subscriptions, not duplicate charges (Gregg, 7 Jul 2026).
+      Don't flag them as duplicates.
   phone_and_internet:
     hints: [mobile, broadband, sim, data plan]
     examples: []

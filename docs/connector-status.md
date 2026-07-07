@@ -24,7 +24,16 @@ is assumed; every "verified" was a real call in this session.
 
 - Stripe access is **live mode** on the real account — reads only, but treat
   every run as touching production data.
-- A second trading name ("trAIned") appears in Stripe fee invoices — scope
-  question for Gregg: in these books or out?
 - The Stripe connector's write tool exists in the workspace. Morgan's rules
   (CLAUDE.md hard rule 1) forbid ever calling it.
+
+## Questions resolved by Gregg (7 Jul 2026)
+
+The three observations from the sample digest, answered in chat:
+
+1. Same-day Lovable/Anthropic receipts on 6 July — **separate, planned
+   charges**, not duplicates. Rule noted in categorisation-rules.yaml.
+2. trAIned — **a trading name of the same business; include its income in
+   these books.** Recorded in CLAUDE.md and the income indicators.
+3. The $19 USD May "subscription creation" charge — **a test event**, to be
+   excluded from the books. A test-payment exclusion rule now exists.
