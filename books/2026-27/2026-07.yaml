@@ -1,0 +1,216 @@
+# Ledger 2026-07 — tax year 2026/27. Booked entries only; approvals in chat.
+month: 2026-07
+entries:
+- id: 2026-07-07-027
+  date: '2026-07-01'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2343-4554)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits, recurring pattern.
+  evidence:
+  - gmail_thread: 19f1c617d53ec9e1
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-041
+  date: '2026-07-01'
+  source: gmail
+  description: 'Anthropic prepaid extra usage (receipt #2419-8761-0334)'
+  amount: 18.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Usage top-up on the Claude plan.
+  evidence:
+  - gmail_thread: 19f1d26930694164
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-068
+  date: '2026-07-01'
+  source: gmail
+  description: Trainline — 3 adult evening returns, Winchester to Southampton
+  amount: 13.05
+  currency: GBP
+  proposed_category: travel
+  reasoning: Three tickets on an evening out reads as family travel, not a client trip.
+  evidence:
+  - gmail_thread: 19f1e306f541f159
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-028
+  date: '2026-07-02'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2966-2476)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits, recurring pattern.
+  evidence:
+  - gmail_thread: 19f21c98d9cbb082
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-049
+  date: '2026-07-02'
+  source: gmail
+  description: Lebara SIM-only plan renewal (10GB monthly, 07884617816)
+  amount: 1.5
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: Monthly mobile plan — allowable if this is the business number.
+  evidence:
+  - gmail_thread: 19f22063dc75d10a
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-029
+  date: '2026-07-03'
+  source: gmail
+  description: 'Lovable credit top-up, 100 credits (receipt #2956-6578)'
+  amount: 30.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits, recurring pattern.
+  evidence:
+  - gmail_thread: 19f26f421a2629e3
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-042
+  date: '2026-07-03'
+  source: gmail
+  description: 'Anthropic prepaid extra usage (receipt #2039-4155-8320)'
+  amount: 18.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Usage top-up on the Claude plan.
+  evidence:
+  - gmail_thread: 19f27cd28d1c107b
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-043
+  date: '2026-07-04'
+  source: gmail
+  description: 'Anthropic Claude Pro subscription, Jul 4–Aug 4 (receipt #2620-8222-9548)'
+  amount: 18.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Monthly Claude subscription renewal.
+  evidence:
+  - gmail_thread: 19f2d07d07137128
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-051
+  date: '2026-07-04'
+  source: gmail
+  description: RingGo parking — Jewry Street, Winchester, 08:08–09:08
+  amount: 2.0
+  currency: GBP
+  proposed_category: travel
+  reasoning: Weekday morning parking; you labelled this thread Tax 2026/27, which raises confidence.
+  evidence:
+  - gmail_thread: 19f295d9c40d52b9
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-044
+  date: '2026-07-05'
+  source: gmail
+  description: 'Anthropic prepaid extra usage (receipt #2686-3732-9762)'
+  amount: 40.5
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Larger usage top-up on the Claude plan.
+  evidence:
+  - gmail_thread: 19f327fcfd8eebe0
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-030
+  date: '2026-07-06'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2193-2752)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits, recurring pattern.
+  evidence:
+  - gmail_thread: 19f384a790f40c14
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-045
+  date: '2026-07-06'
+  source: gmail
+  description: 'Anthropic Claude Max 5x plan, Jul 6–Aug 6, net of unused Pro credit (receipt #2728-2993-1919)'
+  amount: 73.3
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Upgrade to the Max plan — the same-day second receipt is the separate usage top-up below.
+  evidence:
+  - gmail_thread: 19f3846b1d3e9d36
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-046
+  date: '2026-07-06'
+  source: gmail
+  description: 'Anthropic prepaid extra usage (receipt #2585-4953-6885)'
+  amount: 18.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Usage top-up alongside the Max upgrade — planned same-day pair per your ruling.
+  evidence:
+  - gmail_thread: 19f3947a936799d6
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-070
+  date: '2026-07-06'
+  source: gmail
+  description: Klarna instalment — Wayfair
+  amount: 47.85
+  currency: GBP
+  proposed_category: equipment
+  reasoning: Furniture instalment plan, personal pattern.
+  evidence:
+  - gmail_thread: 19f36ea27654c938
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-031
+  date: '2026-07-07'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2985-7589)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits, recurring pattern.
+  evidence:
+  - gmail_thread: 19f399bcb83c1f22
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+totals:
+  income_gbp: 0
+  expenses_gbp: 340.2

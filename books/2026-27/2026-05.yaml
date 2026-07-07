@@ -1,0 +1,219 @@
+# Ledger 2026-05 — tax year 2026/27. Booked entries only; approvals in chat.
+month: 2026-05
+entries:
+- id: 2026-07-07-004
+  date: '2026-05-02'
+  source: stripe
+  description: Client payment — 'Payment for Invoice' via customer balance
+  amount: 300.0
+  currency: GBP
+  proposed_category: sales
+  reasoning: Stripe invoice payment settled in GBP; payer not named on the charge.
+  evidence:
+  - stripe: py_3TS0r5AnusPN3mWR1kvh241Q
+  flags:
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-005
+  date: '2026-05-03'
+  source: stripe
+  description: Client payment — Craig Nerwich (Arctic Ape)
+  amount: 458.38
+  currency: GBP
+  proposed_category: sales
+  reasoning: Regular Arctic Ape invoice payment, paid from ZAR card, settled GBP.
+  evidence:
+  - stripe: ch_3TRZxHAnusPN3mWR0q7cP2ji
+  flags:
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-006
+  date: '2026-05-03'
+  source: stripe
+  description: Client payment — Craig Nerwich (Arctic Ape)
+  amount: 37.0
+  currency: GBP
+  proposed_category: sales
+  reasoning: Small same-day Arctic Ape payment alongside the £458.38 one.
+  evidence:
+  - stripe: ch_3TH8tbAnusPN3mWR0DvBWMd4
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-032
+  date: '2026-05-04'
+  source: gmail
+  description: 'Anthropic Claude Pro subscription, May 4–Jun 4 (receipt #2922-0612-7417)'
+  amount: 18.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Monthly Claude subscription used for client and automation work.
+  evidence:
+  - gmail_thread: 19df2abb8393d053
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-033
+  date: '2026-05-04'
+  source: gmail
+  description: 'Anthropic prepaid extra usage (receipt #2932-8384-2182)'
+  amount: 6.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Usage top-up on the Claude plan.
+  evidence:
+  - gmail_thread: 19df46191789b15d
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-014
+  date: '2026-05-08'
+  source: gmail
+  description: 'Lovable Pro 1 subscription, May (receipt #2408-4066)'
+  amount: 22.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Monthly subscription to your app-building tool.
+  evidence:
+  - gmail_thread: 19e08dfab78752e9
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-015
+  date: '2026-05-10'
+  source: gmail
+  description: 'Lovable plan upgrade Pro 1 → Pro 2, prorated (receipt #2272-1446)'
+  amount: 22.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Plan upgrade on the same business tool.
+  evidence:
+  - gmail_thread: 19e12dcc82727503
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-016
+  date: '2026-05-11'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2827-4520)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits for client/app work — same-day multiples are planned per your ruling.
+  evidence:
+  - gmail_thread: 19e17fe09bd3576e
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-017
+  date: '2026-05-13'
+  source: gmail
+  description: 'Lovable plan upgrade Pro 2 → Pro 3, prorated (receipt #2193-5428)'
+  amount: 44.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Plan upgrade on the same business tool.
+  evidence:
+  - gmail_thread: 19e21ac1f51d5f25
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-035
+  date: '2026-05-14'
+  source: gmail
+  description: 'Anthropic prepaid extra usage (receipt #2223-4759-3114)'
+  amount: 6.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Usage top-up on the Claude plan.
+  evidence:
+  - gmail_thread: 19e2822b16e3b427
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-037
+  date: '2026-05-18'
+  source: gmail
+  description: 'Anthropic prepaid extra usage (receipt #2805-7458-0422)'
+  amount: 6.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Usage top-up on the Claude plan.
+  evidence:
+  - gmail_thread: 19e3cbbcfb42ade7
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-018
+  date: '2026-05-24'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2225-4218)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits, recurring pattern.
+  evidence:
+  - gmail_thread: 19e5872a494d3d66
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-038
+  date: '2026-05-26'
+  source: gmail
+  description: 'Anthropic prepaid extra usage (receipt #2695-7520-3504)'
+  amount: 12.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Usage top-up on the Claude plan.
+  evidence:
+  - gmail_thread: 19e6500339bce3d0
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-019
+  date: '2026-05-27'
+  source: gmail
+  description: 'Lovable credit top-up, 150 credits (receipt #2718-6474)'
+  amount: 45.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits, recurring pattern.
+  evidence:
+  - gmail_thread: 19e68d8f4c2acc78
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-008
+  date: '2026-05-30'
+  source: stripe
+  description: Client payment — Craig Nerwich (Arctic Ape)
+  amount: 712.0
+  currency: GBP
+  proposed_category: sales
+  reasoning: Arctic Ape month-end invoice payment for May.
+  evidence:
+  - stripe: ch_3TcMnEAnusPN3mWR0doTYeSl
+  flags:
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+totals:
+  income_gbp: 1507.38
+  expenses_gbp: 211.0

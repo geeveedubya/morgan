@@ -1,0 +1,234 @@
+# Ledger 2026-06 — tax year 2026/27. Booked entries only; approvals in chat.
+month: 2026-06
+entries:
+- id: 2026-07-07-009
+  date: '2026-06-02'
+  source: stripe
+  description: Client payment — Stefan Brozin
+  amount: 837.0
+  currency: GBP
+  proposed_category: sales
+  reasoning: Invoice payment from a regular client, paid from ZAR card, settled GBP.
+  evidence:
+  - stripe: ch_3Tdoo1AnusPN3mWR1hfOJWlV
+  flags:
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-020
+  date: '2026-06-02'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2588-6006)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits, recurring pattern.
+  evidence:
+  - gmail_thread: 19e88db0809f2a22
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-039
+  date: '2026-06-04'
+  source: gmail
+  description: 'Anthropic Claude Pro subscription, Jun 4–Jul 4 (receipt #2840-7423-0457)'
+  amount: 18.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Monthly Claude subscription renewal.
+  evidence:
+  - gmail_thread: 19e92894ae4b7132
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-021
+  date: '2026-06-05'
+  source: gmail
+  description: 'Lovable credit top-up, 100 credits (receipt #2307-0771)'
+  amount: 30.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits, recurring pattern.
+  evidence:
+  - gmail_thread: 19e97da7b5d0ab3a
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-022
+  date: '2026-06-08'
+  source: gmail
+  description: 'Lovable Pro 1 subscription, Jun 8–Jul 8 (receipt #2613-9128)'
+  amount: 22.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Monthly subscription renewal.
+  evidence:
+  - gmail_thread: 19ea8be977586bea
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-010
+  date: '2026-06-21'
+  source: stripe
+  description: Client payment — Craig Nerwich (Arctic Ape)
+  amount: 600.0
+  currency: GBP
+  proposed_category: sales
+  reasoning: Mid-month Arctic Ape invoice payment.
+  evidence:
+  - stripe: ch_3TiVERAnusPN3mWR0ynvi9Pq
+  flags:
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-048
+  date: '2026-06-22'
+  source: gmail
+  description: Squarespace domain registration — ai-trained.com, 1 year
+  amount: 16.0
+  currency: GBP
+  proposed_category: marketing_and_website
+  reasoning: Domain for the trAIned trading name, which is in these books per your ruling.
+  evidence:
+  - gmail_thread: 19eefd84988d641e
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-069
+  date: '2026-06-23'
+  source: gmail
+  description: Klarna instalment — Argos
+  amount: 37.65
+  currency: GBP
+  proposed_category: equipment
+  reasoning: Retail instalment plan, matches your personal indicators.
+  evidence:
+  - gmail_thread: 19ef47838e4c287c
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-011
+  date: '2026-06-25'
+  source: stripe
+  description: Client payment — Stefan Brozin
+  amount: 100.0
+  currency: GBP
+  proposed_category: sales
+  reasoning: Invoice payment, likely the campaign invoice you emailed Stefan/Avi on 25 June.
+  evidence:
+  - stripe: ch_3TmA2vAnusPN3mWR0ovkigqM
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-050
+  date: '2026-06-25'
+  source: gmail
+  description: RingGo parking — Jewry Street, Winchester, 07:38–09:00
+  amount: 2.0
+  currency: GBP
+  proposed_category: travel
+  reasoning: Weekday morning town-centre parking, consistent with a work trip.
+  evidence:
+  - gmail_thread: 19efd80141957787
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-023
+  date: '2026-06-26'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2065-2553, card •1007)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits — note this one hit a different card (•1007) to the usual •7135.
+  evidence:
+  - gmail_thread: 19f04680fedb4cf9
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-024
+  date: '2026-06-26'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2171-7715)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Second top-up the same day — planned per your ruling.
+  evidence:
+  - gmail_thread: 19f039245e3122dd
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-071
+  date: '2026-06-26'
+  source: gmail
+  description: Apple iCloud+ 2TB monthly — 50% business apportionment of £8.99 (Gregg's ruling)
+  amount: 4.5
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Personal Apple account storage — say the word if part is business use.
+  evidence:
+  - gmail_thread: 19f0769e499c6e40
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-025
+  date: '2026-06-28'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2846-7516, card •8009)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Build credits — charged to card •8009.
+  evidence:
+  - gmail_thread: 19f0f99681e8c327
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-026
+  date: '2026-06-28'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits (receipt #2613-1279, card •8009)'
+  amount: 15.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Second top-up the same day — planned per your ruling.
+  evidence:
+  - gmail_thread: 19f0e863c3f7fde4
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-013
+  date: '2026-06-30'
+  source: stripe
+  description: Client payment — Craig Nerwich (Arctic Ape), June invoice incl. £20 WhatsApp credit
+  amount: 757.0
+  currency: GBP
+  proposed_category: sales
+  reasoning: Matches your 'Invoice June' email to Arctic Ape sent the same morning.
+  evidence:
+  - stripe: ch_3Tnwr0AnusPN3mWR0X5H6rJz
+  - gmail_thread: 19f179acf513df52
+  flags:
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+totals:
+  income_gbp: 2294.0
+  expenses_gbp: 205.15

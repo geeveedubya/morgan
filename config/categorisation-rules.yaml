@@ -77,6 +77,34 @@ personal:
     - restaurants and takeaways (client entertainment is not allowable anyway)
     - clothing (unless protective/branded workwear)
     - personal transfers between own accounts
+    - sports memberships and event fees (England Athletics, trilife — confirmed 2026-07-07)
+    - gifts to family (Mindful Chef gift — confirmed 2026-07-07)
+    - Josie's Winchester (confirmed 2026-07-07)
+
+# Standing rulings from Gregg's chat reviews (dated) — Morgan applies these
+# to future proposals instead of re-asking:
+standing_rulings:
+  - ruling: Google Ads billing (payments-noreply@google.com billing docs) is
+      client-paid ad spend — not Gregg's cost, exclude from the books
+    date: 2026-07-07
+  - ruling: Shopify "Meds 4 Pets" store bills are Paul/Ted's cost — exclude
+    date: 2026-07-07
+  - ruling: Google Workspace for samrosevalley.co.za and domains.co.za hosting
+      under "York Fund Management" ARE Gregg's costs — office_costs_and_software
+    date: 2026-07-07
+  - ruling: Apple iCloud+ (£8.99/mo) is claimed at 50% business apportionment
+    date: 2026-07-07
+  - ruling: Lebara SIM 07884617816 is the business number — phone_and_internet
+    date: 2026-07-07
+  - ruling: Winchester weekday-morning RingGo parking → travel; evening
+      sessions → personal (queue and ask when unclear)
+    date: 2026-07-07
+  - ruling: invoice payments from the Mauritian-rupee cards are client sales
+    date: 2026-07-07
+  - ruling: non-GBP amounts and PDF-only invoice amounts are approved in
+      principle when Gregg says so, with exact GBP pinned at month-end
+      reconciliation from Stripe Dashboard / card statement / invoice PDFs
+    date: 2026-07-07
 
 # These ALWAYS go to the pending queue for your decision, regardless of any
 # other match:

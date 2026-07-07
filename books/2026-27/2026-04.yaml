@@ -1,0 +1,34 @@
+# Ledger 2026-04 — tax year 2026/27. Booked entries only; approvals in chat.
+month: 2026-04
+entries:
+- id: 2026-07-07-001
+  date: '2026-04-07'
+  source: stripe
+  description: Client payment — 'Payment for Invoice' (payer unnamed in Stripe, card in Mauritian rupees)
+  amount: 125.0
+  currency: GBP
+  proposed_category: sales
+  reasoning: Stripe invoice payment settled in GBP; matches the £435.17 payout of 7 April.
+  evidence:
+  - stripe: py_3TH1hiAnusPN3mWR1T7BJFP2
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+- id: 2026-07-07-002
+  date: '2026-04-15'
+  source: stripe
+  description: Client payment — 'Payment for Invoice' (payer unnamed in Stripe, card in Mauritian rupees)
+  amount: 58.87
+  currency: GBP
+  proposed_category: sales
+  reasoning: Stripe invoice payment settled in GBP, same payer pattern as 7 April.
+  evidence:
+  - stripe: py_3TM59yAnusPN3mWR1P0qscUu
+  flags: []
+  status: booked
+  approved_on: '2026-07-07'
+  booked_on: '2026-07-07'
+totals:
+  income_gbp: 183.87
+  expenses_gbp: 0
