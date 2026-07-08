@@ -6,14 +6,21 @@
 scheduling:
   daily_run:
     trigger_id: trig_01PmYT8Ki3DzC7HqJMen6orA
+    status: DISABLED 2026-07-08 — misconfigured, see below
     cadence: "26 6 * * *"      # 06:26 UTC daily = 7:26am UK in summer, 6:26am in winter
-    fires: fresh cloud session running the transaction watcher
-    notifications: [push, email]   # from the Claude platform when the run completes
+    notifications: [push, email]
     created: 2026-07-07
-    caveat: >
-      Whether a headless session can reach Stripe/Airtable is unproven until
-      the first firing — the run reports honestly if a source is unreachable
-      (see docs/connector-status.md).
+    root_cause: >
+      Created via the MCP create_trigger tool, which cannot attach a repo
+      source or enable connectors. Its fresh morning session therefore had no
+      repo cloned and every connector toggled off, so no scan was possible.
+      The 8 Jul run correctly reported this and faked nothing.
+    fix_required: >
+      Re-create as a web-UI scheduled task with (a) source = geeveedubya/morgan
+      on branch claude/morgan-bookkeeper-foundation-1z2849, and (b) connectors
+      Stripe, Gmail, Airtable, Google Drive enabled for the session — the same
+      shape as the working fleet-daily-cycle trigger. The MCP tool cannot set
+      these, so this is a Gregg action in Claude Code on the web.
   weekly_summary_run: not yet scheduled (roadmap phase 4 remainder)
 
 daily_digest:
