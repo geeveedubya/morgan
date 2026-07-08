@@ -4,23 +4,29 @@
 # changes schedules unprompted; Gregg can pause/change it any time by asking.
 
 scheduling:
-  daily_run:
-    trigger_id: trig_01PmYT8Ki3DzC7HqJMen6orA
-    status: DISABLED 2026-07-08 — misconfigured, see below
+  # Model: REMINDER-ONLY. A daily trigger pings Gregg; the actual scan runs
+  # when he opens a session (repo + connectors are always present interactively).
+  # Chosen 2026-07-08 after the fully-unattended attempt failed — see history.
+  daily_reminder:
+    trigger_id: trig_011XmByYbSWCJwYEthUNohNB
+    status: active (created 2026-07-08)
     cadence: "26 6 * * *"      # 06:26 UTC daily = 7:26am UK in summer, 6:26am in winter
+    does: >
+      Fires a throwaway session that only emits a push/email nudge — no repo,
+      no connectors, no scan. Gregg opens a Morgan session and says
+      "run the daily scan"; Morgan does the real work then.
     notifications: [push, email]
-    created: 2026-07-07
-    root_cause: >
-      Created via the MCP create_trigger tool, which cannot attach a repo
-      source or enable connectors. Its fresh morning session therefore had no
-      repo cloned and every connector toggled off, so no scan was possible.
-      The 8 Jul run correctly reported this and faked nothing.
-    fix_required: >
-      Re-create as a web-UI scheduled task with (a) source = geeveedubya/morgan
-      on branch claude/morgan-bookkeeper-foundation-1z2849, and (b) connectors
-      Stripe, Gmail, Airtable, Google Drive enabled for the session — the same
-      shape as the working fleet-daily-cycle trigger. The MCP tool cannot set
-      these, so this is a Gregg action in Claude Code on the web.
+  history:
+    - trigger_id: trig_01PmYT8Ki3DzC7HqJMen6orA
+      lifespan: created 2026-07-07, failed first firing 2026-07-08, deleted
+      why_failed: >
+        MCP-created triggers carry only allowed_tools — they cannot attach a
+        repo source or enable connectors, so the fresh session had nothing to
+        read/write and no sources to scan. Documented in docs/connector-status.md.
+      note: >
+        A fully-unattended daily run is still possible later via a web-UI
+        scheduled task (repo source + connectors), like the fleet-daily-cycle
+        trigger — deferred by Gregg's choice; reminder-only for now.
   weekly_summary_run: not yet scheduled (roadmap phase 4 remainder)
 
 daily_digest:

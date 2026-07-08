@@ -50,9 +50,12 @@ Stripe `8baf69c7-824a-4501-b828-53da53a84b45`, Airtable
 `d6820e65-b508-4a59-ad8a-725a7448dace`, Google Drive
 `0a947318-5062-496a-9eee-c669e70dbab9`.
 
-The broken MCP-created trigger (`trig_01PmYT8Ki3DzC7HqJMen6orA`) is **disabled**
-so it stops firing daily false alarms. It can be deleted once a working
-web-UI schedule replaces it.
+The broken MCP-created trigger (`trig_01PmYT8Ki3DzC7HqJMen6orA`) was **deleted**
+on 8 Jul. In its place is a **reminder-only** trigger
+(`trig_011XmByYbSWCJwYEthUNohNB`, daily 06:26 UTC): it just sends Gregg a
+push/email nudge — no repo, no connectors, no scan — and the real scan runs
+when he opens a session. A fully-unattended run via a web-UI scheduled task
+(repo source + connectors) remains available later if wanted.
 
 **Notifications** (unchanged): push needs the Claude app with notifications on;
 email is the fallback. Both come from the Claude platform — Morgan never sends
