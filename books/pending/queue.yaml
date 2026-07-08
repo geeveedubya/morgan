@@ -1016,7 +1016,9 @@ queue:
     reasoning: "Second Lovable top-up on 7 Jul (evening, after the morning one already booked) — matches the office-costs standing rule; card •7135."
     evidence: [{gmail_thread: 19f3e185410e8909}]
     flags: []
-    status: pending
+    status: booked
+    approved_on: 2026-07-08
+    booked_on: 2026-07-08
   - id: 2026-07-08-002
     date: 2026-07-07
     source: gmail
@@ -1027,4 +1029,6 @@ queue:
     reasoning: "Claude usage top-up on 7 Jul — matches the office-costs standing rule; card •7135."
     evidence: [{gmail_thread: 19f3cf1894e69100}]
     flags: []
-    status: pending
+    status: booked
+    approved_on: 2026-07-08
+    booked_on: 2026-07-08
