@@ -41,6 +41,16 @@ scheduling:
         It nudged Gregg but carried no digest — "the update wasn't ideal,
         I don't even know where it is." Replaced by daily_scan +
         digest_ready_notification above.
+  friday_bank_recon_prompt:
+    trigger_id: trig_017WZTyZHaiqqtyB86i8jt9o
+    status: active (created 2026-07-09)
+    cadence: "33 14 * * 5"     # Friday 14:33 UTC = 3:33pm UK summer / 2:33pm winter
+    does: >
+      Push/email prompting Gregg to attach the week's Tide statement (CSV) in
+      his Morgan session and say "recon the bank statement". Morgan then runs
+      agents/bank-reconciler.md — matching, pinning awaiting-amount items, and
+      queueing anything the bank saw that Stripe/Gmail didn't. No Tide API
+      exists (registry checked 2026-07-09); statements come only from Gregg.
   weekly_summary_run: not yet scheduled (roadmap phase 4 remainder)
 
 daily_digest:

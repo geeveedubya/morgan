@@ -48,6 +48,19 @@ sources:
     never:
       - create, update, or delete records, tables, or bases
 
+  tide_bank:
+    connector: none — no Tide or open-banking MCP connector exists (registry
+      checked 2026-07-09); Tide API / Open Banking integration is a roadmap item
+    access: weekly statement upload by Gregg (CSV preferred), prompted every
+      Friday afternoon by trigger
+    verified: n/a
+    purpose: >
+      The completeness check. Catches money that moves through the bank with
+      no Stripe record or email receipt, and pins exact GBP amounts for
+      approved-awaiting-amount items. See agents/bank-reconciler.md.
+    never:
+      - any connection to the bank itself; statements come only from Gregg
+
   google_drive:
     connector: Google Drive (Claude MCP connector)
     access: read-only
