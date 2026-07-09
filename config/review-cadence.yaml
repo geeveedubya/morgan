@@ -10,7 +10,7 @@ scheduling:
   # repo, the connectors, and Morgan's context. A separate notification
   # trigger then tells Gregg the digest is ready.
   daily_scan:
-    trigger_id: trig_01YGG5QDo6eiMAJ6u3H1RgsP
+    trigger_id: trig_018eHkM9Sx6MMa6V69tUWr85   # recreated 2026-07-09 to add the dashboard refresh step
     status: active (created 2026-07-09; first firing 2026-07-10 is the proof)
     cadence: "56 5 * * *"      # 05:56 UTC = 6:56am UK summer / 5:56am winter
     does: >

@@ -1,0 +1,9 @@
+# Items Morgan is keeping an eye on — shown on the dashboard and in digests.
+# Morgan adds/removes these during runs; each has a plain-English line.
+watching:
+  - since: 2026-06-30
+    item: "Liber8 / Next Gen invoice (sent to Kim 30 Jun) — no matching Stripe payment yet"
+  - since: 2026-07-07
+    item: "15 approved items await exact amounts at month-end reconciliation (non-GBP, PDF invoices, Stripe fees)"
+  - since: 2026-07-07
+    item: "No May Stripe fee invoice email found — check the Dashboard at reconciliation"

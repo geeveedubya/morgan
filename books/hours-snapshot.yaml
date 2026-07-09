@@ -1,0 +1,11 @@
+# Billable-hours snapshot from Airtable ("Automated workflow timesheets"),
+# refreshed when Morgan reads the base. Used by the dashboard and reconciliation.
+as_of: 2026-07-07
+tax_year_total_hours: 73
+by_month:
+  2026-04: 15
+  2026-05: 27
+  2026-06: 28
+  2026-07: 3
+by_client:
+  Arctic Ape: 73
