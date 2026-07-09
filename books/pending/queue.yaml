@@ -1032,3 +1032,38 @@ queue:
     status: booked
     approved_on: 2026-07-08
     booked_on: 2026-07-08
+
+  # ---------- 2026-07-09 run — new since the 8 Jul digest ----------
+  - id: 2026-07-09-001
+    date: 2026-07-08
+    source: gmail
+    description: "Lovable Pro 1 subscription renewal, Jul 8–Aug 8 (receipt #2450-7858)"
+    amount: 22.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Monthly Lovable subscription renewal — matches the office-costs standing rule."
+    evidence: [{gmail_thread: 19f433c7d54376b1}]
+    flags: []
+    status: pending
+  - id: 2026-07-09-002
+    date: 2026-07-09
+    source: gmail
+    description: "Josie's Winchester — card payment"
+    amount: 18.55
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Josie's is on your confirmed-personal list (ruling 7 Jul)."
+    evidence: [{gmail_thread: 19f45bbce7313aaf}]
+    flags: []
+    status: pending
+  - id: 2026-07-09-003
+    date: 2026-07-08
+    source: gmail
+    description: "Gymshark order #UK19267741 (confirmation, amount in order details)"
+    amount: null
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Clothing — personal per your rules unless it's branded workwear."
+    evidence: [{gmail_thread: 19f41559b7dfb2fa}]
+    flags: [amount-unknown]
+    status: pending

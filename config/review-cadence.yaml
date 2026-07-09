@@ -4,29 +4,43 @@
 # changes schedules unprompted; Gregg can pause/change it any time by asking.
 
 scheduling:
-  # Model: REMINDER-ONLY. A daily trigger pings Gregg; the actual scan runs
-  # when he opens a session (repo + connectors are always present interactively).
-  # Chosen 2026-07-08 after the fully-unattended attempt failed — see history.
-  daily_reminder:
-    trigger_id: trig_011XmByYbSWCJwYEthUNohNB
-    status: active (created 2026-07-08)
-    cadence: "26 6 * * *"      # 06:26 UTC daily = 7:26am UK in summer, 6:26am in winter
+  # Model (rewired 2026-07-09 after the reminder-only setup left Gregg with a
+  # nudge but no digest): the SCAN runs itself each morning by resuming
+  # Morgan's own long-lived session — the one environment proven to have the
+  # repo, the connectors, and Morgan's context. A separate notification
+  # trigger then tells Gregg the digest is ready.
+  daily_scan:
+    trigger_id: trig_01YGG5QDo6eiMAJ6u3H1RgsP
+    status: active (created 2026-07-09; first firing 2026-07-10 is the proof)
+    cadence: "56 5 * * *"      # 05:56 UTC = 6:56am UK summer / 5:56am winter
     does: >
-      Fires a throwaway session that only emits a push/email nudge — no repo,
-      no connectors, no scan. Gregg opens a Morgan session and says
-      "run the daily scan"; Morgan does the real work then.
+      Resumes Morgan's session (session_01KK55NqifUquguTwBiQy77X), runs the
+      transaction watcher, updates queue + digest, applies any decisions Gregg
+      marked in the queue file, commits and pushes, then sends a push summary.
+      If a connector is unreachable in the scheduled resume it says so in the
+      digest — never fakes.
+  digest_ready_notification:
+    trigger_id: trig_01FkhSNZxH84YmQznyAkEdwQ
+    status: active (created 2026-07-09)
+    cadence: "26 6 * * *"      # 06:26 UTC = 7:26am UK summer — 30 min after the scan
+    does: >
+      Throwaway session that emits one push/email line telling Gregg the
+      digest is ready, with the fallback instruction if it isn't.
     notifications: [push, email]
   history:
     - trigger_id: trig_01PmYT8Ki3DzC7HqJMen6orA
       lifespan: created 2026-07-07, failed first firing 2026-07-08, deleted
       why_failed: >
-        MCP-created triggers carry only allowed_tools — they cannot attach a
-        repo source or enable connectors, so the fresh session had nothing to
-        read/write and no sources to scan. Documented in docs/connector-status.md.
-      note: >
-        A fully-unattended daily run is still possible later via a web-UI
-        scheduled task (repo source + connectors), like the fleet-daily-cycle
-        trigger — deferred by Gregg's choice; reminder-only for now.
+        Fired a FRESH session; MCP-created triggers cannot attach a repo
+        source or connectors to a fresh session, so it woke up empty.
+        The 2026-07-09 rewiring avoids this entirely by resuming Morgan's
+        existing session instead of spawning a new one.
+    - trigger_id: trig_011XmByYbSWCJwYEthUNohNB
+      lifespan: created 2026-07-08 (reminder-only), replaced 2026-07-09
+      why_replaced: >
+        It nudged Gregg but carried no digest — "the update wasn't ideal,
+        I don't even know where it is." Replaced by daily_scan +
+        digest_ready_notification above.
   weekly_summary_run: not yet scheduled (roadmap phase 4 remainder)
 
 daily_digest:
