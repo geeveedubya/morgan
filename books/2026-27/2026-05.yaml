@@ -241,6 +241,23 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-031
+  date: '2026-05-19'
+  source: bank
+  description: '''OXFORD CIRCUS MARK'' — £14.27 debit from the personal account'
+  amount: 14.27
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: A debit carrying your own business's descriptor on the personal account — test charge or
+    top-up? What was it?
+  evidence:
+  - bank: lloyds-personal-2026-07-10.csv
+  flags:
+  - no-rule-match
+  status: booked
+  note: '''OXFORD CIRCUS MARK'' £14.27 — business, references Oxford Circus (Gregg 10 Jul)'
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-10-022
   date: '2026-05-21'
   source: bank
@@ -284,6 +301,22 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-029
+  date: '2026-05-26'
+  source: bank
+  description: Kenable Ltd — £43.00 (cables/electronics retailer)
+  amount: 43.0
+  currency: GBP
+  proposed_category: equipment
+  reasoning: Cables/adapters — likely office/equipment for the business setup; confirm.
+  evidence:
+  - bank: lloyds-personal-2026-07-10.csv
+  flags:
+  - no-rule-match
+  status: booked
+  note: Kenable Ltd — office cables/equipment (Gregg 10 Jul)
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-019
   date: '2026-05-27'
   source: gmail
@@ -329,4 +362,4 @@ entries:
   booked_on: '2026-07-07'
 totals:
   income_gbp: 1507.38
-  expenses_gbp: 316.36
+  expenses_gbp: 373.63

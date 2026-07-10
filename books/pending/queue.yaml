@@ -1434,7 +1434,8 @@ queue:
     reasoning: "Payment to a person from the personal account — subcontractor/freelancer (business) or personal?"
     evidence: [{bank: lloyds-personal-2026-07-10.csv}]
     flags: ['no-rule-match', 'over-threshold']
-    status: pending
+    status: declined
+    declined_on: 2026-07-10   # car deposit — personal (Gregg 10 Jul)
   - id: 2026-07-10-028
     date: 2026-05-05
     source: bank
@@ -1445,40 +1446,50 @@ queue:
     reasoning: "Rewards/benefits platform — staff incentive (business) or personal? Your call."
     evidence: [{bank: lloyds-personal-2026-07-10.csv}]
     flags: ['no-rule-match', 'over-threshold']
-    status: pending
+    status: declined
+    declined_on: 2026-07-10   # groceries — personal (Gregg 10 Jul)
   - id: 2026-07-10-029
     date: 2026-05-26
     source: bank
     description: "Kenable Ltd — £43.00 (cables/electronics retailer)"
     amount: 43.0
     currency: GBP
-    proposed_category: ""
+    proposed_category: equipment
     reasoning: "Cables/adapters — likely office/equipment for the business setup; confirm."
     evidence: [{bank: lloyds-personal-2026-07-10.csv}]
     flags: ['no-rule-match']
-    status: pending
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
+    note: "Kenable Ltd — office cables/equipment (Gregg 10 Jul)"
   - id: 2026-07-10-030
     date: 2026-06-08
     source: bank
     description: "Copyman — £10.03 (print/copy service)"
     amount: 10.03
     currency: GBP
-    proposed_category: ""
+    proposed_category: marketing_and_website
     reasoning: "Printing/copy shop — business printing or personal?"
     evidence: [{bank: lloyds-personal-2026-07-10.csv}]
     flags: ['no-rule-match']
-    status: pending
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
+    note: "Copyman — business printing (Gregg 10 Jul)"
   - id: 2026-07-10-031
     date: 2026-05-19
     source: bank
     description: "'OXFORD CIRCUS MARK' — £14.27 debit from the personal account"
     amount: 14.27
     currency: GBP
-    proposed_category: ""
+    proposed_category: office_costs_and_software
     reasoning: "A debit carrying your own business's descriptor on the personal account — test charge or top-up? What was it?"
     evidence: [{bank: lloyds-personal-2026-07-10.csv}]
     flags: ['no-rule-match']
-    status: pending
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
+    note: "'OXFORD CIRCUS MARK' £14.27 — business, references Oxford Circus (Gregg 10 Jul)"
   - id: 2026-07-10-032
     date: 2026-06-01
     source: bank
@@ -1489,4 +1500,5 @@ queue:
     reasoning: "Some may be ad-hoc employee compensation (staff_costs), some household transfers between spouses — tell me which dates were for work and Morgan books only those."
     evidence: [{bank: lloyds-personal-2026-07-10.csv}]
     flags: ['no-rule-match', 'over-threshold']
-    status: pending
+    status: declined
+    declined_on: 2026-07-10   # Michelle payments outside Tide are personal/household (Gregg 10 Jul)

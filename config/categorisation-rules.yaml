@@ -117,7 +117,9 @@ standing_rulings:
     date: 2026-07-10
   - ruling: Amazon Monthly Payments instalment plans are personal, not business
     date: 2026-07-10
-  - ruling: Michelle Van Wyk's ad-hoc compensation books as staff_costs
+  - ruling: Michelle Van Wyk — only payments from the TIDE business account
+      (e.g. labelled "Retainer") are staff_costs; any Michelle payment from a
+      personal account is household/personal, never booked
     date: 2026-07-10
   - ruling: subscriptions with no email receipts (Make.com, Adobe, Canva,
       OpenAI) are caught via the weekly Tide recon, not Gmail

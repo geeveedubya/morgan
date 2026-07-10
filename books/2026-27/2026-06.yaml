@@ -134,6 +134,22 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-030
+  date: '2026-06-08'
+  source: bank
+  description: Copyman — £10.03 (print/copy service)
+  amount: 10.03
+  currency: GBP
+  proposed_category: marketing_and_website
+  reasoning: Printing/copy shop — business printing or personal?
+  evidence:
+  - bank: lloyds-personal-2026-07-10.csv
+  flags:
+  - no-rule-match
+  status: booked
+  note: Copyman — business printing (Gregg 10 Jul)
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-10-026
   date: '2026-06-09'
   source: bank
@@ -444,4 +460,4 @@ entries:
   note: four affiliate payouts Apr–Jun (32.67 + 61.12 + 61.92 + 62.83) booked as one line
 totals:
   income_gbp: 3413.64
-  expenses_gbp: 1110.09
+  expenses_gbp: 1120.12
