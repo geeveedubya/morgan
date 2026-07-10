@@ -15,6 +15,20 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-024
+  date: '2026-04-09'
+  source: bank
+  description: Google YouTube Premium (personal Lloyds card)
+  amount: 12.99
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Google subscription — business per Gregg's rule (Anthropic/ChatGPT/Google except Ads).
+  evidence:
+  - bank: lloyds-personal-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-10-014
   date: '2026-04-13'
   source: bank
@@ -64,4 +78,4 @@ entries:
   booked_on: '2026-07-10'
 totals:
   income_gbp: 516.29
-  expenses_gbp: 208.0
+  expenses_gbp: 220.99

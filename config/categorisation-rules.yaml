@@ -108,6 +108,10 @@ standing_rulings:
     date: 2026-07-07
   - ruling: Vitality Life policies are personal insurance — never business
     date: 2026-07-10
+  - ruling: All Anthropic, OpenAI/ChatGPT and Google costs are business
+      (office_costs_and_software) — the ONE exception is Google Ads, which is
+      client-paid and excluded. Applies on any card, including personal.
+    date: 2026-07-10
   - ruling: Fiverr / FiverrEU charges are business (freelance/subcontracted work);
       Tide often mis-tags them "Stock" — book as business, confirm sub-category
     date: 2026-07-10

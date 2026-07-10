@@ -458,15 +458,16 @@ queue:
     date: 2026-05-08
     source: gmail
     description: "Anthropic API credit purchase — $6.00 USD (receipt #2864-1571-2603, card •4424)"
-    amount: 6.00
-    currency: USD
+    amount: 4.43   # pinned from Lloyds personal statement
+    currency: GBP
     proposed_category: office_costs_and_software
     reasoning: "API credits in dollars — non-GBP, so it waits for your say on how to record it."
     evidence: [{gmail_thread: 19e07f103e29444d}]
-    flags: [non-gbp]
-    status: approved
+    flags: []
+    status: booked
+    booked_on: 2026-07-10
     approved_on: 2026-07-07
-    note: "NOT on Tide — paid on personal card •4424; claim at HMRC rate or from personal statement (bank recon 10 Jul)"
+    note: "settled £4.43 on the Lloyds personal card; booked per Gregg's Anthropic-is-business rule"
   - id: 2026-07-07-035
     date: 2026-05-14
     source: gmail
@@ -484,15 +485,16 @@ queue:
     date: 2026-05-15
     source: gmail
     description: "Anthropic API credit purchase — $6.00 USD (receipt #2018-3976-7601, card •4424)"
-    amount: 6.00
-    currency: USD
+    amount: 4.48   # pinned from Lloyds personal statement
+    currency: GBP
     proposed_category: office_costs_and_software
     reasoning: "API credits in dollars — non-GBP flag."
     evidence: [{gmail_thread: 19e2c59723b9a90b}]
-    flags: [non-gbp]
-    status: approved
+    flags: []
+    status: booked
+    booked_on: 2026-07-10
     approved_on: 2026-07-07
-    note: "NOT on Tide — paid on personal card •4424; claim at HMRC rate or from personal statement (bank recon 10 Jul)"
+    note: "settled £4.48 on the Lloyds personal card; booked per Gregg's Anthropic-is-business rule"
   - id: 2026-07-07-037
     date: 2026-05-18
     source: gmail
@@ -544,7 +546,7 @@ queue:
     flags: [non-gbp]
     status: approved
     approved_on: 2026-07-07
-    note: "NOT on Tide — paid on personal card •4424; claim at HMRC rate or from personal statement (bank recon 10 Jul)"
+    note: "3rd USD Anthropic credit — settles ~14 Jun on the Lloyds card, past the 10 Jun statement end; pin from the next personal statement"
   - id: 2026-07-07-041
     date: 2026-07-01
     source: gmail
@@ -1368,3 +1370,123 @@ queue:
     status: booked
     approved_on: 2026-07-10
     booked_on: 2026-07-10
+
+  # ---------- 2026-07-10 personal-account recon (Lloyds) — business overlaps only ----------
+  - id: 2026-07-10-023
+    date: 2026-05-29
+    source: bank
+    description: "FiverrEU freelance gig (personal Lloyds card)"
+    amount: 27.58
+    currency: GBP
+    proposed_category: marketing_and_website
+    reasoning: "Second Fiverr charge, on the personal card — business per the Fiverr standing rule."
+    evidence: [{bank: lloyds-personal-2026-07-10.csv}]
+    flags: []
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
+  - id: 2026-07-10-024
+    date: 2026-04-09
+    source: bank
+    description: "Google YouTube Premium (personal Lloyds card)"
+    amount: 12.99
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Google subscription — business per Gregg's rule (Anthropic/ChatGPT/Google except Ads)."
+    evidence: [{bank: lloyds-personal-2026-07-10.csv}]
+    flags: []
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
+  - id: 2026-07-10-025
+    date: 2026-05-11
+    source: bank
+    description: "Google YouTube Premium (personal Lloyds card)"
+    amount: 12.99
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Google subscription — business per Gregg's rule."
+    evidence: [{bank: lloyds-personal-2026-07-10.csv}]
+    flags: []
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
+  - id: 2026-07-10-026
+    date: 2026-06-09
+    source: bank
+    description: "Google YouTube Premium (personal Lloyds card)"
+    amount: 12.99
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Google subscription — business per Gregg's rule."
+    evidence: [{bank: lloyds-personal-2026-07-10.csv}]
+    flags: []
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
+  - id: 2026-07-10-027
+    date: 2026-05-11
+    source: bank
+    description: "Peter Cooper — £500 payment to an individual"
+    amount: 500.0
+    currency: GBP
+    proposed_category: ""
+    reasoning: "Payment to a person from the personal account — subcontractor/freelancer (business) or personal?"
+    evidence: [{bank: lloyds-personal-2026-07-10.csv}]
+    flags: ['no-rule-match', 'over-threshold']
+    status: pending
+  - id: 2026-07-10-028
+    date: 2026-05-05
+    source: bank
+    description: "Boostworks — 2 charges (£320.26 on 1 Apr, £100 on 5 May)"
+    amount: 420.26
+    currency: GBP
+    proposed_category: ""
+    reasoning: "Rewards/benefits platform — staff incentive (business) or personal? Your call."
+    evidence: [{bank: lloyds-personal-2026-07-10.csv}]
+    flags: ['no-rule-match', 'over-threshold']
+    status: pending
+  - id: 2026-07-10-029
+    date: 2026-05-26
+    source: bank
+    description: "Kenable Ltd — £43.00 (cables/electronics retailer)"
+    amount: 43.0
+    currency: GBP
+    proposed_category: ""
+    reasoning: "Cables/adapters — likely office/equipment for the business setup; confirm."
+    evidence: [{bank: lloyds-personal-2026-07-10.csv}]
+    flags: ['no-rule-match']
+    status: pending
+  - id: 2026-07-10-030
+    date: 2026-06-08
+    source: bank
+    description: "Copyman — £10.03 (print/copy service)"
+    amount: 10.03
+    currency: GBP
+    proposed_category: ""
+    reasoning: "Printing/copy shop — business printing or personal?"
+    evidence: [{bank: lloyds-personal-2026-07-10.csv}]
+    flags: ['no-rule-match']
+    status: pending
+  - id: 2026-07-10-031
+    date: 2026-05-19
+    source: bank
+    description: "'OXFORD CIRCUS MARK' — £14.27 debit from the personal account"
+    amount: 14.27
+    currency: GBP
+    proposed_category: ""
+    reasoning: "A debit carrying your own business's descriptor on the personal account — test charge or top-up? What was it?"
+    evidence: [{bank: lloyds-personal-2026-07-10.csv}]
+    flags: ['no-rule-match']
+    status: pending
+  - id: 2026-07-10-032
+    date: 2026-06-01
+    source: bank
+    description: "Michelle Van Wyk — 11 personal-account payments Apr–Jun totalling ~£1,430"
+    amount: 1430.0
+    currency: GBP
+    proposed_category: ""
+    reasoning: "Some may be ad-hoc employee compensation (staff_costs), some household transfers between spouses — tell me which dates were for work and Morgan books only those."
+    evidence: [{bank: lloyds-personal-2026-07-10.csv}]
+    flags: ['no-rule-match', 'over-threshold']
+    status: pending
