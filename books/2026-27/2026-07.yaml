@@ -270,6 +270,23 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-002
+  date: '2026-07-06'
+  source: bank
+  description: 4xP Limited (Liber8) — bank transfer, ref Inv 128
+  amount: 500.0
+  currency: GBP
+  proposed_category: sales
+  reasoning: The watched Liber8/Next Gen invoice was paid by transfer on 6 Jul — closes that loose end.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags:
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
+  note: paid against an invoice drawn up outside Stripe; received by bank transfer — Gregg confirmed 10
+    Jul
 - id: 2026-07-07-031
   date: '2026-07-07'
   source: gmail
@@ -313,6 +330,20 @@ entries:
   status: booked
   approved_on: '2026-07-08'
   booked_on: '2026-07-08'
+- id: 2026-07-10-005
+  date: '2026-07-07'
+  source: bank
+  description: Adobe — 4 monthly debits of £11.99 (Apr–Jul)
+  amount: 47.96
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Recurring design software; never emails receipts to this inbox.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-09-001
   date: '2026-07-08'
   source: gmail
@@ -344,6 +375,20 @@ entries:
   status: booked
   approved_on: '2026-07-10'
   booked_on: '2026-07-10'
+- id: 2026-07-10-009
+  date: '2026-07-10'
+  source: bank
+  description: Tide account fees — 42 small fee lines this tax year (mostly £0.20 per faster payment)
+  amount: 19.77
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: The bank's own charges, visible only on the statement.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 totals:
-  income_gbp: 0
-  expenses_gbp: 882.33
+  income_gbp: 500.0
+  expenses_gbp: 950.06

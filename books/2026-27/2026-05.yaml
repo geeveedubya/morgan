@@ -193,6 +193,21 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-022
+  date: '2026-05-21'
+  source: bank
+  description: FiverrEU freelance gig (Tide mis-tagged 'Stock')
+  amount: 27.47
+  currency: GBP
+  proposed_category: marketing_and_website
+  reasoning: Fiverr spend is business per Gregg's standing rule (10 Jul); assumed creative/marketing gig
+    — recategorise if it was dev/automation.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-018
   date: '2026-05-24'
   source: gmail
@@ -252,4 +267,4 @@ entries:
   booked_on: '2026-07-07'
 totals:
   income_gbp: 1507.38
-  expenses_gbp: 239.41
+  expenses_gbp: 266.88

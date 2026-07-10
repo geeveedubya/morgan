@@ -47,8 +47,8 @@ expenses:
     note: commuting to a regular workplace is NOT allowable; client travel is
     examples: []
   marketing_and_website:
-    hints: [advertising, ads, SEO, design, print]
-    examples: []
+    hints: [advertising, ads, SEO, design, print, freelance, gig]
+    examples: [Fiverr, Squarespace domains]
   professional_fees:
     hints: [accountant, legal, solicitor, insurance, professional indemnity]
     examples: []
@@ -107,6 +107,11 @@ standing_rulings:
   - ruling: invoice payments from the Mauritian-rupee cards are client sales
     date: 2026-07-07
   - ruling: Vitality Life policies are personal insurance — never business
+    date: 2026-07-10
+  - ruling: Fiverr / FiverrEU charges are business (freelance/subcontracted work);
+      Tide often mis-tags them "Stock" — book as business, confirm sub-category
+    date: 2026-07-10
+  - ruling: Amazon Monthly Payments instalment plans are personal, not business
     date: 2026-07-10
   - ruling: Michelle Van Wyk's ad-hoc compensation books as staff_costs
     date: 2026-07-10

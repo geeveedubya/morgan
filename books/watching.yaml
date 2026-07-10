@@ -1,9 +1,8 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
-# Morgan adds/removes these during runs; each has a plain-English line.
 watching:
   - since: 2026-07-10
-    item: "7 approved items still await amounts: 3 Anthropic USD credits + samrosevalley Workspace ×3 + York Fund hosting — none hit Tide, so confirm which card pays them"
+    item: "7 approved items still await amounts: 3 Anthropic USD credits (personal card •4424) + samrosevalley Workspace ×3 + York Fund hosting — none hit Tide, so pin from the paying card's statement"
   - since: 2026-07-10
-    item: "Sports Playmaker paid invoice #0055 by bank transfer — check whether other invoices are being settled outside Stripe"
+    item: "Two clients now pay outside Stripe: Sports Playmaker (technical issue) and Liber8 (invoice raised outside Stripe) — watch for more bank-transfer settlements the daily Stripe scan can't see"
   - since: 2026-07-10
-    item: "£11.43 landed 21 May from the excluded $19 test payment — both legs excluded, flag for accountant notes"
+    item: "£11.43 credit 21 May is the excluded $19 test returning — both legs excluded, flag for accountant notes"

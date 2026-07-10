@@ -61,6 +61,21 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-004
+  date: '2026-06-04'
+  source: bank
+  description: Make.com — 5 debits Apr–Jun (6.34, 7.95, 25.37, 25.45, 236.32 on 4 Jun)
+  amount: 301.43
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Your core automation platform, paid by card with no email receipts — bank-only catch.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags:
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-021
   date: '2026-06-05'
   source: gmail
@@ -75,6 +90,36 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-020
+  date: '2026-06-05'
+  source: bank
+  description: Amazon 5 Jun £66.26 — cork board + 3 office items (order confirmed in Gmail, labelled Tax
+    2026/27)
+  amount: 66.26
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Order email matches the debit and you labelled it as tax-relevant — office supplies.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  - gmail_thread: 19e982c0bc4060fe
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
+- id: 2026-07-10-011
+  date: '2026-06-07'
+  source: bank
+  description: Squarespace domain — SQSP DOMAIN#239632191
+  amount: 7.68
+  currency: GBP
+  proposed_category: marketing_and_website
+  reasoning: A second domain registration on the business card.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-022
   date: '2026-06-08'
   source: gmail
@@ -89,6 +134,53 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-007
+  date: '2026-06-15'
+  source: bank
+  description: OpenAI ChatGPT — 2 monthly debits of £17.87
+  amount: 35.74
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: AI subscription on the business account, bank-only catch.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
+- id: 2026-07-10-001
+  date: '2026-06-18'
+  source: bank
+  description: 'THE SPORTS PLAYMAKER LTD — bank transfer, ref C76BE83D-0055 (your Stripe invoice #0055)'
+  amount: 900.0
+  currency: GBP
+  proposed_category: sales
+  reasoning: Client paid your invoice by bank transfer instead of Stripe — income the books had never
+    seen.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags:
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
+  note: received outside Stripe (bank transfer) due to a technical payment issue — Gregg confirmed 10
+    Jul
+- id: 2026-07-10-017
+  date: '2026-06-18'
+  source: bank
+  description: Winchester high street 18 Jun — TG Jones £31.49 + Waterstones £22.00 (Tide tagged 'Office
+    supplies')
+  amount: 53.49
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Stationery and books tagged as office supplies by the bank — confirm they were for the business.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-010
   date: '2026-06-21'
   source: stripe
@@ -132,6 +224,20 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-008
+  date: '2026-06-23'
+  source: bank
+  description: Anthropic — £12.00 debit 23 Jun with no matching email receipt
+  amount: 12.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Extra Claude charge the Gmail scan never saw; consistent with your usage top-ups.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-011
   date: '2026-06-25'
   source: stripe
@@ -202,6 +308,35 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-006
+  date: '2026-06-27'
+  source: bank
+  description: Canva — 3 monthly debits of £10.99
+  amount: 32.97
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Recurring design tool, bank-only catch.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
+- id: 2026-07-10-010
+  date: '2026-06-27'
+  source: bank
+  description: Echo Tax Limited — Inv 4934 (your accountant)
+  amount: 360.0
+  currency: GBP
+  proposed_category: professional_fees
+  reasoning: Accountancy fees are squarely allowable.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags:
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-012
   date: '2026-06-28'
   source: gmail
@@ -248,6 +383,20 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-012
+  date: '2026-06-28'
+  source: bank
+  description: ONELINK platform fee on the trAIned $1 sale
+  amount: 0.76
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: The fee leg of the trAIned sale you approved as income.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-013
   date: '2026-06-30'
   source: stripe
@@ -264,6 +413,21 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-003
+  date: '2026-06-30'
+  source: bank
+  description: PartnerStack affiliate payouts ×4 (7 Apr £32.67, 1 May £61.12, 5 Jun £61.92, 30 Jun £62.83)
+  amount: 218.54
+  currency: GBP
+  proposed_category: sales
+  reasoning: Recurring partner-programme income (likely Make affiliate) arriving monthly by transfer.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
+  note: four affiliate payouts Apr–Jun (32.67 + 61.12 + 61.92 + 62.83) booked as one line
 totals:
-  income_gbp: 2295.1
-  expenses_gbp: 226.77
+  income_gbp: 3413.64
+  expenses_gbp: 1097.1
