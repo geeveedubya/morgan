@@ -240,6 +240,20 @@ entries:
   status: booked
   approved_on: '2026-07-08'
   booked_on: '2026-07-08'
+- id: 2026-07-09-001
+  date: '2026-07-08'
+  source: gmail
+  description: 'Lovable Pro 1 subscription renewal, Jul 8–Aug 8 (receipt #2450-7858)'
+  amount: 22.0
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Monthly Lovable subscription renewal — matches the office-costs standing rule.
+  evidence:
+  - gmail_thread: 19f433c7d54376b1
+  flags: []
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 totals:
   income_gbp: 0
-  expenses_gbp: 373.2
+  expenses_gbp: 395.2

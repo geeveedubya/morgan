@@ -1044,7 +1044,9 @@ queue:
     reasoning: "Monthly Lovable subscription renewal — matches the office-costs standing rule."
     evidence: [{gmail_thread: 19f433c7d54376b1}]
     flags: []
-    status: pending
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
   - id: 2026-07-09-002
     date: 2026-07-09
     source: gmail
@@ -1055,7 +1057,8 @@ queue:
     reasoning: "Josie's is on your confirmed-personal list (ruling 7 Jul)."
     evidence: [{gmail_thread: 19f45bbce7313aaf}]
     flags: []
-    status: pending
+    status: declined
+    declined_on: 2026-07-10   # confirmed personal by Gregg in chat
   - id: 2026-07-09-003
     date: 2026-07-08
     source: gmail
@@ -1066,4 +1069,5 @@ queue:
     reasoning: "Clothing — personal per your rules unless it's branded workwear."
     evidence: [{gmail_thread: 19f41559b7dfb2fa}]
     flags: [amount-unknown]
-    status: pending
+    status: declined
+    declined_on: 2026-07-10   # confirmed personal by Gregg in chat
