@@ -30,6 +30,23 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-07-054
+  date: '2026-06-02'
+  source: gmail
+  description: Google Workspace monthly invoice — oxfordcircus.co.za (May)
+  amount: 21.62
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Monthly workspace invoice; amount in PDF attachment.
+  evidence:
+  - gmail_thread: 19e8861ac99b5f69
+  - bank: tide-2026-07-10.csv
+  flags:
+  - amount-unknown
+  status: booked
+  approved_on: 2026-07-07
+  note: pinned from Tide debit 1 Jun
+  booked_on: '2026-07-10'
 - id: 2026-07-07-039
   date: '2026-06-04'
   source: gmail
@@ -185,6 +202,24 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-07-012
+  date: '2026-06-28'
+  source: gmail
+  description: 'trAIned sale — $1.00 via Onelink/Stripe Link (receipt #2498-3493)'
+  amount: 1.1
+  currency: USD
+  proposed_category: sales
+  reasoning: trAIned income belongs in these books per your ruling, but $1.00 paid with your own card
+    ending 7135 looks like a payment-flow test — your call.
+  evidence:
+  - gmail_thread: 19f0fd17a239992b
+  - bank: tide-2026-07-10.csv
+  flags:
+  - non-gbp
+  status: booked
+  approved_on: 2026-07-07
+  note: booked at £1.10 — Stripe payout received 10 Jul per Tide; ONELINK platform fee £0.76 queued separately
+  booked_on: '2026-07-10'
 - id: 2026-07-07-025
   date: '2026-06-28'
   source: gmail
@@ -230,5 +265,5 @@ entries:
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
 totals:
-  income_gbp: 2294.0
-  expenses_gbp: 205.15
+  income_gbp: 2295.1
+  expenses_gbp: 226.77

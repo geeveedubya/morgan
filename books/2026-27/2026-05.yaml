@@ -1,6 +1,24 @@
 # Ledger 2026-05 — tax year 2026/27. Booked entries only; approvals in chat.
 month: 2026-05
 entries:
+- id: 2026-07-07-053
+  date: '2026-05-01'
+  source: gmail
+  description: Google Workspace monthly invoice — oxfordcircus.co.za (April)
+  amount: 21.54
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Your business email/domain workspace — the amount is in the attached PDF, which this run
+    didn't open.
+  evidence:
+  - gmail_thread: 19de47c06dfaad09
+  - bank: tide-2026-07-10.csv
+  flags:
+  - amount-unknown
+  status: booked
+  approved_on: 2026-07-07
+  note: pinned from Tide debit 1 May
+  booked_on: '2026-07-10'
 - id: 2026-07-07-004
   date: '2026-05-02'
   source: stripe
@@ -73,6 +91,24 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-07-062
+  date: '2026-05-05'
+  source: gmail
+  description: Stripe fees — April tax invoice (as 'Gregg van Wyk t/a Oxford Circus Marketing')
+  amount: 6.87
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: Stripe's monthly fee invoice; exact amount lives in the Stripe Dashboard — reconciliation
+    will pin it down from balance transactions.
+  evidence:
+  - gmail_thread: 19df9fabcdd61a7c
+  - bank: tide-2026-07-10.csv
+  flags:
+  - amount-unknown
+  status: booked
+  approved_on: 2026-07-07
+  note: Stripe fees Apr, computed as gross charges minus payouts (125→120.24, 58.87→56.76) per Tide
+  booked_on: '2026-07-10'
 - id: 2026-07-07-014
   date: '2026-05-08'
   source: gmail
@@ -216,4 +252,4 @@ entries:
   booked_on: '2026-07-07'
 totals:
   income_gbp: 1507.38
-  expenses_gbp: 211.0
+  expenses_gbp: 239.41

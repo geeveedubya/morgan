@@ -1,9 +1,9 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 # Morgan adds/removes these during runs; each has a plain-English line.
 watching:
-  - since: 2026-06-30
-    item: "Liber8 / Next Gen invoice (sent to Kim 30 Jun) — no matching Stripe payment yet"
-  - since: 2026-07-07
-    item: "15 approved items await exact amounts at month-end reconciliation (non-GBP, PDF invoices, Stripe fees)"
-  - since: 2026-07-07
-    item: "No May Stripe fee invoice email found — check the Dashboard at reconciliation"
+  - since: 2026-07-10
+    item: "7 approved items still await amounts: 3 Anthropic USD credits + samrosevalley Workspace ×3 + York Fund hosting — none hit Tide, so confirm which card pays them"
+  - since: 2026-07-10
+    item: "Sports Playmaker paid invoice #0055 by bank transfer — check whether other invoices are being settled outside Stripe"
+  - since: 2026-07-10
+    item: "£11.43 landed 21 May from the excluded $19 test payment — both legs excluded, flag for accountant notes"

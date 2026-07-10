@@ -29,6 +29,24 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-07-003
+  date: '2026-04-30'
+  source: stripe
+  description: Client payment — Stefan Brozin, charged in South African rand (R8,000.00)
+  amount: 332.42
+  currency: ZAR
+  proposed_category: sales
+  reasoning: Invoice payment from a regular client, but charged in ZAR — books are GBP-only, so you decide
+    how to record it.
+  evidence:
+  - stripe: py_3TRZYpAnusPN3mWR1wyxGkdp
+  - bank: tide-2026-07-10.csv
+  flags:
+  - non-gbp
+  status: booked
+  approved_on: 2026-07-07
+  note: booked at Stripe GBP settlement £332.42 received 6 May (net of Stripe fees), per Tide statement
+  booked_on: '2026-07-10'
 totals:
-  income_gbp: 183.87
+  income_gbp: 516.29
   expenses_gbp: 0

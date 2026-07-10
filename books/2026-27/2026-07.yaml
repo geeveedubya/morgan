@@ -29,6 +29,40 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-07-055
+  date: '2026-07-01'
+  source: gmail
+  description: Google Workspace monthly invoice — oxfordcircus.co.za (June)
+  amount: 21.94
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Monthly workspace invoice; amount in PDF attachment.
+  evidence:
+  - gmail_thread: 19f1d8e0015d1830
+  - bank: tide-2026-07-10.csv
+  flags:
+  - amount-unknown
+  status: booked
+  approved_on: 2026-07-07
+  note: pinned from Tide debit 1 Jul
+  booked_on: '2026-07-10'
+- id: 2026-07-07-067
+  date: '2026-07-01'
+  source: gmail
+  description: HP Instant Ink monthly statement
+  amount: 5.37
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Printer ink subscription — plausibly home-office; amount is in the statement link.
+  evidence:
+  - gmail_thread: 19f1d31ff067055e
+  - bank: tide-2026-07-10.csv
+  flags:
+  - amount-unknown
+  status: booked
+  approved_on: 2026-07-07
+  note: 'pinned from Tide: 3 monthly HP Instant Ink debits of £1.79'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-068
   date: '2026-07-01'
   source: gmail
@@ -141,6 +175,28 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-07-063
+  date: '2026-07-05'
+  source: gmail
+  description: Stripe fees — June tax invoices (Oxford Circus Digital + trAIned + trAIned Managed Payments)
+  amount: 143.82
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: Three June fee invoices from Stripe covering both trading names; amounts in the Dashboard.
+    (No May fee invoice email was found — reconciliation will check.)
+  evidence:
+  - gmail_thread: 19f33785619f2fae
+  - gmail_thread: 19f32e71e2ac873c
+  - gmail_thread: 19f32e396e4bcf50
+  - gmail_thread: 19f20225c8b4c1ac
+  - bank: tide-2026-07-10.csv
+  flags:
+  - amount-unknown
+  status: booked
+  approved_on: 2026-07-07
+  note: Stripe fees May–Jun via payout differences per Tide (19.20 May + 124.62 Jun); excludes FX spread
+    inside the ZAR settlement
+  booked_on: '2026-07-10'
 - id: 2026-07-07-030
   date: '2026-07-06'
   source: gmail
@@ -256,4 +312,4 @@ entries:
   booked_on: '2026-07-10'
 totals:
   income_gbp: 0
-  expenses_gbp: 395.2
+  expenses_gbp: 566.33
