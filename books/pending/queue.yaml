@@ -755,7 +755,7 @@ queue:
     flags: [no-rule-match, amount-unknown]
     status: approved
     approved_on: 2026-07-07
-    note: "no Tide debit found — billed elsewhere; confirm whose card pays samrosevalley Workspace (bank recon 10 Jul)"
+    note: "Gregg confirmed 10 Jul: paid by him, business expense — amount to pin from the invoice PDFs or the paying card's statement"
   - id: 2026-07-07-057
     date: 2026-06-02
     source: gmail
@@ -768,7 +768,7 @@ queue:
     flags: [no-rule-match, amount-unknown]
     status: approved
     approved_on: 2026-07-07
-    note: "no Tide debit found — billed elsewhere; confirm whose card pays samrosevalley Workspace (bank recon 10 Jul)"
+    note: "Gregg confirmed 10 Jul: paid by him, business expense — amount to pin from the invoice PDFs or the paying card's statement"
   - id: 2026-07-07-058
     date: 2026-07-01
     source: gmail
@@ -781,7 +781,7 @@ queue:
     flags: [no-rule-match, amount-unknown]
     status: approved
     approved_on: 2026-07-07
-    note: "no Tide debit found — billed elsewhere; confirm whose card pays samrosevalley Workspace (bank recon 10 Jul)"
+    note: "Gregg confirmed 10 Jul: paid by him, business expense — amount to pin from the invoice PDFs or the paying card's statement"
   - id: 2026-07-07-059
     date: 2026-05-02
     source: gmail
@@ -1217,32 +1217,36 @@ queue:
     date: 2026-07-09
     source: bank
     description: "RingGo — 14 further parking sessions Apr–Jul not previously queued (£29.60 total)"
-    amount: 29.60
+    amount: 16.00   # travel portion; £13.60 evening/weekend declined as -019
     currency: GBP
-    proposed_category: ""
+    proposed_category: travel
     reasoning: "Your standing rule splits weekday-morning (travel) from evening/weekend (personal) — say 'apply the parking rule' and Morgan splits them by session time, or rule on the lot."
     evidence: [{bank: tide-2026-07-10.csv}]
     flags: [no-rule-match]
-    status: pending
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
   - id: 2026-07-10-014
     date: 2026-04-13
     source: bank
     description: "Apple.com — £408.00 on 13 Apr less £200.00 refund 23 Apr (net £208.00)"
     amount: 208.00
     currency: GBP
-    proposed_category: ""
+    proposed_category: equipment   # Gregg: office iPad
     reasoning: "Hardware-sized purchase — equipment if it's a work device, personal if not. What was it?"
     evidence: [{bank: tide-2026-07-10.csv}]
     flags: [no-rule-match]
-    status: pending
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
   - id: 2026-07-10-015
     date: 2026-06-19
     source: bank
-    description: "Amazon — 6 purchases Apr–Jun totalling £275.55 (Tide tagged them 'Stock')"
-    amount: 275.55
+    description: "Amazon — 4 unconfirmed debits (15 Apr £88.08, 27 Apr £68.52 + £14.99, 19 Jun £28.98) — look like Monthly Payments instalments; no order emails pin them"
+    amount: 200.57   # 4 unconfirmed debits; 66.26 split to -020, 8.72 to -021
     currency: GBP
     proposed_category: ""
-    reasoning: "Could be equipment/consumables or household — what were these orders?"
+    reasoning: "Inbox matching confirmed two of six (split out); these four need Gregg to check his Amazon order history."
     evidence: [{bank: tide-2026-07-10.csv}]
     flags: [no-rule-match, over-threshold]
     status: pending
@@ -1252,11 +1256,13 @@ queue:
     description: "Michelle Van Wyk — £300.00 transfer, ref 'Retainer'"
     amount: 300.00
     currency: GBP
-    proposed_category: ""
+    proposed_category: staff_costs   # Gregg: ad-hoc employee, occasional work
     reasoning: "If Michelle does paid work for the business at a fair rate this is allowable as wages/subcontracting — needs your ruling (and HMRC expects it to be real work, actually paid, at a market rate)."
     evidence: [{bank: tide-2026-07-10.csv}]
     flags: [no-rule-match, over-threshold]
-    status: pending
+    status: booked
+    approved_on: 2026-07-10
+    booked_on: 2026-07-10
   - id: 2026-07-10-017
     date: 2026-06-18
     source: bank
@@ -1278,4 +1284,40 @@ queue:
     reasoning: "Life insurance for a sole trader is not an allowable business expense — proposed personal unless there's a policy detail I'm missing."
     evidence: [{bank: tide-2026-07-10.csv}]
     flags: [over-threshold]
+    status: declined
+    declined_on: 2026-07-10   # Gregg: personal insurance
+
+  - id: 2026-07-10-019
+    date: 2026-07-09
+    source: bank
+    description: "RingGo parking — 6 evening/weekend sessions Apr–Jul (parking rule applied)"
+    amount: 13.60
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Evening/weekend sessions are personal per the standing parking rule."
+    evidence: [{bank: tide-2026-07-10.csv}]
+    flags: []
+    status: declined
+    declined_on: 2026-07-10   # parking rule applied at Gregg's instruction
+  - id: 2026-07-10-020
+    date: 2026-06-05
+    source: bank
+    description: "Amazon 5 Jun £66.26 — cork board + 3 office items (order confirmed in Gmail, labelled Tax 2026/27)"
+    amount: 66.26
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Order email matches the debit and you labelled it as tax-relevant — office supplies."
+    evidence: [{bank: tide-2026-07-10.csv}, {gmail_thread: 19e982c0bc4060fe}]
+    flags: []
+    status: pending
+  - id: 2026-07-10-021
+    date: 2026-04-29
+    source: bank
+    description: "Amazon 29 Apr £8.72 — matched to a personal-care order the same day"
+    amount: 8.72
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Order email matches the debit; unambiguously personal."
+    evidence: [{bank: tide-2026-07-10.csv}, {gmail_thread: 19dda110d3a077bc}]
+    flags: []
     status: pending

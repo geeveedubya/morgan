@@ -64,6 +64,11 @@ expenses:
     note: >
       Claimed via HMRC flat rate based on hours worked from home per month —
       a month-end entry, not a per-transaction match. Handled at reconciliation.
+  staff_costs:
+    hints: [wages, retainer, payroll]
+    note: Michelle Van Wyk is an ad-hoc employee — her compensation is allowable
+      (ruled by Gregg 2026-07-10; must be real work, actually paid, market rate)
+    examples: []
   equipment:
     hints: [laptop, monitor, keyboard, desk, chair, hardware]
     note: capital-ish items — flag anything over the review threshold
@@ -101,6 +106,13 @@ standing_rulings:
     date: 2026-07-07
   - ruling: invoice payments from the Mauritian-rupee cards are client sales
     date: 2026-07-07
+  - ruling: Vitality Life policies are personal insurance — never business
+    date: 2026-07-10
+  - ruling: Michelle Van Wyk's ad-hoc compensation books as staff_costs
+    date: 2026-07-10
+  - ruling: subscriptions with no email receipts (Make.com, Adobe, Canva,
+      OpenAI) are caught via the weekly Tide recon, not Gmail
+    date: 2026-07-10
   - ruling: non-GBP amounts and PDF-only invoice amounts are approved in
       principle when Gregg says so, with exact GBP pinned at month-end
       reconciliation from Stripe Dashboard / card statement / invoice PDFs

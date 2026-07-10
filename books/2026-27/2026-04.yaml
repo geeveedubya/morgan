@@ -15,6 +15,21 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-014
+  date: '2026-04-13'
+  source: bank
+  description: Apple.com — office iPad (£408 on 13 Apr less £200 refund)
+  amount: 208.0
+  currency: GBP
+  proposed_category: equipment
+  reasoning: Hardware-sized purchase — equipment if it's a work device, personal if not. What was it?
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags:
+  - no-rule-match
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-002
   date: '2026-04-15'
   source: stripe
@@ -49,4 +64,4 @@ entries:
   booked_on: '2026-07-10'
 totals:
   income_gbp: 516.29
-  expenses_gbp: 0
+  expenses_gbp: 208.0

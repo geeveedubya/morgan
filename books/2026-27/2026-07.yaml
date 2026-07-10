@@ -77,6 +77,23 @@ entries:
   status: booked
   approved_on: '2026-07-07'
   booked_on: '2026-07-07'
+- id: 2026-07-10-016
+  date: '2026-07-01'
+  source: bank
+  description: Michelle Van Wyk — ad-hoc employee compensation, ref 'Retainer'
+  amount: 300.0
+  currency: GBP
+  proposed_category: staff_costs
+  reasoning: If Michelle does paid work for the business at a fair rate this is allowable as wages/subcontracting
+    — needs your ruling (and HMRC expects it to be real work, actually paid, at a market rate).
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags:
+  - no-rule-match
+  - over-threshold
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 - id: 2026-07-07-028
   date: '2026-07-02'
   source: gmail
@@ -310,6 +327,23 @@ entries:
   status: booked
   approved_on: '2026-07-10'
   booked_on: '2026-07-10'
+- id: 2026-07-10-013
+  date: '2026-07-09'
+  source: bank
+  description: RingGo parking — 8 weekday-morning sessions Apr–Jul (parking rule applied; 6 evening/weekend
+    sessions £13.60 declined separately)
+  amount: 16.0
+  currency: GBP
+  proposed_category: travel
+  reasoning: Your standing rule splits weekday-morning (travel) from evening/weekend (personal) — say
+    'apply the parking rule' and Morgan splits them by session time, or rule on the lot.
+  evidence:
+  - bank: tide-2026-07-10.csv
+  flags:
+  - no-rule-match
+  status: booked
+  approved_on: '2026-07-10'
+  booked_on: '2026-07-10'
 totals:
   income_gbp: 0
-  expenses_gbp: 566.33
+  expenses_gbp: 882.33
