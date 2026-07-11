@@ -1514,7 +1514,8 @@ queue:
     reasoning: "trAIned income is normally business, but this went to your media+test alias and is a Foundation-tier signup — looks like you testing the new subscription flow, so proposed exclude per the test-event rule. Overrule me if it's a real sale."
     evidence: [{gmail_thread: 19f4c80a5f0f5755}]
     flags: [amount-unknown]
-    status: pending
+    status: declined
+    declined_on: 2026-07-11   # test — sent to media+test@oxfordcircus.co.za (Gregg 11 Jul)
   - id: 2026-07-11-002
     date: 2026-07-10
     source: gmail
@@ -1525,7 +1526,8 @@ queue:
     reasoning: "Golf teetime — personal per the sports/leisure rule."
     evidence: [{gmail_thread: 19f4ba4e6cbaa9f4}]
     flags: []
-    status: pending
+    status: declined
+    declined_on: 2026-07-11   # golf — personal (Gregg 11 Jul)
   - id: 2026-07-11-003
     date: 2026-07-10
     source: gmail
@@ -1536,4 +1538,19 @@ queue:
     reasoning: "A new Workspace for the trAIned trading name — business per the Google rule; first charge not in yet, amount to pin at reconciliation."
     evidence: [{gmail_thread: 19f4b2fdf765b0cc}, {gmail_thread: 19f4b2efd3da6ffd}]
     flags: [amount-unknown]
-    status: pending
+    status: approved
+    approved_on: 2026-07-11
+    note: "confirmed business (Gregg 11 Jul); Squarespace-provisioned Workspace — no email receipt, amount to pin from Friday's Tide statement"
+  - id: 2026-07-11-004
+    date: 2026-07-10
+    source: gmail
+    description: "Google Workspace Business Starter — new account for askorla.ai (via Squarespace)"
+    amount: null
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Second business Workspace Gregg took out via Squarespace (askorla.ai); business, amount to pin from Friday's bank statement."
+    evidence: [{gmail_thread: 19f4b2efd3da6ffd}]
+    flags: [amount-unknown]
+    status: approved
+    approved_on: 2026-07-11
+    note: "confirmed business (Gregg 11 Jul); no email receipt — pin amount at Friday's Tide recon"

@@ -16,8 +16,10 @@ income:
     - Stripe charges and payouts (the primary income record)
     - emails confirming client invoices or payments received
     - anything cross-referencing a client in the Airtable billable-hours base
-    - trAIned activity — trAIned is a trading name of the same business;
-      its income is included in these books (confirmed by Gregg, 7 Jul 2026)
+    - trAIned activity — trAIned is a trading name of the same business.
+      trAIned subscriber income IS income, UNLESS the subscriber's email is on
+      oxfordcircus.co.za (media@/media+/gregg@/gregg+), which marks a test —
+      then exclude (Gregg, 11 Jul 2026)
   categories:
     - sales            # client work invoiced and paid
 
@@ -25,9 +27,9 @@ income:
 # so Gregg sees them, proposed as "exclude"):
 exclude:
   indicators:
-    - test events and test payments, e.g. charges billed to Gregg's own
-      address (gregg+...@oxfordcircus.co.za) or described as testing
-      (confirmed by Gregg, 7 Jul 2026 — the $19 May subscription was a test)
+    - test events and test payments — any charge/subscriber on an
+      oxfordcircus.co.za address (gregg@, gregg+..., media@, media+...) or
+      described as testing (Gregg, 7 & 11 Jul 2026)
 
 # HMRC allowable expense categories for a sole trader (not VAT-registered,
 # so all amounts are recorded gross).
@@ -108,6 +110,10 @@ standing_rulings:
     date: 2026-07-07
   - ruling: Vitality Life policies are personal insurance — never business
     date: 2026-07-10
+  - ruling: Both Squarespace-provisioned Google Workspace accounts —
+      ai-trained.com and askorla.ai — are business (office_costs_and_software);
+      they don't email receipts, so pin amounts from the bank statement
+    date: 2026-07-11
   - ruling: All Anthropic, OpenAI/ChatGPT and Google costs are business
       (office_costs_and_software) — the ONE exception is Google Ads, which is
       client-paid and excluded. Applies on any card, including personal.
