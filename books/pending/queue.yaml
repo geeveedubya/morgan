@@ -1502,3 +1502,38 @@ queue:
     flags: ['no-rule-match', 'over-threshold']
     status: declined
     declined_on: 2026-07-10   # Michelle payments outside Tide are personal/household (Gregg 10 Jul)
+
+  # ---------- 2026-07-11 run — new since the 10 Jul digest ----------
+  - id: 2026-07-11-001
+    date: 2026-07-10
+    source: gmail
+    description: "trAIned 'Foundation' subscription receipt #2611-2173 — sent to media+test@oxfordcircus.co.za"
+    amount: null
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "trAIned income is normally business, but this went to your media+test alias and is a Foundation-tier signup — looks like you testing the new subscription flow, so proposed exclude per the test-event rule. Overrule me if it's a real sale."
+    evidence: [{gmail_thread: 19f4c80a5f0f5755}]
+    flags: [amount-unknown]
+    status: pending
+  - id: 2026-07-11-002
+    date: 2026-07-10
+    source: gmail
+    description: "Avington Park Golf — teetime, Friday 10 July"
+    amount: 35.80
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Golf teetime — personal per the sports/leisure rule."
+    evidence: [{gmail_thread: 19f4ba4e6cbaa9f4}]
+    flags: []
+    status: pending
+  - id: 2026-07-11-003
+    date: 2026-07-10
+    source: gmail
+    description: "Google Workspace Business Starter — new account for ai-trained.com (trAIned), provisioned via Squarespace"
+    amount: null
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "A new Workspace for the trAIned trading name — business per the Google rule; first charge not in yet, amount to pin at reconciliation."
+    evidence: [{gmail_thread: 19f4b2fdf765b0cc}, {gmail_thread: 19f4b2efd3da6ffd}]
+    flags: [amount-unknown]
+    status: pending
