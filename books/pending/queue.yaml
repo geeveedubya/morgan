@@ -1562,8 +1562,10 @@ queue:
     description: "Meta (Facebook) ads — ZAR400.00 funded 11 Jul (ZAR114.99 billed for delivery), account 2038588409764129"
     amount: 400.00
     currency: ZAR
-    proposed_category: ""
+    proposed_category: marketing_and_website   # Gregg 12 Jul: this account is business
     reasoning: "You run Meta campaigns for clients. Is Meta ad spend client-paid/rebilled like Google Ads (→ exclude), or your own cost? Non-GBP either way, so flagged for your call."
     evidence: [{gmail_thread: 19f52ec0b3662bef}, {gmail_thread: 19f52cbbb626c2c4}]
     flags: [non-gbp, no-rule-match, over-threshold]
-    status: pending
+    status: approved
+    approved_on: 2026-07-12
+    note: "business (Gregg 12 Jul): Meta account 2038588409764129, paid on personal card •4424; ZAR — pin GBP from the card statement"

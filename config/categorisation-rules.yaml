@@ -114,6 +114,11 @@ standing_rulings:
       ai-trained.com and askorla.ai — are business (office_costs_and_software);
       they don't email receipts, so pin amounts from the bank statement
     date: 2026-07-11
+  - ruling: Meta (Facebook) ad account 2038588409764129 (paid from personal
+      card •4424) is Gregg's OWN marketing — business (marketing_and_website).
+      ALL OTHER Meta ad accounts are billed to clients by Meta directly, so
+      exclude from the books unless Gregg says otherwise.
+    date: 2026-07-12
   - ruling: All Anthropic, OpenAI/ChatGPT and Google costs are business
       (office_costs_and_software) — the ONE exception is Google Ads, which is
       client-paid and excluded. Applies on any card, including personal.
