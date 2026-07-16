@@ -1,10 +1,6 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
 - since: '2026-07-15'
-  item: Stripe connector needs re-authorising — it was unreachable on the 15 Jul scheduled run; re-auth
-    in claude.ai connector settings so daily scans see it again. Friday's Tide recon still catches any
-    Stripe income via payouts.
-- since: '2026-07-15'
   item: Revolut account now active (became a bank 14 Jul) — if business money flows through it, send Morgan
     the statement to reconcile alongside Tide/Lloyds
 - since: '2026-07-12'

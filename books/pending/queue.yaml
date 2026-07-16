@@ -1569,3 +1569,27 @@ queue:
     status: approved
     approved_on: 2026-07-12
     note: "business (Gregg 12 Jul): Meta account 2038588409764129, paid on personal card •4424; ZAR — pin GBP from the card statement"
+
+  # ---------- 2026-07-16 run — new since the 15 Jul digest ----------
+  - id: 2026-07-16-001
+    date: 2026-07-15
+    source: gmail
+    description: "GoDaddy domain auto-renewal (order #4137462910), paid £15.59 via PayPal to Go Daddy Europe"
+    amount: 15.59
+    currency: GBP
+    proposed_category: marketing_and_website
+    reasoning: "The GoDaddy auto-renewal you were expecting (flagged 10 Jul) has landed — a business domain renewal, same category as your other domains; clean GBP via PayPal."
+    evidence: [{gmail_thread: 19f664f8afbd90df}, {gmail_thread: 19f664fd6e3ee9f2}]
+    flags: []
+    status: pending
+  - id: 2026-07-16-002
+    date: 2026-07-15
+    source: gmail
+    description: "Lovable credit top-up, 50 credits — Credit Top-up Pro (receipt #2497-3488)"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Standard Lovable build-credit top-up, identical to your recurring ones — matches the office-costs standing rule."
+    evidence: [{gmail_thread: 19f66476613309b6}]
+    flags: []
+    status: pending

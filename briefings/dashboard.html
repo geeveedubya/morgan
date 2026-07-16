@@ -83,14 +83,14 @@ footer { margin-top:26px; color:var(--ink2); font-size:12.5px; border-top:1px so
 <header>
   <div><div class="brand">Morgan · Day-book</div>
   <h1>Oxford Circus Digital — tax year 2026/27</h1></div>
-  <div class="asof mono">as of 2026-07-15 · books current to last scan</div>
+  <div class="asof mono">as of 2026-07-16 · books current to last scan</div>
 </header>
 
 <div class="stats">
   <div class="stat"><div class="k">Net position</div><div class="v mono">£3,272.51</div></div>
   <div class="stat"><div class="k">Income booked</div><div class="v mono">£5,937.31</div></div>
   <div class="stat"><div class="k">Expenses booked</div><div class="v mono">£2,664.80</div></div>
-  <div class="stat"><div class="k">Needs your decision</div><div class="v mono">0</div></div>
+  <div class="stat attn"><div class="k">Needs your decision</div><div class="v mono">2</div></div>
 </div>
 
 <p class="tale">Since 6 April you've invoiced and been paid £5,937.31, almost all of it settled through Stripe. Arctic Ape is the backbone — £2,564.38, about 43% of income, earned across 73 logged hours (≈ £35.13/hour). Jun was the strongest month at £3,413.64. Spending is lean: £2,664.80 booked so far, dominated by the software that runs the business. Net position: £3,272.51 before the items still awaiting exact amounts.</p>
@@ -164,13 +164,15 @@ footer { margin-top:26px; color:var(--ink2); font-size:12.5px; border-top:1px so
   <span class="ctrack"><span class="cfill inc" style="width:50%"></span></span>
   <span class="cval">£1,269.42</span></div>
     <p class="hint" style="margin-top:12px">73h logged in Airtable this tax year · ≈ £35.13/hour on Arctic Ape work</p></div>
-  <div class="panel"><h2>The queue — every transaction's journey</h2><div class="pipe"><span class="seg s-booked" style="flex:86" data-tip="Booked: 86"></span><span class="seg s-approved" style="flex:8" data-tip="Approved · amounts pending: 8"></span><span class="seg s-declined" style="flex:24" data-tip="Declined (kept): 24"></span></div><div class="legend"><span class="lg"><span class="dot s-booked"></span>Booked <b>86</b></span><span class="lg"><span class="dot s-approved"></span>Approved · amounts pending <b>8</b></span><span class="lg"><span class="dot s-pending"></span>Needs your decision <b>0</b></span><span class="lg"><span class="dot s-declined"></span>Declined (kept) <b>24</b></span></div></div>
+  <div class="panel"><h2>The queue — every transaction's journey</h2><div class="pipe"><span class="seg s-booked" style="flex:86" data-tip="Booked: 86"></span><span class="seg s-approved" style="flex:8" data-tip="Approved · amounts pending: 8"></span><span class="seg s-pending" style="flex:2" data-tip="Needs your decision: 2"></span><span class="seg s-declined" style="flex:24" data-tip="Declined (kept): 24"></span></div><div class="legend"><span class="lg"><span class="dot s-booked"></span>Booked <b>86</b></span><span class="lg"><span class="dot s-approved"></span>Approved · amounts pending <b>8</b></span><span class="lg"><span class="dot s-pending"></span>Needs your decision <b>2</b></span><span class="lg"><span class="dot s-declined"></span>Declined (kept) <b>24</b></span></div></div>
 </div>
 
-<div class="panel" style="margin-top:14px"><h2>Waiting on you (0)</h2><div class="tablewrap"><p class="empty">Queue is clear — nothing needs you.</p></div></div>
+<div class="panel" style="margin-top:14px"><h2>Waiting on you (2)</h2><div class="tablewrap"><table class="ptable"><thead><tr><th>Date</th><th>Item</th><th>Amount</th><th>Proposed</th></tr></thead><tbody><tr><td class="mono">07-15</td><td>GoDaddy domain auto-renewal (order #4137462910), paid £15.59 via PayPal to Go Daddy Europe</td>
+<td class="mono num">£15.59</td><td><span class="chip">Marketing & website</span></td></tr>
+<tr><td class="mono">07-15</td><td>Lovable credit top-up, 50 credits — Credit Top-up Pro (receipt #2497-3488)</td>
+<td class="mono num">£15.00</td><td><span class="chip">Office & software</span></td></tr></tbody></table><p class="hint">To decide: open your Morgan session and reply, e.g. “approve 1, decline 2”.</p></div></div>
 
-<div class="panel" style="margin-top:14px"><h2>Morgan is watching</h2><ul class="watch"><li>Stripe connector needs re-authorising — it was unreachable on the 15 Jul scheduled run; re-auth in claude.ai connector settings so daily scans see it again. Friday&#x27;s Tide recon still catches any Stripe income via payouts. <span class="since">since 07-15</span></li>
-<li>Revolut account now active (became a bank 14 Jul) — if business money flows through it, send Morgan the statement to reconcile alongside Tide/Lloyds <span class="since">since 07-15</span></li>
+<div class="panel" style="margin-top:14px"><h2>Morgan is watching</h2><ul class="watch"><li>Revolut account now active (became a bank 14 Jul) — if business money flows through it, send Morgan the statement to reconcile alongside Tide/Lloyds <span class="since">since 07-15</span></li>
 <li>Meta ads (own account 2038588409764129) approved as business but charged in ZAR on personal card •4424 — pin GBP from that card&#x27;s statement, alongside the 3rd Anthropic credit <span class="since">since 07-12</span></li>
 <li>trAIned is going live as a subscription product (ai-trained.com Workspace + Foundation tier) — new recurring costs and income coming; GoDaddy domains set to auto-renew (notice 10 Jul, charge to follow) <span class="since">since 07-11</span></li>
 <li>3rd Anthropic USD credit + samrosevalley Workspace ×3 + York Fund hosting still await amounts — not on Tide or the 1 Apr–10 Jun Lloyds statement; pin from the next personal statement or the Amex/Barclaycard <span class="since">since 07-10</span></li>
