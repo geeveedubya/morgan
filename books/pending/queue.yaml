@@ -1581,7 +1581,9 @@ queue:
     reasoning: "The GoDaddy auto-renewal you were expecting (flagged 10 Jul) has landed — a business domain renewal, same category as your other domains; clean GBP via PayPal."
     evidence: [{gmail_thread: 19f664f8afbd90df}, {gmail_thread: 19f664fd6e3ee9f2}]
     flags: []
-    status: pending
+    status: booked
+    approved_on: 2026-07-16
+    booked_on: 2026-07-16
   - id: 2026-07-16-002
     date: 2026-07-15
     source: gmail
@@ -1592,4 +1594,6 @@ queue:
     reasoning: "Standard Lovable build-credit top-up, identical to your recurring ones — matches the office-costs standing rule."
     evidence: [{gmail_thread: 19f66476613309b6}]
     flags: []
-    status: pending
+    status: booked
+    approved_on: 2026-07-16
+    booked_on: 2026-07-16
