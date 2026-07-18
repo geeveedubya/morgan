@@ -1597,3 +1597,27 @@ queue:
     status: booked
     approved_on: 2026-07-16
     booked_on: 2026-07-16
+
+  # ---------- 2026-07-17 run — new since the 16 Jul digest ----------
+  - id: 2026-07-17-001
+    date: 2026-07-16
+    source: gmail
+    description: "Meta (Facebook) ads — Back9 Ad Account (1683773782802268): £30.57 (12 Jul range) + £6.47 (16 Jul range)"
+    amount: 37.04
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "This is the Back9 ad account (1683773782802268), NOT your own account 2038588409764129 — per your standing ruling all other Meta accounts are billed to clients by Meta, so proposed exclude. Say the word if Back9 is actually your cost."
+    evidence: [{gmail_thread: 19f6a0bd36d30017}, {gmail_thread: 19f6e762680155d6}]
+    flags: [client-account]
+    status: pending
+  - id: 2026-07-17-002
+    date: 2026-07-16
+    source: gmail
+    description: "Avington Park Golf — teetime payment received, Thursday 16 July (£17.90)"
+    amount: 17.90
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Golf teetime — personal, consistent with your 11 Jul ruling on the last Avington teetime."
+    evidence: [{gmail_thread: 19f6b0978ce1815e}]
+    flags: []
+    status: pending
