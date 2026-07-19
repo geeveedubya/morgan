@@ -1,8 +1,5 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
-- since: '2026-07-17'
-  item: Sentry trial ending (notice 16 Jul, 'limits will apply') — a paid Sentry plan may follow; it monitors
-    the apps, so the first bill would be a business cost. Catch it when it lands.
 - since: '2026-07-15'
   item: Revolut account now active (became a bank 14 Jul) — if business money flows through it, send Morgan
     the statement to reconcile alongside Tide/Lloyds

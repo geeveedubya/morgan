@@ -1621,3 +1621,38 @@ queue:
     evidence: [{gmail_thread: 19f6b0978ce1815e}]
     flags: []
     status: pending
+
+  # ---------- 2026-07-19 run — new since the 17 Jul digest (covers 17–19 Jul; no scan ran on the 18th) ----------
+  - id: 2026-07-19-001
+    date: 2026-07-17
+    source: gmail
+    description: "Meta (Facebook) ads — your OWN account 2038588409764129 (Gregg van Wyk): ZAR115.06 billed, date range Jul 17"
+    amount: null
+    currency: ZAR
+    proposed_category: marketing_and_website
+    reasoning: "Your own Meta account (2038588409764129) — business marketing per your 12 Jul ruling. Billed in ZAR, so I'm not converting: approved-in-principle, exact GBP pinned from the personal card •4424 statement at month-end (same as the 11 Jul one)."
+    evidence: [{gmail_thread: 19f7302e3ac24e0e}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+  - id: 2026-07-19-002
+    date: 2026-07-18
+    source: gmail
+    description: "RingGo parking — Jewry Street Car Park, Winchester Central, Sat 18 Jul 08:10–09:10 (£2.00), vehicle LL69UWJ"
+    amount: 2.00
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Winchester morning session, but a Saturday — your parking rule only maps weekday mornings to travel, and the Apr–Jul weekend sessions were booked personal, so I've proposed personal to match. If this was a work trip, say the word and I'll move it to travel."
+    evidence: [{gmail_thread: 19f74102efbc89b0}]
+    flags: [weekend-ambiguous]
+    status: pending
+  - id: 2026-07-19-003
+    date: 2026-07-18
+    source: gmail
+    description: "Virgin Media — July home broadband/TV bill, £44.50"
+    amount: 44.50
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Home broadband bill. Your business connection is the Lebara SIM (7 Jul ruling), so I've proposed personal — but if you want to claim a home-office share of the broadband, tell me the % and I'll apportion it to phone_and_internet."
+    evidence: [{gmail_thread: 19f74dee9ff19eee}]
+    flags: [apportionment-option]
+    status: pending
