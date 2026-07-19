@@ -1609,7 +1609,9 @@ queue:
     reasoning: "This is the Back9 ad account (1683773782802268), NOT your own account 2038588409764129 — per your standing ruling all other Meta accounts are billed to clients by Meta, so proposed exclude. Say the word if Back9 is actually your cost."
     evidence: [{gmail_thread: 19f6a0bd36d30017}, {gmail_thread: 19f6e762680155d6}]
     flags: [client-account]
-    status: pending
+    status: declined
+    declined_on: 2026-07-19
+    note: "confirmed client account (Gregg 19 Jul) — Back9 ad spend is billed to the client by Meta, excluded from the books"
   - id: 2026-07-17-002
     date: 2026-07-16
     source: gmail
@@ -1620,7 +1622,9 @@ queue:
     reasoning: "Golf teetime — personal, consistent with your 11 Jul ruling on the last Avington teetime."
     evidence: [{gmail_thread: 19f6b0978ce1815e}]
     flags: []
-    status: pending
+    status: declined
+    declined_on: 2026-07-19
+    note: "personal (Gregg 19 Jul) — golf teetime, not booked"
 
   # ---------- 2026-07-19 run — new since the 17 Jul digest (covers 17–19 Jul; no scan ran on the 18th) ----------
   - id: 2026-07-19-001
@@ -1644,7 +1648,9 @@ queue:
     reasoning: "Winchester morning session, but a Saturday — your parking rule only maps weekday mornings to travel, and the Apr–Jul weekend sessions were booked personal, so I've proposed personal to match. If this was a work trip, say the word and I'll move it to travel."
     evidence: [{gmail_thread: 19f74102efbc89b0}]
     flags: [weekend-ambiguous]
-    status: pending
+    status: declined
+    declined_on: 2026-07-19
+    note: "personal (Gregg 19 Jul) — confirmed the Saturday parking is personal, not travel"
   - id: 2026-07-19-003
     date: 2026-07-18
     source: gmail
@@ -1655,4 +1661,7 @@ queue:
     reasoning: "Home broadband bill. Your business connection is the Lebara SIM (7 Jul ruling), so I've proposed personal — but if you want to claim a home-office share of the broadband, tell me the % and I'll apportion it to phone_and_internet."
     evidence: [{gmail_thread: 19f74dee9ff19eee}]
     flags: [apportionment-option]
-    status: pending
+    status: booked
+    approved_on: 2026-07-19
+    booked_on: 2026-07-19
+    note: "personal+business (Gregg 19 Jul): 50% business apportionment — £22.25 booked to phone_and_internet in books/2026-27/2026-07.yaml, £22.25 personal. Made a standing rule."

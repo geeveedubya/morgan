@@ -419,6 +419,21 @@ entries:
   status: booked
   approved_on: '2026-07-16'
   booked_on: '2026-07-16'
+- id: 2026-07-19-003
+  date: '2026-07-18'
+  source: gmail
+  description: 'Virgin Media July broadband — 50% business apportionment of the £44.50 bill'
+  amount: 22.25
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: Home broadband apportioned 50% to business per Gregg's 19 Jul ruling (matches
+    the iCloud+ 50% basis); the other £22.25 is personal.
+  evidence:
+  - gmail_thread: 19f74dee9ff19eee
+  flags: [apportioned-50pc]
+  status: booked
+  approved_on: '2026-07-19'
+  booked_on: '2026-07-19'
 totals:
   income_gbp: 500.0
-  expenses_gbp: 980.65
+  expenses_gbp: 1002.90

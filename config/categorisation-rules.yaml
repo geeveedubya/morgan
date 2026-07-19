@@ -139,6 +139,10 @@ standing_rulings:
       principle when Gregg says so, with exact GBP pinned at month-end
       reconciliation from Stripe Dashboard / card statement / invoice PDFs
     date: 2026-07-07
+  - ruling: Virgin Media home broadband is mixed personal/business — book 50%
+      to phone_and_internet, 50% personal (the "max allowance" Gregg is claiming;
+      same 50% basis as the Apple iCloud+ apportionment)
+    date: 2026-07-19
 
 # These ALWAYS go to the pending queue for your decision, regardless of any
 # other match:
