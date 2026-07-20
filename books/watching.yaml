@@ -1,5 +1,8 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
+- since: '2026-07-20'
+  item: Squarespace domain auto-renews 3 Aug (reminder 19 Jul) — a business domain, so the charge will
+    be a cost when it lands; catch it in early-August's scan / bank recon
 - since: '2026-07-15'
   item: Revolut account now active (became a bank 14 Jul) — if business money flows through it, send Morgan
     the statement to reconcile alongside Tide/Lloyds
