@@ -1665,3 +1665,40 @@ queue:
     approved_on: 2026-07-19
     booked_on: 2026-07-19
     note: "personal+business (Gregg 19 Jul): 50% business apportionment — £22.25 booked to phone_and_internet in books/2026-27/2026-07.yaml, £22.25 personal. Made a standing rule."
+
+  # ---------- 2026-07-21 run — new since the 20 Jul digest ----------
+  - id: 2026-07-21-001
+    date: 2026-07-21
+    source: gmail
+    description: "domains.co.za hosting invoice #3687176 (York Fund Management): Web Hosting Basic oxfordcircus.co.za R109.00 + samrosevalley.co.za R129.00 = R238.00, auto-charged 1 Aug"
+    amount: null
+    currency: ZAR
+    proposed_category: office_costs_and_software
+    reasoning: "York Fund Management hosting on domains.co.za — business per your 7 Jul standing ruling (covers both oxfordcircus.co.za and samrosevalley.co.za hosting). Billed R238 ZAR, so not converting: exact GBP pinned from the card statement when it charges on 1 Aug."
+    evidence: [{gmail_thread: 19f82f38c39fa13e}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+  - id: 2026-07-21-002
+    date: 2026-07-20
+    source: gmail
+    description: "Meta (Facebook) ads — Back9 Ad Account (1683773782802268): £30.59 GBP, date range Jul 17"
+    amount: 30.59
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "Back9 is a client account — you confirmed this on 19 Jul, and it matches the standing rule that all Meta accounts other than your own 2038… are client-billed. Excluded, kept for the audit trail. Tell me if this one's ever your cost."
+    evidence: [{gmail_thread: 19f812c4ec40bdee}]
+    flags: [client-account]
+    status: declined
+    declined_on: 2026-07-21
+    note: "auto-excluded per your 19 Jul Back9 ruling + the 12 Jul Meta standing rule; no action needed"
+  - id: 2026-07-21-003
+    date: 2026-07-20
+    source: gmail
+    description: "Meta (Facebook) ads — Arctic Ape Ice Baths account (908823494514663): ZAR4,585.05, date range from Jul 7"
+    amount: 4585.05
+    currency: ZAR
+    proposed_category: exclude
+    reasoning: "This is the Arctic Ape Ice Baths ad account — your client's own account, so per the Meta standing rule it's billed to them by Meta, not your cost → proposed exclude. Flagging it because it's a big one (~£190) and a new account; confirm exclude, or tell me if you're carrying this spend and rebilling."
+    evidence: [{gmail_thread: 19f7f7eae603e2f6}]
+    flags: [client-account, non-gbp, over-threshold]
+    status: pending
