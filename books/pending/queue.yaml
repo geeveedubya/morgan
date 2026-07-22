@@ -1702,3 +1702,18 @@ queue:
     evidence: [{gmail_thread: 19f7f7eae603e2f6}]
     flags: [client-account, non-gbp, over-threshold]
     status: pending
+
+  # ---------- 2026-07-22 run — new since the 21 Jul digest ----------
+  - id: 2026-07-22-001
+    date: 2026-07-22
+    source: gmail
+    description: "Avington Park Golf — teetime payment received, Wednesday 22 July (£35.80)"
+    amount: 35.80
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Golf teetime — personal, matching your 11 Jul and 19 Jul rulings on the earlier Avington teetimes. Auto-excluded, kept for the audit trail. Tell me if this one was a client round."
+    evidence: [{gmail_thread: 19f85b1c500e0ffa}]
+    flags: []
+    status: declined
+    declined_on: 2026-07-22
+    note: "personal per your established Avington-golf ruling (11 Jul + 19 Jul); no action needed"
