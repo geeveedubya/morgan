@@ -434,6 +434,50 @@ entries:
   status: booked
   approved_on: '2026-07-19'
   booked_on: '2026-07-19'
+- id: 2026-07-24-001
+  date: '2026-07-24'
+  source: bank
+  description: Supabase (Singapore) — backend/database hosting for the apps
+  amount: 18.80
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business app infrastructure (Supabase backs Ask Orla / Arctic Ape / trAIned);
+    Tide tagged it "Software and IT costs". Booked from the 24 Jul Tide statement.
+  evidence:
+  - bank: tide-2026-07-24.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-24'
+  booked_on: '2026-07-24'
+- id: 2026-07-24-002
+  date: '2026-07-18'
+  source: bank
+  description: Squarespace website subscription (SQSP* WEBSIT#243144916)
+  amount: 19.20
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Squarespace hosts the business websites (trAIned / ai-trained.com); business
+    software. Booked from the 24 Jul Tide statement.
+  evidence:
+  - bank: tide-2026-07-24.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-24'
+  booked_on: '2026-07-24'
+- id: 2026-07-24-003
+  date: '2026-07-24'
+  source: bank
+  description: Tide account fees — 3 fee lines on the 18–24 Jul statement (£0.52 + £0.20 + £0.20)
+  amount: 0.92
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: The bank's own charges on the business account, visible only on the statement.
+  evidence:
+  - bank: tide-2026-07-24.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-24'
+  booked_on: '2026-07-24'
 totals:
   income_gbp: 500.0
-  expenses_gbp: 1002.90
+  expenses_gbp: 1041.82

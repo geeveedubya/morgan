@@ -1677,7 +1677,9 @@ queue:
     reasoning: "York Fund Management hosting on domains.co.za — business per your 7 Jul standing ruling (covers both oxfordcircus.co.za and samrosevalley.co.za hosting). Billed R238 ZAR, so not converting: exact GBP pinned from the card statement when it charges on 1 Aug."
     evidence: [{gmail_thread: 19f82f38c39fa13e}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    approved_on: 2026-07-24
+    note: "business (Gregg 24 Jul): York Fund / domains.co.za hosting is his cost — office_costs_and_software. ZAR, credit-card charge due 1 Aug; pin exact GBP from the card statement when it lands."
   - id: 2026-07-21-002
     date: 2026-07-20
     source: gmail
@@ -1701,7 +1703,9 @@ queue:
     reasoning: "This is the Arctic Ape Ice Baths ad account — your client's own account, so per the Meta standing rule it's billed to them by Meta, not your cost → proposed exclude. Flagging it because it's a big one (~£190) and a new account; confirm exclude, or tell me if you're carrying this spend and rebilling."
     evidence: [{gmail_thread: 19f7f7eae603e2f6}]
     flags: [client-account, non-gbp, over-threshold]
-    status: pending
+    status: declined
+    declined_on: 2026-07-24
+    note: "excluded (Gregg 24 Jul): Meta ad spend for client accounts — incl. Arctic Ape — is the client's expense, billed directly. Future client Meta charges auto-exclude per this + the 12 Jul rule."
 
   # ---------- 2026-07-22 run — new since the 21 Jul digest ----------
   - id: 2026-07-22-001
@@ -1717,3 +1721,16 @@ queue:
     status: declined
     declined_on: 2026-07-22
     note: "personal per your established Avington-golf ruling (11 Jul + 19 Jul); no action needed"
+
+  # ---------- 2026-07-24 run — from the Tide statement (18–24 Jul) ----------
+  - id: 2026-07-24-004
+    date: 2026-07-23
+    source: bank
+    description: "RingGo parking — Maplewood, Chineham (£2.00), Thu 23 Jul 07:42"
+    amount: 2.00
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Weekday-morning parking, and Tide tagged it Travel — but it's Chineham, not Winchester, so it's outside your Winchester parking rule. Proposed travel; confirm it was a business trip, or say personal and I'll flip it."
+    evidence: [{bank: tide-2026-07-24.csv}]
+    flags: [non-winchester, confirm]
+    status: pending
