@@ -1734,3 +1734,31 @@ queue:
     evidence: [{bank: tide-2026-07-24.csv}]
     flags: [non-winchester, confirm]
     status: pending
+
+  # ---------- 2026-07-25 run — new since the 24 Jul digest ----------
+  - id: 2026-07-25-001
+    date: 2026-07-24
+    source: gmail
+    description: "Meta (Facebook) ads — Back9 Ad Account (1683773782802268): £30.56 GBP, date range Jul 20"
+    amount: 30.56
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "Back9 client account — excluded per your 19 + 24 Jul rulings that client Meta spend is billed to them directly. Auto-excluded, logged for the audit trail."
+    evidence: [{gmail_thread: 19f934ef453e8fbb}]
+    flags: [client-account]
+    status: declined
+    declined_on: 2026-07-25
+    note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
+  - id: 2026-07-25-002
+    date: 2026-07-24
+    source: gmail
+    description: "Avington Park Golf — teetime payment received, Friday 24 July (£35.80)"
+    amount: 35.80
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Golf teetime — personal, per your established Avington ruling (11 + 19 Jul). Auto-excluded, logged for the audit trail."
+    evidence: [{gmail_thread: 19f94b52771d7cff}]
+    flags: []
+    status: declined
+    declined_on: 2026-07-25
+    note: "personal per your established Avington-golf ruling; no action needed"

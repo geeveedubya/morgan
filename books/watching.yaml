@@ -3,9 +3,6 @@ watching:
 - since: '2026-07-24'
   item: Lloyds credit-card statement ready (notice 23 Jul) — send it to Morgan and it clears a big chunk
     of the awaiting-GBP backlog on card •4424 (your Meta own-account ZAR charges, the Anthropic USD credits)
-- since: '2026-07-24'
-  item: Stripe connector needs re-authorising — the daily Stripe pull has been unavailable since 23 Jul;
-    reconnect it from claude.ai connector settings (bank recon still catches Stripe income via payouts meanwhile)
 - since: '2026-07-20'
   item: Squarespace domain auto-renews 3 Aug (reminder 19 Jul) — a business domain, so the charge will
     be a cost when it lands; catch it in early-August's scan / bank recon
