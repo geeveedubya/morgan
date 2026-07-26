@@ -1762,3 +1762,18 @@ queue:
     status: declined
     declined_on: 2026-07-25
     note: "personal per your established Avington-golf ruling; no action needed"
+
+  # ---------- 2026-07-26 run — new since the 25 Jul digest ----------
+  - id: 2026-07-26-001
+    date: 2026-07-26
+    source: gmail
+    description: "Meta (Facebook) ads — Arctic Ape Ice Baths account (908823494514663): ZAR1,701.15, date range from Jul 19"
+    amount: 1701.15
+    currency: ZAR
+    proposed_category: exclude
+    reasoning: "Arctic Ape client ad account — excluded per your 24 Jul ruling that client Meta spend is billed to them directly. Auto-excluded, logged for the audit trail."
+    evidence: [{gmail_thread: 19f9cc67defc523d}]
+    flags: [client-account, non-gbp]
+    status: declined
+    declined_on: 2026-07-26
+    note: "auto-excluded per the confirmed client-Meta ruling (Gregg 24 Jul); no action needed"
