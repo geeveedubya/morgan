@@ -1638,6 +1638,7 @@ queue:
     evidence: [{gmail_thread: 19f7302e3ac24e0e}]
     flags: [non-gbp, awaiting-gbp]
     status: pending
+    note: "27 Jul: Gregg supplied the Meta dashboard export — this item is ref T7EUUVR372, ZAR115.06, 18 Jul, on Visa •4424. The 2038 account's charges span card •4424 (ZAR) AND prepaid-balance top-ups; only 3 small ones (84X7UUH472/KH372V5472/LJRG5V5472) landed on the Club Lloyds current account. Needs the •4424 card statement (or an agreed FX rate) to pin exact GBP for the full month, and care to not double-count 'Funded' top-ups vs delivery charges. Parked at Gregg's request to prioritise the monthly-costs task."
   - id: 2026-07-19-002
     date: 2026-07-18
     source: gmail
