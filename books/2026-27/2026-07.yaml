@@ -478,6 +478,51 @@ entries:
   status: booked
   approved_on: '2026-07-24'
   booked_on: '2026-07-24'
+- id: 2026-07-27-002
+  date: '2026-07-01'
+  source: bank
+  description: Google Workspace — samrosevalley.co.za (18.63 EUR @ 1.1593)
+  amount: 16.07
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: samrosevalley Workspace is your cost (7 Jul ruling); GBP pinned from the Lloyds
+    credit-card statement (card •4132, 22 Jul).
+  evidence:
+  - bank: lloyds-cc-4132-2026-07-22.pdf
+  flags: []
+  status: booked
+  approved_on: '2026-07-27'
+  booked_on: '2026-07-27'
+- id: 2026-07-27-003
+  date: '2026-07-01'
+  source: bank
+  description: domains.co.za / DiaMatrix — York Fund hosting (218.00 ZAR @ 21.6056)
+  amount: 10.09
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: York Fund / domains.co.za hosting is your business cost (24 Jul ruling); GBP
+    pinned from the Lloyds credit-card statement (card •4132, 22 Jul). Separate from the
+    R238 Aug invoice still in the queue.
+  evidence:
+  - bank: lloyds-cc-4132-2026-07-22.pdf
+  flags: []
+  status: booked
+  approved_on: '2026-07-27'
+  booked_on: '2026-07-27'
+- id: 2026-07-27-004
+  date: '2026-07-01'
+  source: bank
+  description: Lloyds credit-card non-sterling purchase fees (on the two business charges above)
+  amount: 0.76
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: The card's foreign-transaction fees on the Workspace and hosting charges (£0.47 + £0.29).
+  evidence:
+  - bank: lloyds-cc-4132-2026-07-22.pdf
+  flags: []
+  status: booked
+  approved_on: '2026-07-27'
+  booked_on: '2026-07-27'
 totals:
   income_gbp: 500.0
-  expenses_gbp: 1041.82
+  expenses_gbp: 1068.74

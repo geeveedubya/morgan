@@ -1733,7 +1733,9 @@ queue:
     reasoning: "Weekday-morning parking, and Tide tagged it Travel — but it's Chineham, not Winchester, so it's outside your Winchester parking rule. Proposed travel; confirm it was a business trip, or say personal and I'll flip it."
     evidence: [{bank: tide-2026-07-24.csv}]
     flags: [non-winchester, confirm]
-    status: pending
+    status: declined
+    declined_on: 2026-07-27
+    note: "personal (Gregg 27 Jul) — confirmed the Chineham parking is personal, not travel"
 
   # ---------- 2026-07-25 run — new since the 24 Jul digest ----------
   - id: 2026-07-25-001
