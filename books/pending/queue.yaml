@@ -1777,3 +1777,18 @@ queue:
     status: declined
     declined_on: 2026-07-26
     note: "auto-excluded per the confirmed client-Meta ruling (Gregg 24 Jul); no action needed"
+
+  # ---------- 2026-07-27 run — new since the 26 Jul digest ----------
+  - id: 2026-07-27-001
+    date: 2026-07-26
+    source: gmail
+    description: "Meta (Facebook) ads — Back9 Ad Account (1683773782802268): £30.64 GBP, date range Jul 23"
+    amount: 30.64
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "Back9 client account — excluded per your confirmed client-Meta ruling. Auto-excluded, logged for the audit trail."
+    evidence: [{gmail_thread: 19f9dc32d90efbfe}]
+    flags: [client-account]
+    status: declined
+    declined_on: 2026-07-27
+    note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
