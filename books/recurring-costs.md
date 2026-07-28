@@ -1,71 +1,67 @@
-# Recurring monthly costs — Oxford Circus Digital
+# Recurring payments — Oxford Circus Digital
 
-_Compiled 27 July 2026 from the booked ledger and the July Tide / Lloyds statements.
-Amounts marked **(est)** aren't yet evidenced; **~day** is approximate where it was
-inferred from a catch-up booking rather than a clean monthly debit._
+_Rebuilt 27 July 2026 from the full Tide business-account history
+(`books/statements/tide-2026-07-10.csv`) plus the July Lloyds statements.
+**~** marks a figure that isn't yet certain (estimate, variable, or day inferred)._
 
-## The question in one line
+## Off the Tide business account
 
-- **If you only fund what hits the Tide business account today:** ~**£60/month**, rising once Vercel lands — hold **~£100**.
-- **If you move the whole software stack onto the business account:** budget **~£255/month committed + a ~£150 usage buffer ≈ £400/month**, with the big outflows clustered **1st–8th**.
+| Provider | ~Date | ~Amount | Type |
+|---|---|---:|---|
+| Google Workspace — oxfordcircus.co.za | 1st | 21.94 | Business |
+| Michelle Van Wyk — retainer | 1st | ~300.00 | Business (staff) — first seen 1 Jul, confirm if monthly |
+| OpenAI / ChatGPT | 1st | 0.00 | **Cancelled** (was £17.87) |
+| Anthropic — Claude Max plan | ~4th–6th | ~73.30 | Business |
+| Vitality Life — policy 1 (…565436) | 5th | 76.59 | **Personal** |
+| Vitality Life — policy 2 (…500667) | 5th | 53.81 | **Personal** |
+| Adobe | 7th | 11.99 | Business |
+| Lovable — Pro plan | ~8th | 22.00 | Business |
+| Squarespace — website | ~18th | 19.20 | Business |
+| Supabase | ~24th | 18.80 | Business |
+| Canva | ~28th | 10.99 | Business |
+| Make.com | ~month-end | ~5.00 | Business — **spiky, up to £236** |
+| Vercel (new) | ~TBC | ~16.00 | Business |
 
----
-
-## A. Committed subscriptions (predictable, monthly)
-
-| Item | £/month | ~Day | Paid from |
-|---|---:|---|---|
-| Anthropic — Claude Max 5x plan | 73.30 | ~6th | Lloyds card |
-| Google Workspace — oxfordcircus.co.za | 21.94 | ~1st | Lloyds card |
-| Lovable — Pro plan | 22.00 | ~8th | Lloyds card |
-| Squarespace — website subscription | 19.20 | ~18th | **Tide (business)** |
-| Supabase — app backend/hosting | 18.80 | ~24th | **Tide (business)** |
-| OpenAI — ChatGPT | 17.87 | ~mid | Lloyds card |
-| Google Workspace — samrosevalley.co.za | 16.07 | ~1st | Lloyds card •4132 |
-| Vercel — hosting (**new**) | 16.00 **(est)** | TBD | **Tide (business)** |
-| Google Workspace — ai-trained.com + askorla.ai | 13.00 **(est)** | ~1st | Lloyds card |
-| Adobe | 11.99 | ~7th | Lloyds card |
-| Canva | 10.99 | ~27th | Lloyds card |
-| domains.co.za / DiaMatrix — York Fund hosting | 10.09 | ~1st | Lloyds card •4132 |
-| Lebara — business SIM | 1.50 | ~3rd | current a/c |
-| **Committed subtotal** | **≈ £252.75** | | |
-
-## B. Variable / usage-based (on top — not a fixed day)
-
-| Item | Typical range | Notes |
-|---|---|---|
-| Anthropic — prepaid usage top-ups | £40–90/mo | Several £18–40 top-ups in July |
-| Lovable — credit top-ups | £15 each, a few/mo | Buy-as-you-go build credits |
-| Meta — your own (2038) ad spend | ~£40/mo | £39.45 across 13–20 Jul; scales with campaigns |
-| Make.com | spiky | Hit **£236 in one June debit** — watch this one |
-
-_A quiet month adds ~£100 of variable cost; a heavy one (big Make.com or ad push) £200+._
-
-## C. Annual (not monthly — flagged so they don't surprise you)
-
-| Item | Amount | When |
+### Variable top-ups (same account, no fixed day)
+| Provider | ~Amount / month | Type |
 |---|---:|---|
-| GoDaddy — domain renewals | £15.59 | mid-month, annual |
-| Squarespace — domain auto-renew | ~£16 | **3 Aug** (next) |
+| Anthropic — usage top-ups | ~20–90 | Business |
+| Lovable — credit top-ups | ~15–45 | Business |
 
----
+## Totals — money leaving the Tide account each month
 
-## What this means for the **Tide business account**
+| Bucket | ~Total |
+|---|---:|
+| Business subscriptions (fixed, incl. Vercel; **excl. cancelled OpenAI**) | **£194.22** |
+| Business variable top-ups (Anthropic + Lovable + Make, typical) | **~£100** |
+| Personal — Vitality Life (both policies, 5th) | **£130.40** |
+| Michelle retainer (**if monthly** — confirm) | **~£300.00** |
+| **Typical month — everything except the Michelle retainer** | **~£425** |
+| **Typical month — including the Michelle retainer** | **~£725** |
+| **Heavy month** (big Make.com / ad push) | **up to ~£950** |
 
-Today only **Squarespace (~18th)**, **Supabase (~24th)** and **Tide fees** run through Tide —
-about **£40/month**, becoming ~**£55–60** once **Vercel** starts. Everything else is currently
-on your **personal Lloyds card / current account**.
+> Recommendation: keep **~£450/month** in Tide as a floor (covers subs + Vitality + a
+> normal usage month), or **~£750** if the £300 retainer is a recurring monthly payment.
+> Heaviest days: **1st** (Workspace + retainer) and **5th** (Vitality £130.40).
 
-If you want business spend cleanly separated (which makes the accountant's job — and this
-reconciliation — far easier), move the stack onto the business card and fund Tide with
-**~£400/month**, weighted to the **1st–8th** (Workspace, hosting, Anthropic, Lovable) with a
-second smaller wave on the **18th & 24th**.
+## Also recurring, but NOT off the Tide account
 
-## To firm these numbers up
+| Provider | ~Date | ~Amount | Account | Type |
+|---|---|---:|---|---|
+| Google Workspace — samrosevalley.co.za | ~1st | 16.07 | Lloyds card •4132 | Business |
+| domains.co.za / DiaMatrix hosting | ~1st | 10.09 | Lloyds card •4132 | Business |
+| Lebara — business SIM | ~3rd | 1.50 | current account | Business |
+| Meta — your own (2038) ad spend | variable | ~ZAR, variable | card •4424 | Business |
 
-1. **Vercel's first invoice** — replace the £16 estimate.
-2. **A full month's Tide statement** — confirm exact days for the business-account debits.
-3. **The ai-trained.com / askorla.ai Workspace amounts** — currently estimated at ~£13 combined.
+_Off-Tide business subtotal ≈ **£27.66/month** fixed (+ variable Meta ad spend)._
 
-> Note on "recharged": if Vercel/Supabase are being **rebilled to a client** rather than run
-> as your own recurring cost, tell me — they'd be categorised as client costs, not yours.
+## Annual (flagged so they don't surprise the account)
+| Provider | ~Amount | When |
+|---|---:|---|
+| GoDaddy — domain renewals | 15.59 | annual, mid-month |
+| Squarespace — domain auto-renew | ~16 | **3 Aug** next |
+
+## To firm up
+1. **Michelle retainer** — is the £300 (1 Jul) a new monthly commitment? It swings the total by £300.
+2. **Vercel first invoice** — replace the ~£16 estimate.
+3. **"Recharged"** — are Vercel/Supabase your own recurring cost, or rebilled to a client? (Changes categorisation.)
