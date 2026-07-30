@@ -553,6 +553,21 @@ entries:
   status: booked
   approved_on: '2026-07-29'
   booked_on: '2026-07-29'
+- id: 2026-07-30-001
+  date: '2026-07-28'
+  source: stripe
+  description: Client payment — Craig Nerwich (Arctic Ape), July invoice incl. rebilled subs
+  amount: 772.00
+  currency: GBP
+  proposed_category: sales
+  reasoning: Arctic Ape settled the July invoice (retainer + rebilled hosting). Charged
+    ZAR17,912.79, settled £772.00 GBP. Booked gross; the Stripe fee gets booked at month-end recon.
+  evidence:
+  - stripe_charge: ch_3Ty5sJAnusPN3mWR1T6Liuv9
+  flags: []
+  status: booked
+  approved_on: '2026-07-30'
+  booked_on: '2026-07-30'
 totals:
-  income_gbp: 500.0
+  income_gbp: 1272.0
   expenses_gbp: 1091.24

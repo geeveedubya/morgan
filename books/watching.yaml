@@ -1,8 +1,8 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
-- since: '2026-07-29'
-  item: July invoice sent to Arctic Ape (Craig/Dan) including the rebilled subs + Dave's app hosting (Vercel/Supabase)
-    — watch for the Stripe settlement as income; confirms the hosting subs are recharged to the client.
+- since: '2026-07-30'
+  item: Stripe changing UK card-processing pricing from 21 Oct 2026 (notice 30 Jul) — will nudge the Stripe
+    fees on client payments; re-check the fee rate at the Oct recon.
 - since: '2026-07-29'
   item: Two Lebara SIMs now renewing (07555088933 = Gregg's business mobile per signature; 07368497782
     = unknown) — the standing ruling only names 07884617816. Confirm which SIMs are business and pin amounts
