@@ -523,6 +523,36 @@ entries:
   status: booked
   approved_on: '2026-07-27'
   booked_on: '2026-07-27'
+- id: 2026-07-29-001
+  date: '2026-07-28'
+  source: gmail
+  description: Vercel Pro — app hosting (receipt #2662-2630, $20 + $4 UK VAT = $24.00)
+  amount: 18.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: New business hosting sub (for Dave's app — rebilled to the client via the July
+    Arctic Ape invoice, so recouped as income). $24.00 @ ~0.75; confirm exact GBP at card recon.
+  evidence:
+  - gmail_thread: 19fa7e4611e45881
+  flags: [fx-estimate]
+  status: booked
+  approved_on: '2026-07-29'
+  booked_on: '2026-07-29'
+- id: 2026-07-29-002
+  date: '2026-07-27'
+  source: gmail
+  description: Apple iCloud+ 2TB (monthly £8.99) — 50% business apportionment
+  amount: 4.50
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: iCloud+ claimed at 50% business per your 10 Jul ruling (£8.99 × 50% = £4.50);
+    the other £4.49 is personal.
+  evidence:
+  - gmail_thread: 19fa2502ab2fb4ea
+  flags: [apportioned-50pc]
+  status: booked
+  approved_on: '2026-07-29'
+  booked_on: '2026-07-29'
 totals:
   income_gbp: 500.0
-  expenses_gbp: 1068.74
+  expenses_gbp: 1091.24
