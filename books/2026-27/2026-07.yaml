@@ -568,6 +568,20 @@ entries:
   status: booked
   approved_on: '2026-07-30'
   booked_on: '2026-07-30'
+- id: 2026-07-31-001
+  date: '2026-07-30'
+  source: gmail
+  description: 'Lovable credit top-up, 50 credits — Credit Top-up Pro (receipt #2605-2095, £12.50 + £2.50 VAT)'
+  amount: 15.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Standard Lovable build-credit top-up, matches the office-costs standing rule.
+  evidence:
+  - gmail_thread: 19fb1ee6e92ef78e
+  flags: []
+  status: booked
+  approved_on: '2026-07-31'
+  booked_on: '2026-07-31'
 totals:
   income_gbp: 1272.0
-  expenses_gbp: 1091.24
+  expenses_gbp: 1106.24
