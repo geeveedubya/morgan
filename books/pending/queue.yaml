@@ -1825,3 +1825,40 @@ queue:
     status: declined
     declined_on: 2026-07-31
     note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
+
+  # ---------- 2026-07-31 Tide recon (24–31 Jul) — items needing a decision ----------
+  - id: 2026-07-31-007
+    date: 2026-07-24
+    source: bank
+    description: "Faster payment out to Terry Gosden, ref 'Reese' — £35.00 (Tide tagged 'Other expenses')"
+    amount: 35.00
+    currency: GBP
+    proposed_category: personal
+    reasoning: "A £35 transfer to Terry Gosden (ref 'Reese') — doesn't look like a business supplier, so proposed personal. Tell me if it's a business cost and I'll recategorise."
+    evidence: [{bank: tide-2026-07-31.csv}]
+    flags: [unclear, confirm]
+    status: pending
+  - id: 2026-07-31-008
+    date: 2026-07-26
+    source: bank
+    description: "HP Instant Ink UK — £1.79 (Tide tagged 'Office supplies')"
+    amount: 1.79
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "HP Instant Ink printer subscription — proposed business (office supplies), since Tide tagged it so. Confirm business, or say personal / apportion, and I'll make it a rule for future months."
+    evidence: [{bank: tide-2026-07-31.csv}]
+    flags: [confirm]
+    status: pending
+  - id: 2026-07-31-009
+    date: 2026-07-30
+    source: bank
+    description: "RingGo parking — Maplewood, Chineham, £2.00 (Thu 30 Jul)"
+    amount: 2.00
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Chineham parking again — personal, matching your 27 Jul ruling on the earlier Chineham session. Auto-excluded; say if this one was a work trip."
+    evidence: [{bank: tide-2026-07-31.csv}]
+    flags: [non-winchester]
+    status: declined
+    declined_on: 2026-07-31
+    note: "personal per your 27 Jul Chineham ruling; no action needed"

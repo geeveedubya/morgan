@@ -526,15 +526,16 @@ entries:
 - id: 2026-07-29-001
   date: '2026-07-28'
   source: gmail
-  description: Vercel Pro — app hosting (receipt #2662-2630, $20 + $4 UK VAT = $24.00)
-  amount: 18.00
+  description: Vercel Pro — app hosting ($24 receipt £18.05 + £0.38 = £18.43, actual from Tide)
+  amount: 18.43
   currency: GBP
   proposed_category: office_costs_and_software
   reasoning: New business hosting sub (for Dave's app — rebilled to the client via the July
-    Arctic Ape invoice, so recouped as income). $24.00 @ ~0.75; confirm exact GBP at card recon.
+    Arctic Ape invoice, so recouped as income). Exact GBP pinned from the 31 Jul Tide statement.
   evidence:
   - gmail_thread: 19fa7e4611e45881
-  flags: [fx-estimate]
+  - bank: tide-2026-07-31.csv
+  flags: []
   status: booked
   approved_on: '2026-07-29'
   booked_on: '2026-07-29'
@@ -582,6 +583,67 @@ entries:
   status: booked
   approved_on: '2026-07-31'
   booked_on: '2026-07-31'
+- id: 2026-07-31-003
+  date: '2026-07-28'
+  source: bank
+  description: Stripe fees on the Arctic Ape payment (£772.00 gross → £739.32 net payout)
+  amount: 32.68
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: The £739.32 that landed in Tide on 28 Jul is the net settlement of the £772.00
+    Arctic Ape charge (booked gross as 2026-07-30-001); the £32.68 difference is Stripe's fee.
+    NOT re-booked as income — it's the same money.
+  evidence:
+  - bank: tide-2026-07-31.csv
+  - stripe_charge: ch_3Ty5sJAnusPN3mWR1T6Liuv9
+  flags: []
+  status: booked
+  approved_on: '2026-07-31'
+  booked_on: '2026-07-31'
+- id: 2026-07-31-004
+  date: '2026-07-28'
+  source: bank
+  description: Canva subscription (Canva* 04956-46798103)
+  amount: 10.99
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Recurring Canva subscription — business software; from the 31 Jul Tide statement.
+  evidence:
+  - bank: tide-2026-07-31.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-31'
+  booked_on: '2026-07-31'
+- id: 2026-07-31-005
+  date: '2026-07-28'
+  source: bank
+  description: Michelle Van Wyk — retainer (ref "Retainer", from Tide)
+  amount: 100.00
+  currency: GBP
+  proposed_category: staff_costs
+  reasoning: Paid from the Tide business account and labelled "Retainer" — staff_costs per
+    your 10 Jul ruling. Note this month's retainer is £100 (not the ~£300 I'd estimated).
+  evidence:
+  - bank: tide-2026-07-31.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-31'
+  booked_on: '2026-07-31'
+- id: 2026-07-31-006
+  date: '2026-07-29'
+  source: bank
+  description: Tide account fees — 6 fee lines on the 24–31 Jul statement (£0.50+£0.20×4+£0.01)
+  amount: 1.31
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: The bank's own charges on the business account (excludes the £0.52 Supabase fee
+    already booked in the 24 Jul recon).
+  evidence:
+  - bank: tide-2026-07-31.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-31'
+  booked_on: '2026-07-31'
 totals:
   income_gbp: 1272.0
-  expenses_gbp: 1106.24
+  expenses_gbp: 1251.65
