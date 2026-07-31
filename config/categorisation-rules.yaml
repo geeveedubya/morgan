@@ -143,6 +143,9 @@ standing_rulings:
       to phone_and_internet, 50% personal (the "max allowance" Gregg is claiming;
       same 50% basis as the Apple iCloud+ apportionment)
     date: 2026-07-19
+  - ruling: HP Instant Ink printer subscription is a business office cost
+      (office_costs_and_software) — book in full
+    date: 2026-07-31
 
 # These ALWAYS go to the pending queue for your decision, regardless of any
 # other match:

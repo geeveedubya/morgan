@@ -644,6 +644,20 @@ entries:
   status: booked
   approved_on: '2026-07-31'
   booked_on: '2026-07-31'
+- id: 2026-07-31-008
+  date: '2026-07-26'
+  source: bank
+  description: HP Instant Ink UK — printer ink subscription
+  amount: 1.79
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business office cost (Gregg 31 Jul); from the 31 Jul Tide statement.
+  evidence:
+  - bank: tide-2026-07-31.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-31'
+  booked_on: '2026-07-31'
 totals:
   income_gbp: 1272.0
-  expenses_gbp: 1251.65
+  expenses_gbp: 1253.44

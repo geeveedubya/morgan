@@ -1837,7 +1837,9 @@ queue:
     reasoning: "A £35 transfer to Terry Gosden (ref 'Reese') — doesn't look like a business supplier, so proposed personal. Tell me if it's a business cost and I'll recategorise."
     evidence: [{bank: tide-2026-07-31.csv}]
     flags: [unclear, confirm]
-    status: pending
+    status: declined
+    declined_on: 2026-07-31
+    note: "personal (Gregg 31 Jul) — not a business cost"
   - id: 2026-07-31-008
     date: 2026-07-26
     source: bank
@@ -1848,7 +1850,10 @@ queue:
     reasoning: "HP Instant Ink printer subscription — proposed business (office supplies), since Tide tagged it so. Confirm business, or say personal / apportion, and I'll make it a rule for future months."
     evidence: [{bank: tide-2026-07-31.csv}]
     flags: [confirm]
-    status: pending
+    status: booked
+    approved_on: 2026-07-31
+    booked_on: 2026-07-31
+    note: "business (Gregg 31 Jul) — HP Instant Ink is a business office cost; booked to books/2026-27/2026-07.yaml and made a standing rule."
   - id: 2026-07-31-009
     date: 2026-07-30
     source: bank
