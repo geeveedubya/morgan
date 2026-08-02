@@ -1867,3 +1867,18 @@ queue:
     status: declined
     declined_on: 2026-07-31
     note: "personal per your 27 Jul Chineham ruling; no action needed"
+
+  # ---------- 2026-08-02 run — new since the 1 Aug digest ----------
+  - id: 2026-08-02-001
+    date: 2026-08-01
+    source: gmail
+    description: "RingGo parking — Jewry Street, Winchester Central, Sat 1 Aug 08:11–10:11 (£3.60), vehicle LL69UWJ"
+    amount: 3.60
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Winchester weekend morning — personal, matching your 18 Jul Saturday-parking ruling (the weekday-morning→travel rule doesn't cover Saturdays). Say if it was a work trip and I'll move it to travel."
+    evidence: [{gmail_thread: 19fbc2a7f921860b}]
+    flags: [weekend]
+    status: declined
+    declined_on: 2026-08-02
+    note: "personal per your Winchester-weekend parking precedent; no action needed"

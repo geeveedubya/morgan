@@ -1,5 +1,9 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
+- since: '2026-08-02'
+  item: 'Early-Aug business charges to pin at the next card/Tide recon: domains.co.za R238 hosting (2026-07-21-001,
+    CONFIRMED charged 1 Aug), samrosevalley Google Workspace (Aug invoice, auto-charged), and the Lebara
+    business SIM 07884617816 (renewed 1 Aug, ~£1.50 phone_and_internet).'
 - since: '2026-07-30'
   item: Stripe changing UK card-processing pricing from 21 Oct 2026 (notice 30 Jul) — will nudge the Stripe
     fees on client payments; re-check the fee rate at the Oct recon.
