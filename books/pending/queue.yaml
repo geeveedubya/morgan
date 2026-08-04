@@ -1897,3 +1897,16 @@ queue:
     status: declined
     declined_on: 2026-08-03
     note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
+
+  # ---------- 2026-08-04 run — new since the 3 Aug digest ----------
+  - id: 2026-08-04-001
+    date: 2026-08-03
+    source: gmail
+    description: "Anthropic (Claude) receipt #2468-9779-5009 — one-time API credit purchase, US$12.00 (US$10.00 + US$2.00 UK VAT), paid 3 Aug"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Anthropic is business (office_costs_and_software) per your 10 Jul standing ruling — a one-time API credit top-up. Charged in USD, so I'm not converting: approve and I'll pin the exact GBP from the card statement (roughly £9 at ~$1=£0.75). This is on card •4424, so it lands with the •4424 backlog."
+    evidence: [{gmail_thread: 19fc8441759a973a}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending

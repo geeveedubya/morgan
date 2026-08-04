@@ -1,5 +1,9 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
+- since: '2026-08-04'
+  item: 'Twilio/Meta notice (3 Aug): WhatsApp service & utility message fees change from
+    1 Oct 2026 — no charge yet. If Gregg runs WhatsApp messaging through Twilio for a client
+    or his own automations, the cost base shifts in October; re-check at the Oct recon.'
 - since: '2026-08-02'
   item: 'Early-Aug business charges to pin at the next card/Tide recon: domains.co.za R238 hosting (2026-07-21-001,
     CONFIRMED charged 1 Aug), both Google Workspaces (samrosevalley + oxfordcircus.co.za, Aug invoices
