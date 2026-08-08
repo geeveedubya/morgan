@@ -1910,3 +1910,29 @@ queue:
     evidence: [{gmail_thread: 19fc8441759a973a}]
     flags: [non-gbp, awaiting-gbp]
     status: pending
+
+  # ---------- 2026-08-06 run — new since the 5 Aug digest ----------
+  - id: 2026-08-06-001
+    date: 2026-08-05
+    source: gmail
+    description: "Lovable receipt #2886-8641 — Credit Top-up (Pro), 50 credits: £12.50 + £2.50 UK VAT = £15.00, paid 5 Aug"
+    amount: 15.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Lovable is business (office_costs_and_software) — a £15.00 GBP credit top-up, billed in sterling with UK VAT (same £15.00 as the July charge). Approve and it books; say personal and I'll exclude."
+    evidence: [{gmail_thread: 19fd0f1d92d2c50e}]
+    flags: [confirm]
+    status: pending
+  - id: 2026-08-06-002
+    date: 2026-08-05
+    source: gmail
+    description: "Meta (Facebook) ads — Back9 Ad Account (1683773782802268): £30.73 GBP, date range Aug 1"
+    amount: 30.73
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "Back9 client account — excluded per your confirmed client-Meta ruling. Auto-excluded, logged for the audit trail."
+    evidence: [{gmail_thread: 19fd117ab31244bd}]
+    flags: [client-account]
+    status: declined
+    declined_on: 2026-08-06
+    note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
