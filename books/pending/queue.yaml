@@ -1936,3 +1936,92 @@ queue:
     status: declined
     declined_on: 2026-08-06
     note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
+
+  # ---------- 2026-08-09 run — new since the 6 Aug digest (covers 6–9 Aug) ----------
+  - id: 2026-08-09-001
+    date: 2026-08-08
+    source: gmail
+    description: "Lovable receipt #2952-6443 — Pro monthly plan (Aug 8–Sep 8): £18.33 + £3.67 UK VAT = £22.00, paid 8 Aug"
+    amount: 22.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Lovable Pro monthly subscription — business (office_costs_and_software). This is the recurring £22 Pro plan, separate from the £15 credit top-up on 5 Aug (both expected, per the multi-receipt note). Approve and it books."
+    evidence: [{gmail_thread: 19fe2e1ed0b617b8}]
+    flags: [confirm]
+    status: pending
+  - id: 2026-08-09-002
+    date: 2026-08-06
+    source: gmail
+    description: "Anthropic (Claude) receipt #2257-7738-6370 — Max plan 5x monthly (Aug 6–Sep 6): £75.00 + £15.00 UK VAT = £90.00, paid 6 Aug"
+    amount: 90.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Claude Max 5x monthly subscription — business (office_costs_and_software) per your 10 Jul Anthropic ruling. Billed in sterling with UK VAT this time (£90.00, matches the figure you confirmed for the recurring-costs budget). Approve and it books."
+    evidence: [{gmail_thread: 19fd825f6cd16438}]
+    flags: [confirm]
+    status: pending
+  - id: 2026-08-09-003
+    date: 2026-08-06
+    source: gmail
+    description: "Meta (Facebook) ads — Back9 Ad Account (1683773782802268): £30.96 GBP, date range Aug 5"
+    amount: 30.96
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "Back9 client account — excluded per your confirmed client-Meta ruling. Auto-excluded, logged for the audit trail."
+    evidence: [{gmail_thread: 19fd5d276e7fdd42}]
+    flags: [client-account]
+    status: declined
+    declined_on: 2026-08-09
+    note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
+  - id: 2026-08-09-004
+    date: 2026-08-08
+    source: gmail
+    description: "Meta (Facebook) ads — Back9 Ad Account (1683773782802268): £52.97 GBP, date range Aug 5"
+    amount: 52.97
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "Back9 client account — excluded per your confirmed client-Meta ruling. Auto-excluded, logged for the audit trail."
+    evidence: [{gmail_thread: 19fe35d1f80e357f}]
+    flags: [client-account]
+    status: declined
+    declined_on: 2026-08-09
+    note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
+  - id: 2026-08-09-005
+    date: 2026-08-06
+    source: gmail
+    description: "Meta (Facebook) ads — Arctic Ape Ice Baths Ad Account (908823494514663): ZAR4,585.05, date range Jul 24"
+    amount: null
+    currency: ZAR
+    proposed_category: exclude
+    reasoning: "Arctic Ape client ad account — Meta bills the client directly (your 12 Jul ruling + 'anything for Arctic Ape and Meta is client expense'). Excluded, logged for the audit trail; no GBP conversion needed since it's not going in the books."
+    evidence: [{gmail_thread: 19fd63c7bddb4111}]
+    flags: [client-account, non-gbp]
+    status: declined
+    declined_on: 2026-08-09
+    note: "auto-excluded — client Meta ad account, billed to Arctic Ape directly; no action needed"
+  - id: 2026-08-09-006
+    date: 2026-08-06
+    source: gmail
+    description: "Shopify bill — 'Meds 4 Pets' store: £80.24 GBP, charged 6 Aug"
+    amount: 80.24
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "Meds 4 Pets Shopify store — Paul/Ted's cost, excluded per your 7 Jul standing ruling. Logged for the audit trail."
+    evidence: [{gmail_thread: 19fd62065d43f9ea}]
+    flags: [client-account]
+    status: declined
+    declined_on: 2026-08-09
+    note: "auto-excluded per your Meds 4 Pets standing ruling; no action needed"
+  - id: 2026-08-09-007
+    date: 2026-08-08
+    source: gmail
+    description: "RingGo parking — Jewry Street, Winchester Central, Sat 8 Aug 08:13–09:13 (£2.00), vehicle VA07ZGF"
+    amount: 2.00
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Winchester Saturday morning — personal, matching your weekend-parking precedent (the weekday-morning→travel rule doesn't cover Saturdays). Say if it was a work trip and I'll move it to travel."
+    evidence: [{gmail_thread: 19fe0384d7707c2a}]
+    flags: [weekend]
+    status: declined
+    declined_on: 2026-08-09
+    note: "personal per your Winchester-weekend parking precedent; no action needed"
