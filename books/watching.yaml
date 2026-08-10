@@ -1,5 +1,9 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
+- since: '2026-08-10'
+  item: 'Arctic Ape invoice coming this month — Gregg told Craig/Dan (9 Aug) he''s on ~12 days
+    of Arctic Ape work this month (some rolled over from July). Expect a client invoice + Stripe
+    payment to land; catch it in the Stripe pull / bank recon and book as sales income.'
 - since: '2026-08-04'
   item: 'Twilio/Meta notice (3 Aug): WhatsApp service & utility message fees change from
     1 Oct 2026 — no charge yet. If Gregg runs WhatsApp messaging through Twilio for a client
