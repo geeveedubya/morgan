@@ -47,6 +47,22 @@ entries:
   status: booked
   approved_on: '2026-08-11'
   booked_on: '2026-08-11'
+- id: 2026-08-11-004
+  date: '2026-08-10'
+  source: gmail
+  description: Budget car hire, O.R. Tambo Johannesburg (21–26 Aug, VW Polo) — £86.39
+    rental + £35.32 Zurich full insurance, on Amex
+  amount: 121.71
+  currency: GBP
+  proposed_category: travel
+  reasoning: Car hire for the Johannesburg business trip (Amex, same 20–26 Aug duration) —
+    100% business (Gregg 11 Aug). Includes the bundled full-protection insurance.
+  evidence:
+  - gmail_thread: 19fec08d5e085084
+  flags: []
+  status: booked
+  approved_on: '2026-08-11'
+  booked_on: '2026-08-11'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 1114.64
+  expenses_gbp: 1236.35

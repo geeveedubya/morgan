@@ -2,10 +2,10 @@
 watching:
 - since: '2026-08-11'
   item: 'South Africa trip 20–26 Aug — CONFIRMED 100% business (Arctic Ape client visit, Gregg
-    11 Aug). Flight £1,047.09, insurance £41.35 and the National Express coach £26.20 are BOOKED
-    to travel (books/2026-27/2026-08.yaml). Two parts still have NO amount — the Protea Hotel
-    (OR Tambo, Johannesburg) and a Rentalcars car-hire/insurance — pin those from the card
-    statement and book them to travel too (same business trip).'
+    11 Aug). BOOKED to travel (books/2026-27/2026-08.yaml): flight £1,047.09, insurance £41.35,
+    National Express coach £26.20, and Budget car hire £121.71 (Amex, incl. full-protection
+    insurance). Still to pin: the Protea Hotel (OR Tambo, Johannesburg) booking — no charge
+    amount seen yet (may be pay-at-property); catch it on the card/Booking.com and book to travel.'
 - since: '2026-08-10'
   item: 'Arctic Ape invoice coming this month — Gregg proposed ~12 days of work (9 Aug) and Dan
     CONFIRMED agreement (10 Aug). Expect a client invoice + Stripe payment to land; catch it in
