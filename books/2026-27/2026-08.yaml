@@ -1,0 +1,52 @@
+# Ledger 2026-08 — tax year 2026/27. Booked entries only; approvals in chat.
+month: 2026-08
+entries:
+- id: 2026-08-11-001
+  date: '2026-08-10'
+  source: gmail
+  description: Virgin Atlantic flight LHR↔JNB (booking ENS6O2, 20–26 Aug, Economy Light)
+  amount: 1047.09
+  currency: GBP
+  proposed_category: travel
+  reasoning: Return flight to Johannesburg for the Arctic Ape client visit — 100% business
+    (Gregg 11 Aug).
+  evidence:
+  - gmail_thread: 19feab8504b00b9e
+  flags: []
+  status: booked
+  approved_on: '2026-08-11'
+  booked_on: '2026-08-11'
+- id: 2026-08-11-002
+  date: '2026-08-10'
+  source: gmail
+  description: Virgin Atlantic / Allianz travel insurance (policy VAAGBA700005099, South
+    Africa, 20–26 Aug)
+  amount: 41.35
+  currency: GBP
+  proposed_category: travel
+  reasoning: Travel insurance for the business trip to Johannesburg — 100% business (Gregg
+    11 Aug).
+  evidence:
+  - gmail_thread: 19feab619f2bd1f5
+  flags: []
+  status: booked
+  approved_on: '2026-08-11'
+  booked_on: '2026-08-11'
+- id: 2026-08-11-003
+  date: '2026-08-10'
+  source: gmail
+  description: National Express coach ticket (airport transfer for the SA trip)
+  amount: 26.20
+  currency: GBP
+  proposed_category: travel
+  reasoning: Coach to the airport for the Johannesburg business trip — 100% business (Gregg
+    11 Aug).
+  evidence:
+  - gmail_thread: 19feaccb21490e2e
+  flags: []
+  status: booked
+  approved_on: '2026-08-11'
+  booked_on: '2026-08-11'
+totals:
+  income_gbp: 0.0
+  expenses_gbp: 1114.64

@@ -2041,7 +2041,10 @@ queue:
     reasoning: "Return flight to Johannesburg, 20–26 Aug — proposed business travel: Arctic Ape (your JHB client) is bedding down the new arrangement and you told them you're coming to see them. Client travel is allowable, but confirm it's a business trip (not personal/home visit), or tell me the business/personal split. Over the £250 review threshold, so queued regardless."
     evidence: [{gmail_thread: 19feab8504b00b9e}]
     flags: [over-threshold, confirm-business]
-    status: pending
+    status: booked
+    approved_on: 2026-08-11
+    booked_on: 2026-08-11
+    note: "business — SA trip is 100% business, the Arctic Ape client visit (Gregg 11 Aug). Booked £1,047.09 to travel in books/2026-27/2026-08.yaml."
   - id: 2026-08-11-002
     date: 2026-08-10
     source: gmail
@@ -2052,7 +2055,10 @@ queue:
     reasoning: "Travel insurance for the same 20–26 Aug South Africa trip — proposed business travel alongside the flight. If the trip is business (Arctic Ape), this rides with it; if personal, it's personal. Confirm with the flight."
     evidence: [{gmail_thread: 19feab619f2bd1f5}]
     flags: [confirm-business]
-    status: pending
+    status: booked
+    approved_on: 2026-08-11
+    booked_on: 2026-08-11
+    note: "business — travel insurance for the 100%-business SA trip (Gregg 11 Aug). Booked £41.35 to travel in books/2026-27/2026-08.yaml."
   - id: 2026-08-11-003
     date: 2026-08-10
     source: gmail
@@ -2063,4 +2069,7 @@ queue:
     reasoning: "Coach ticket booked the same morning as the SA flights — likely the airport transfer for the 20 Aug trip. Proposed business travel with the rest of the trip; confirm business vs personal (say if this coach was actually a separate personal journey)."
     evidence: [{gmail_thread: 19feaccb21490e2e}]
     flags: [confirm-business]
-    status: pending
+    status: booked
+    approved_on: 2026-08-11
+    booked_on: 2026-08-11
+    note: "business — airport coach for the 100%-business SA trip (Gregg 11 Aug). Booked £26.20 to travel in books/2026-27/2026-08.yaml."
