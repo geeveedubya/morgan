@@ -2025,3 +2025,42 @@ queue:
     status: declined
     declined_on: 2026-08-09
     note: "personal per your Winchester-weekend parking precedent; no action needed"
+
+  # ---------- 2026-08-11 run — new since the 10 Aug digest ----------
+  # South Africa trip 20–26 Aug — booked 10 Aug. Looks like the Arctic Ape client
+  # visit ("looking forward to seeing you and bedding down everything"), so proposed
+  # as business travel — but SA is also home, so please confirm business vs personal
+  # (and any split), and I'll book/apportion the whole cluster together.
+  - id: 2026-08-11-001
+    date: 2026-08-10
+    source: gmail
+    description: "Virgin Atlantic flight LHR↔JNB (booking ENS6O2, 20–26 Aug, Economy Light): total GBP 1,047.09"
+    amount: 1047.09
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Return flight to Johannesburg, 20–26 Aug — proposed business travel: Arctic Ape (your JHB client) is bedding down the new arrangement and you told them you're coming to see them. Client travel is allowable, but confirm it's a business trip (not personal/home visit), or tell me the business/personal split. Over the £250 review threshold, so queued regardless."
+    evidence: [{gmail_thread: 19feab8504b00b9e}]
+    flags: [over-threshold, confirm-business]
+    status: pending
+  - id: 2026-08-11-002
+    date: 2026-08-10
+    source: gmail
+    description: "Virgin Atlantic / Allianz travel insurance (policy VAAGBA700005099, South Africa, 20–26 Aug): GBP 41.35"
+    amount: 41.35
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Travel insurance for the same 20–26 Aug South Africa trip — proposed business travel alongside the flight. If the trip is business (Arctic Ape), this rides with it; if personal, it's personal. Confirm with the flight."
+    evidence: [{gmail_thread: 19feab619f2bd1f5}]
+    flags: [confirm-business]
+    status: pending
+  - id: 2026-08-11-003
+    date: 2026-08-10
+    source: gmail
+    description: "National Express coach ticket: £26.20, charged 10 Aug"
+    amount: 26.20
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Coach ticket booked the same morning as the SA flights — likely the airport transfer for the 20 Aug trip. Proposed business travel with the rest of the trip; confirm business vs personal (say if this coach was actually a separate personal journey)."
+    evidence: [{gmail_thread: 19feaccb21490e2e}]
+    flags: [confirm-business]
+    status: pending
