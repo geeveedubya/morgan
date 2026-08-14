@@ -2087,3 +2087,18 @@ queue:
     approved_on: 2026-08-11
     booked_on: 2026-08-11
     note: "business — car hire for the 100%-business SA trip (Gregg 11 Aug). Booked £121.71 to travel in books/2026-27/2026-08.yaml."
+
+  # ---------- 2026-08-13 run — new since the 12 Aug digest ----------
+  - id: 2026-08-13-001
+    date: 2026-08-12
+    source: gmail
+    description: "Meta (Facebook) ads — Back9 Ad Account (1683773782802268): £52.84 GBP, date range Aug 7"
+    amount: 52.84
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "Back9 client account — excluded per your confirmed client-Meta ruling. Auto-excluded, logged for the audit trail."
+    evidence: [{gmail_thread: 19ff4fe525d574f3}]
+    flags: [client-account]
+    status: declined
+    declined_on: 2026-08-13
+    note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
