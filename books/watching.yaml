@@ -1,5 +1,9 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
+- since: '2026-08-18'
+  item: 'Barclaycard monthly statement ready (18 Aug) — a card source Morgan hasn''t reconciled.
+    If any business spend runs through Barclaycard (e.g. the SA-trip hotel, or other travel), send
+    the statement and Morgan will pin those charges; otherwise it stays personal.'
 - since: '2026-08-15'
   item: 'UK IPO trade mark UK00004389457 — correspondence received 14 Aug (a letter, no charge in
     the email). A trade mark is a business brand asset, so any IPO filing/renewal fee is an
