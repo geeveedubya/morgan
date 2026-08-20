@@ -2145,3 +2145,18 @@ queue:
     evidence: [{gmail_thread: 1a01354714ab7814}]
     flags: [confirm]
     status: pending
+
+  # ---------- 2026-08-19 run — new since the 18 Aug digest ----------
+  - id: 2026-08-19-001
+    date: 2026-08-18
+    source: gmail
+    description: "Meta (Facebook) ads — Arctic Ape Ice Baths Ad Account (908823494514663): ZAR4,585.05, date range Aug 5 (separate from the Jul-24 charge, different transaction ID)"
+    amount: null
+    currency: ZAR
+    proposed_category: exclude
+    reasoning: "Arctic Ape client ad account — Meta bills the client directly (your 12 Jul ruling + 'anything for Arctic Ape and Meta is client expense'). A fresh Aug-5 billing period, not a duplicate of the Jul-24 one. Excluded, logged; no GBP conversion needed since it's not in the books."
+    evidence: [{gmail_thread: 1a013b9793c74e00}]
+    flags: [client-account, non-gbp]
+    status: declined
+    declined_on: 2026-08-19
+    note: "auto-excluded — client Meta ad account, billed to Arctic Ape directly; no action needed"
