@@ -2160,3 +2160,27 @@ queue:
     status: declined
     declined_on: 2026-08-19
     note: "auto-excluded — client Meta ad account, billed to Arctic Ape directly; no action needed"
+
+  # ---------- 2026-08-20 run — new since the 19 Aug digest ----------
+  - id: 2026-08-20-001
+    date: 2026-08-19
+    source: gmail
+    description: "Recharge.com order #312054989 — 1x Lebara top-up £5.00 + £1.56 fees = £6.56 (2nd top-up this week)"
+    amount: 6.56
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "Another £5 Lebara top-up (Recharge.com, incl. £1.56 fees) — proposed business phone_and_internet per your Lebara business-SIM ruling, same as 2026-08-18-001. Approve and it books the full £6.56; say personal for a personal SIM and I'll exclude."
+    evidence: [{gmail_thread: 1a01a85bf37fc948}]
+    flags: [confirm]
+    status: pending
+  - id: 2026-08-20-002
+    date: 2026-08-19
+    source: gmail
+    description: "Virgin Media — August home broadband/TV bill, £44.50 (business portion £22.25 at 50%)"
+    amount: 22.25
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "August Virgin Media bill £44.50 — proposed 50% business (£22.25) to phone_and_internet per your 19 Jul standing ruling (max home-office allowance), the other £22.25 personal. Same basis as July's booking (2026-07-19-003). Approve and I book £22.25."
+    evidence: [{gmail_thread: 1a01a3923718e2c7}]
+    flags: [apportioned-50]
+    status: pending
