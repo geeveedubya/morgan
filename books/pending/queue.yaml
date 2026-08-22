@@ -2184,3 +2184,29 @@ queue:
     evidence: [{gmail_thread: 1a01a3923718e2c7}]
     flags: [apportioned-50]
     status: pending
+
+  # ---------- 2026-08-21 run — new since the 20 Aug digest ----------
+  - id: 2026-08-21-001
+    date: 2026-08-21
+    source: gmail
+    description: "domains.co.za hosting invoice #3747902 (York Fund Management): Web Hosting oxfordcircus.co.za R109.00 + samrosevalley.co.za R129.00 = R238.00, auto-charged 1 Sep (Sept cycle)"
+    amount: null
+    currency: ZAR
+    proposed_category: office_costs_and_software
+    reasoning: "York Fund / domains.co.za hosting for both business domains — business per your 7 Jul standing ruling. Billed R238 ZAR, charge due 1 Sep; not converting — I'll pin exact GBP from the card statement when it lands (same as the earlier cycle, 2026-07-21-001)."
+    evidence: [{gmail_thread: 1a0229d9f36774c4}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+  - id: 2026-08-21-002
+    date: 2026-08-20
+    source: gmail
+    description: "Meta (Facebook) ads — Back9 Ad Account (1683773782802268): £52.85 GBP, date range Aug 16"
+    amount: 52.85
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "Back9 client account — excluded per your confirmed client-Meta ruling. Auto-excluded, logged for the audit trail."
+    evidence: [{gmail_thread: 1a01f72b048ee70a}]
+    flags: [client-account]
+    status: declined
+    declined_on: 2026-08-21
+    note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
