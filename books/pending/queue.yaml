@@ -2210,3 +2210,16 @@ queue:
     status: declined
     declined_on: 2026-08-21
     note: "auto-excluded per the confirmed client-Meta ruling; no action needed"
+
+  # ---------- 2026-08-24 run — new since the 23 Aug digest ----------
+  - id: 2026-08-24-001
+    date: 2026-08-23
+    source: gmail
+    description: "National Express coach ticket EUZMFF34: £19.00, charged 23 Aug (likely the SA-trip return airport transfer)"
+    amount: 19.00
+    currency: GBP
+    proposed_category: travel
+    reasoning: "£19 coach booked mid-trip (same merchant as the outbound SA transfer, 2026-08-11-003) — proposed business travel as the return leg of the 100%-business SA trip. I couldn't read the route from the receipt, so confirm it's the trip transfer (not a separate personal journey) and it books; the SA trip is already ruled 100% business."
+    evidence: [{gmail_thread: 1a02e3910286e468}]
+    flags: [confirm-business]
+    status: pending
