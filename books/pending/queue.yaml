@@ -1637,7 +1637,9 @@ queue:
     reasoning: "Your own Meta account (2038588409764129) — business marketing per your 12 Jul ruling. Billed in ZAR, so I'm not converting: approved-in-principle, exact GBP pinned from the personal card •4424 statement at month-end (same as the 11 Jul one)."
     evidence: [{gmail_thread: 19f7302e3ac24e0e}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    approved_on: 2026-08-28
+    note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement."
     note: "27 Jul: Gregg supplied the Meta dashboard export — this item is ref T7EUUVR372, ZAR115.06, 18 Jul, on Visa •4424. The 2038 account's charges span card •4424 (ZAR) AND prepaid-balance top-ups; only 3 small ones (84X7UUH472/KH372V5472/LJRG5V5472) landed on the Club Lloyds current account. Needs the •4424 card statement (or an agreed FX rate) to pin exact GBP for the full month, and care to not double-count 'Funded' top-ups vs delivery charges. Parked at Gregg's request to prioritise the monthly-costs task."
   - id: 2026-07-19-002
     date: 2026-07-18
@@ -1909,7 +1911,9 @@ queue:
     reasoning: "Anthropic is business (office_costs_and_software) per your 10 Jul standing ruling — a one-time API credit top-up. Charged in USD, so I'm not converting: approve and I'll pin the exact GBP from the card statement (roughly £9 at ~$1=£0.75). This is on card •4424, so it lands with the •4424 backlog."
     evidence: [{gmail_thread: 19fc8441759a973a}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    approved_on: 2026-08-28
+    note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement."
 
   # ---------- 2026-08-06 run — new since the 5 Aug digest ----------
   - id: 2026-08-06-001
@@ -1922,7 +1926,10 @@ queue:
     reasoning: "Lovable is business (office_costs_and_software) — a £15.00 GBP credit top-up, billed in sterling with UK VAT (same £15.00 as the July charge). Approve and it books; say personal and I'll exclude."
     evidence: [{gmail_thread: 19fd0f1d92d2c50e}]
     flags: [confirm]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business — approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml."
   - id: 2026-08-06-002
     date: 2026-08-05
     source: gmail
@@ -1948,7 +1955,10 @@ queue:
     reasoning: "Lovable Pro monthly subscription — business (office_costs_and_software). This is the recurring £22 Pro plan, separate from the £15 credit top-up on 5 Aug (both expected, per the multi-receipt note). Approve and it books."
     evidence: [{gmail_thread: 19fe2e1ed0b617b8}]
     flags: [confirm]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business — approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml."
   - id: 2026-08-09-002
     date: 2026-08-06
     source: gmail
@@ -1959,7 +1969,10 @@ queue:
     reasoning: "Claude Max 5x monthly subscription — business (office_costs_and_software) per your 10 Jul Anthropic ruling. Billed in sterling with UK VAT this time (£90.00, matches the figure you confirmed for the recurring-costs budget). Approve and it books."
     evidence: [{gmail_thread: 19fd825f6cd16438}]
     flags: [confirm]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business — approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml."
   - id: 2026-08-09-003
     date: 2026-08-06
     source: gmail
@@ -2144,7 +2157,10 @@ queue:
     reasoning: "A £5 Lebara top-up (bought via Recharge.com, incl. £1.56 fees) — proposed business phone_and_internet, matching your Lebara business-SIM ruling. Approve and it books the full £6.56. The receipt doesn't say which Lebara number; if this top-up was for a personal SIM, say so and I'll exclude."
     evidence: [{gmail_thread: 1a01354714ab7814}]
     flags: [confirm]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business — approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml."
 
   # ---------- 2026-08-19 run — new since the 18 Aug digest ----------
   - id: 2026-08-19-001
@@ -2172,7 +2188,10 @@ queue:
     reasoning: "Another £5 Lebara top-up (Recharge.com, incl. £1.56 fees) — proposed business phone_and_internet per your Lebara business-SIM ruling, same as 2026-08-18-001. Approve and it books the full £6.56; say personal for a personal SIM and I'll exclude."
     evidence: [{gmail_thread: 1a01a85bf37fc948}]
     flags: [confirm]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business — approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml."
   - id: 2026-08-20-002
     date: 2026-08-19
     source: gmail
@@ -2183,7 +2202,10 @@ queue:
     reasoning: "August Virgin Media bill £44.50 — proposed 50% business (£22.25) to phone_and_internet per your 19 Jul standing ruling (max home-office allowance), the other £22.25 personal. Same basis as July's booking (2026-07-19-003). Approve and I book £22.25."
     evidence: [{gmail_thread: 1a01a3923718e2c7}]
     flags: [apportioned-50]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business — approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml."
 
   # ---------- 2026-08-21 run — new since the 20 Aug digest ----------
   - id: 2026-08-21-001
@@ -2196,7 +2218,9 @@ queue:
     reasoning: "York Fund / domains.co.za hosting for both business domains — business per your 7 Jul standing ruling. Billed R238 ZAR, charge due 1 Sep; not converting — I'll pin exact GBP from the card statement when it lands (same as the earlier cycle, 2026-07-21-001)."
     evidence: [{gmail_thread: 1a0229d9f36774c4}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    approved_on: 2026-08-28
+    note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement."
   - id: 2026-08-21-002
     date: 2026-08-20
     source: gmail
@@ -2222,7 +2246,10 @@ queue:
     reasoning: "£19 coach booked mid-trip (same merchant as the outbound SA transfer, 2026-08-11-003) — proposed business travel as the return leg of the 100%-business SA trip. I couldn't read the route from the receipt, so confirm it's the trip transfer (not a separate personal journey) and it books; the SA trip is already ruled 100% business."
     evidence: [{gmail_thread: 1a02e3910286e468}]
     flags: [confirm-business]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business — approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml."
 
   # ---------- 2026-08-28 catch-up run — covers 24–28 Aug (25–27 Aug runs were cut short) ----------
   - id: 2026-08-28-001
@@ -2235,7 +2262,10 @@ queue:
     reasoning: "August iCloud+ £8.99 — 50% business (£4.50) per your 7 Jul apportionment ruling, £4.50 personal. Same basis as prior months. Approve and I book £4.50."
     evidence: [{gmail_thread: 1a04161c10aae76c}]
     flags: [apportioned-50]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business — approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml."
   - id: 2026-08-28-002
     date: 2026-08-24
     source: gmail
@@ -2246,7 +2276,9 @@ queue:
     reasoning: "Supabase Pro monthly — business (office_costs_and_software). Billed US$25; I'll pin exact GBP from the Tide debit when it lands and NOT double-count the USD invoice against the GBP debit (same guard as July). Approve in principle."
     evidence: [{gmail_thread: 1a0334df21ba7f57}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    approved_on: 2026-08-28
+    note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement."
   - id: 2026-08-28-003
     date: 2026-08-27
     source: gmail
@@ -2257,7 +2289,10 @@ queue:
     reasoning: "Two Lebara 10GB plans renewed. 07555088933 is your business mobile (matches your email signature +44 755 508 8933) → business; 07368497782 is the one we've never pinned down. Confirm which SIM(s) are business and I'll book that share to phone_and_internet and make it a standing rule (resolves the open SIM question). Proposed both business for now = £3.00."
     evidence: [{gmail_thread: 1a0426465469fc6c}]
     flags: [confirm]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business — approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml."
   - id: 2026-08-28-004
     date: 2026-08-26
     source: gmail
@@ -2281,7 +2316,9 @@ queue:
     reasoning: "A Shopify store bill for 'Lilou Collection' — a store I don't have a ruling for. Is this YOUR store (business office_costs_and_software) or a client's you manage (exclude, like Meds 4 Pets)? Tell me which and I'll book or exclude, and add a standing rule. US$ — GBP pinned from the card if it's business."
     evidence: [{gmail_thread: 1a041ecb895776af}]
     flags: [non-gbp, no-rule-match, confirm]
-    status: pending
+    status: declined
+    declined_on: 2026-08-28
+    note: "client direct expense, not Greggs (Gregg 28 Aug) — excluded; added a standing rule for Lilou Collection."
   - id: 2026-08-28-006
     date: 2026-08-25
     source: gmail
@@ -2292,4 +2329,6 @@ queue:
     reasoning: "Local Uber transport in Johannesburg during the 100%-business SA trip — proposed business travel. Two evening rides; if any were personal (e.g. a night out rather than client transport), tell me and I'll split. ZAR, so GBP pinned from the card. Confirm business."
     evidence: [{gmail_thread: 1a0399818334e9fd}]
     flags: [non-gbp, confirm-business]
-    status: pending
+    status: approved
+    approved_on: 2026-08-28
+    note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement."

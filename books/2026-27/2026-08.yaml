@@ -63,6 +63,132 @@ entries:
   status: booked
   approved_on: '2026-08-11'
   booked_on: '2026-08-11'
+- id: 2026-08-06-001
+  date: '2026-08-05'
+  source: gmail
+  description: Lovable credit top-up (receipt #2886-8641), 50 credits
+  amount: 15.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business build credits; approved (Gregg 28 Aug).
+  evidence:
+  - gmail_thread: 19fd0f1d92d2c50e
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-09-002
+  date: '2026-08-06'
+  source: gmail
+  description: Anthropic Claude Max 5x monthly subscription (receipt #2257-7738-6370)
+  amount: 90.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Claude Max plan, business; approved (Gregg 28 Aug).
+  evidence:
+  - gmail_thread: 19fd825f6cd16438
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-09-001
+  date: '2026-08-08'
+  source: gmail
+  description: Lovable Pro monthly plan (receipt #2952-6443)
+  amount: 22.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Lovable Pro subscription, business; approved (Gregg 28 Aug).
+  evidence:
+  - gmail_thread: 19fe2e1ed0b617b8
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-18-001
+  date: '2026-08-18'
+  source: gmail
+  description: Lebara top-up £5 + £1.56 fees (Recharge.com #311996400)
+  amount: 6.56
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: Business Lebara SIM top-up; approved (Gregg 28 Aug).
+  evidence:
+  - gmail_thread: 19fd0f1d92d2c50e
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-20-001
+  date: '2026-08-19'
+  source: gmail
+  description: Lebara top-up £5 + £1.56 fees (Recharge.com #312054989)
+  amount: 6.56
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: Business Lebara SIM top-up; approved (Gregg 28 Aug).
+  evidence:
+  - gmail_thread: 1a01a85bf37fc948
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-20-002
+  date: '2026-08-19'
+  source: gmail
+  description: Virgin Media August bill £44.50 — 50% business apportionment
+  amount: 22.25
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: 50% business per the standing ruling; approved (Gregg 28 Aug). Other £22.25 personal.
+  evidence:
+  - gmail_thread: 1a01a3923718e2c7
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-24-001
+  date: '2026-08-23'
+  source: gmail
+  description: National Express coach £19.00 (SA-trip return airport transfer, ticket EUZMFF34)
+  amount: 19.00
+  currency: GBP
+  proposed_category: travel
+  reasoning: Return transfer for the 100%-business SA trip; approved (Gregg 28 Aug).
+  evidence:
+  - gmail_thread: 1a02e3910286e468
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-28-001
+  date: '2026-08-26'
+  source: gmail
+  description: Apple iCloud+ 2TB monthly £8.99 — 50% business apportionment
+  amount: 4.50
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 50% business per the standing ruling; approved (Gregg 28 Aug). Other £4.49 personal.
+  evidence:
+  - gmail_thread: 1a04161c10aae76c
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-28-003
+  date: '2026-08-27'
+  source: gmail
+  description: Lebara SIM-only plan renewals ×2 (07555088933 + 07368497782, £1.50 each)
+  amount: 3.00
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: Both Lebara SIMs approved as business (Gregg 28 Aug, "business items approved").
+  evidence:
+  - gmail_thread: 1a0426465469fc6c
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 1236.35
+  expenses_gbp: 1425.22

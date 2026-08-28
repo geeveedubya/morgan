@@ -146,6 +146,12 @@ standing_rulings:
   - ruling: HP Instant Ink printer subscription is a business office cost
       (office_costs_and_software) — book in full
     date: 2026-07-31
+  - ruling: Shopify "Lilou Collection" store bills are a client's direct expense,
+      not Gregg's — exclude (same treatment as Meds 4 Pets)
+    date: 2026-08-28
+  - ruling: Both Lebara SIMs 07555088933 (Gregg's business mobile) and 07368497782
+      are business — phone_and_internet (Gregg 28 Aug; extends the 07884617816 ruling)
+    date: 2026-08-28
 
 # These ALWAYS go to the pending queue for your decision, regardless of any
 # other match:
