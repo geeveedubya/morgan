@@ -21,11 +21,12 @@ watching:
     allowable business cost (professional_fees / marketing_and_website). Watch for the fee on the
     card/Tide and queue it when it lands; the letter itself is just correspondence.'
 - since: '2026-08-11'
-  item: 'South Africa trip 20–26 Aug — CONFIRMED 100% business (Arctic Ape client visit, Gregg
-    11 Aug). BOOKED to travel (books/2026-27/2026-08.yaml): flight £1,047.09, insurance £41.35,
-    National Express coach £26.20, and Budget car hire £121.71 (Amex, incl. full-protection
-    insurance). Still to pin: the Protea Hotel (OR Tambo, Johannesburg) booking — no charge
-    amount seen yet (may be pay-at-property); catch it on the card/Booking.com and book to travel.'
+  item: 'South Africa trip 20–26 Aug — CONFIRMED 100% business, now RECONCILED from the Barclaycard
+    8009 statement (Gregg 28 Aug). Booked to travel: flight £1,047.09, insurance £41.35, coach
+    £26.20 + £19.00, car hire £121.71, hotel £594.47, lounges £77.65, VA upgrade £150, Uber £37.65,
+    subsistence £55.67, petty cash £64.83. Personal trip spend (school fees, Adidas, alcohol,
+    pharmacy, Capilux, SMW, WH Smith) deliberately left out. ONLY open item: the Budget car-hire
+    FINAL invoice may top the £121.71 pre-paid figure (Gregg querying extra fees) — adjust when it lands.'
 - since: '2026-08-10'
   item: 'Arctic Ape invoice coming this month — Gregg proposed ~12 days of work (9 Aug) and Dan
     CONFIRMED agreement (10 Aug). Expect a client invoice + Stripe payment to land; catch it in

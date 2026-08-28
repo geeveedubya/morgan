@@ -206,6 +206,83 @@ entries:
   status: booked
   approved_on: '2026-08-28'
   booked_on: '2026-08-28'
+- id: 2026-08-28-007
+  date: '2026-08-26'
+  source: bank
+  description: Protea Hotel OR Tambo (Johannesburg) — accommodation for the SA business trip
+    (5 charges on Barclaycard 8009, 21–26 Aug)
+  amount: 594.47
+  currency: GBP
+  proposed_category: travel
+  reasoning: Hotel accommodation for the 100%-business SA trip; approved (Gregg 28 Aug).
+  evidence:
+  - bank: barclaycard-8009-2026-08.png
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-28-008
+  date: '2026-08-26'
+  source: bank
+  description: Airport lounges for the SA business trip — No1lounges Heathrow £44.00 +
+    Bidvest Premier Lounge OR Tambo £33.65 (Barclaycard 8009)
+  amount: 77.65
+  currency: GBP
+  proposed_category: travel
+  reasoning: Airport lounge access on the business trip; approved (Gregg 28 Aug).
+  evidence:
+  - bank: barclaycard-8009-2026-08.png
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-28-009
+  date: '2026-08-25'
+  source: bank
+  description: Virgin Atlantic ancillary/upgrade on the SA-trip flights — 2× £75.00
+    (Barclaycard 8009, 10 + 25 Aug)
+  amount: 150.00
+  currency: GBP
+  proposed_category: travel
+  reasoning: Flight upgrade/seat on the business-trip flights; approved (Gregg 28 Aug).
+  evidence:
+  - bank: barclaycard-8009-2026-08.png
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-28-010
+  date: '2026-08-23'
+  source: bank
+  description: Subsistence on the SA business trip (meals/food) — Woolworths £24.72 +
+    Checkers £17.59 + Checkers £10.75 + Wimpy £2.61 (Barclaycard 8009)
+  amount: 55.67
+  currency: GBP
+  proposed_category: travel
+  reasoning: Reasonable subsistence while away on the wholly-business trip ("I had to eat",
+    Gregg 28 Aug). Excludes alcohol (Liquorshop — not allowable, kept personal).
+  evidence:
+  - bank: barclaycard-8009-2026-08.png
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
+- id: 2026-08-28-011
+  date: '2026-08-20'
+  source: bank
+  description: Global Exchange — foreign currency (petty cash/spending money) for the SA
+    business trip, £61.84 + £2.99 non-sterling fee (Barclaycard 8009)
+  amount: 64.83
+  currency: GBP
+  proposed_category: travel
+  reasoning: Trip petty cash/spending money (Gregg 28 Aug); business-trip float incl. the
+    £2.99 FX fee.
+  evidence:
+  - bank: barclaycard-8009-2026-08.png
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 1462.87
+  expenses_gbp: 2405.49

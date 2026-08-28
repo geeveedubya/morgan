@@ -2345,7 +2345,10 @@ queue:
     reasoning: "The hotel I've been watching — accommodation for the 100%-business SA trip. Five Protea Hotel charges on card 8009 (one main bill £533.19 plus incidentals). Proposed business travel; approve and it books."
     evidence: [{bank: barclaycard-8009-2026-08.png}]
     flags: [confirm-business]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business travel approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml from the Barclaycard 8009 statement."
   - id: 2026-08-28-008
     date: 2026-08-26
     source: bank
@@ -2356,7 +2359,10 @@ queue:
     reasoning: "Airport lounge access on the outbound and return of the business trip — proposed business travel. Approve and it books."
     evidence: [{bank: barclaycard-8009-2026-08.png}]
     flags: [confirm-business]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business travel approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml from the Barclaycard 8009 statement."
   - id: 2026-08-28-009
     date: 2026-08-25
     source: bank
@@ -2367,4 +2373,37 @@ queue:
     reasoning: "Two £75 Virgin Atlantic charges (seat/upgrade/bag) on the business-trip flights — your upgrade bid appears to have landed. Proposed business travel alongside the flight (2026-08-11-001). Confirm and it books; if either was a personal add-on, say so."
     evidence: [{bank: barclaycard-8009-2026-08.png}]
     flags: [confirm-business]
-    status: pending
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business travel approved (Gregg 28 Aug); booked to books/2026-27/2026-08.yaml from the Barclaycard 8009 statement."
+
+  # ---------- 2026-08-28 Barclaycard 8009 — trip subsistence + petty cash (Gregg 28 Aug) ----------
+  - id: 2026-08-28-010
+    date: 2026-08-23
+    source: bank
+    description: "Subsistence on the SA business trip (meals/food): Woolworths £24.72 + Checkers £17.59 + Checkers £10.75 + Wimpy £2.61 = £55.67"
+    amount: 55.67
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Reasonable subsistence while away on the wholly-business trip (Gregg 28 Aug, 'I had to eat'). Alcohol (Liquorshop £19.69) kept personal — not allowable."
+    evidence: [{bank: barclaycard-8009-2026-08.png}]
+    flags: []
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business subsistence; £55.67 booked to books/2026-27/2026-08.yaml."
+  - id: 2026-08-28-011
+    date: 2026-08-20
+    source: bank
+    description: "Global Exchange — trip petty cash/spending money £61.84 + £2.99 non-sterling fee = £64.83"
+    amount: 64.83
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Foreign-currency spending money for the business trip (Gregg 28 Aug, 'petty cash'), incl. the £2.99 FX fee."
+    evidence: [{bank: barclaycard-8009-2026-08.png}]
+    flags: []
+    status: booked
+    approved_on: 2026-08-28
+    booked_on: 2026-08-28
+    note: "business-trip petty cash; £64.83 booked to books/2026-27/2026-08.yaml."
