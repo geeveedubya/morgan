@@ -2223,3 +2223,73 @@ queue:
     evidence: [{gmail_thread: 1a02e3910286e468}]
     flags: [confirm-business]
     status: pending
+
+  # ---------- 2026-08-28 catch-up run — covers 24–28 Aug (25–27 Aug runs were cut short) ----------
+  - id: 2026-08-28-001
+    date: 2026-08-26
+    source: gmail
+    description: "Apple iCloud+ 2TB monthly — £8.99 (invoice MKB9XJ2K46, renews 27 Sep); business portion £4.50 at 50%"
+    amount: 4.50
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "August iCloud+ £8.99 — 50% business (£4.50) per your 7 Jul apportionment ruling, £4.50 personal. Same basis as prior months. Approve and I book £4.50."
+    evidence: [{gmail_thread: 1a04161c10aae76c}]
+    flags: [apportioned-50]
+    status: pending
+  - id: 2026-08-28-002
+    date: 2026-08-24
+    source: gmail
+    description: "Supabase Pte Ltd invoice #VVEMGH-00004 — US$25.00 paid 24 Aug (Pro plan)"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Supabase Pro monthly — business (office_costs_and_software). Billed US$25; I'll pin exact GBP from the Tide debit when it lands and NOT double-count the USD invoice against the GBP debit (same guard as July). Approve in principle."
+    evidence: [{gmail_thread: 1a0334df21ba7f57}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+  - id: 2026-08-28-003
+    date: 2026-08-27
+    source: gmail
+    description: "Lebara SIM-only plan renewals ×2 (27 Aug): 07555088933 £1.50 + 07368497782 £1.50 = £3.00 (10GB plans)"
+    amount: 3.00
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "Two Lebara 10GB plans renewed. 07555088933 is your business mobile (matches your email signature +44 755 508 8933) → business; 07368497782 is the one we've never pinned down. Confirm which SIM(s) are business and I'll book that share to phone_and_internet and make it a standing rule (resolves the open SIM question). Proposed both business for now = £3.00."
+    evidence: [{gmail_thread: 1a0426465469fc6c}]
+    flags: [confirm]
+    status: pending
+  - id: 2026-08-28-004
+    date: 2026-08-26
+    source: gmail
+    description: "Meta (Facebook) ads — Arctic Ape Ice Baths Ad Account (908823494514663): ZAR2,901.48, date range Aug 17"
+    amount: null
+    currency: ZAR
+    proposed_category: exclude
+    reasoning: "Arctic Ape client ad account — Meta bills the client directly. Excluded, logged for the audit trail; no GBP conversion needed."
+    evidence: [{gmail_thread: 1a03c4ab3cd713a2}]
+    flags: [client-account, non-gbp]
+    status: declined
+    declined_on: 2026-08-28
+    note: "auto-excluded — client Meta ad account, billed to Arctic Ape directly; no action needed"
+  - id: 2026-08-28-005
+    date: 2026-08-27
+    source: gmail
+    description: "Shopify bill — 'Lilou Collection' store: US$113.83, charged 27 Aug"
+    amount: null
+    currency: USD
+    proposed_category: uncategorised
+    reasoning: "A Shopify store bill for 'Lilou Collection' — a store I don't have a ruling for. Is this YOUR store (business office_costs_and_software) or a client's you manage (exclude, like Meds 4 Pets)? Tell me which and I'll book or exclude, and add a standing rule. US$ — GBP pinned from the card if it's business."
+    evidence: [{gmail_thread: 1a041ecb895776af}]
+    flags: [non-gbp, no-rule-match, confirm]
+    status: pending
+  - id: 2026-08-28-006
+    date: 2026-08-25
+    source: gmail
+    description: "Uber rides, Johannesburg, 25 Aug (during SA business trip): ~ZAR357 + ~ZAR439 (incl tips) ≈ ZAR796 total"
+    amount: null
+    currency: ZAR
+    proposed_category: travel
+    reasoning: "Local Uber transport in Johannesburg during the 100%-business SA trip — proposed business travel. Two evening rides; if any were personal (e.g. a night out rather than client transport), tell me and I'll split. ZAR, so GBP pinned from the card. Confirm business."
+    evidence: [{gmail_thread: 1a0399818334e9fd}]
+    flags: [non-gbp, confirm-business]
+    status: pending
