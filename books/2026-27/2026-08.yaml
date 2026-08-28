@@ -189,6 +189,23 @@ entries:
   status: booked
   approved_on: '2026-08-28'
   booked_on: '2026-08-28'
+- id: 2026-08-28-006
+  date: '2026-08-25'
+  source: bank
+  description: Uber rides, Johannesburg (SA business trip) — 4 charges on Barclaycard 8009
+    (£9.78 + £7.10 + £7.10 + £13.67)
+  amount: 37.65
+  currency: GBP
+  proposed_category: travel
+  reasoning: Local transport on the 100%-business SA trip; approved business (Gregg 28 Aug),
+    GBP now pinned from the Barclaycard 8009 statement.
+  evidence:
+  - gmail_thread: 1a0399818334e9fd
+  - bank: barclaycard-8009-2026-08.png
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-08-28'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 1425.22
+  expenses_gbp: 1462.87

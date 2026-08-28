@@ -2322,13 +2322,49 @@ queue:
   - id: 2026-08-28-006
     date: 2026-08-25
     source: gmail
-    description: "Uber rides, Johannesburg, 25 Aug (during SA business trip): ~ZAR357 + ~ZAR439 (incl tips) ≈ ZAR796 total"
-    amount: null
-    currency: ZAR
+    description: "Uber rides, Johannesburg, 25 Aug (SA business trip) — 4 charges on Barclaycard 8009: £9.78 + £7.10 + £7.10 + £13.67 = £37.65"
+    amount: 37.65
+    currency: GBP
     proposed_category: travel
-    reasoning: "Local Uber transport in Johannesburg during the 100%-business SA trip — proposed business travel. Two evening rides; if any were personal (e.g. a night out rather than client transport), tell me and I'll split. ZAR, so GBP pinned from the card. Confirm business."
-    evidence: [{gmail_thread: 1a0399818334e9fd}]
-    flags: [non-gbp, confirm-business]
-    status: approved
+    reasoning: "Local transport on the 100%-business SA trip; approved business (Gregg 28 Aug). GBP pinned from the Barclaycard 8009 statement (£37.65 across 4 Uber charges) and booked."
+    evidence: [{gmail_thread: 1a0399818334e9fd}, {bank: barclaycard-8009-2026-08.png}]
+    flags: [confirm-business]
+    status: booked
     approved_on: 2026-08-28
-    note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement."
+    booked_on: 2026-08-28
+    note: "business — Uber transport on the SA trip; £37.65 booked to books/2026-27/2026-08.yaml from the Barclaycard 8009 statement."
+
+  # ---------- 2026-08-28 Barclaycard 8009 SA-trip recon — new business-travel items (need approval) ----------
+  - id: 2026-08-28-007
+    date: 2026-08-26
+    source: bank
+    description: "Protea Hotel OR Tambo (Johannesburg) — accommodation for the SA business trip, Barclaycard 8009: £533.19 + £26.02 + £13.07 + £12.74 + £9.45 = £594.47 (21–26 Aug)"
+    amount: 594.47
+    currency: GBP
+    proposed_category: travel
+    reasoning: "The hotel I've been watching — accommodation for the 100%-business SA trip. Five Protea Hotel charges on card 8009 (one main bill £533.19 plus incidentals). Proposed business travel; approve and it books."
+    evidence: [{bank: barclaycard-8009-2026-08.png}]
+    flags: [confirm-business]
+    status: pending
+  - id: 2026-08-28-008
+    date: 2026-08-26
+    source: bank
+    description: "Airport lounges for the SA business trip, Barclaycard 8009: No1lounges.com £44.00 (Heathrow, 20 Aug) + Bidvest Premier Lounge £33.65 (OR Tambo, 26 Aug) = £77.65"
+    amount: 77.65
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Airport lounge access on the outbound and return of the business trip — proposed business travel. Approve and it books."
+    evidence: [{bank: barclaycard-8009-2026-08.png}]
+    flags: [confirm-business]
+    status: pending
+  - id: 2026-08-28-009
+    date: 2026-08-25
+    source: bank
+    description: "Virgin Atlantic ancillary/upgrade charges on the SA-trip flights, Barclaycard 8009: £75.00 (25 Aug, ref 9320177344814) + £75.00 (10 Aug, ref 9322320570946) = £150.00"
+    amount: 150.00
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Two £75 Virgin Atlantic charges (seat/upgrade/bag) on the business-trip flights — your upgrade bid appears to have landed. Proposed business travel alongside the flight (2026-08-11-001). Confirm and it books; if either was a personal add-on, say so."
+    evidence: [{bank: barclaycard-8009-2026-08.png}]
+    flags: [confirm-business]
+    status: pending
