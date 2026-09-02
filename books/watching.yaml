@@ -1,5 +1,17 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
+- since: '2026-09-02'
+  item: 'Arctic Ape £2,600 invoice payment FAILED (31 Aug, ch_3U9LOFAnusPN3mWR, Craig Nerwich) — the
+    client invoice we''ve watched for since 10 Aug was attempted but NOT paid. No income booked. Watch
+    for a successful retry/settlement in the Stripe pull and book to sales then; chase the client
+    meanwhile.'
+- since: '2026-09-02'
+  item: 'Payment-failure cluster (~31 Aug–1 Sep) — a batch of Gregg''s OWN business subscriptions
+    bounced: Google Workspace samrosevalley (Mastercard 1897 declined), Google Workspace oxfordcircus
+    (Mastercard 9520 declined), domains.co.za R238 hosting (charge FAILED — so 2026-08-21-001 stays
+    unbooked, not awaiting-amount), Vercel (card 9520 failed), Google Cloud command-arctic-ape at risk
+    of suspension, Amex near credit limit. Looks like a cards/cash-flow issue. Nothing to book (a
+    failed charge is not a cost); watch for successful re-charges and book those when they land.'
 - since: '2026-08-28'
   item: 'Budget car-hire FINAL invoice (rental agreement 122979102) not yet issued — Budget say the
     rental is still being processed, and Gregg is querying extra charges (~20% over the initial fee
