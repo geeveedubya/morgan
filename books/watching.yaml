@@ -7,11 +7,13 @@ watching:
     meanwhile.'
 - since: '2026-09-02'
   item: 'Payment-failure cluster (~31 Aug–1 Sep) — a batch of Gregg''s OWN business subscriptions
-    bounced: Google Workspace samrosevalley (Mastercard 1897 declined), Google Workspace oxfordcircus
-    (Mastercard 9520 declined), domains.co.za R238 hosting (charge FAILED — so 2026-08-21-001 stays
-    unbooked, not awaiting-amount), Vercel (card 9520 failed), Google Cloud command-arctic-ape at risk
-    of suspension, Amex near credit limit. Looks like a cards/cash-flow issue. Nothing to book (a
-    failed charge is not a cost); watch for successful re-charges and book those when they land.'
+    bounced. UPDATE 5 Sep: PARTLY RESOLVED — domains.co.za R238 hosting was retried and PAID 2 Sep
+    (2026-08-21-001 now a real charge, awaiting GBP), and Google Workspace samrosevalley was PAID
+    2 Sep (€19.25, queued 2026-09-05-003). STILL OPEN: Google Workspace oxfordcircus.co.za (Mastercard
+    9520 declined 1 Sep, no success seen), Google Cloud command-arctic-ape still "at risk of
+    suspension", Vercel (card 9520 failed), Amex near credit limit; the Mastercard 1897 behind several
+    of these has also EXPIRED (YouTube notice 3 Sep) — a card update would likely clear the rest.
+    Nothing to book (a failed charge is not a cost); watch for the remaining re-charges.'
 - since: '2026-08-28'
   item: 'Budget car-hire FINAL invoice (rental agreement 122979102) not yet issued — Budget say the
     rental is still being processed, and Gregg is querying extra charges (~20% over the initial fee

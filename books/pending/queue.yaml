@@ -2216,11 +2216,11 @@ queue:
     currency: ZAR
     proposed_category: office_costs_and_software
     reasoning: "York Fund / domains.co.za hosting for both business domains — business per your 7 Jul standing ruling. Billed R238 ZAR, charge due 1 Sep; not converting — I'll pin exact GBP from the card statement when it lands (same as the earlier cycle, 2026-07-21-001)."
-    evidence: [{gmail_thread: 1a0229d9f36774c4}]
+    evidence: [{gmail_thread: 1a0229d9f36774c4}, {gmail_thread: 1a0619660fc1c5ee}, {gmail_thread: 1a061965819a18cd}]
     flags: [non-gbp, awaiting-gbp]
     status: approved
     approved_on: 2026-08-28
-    note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement."
+    note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement. UPDATE 2 Sep: the 1 Sep attempt FAILED then a retry SUCCEEDED — PayGate + domains.co.za billing both confirmed payment of R238.00 for invoice 3747902 on 2 Sep. Charge is now real; still just needs the exact GBP from the card statement to book."
   - id: 2026-08-21-002
     date: 2026-08-20
     source: gmail
@@ -2430,4 +2430,39 @@ queue:
     reasoning: "A Lebara SIM renewal like the two already ruled business — but this is a THIRD number and the receipt doesn't show which SIM. Confirm it's a business line before booking (the standing ruling only names 07884617816, 07555088933, 07368497782)."
     evidence: [{gmail_note: "Lebara SIM-only renewal £1.50, 31 Aug 2026"}]
     flags: [sim_number_unconfirmed]
+    status: pending
+
+  # ---------- 2026-09-05 catch-up scan (covers 2–5 Sep; 3/4 Sep runs were interrupted) ----------
+  - id: 2026-09-05-001
+    date: 2026-09-03
+    source: gmail
+    description: "Anthropic auto-recharge API credits — $12.01 (US$10.01 credits + £/$2.00 UK VAT), receipt #2941-3554-6482, paid 3 Sep on card ••4424"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Anthropic = business per the standing ruling. Billed in USD ($12.01), so not converting — approve in principle and I'll pin exact GBP from the ••4424 card statement (same card as the other Anthropic/Meta foreign charges)."
+    evidence: [{gmail_thread: 1a06a65d564d68f1}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+  - id: 2026-09-05-002
+    date: 2026-09-03
+    source: gmail
+    description: "Squarespace domain registration — keepmyseatwarm.com, £16.00 (registered 3 Sep, renews 19 Aug 2027)"
+    amount: 16.00
+    currency: GBP
+    proposed_category: marketing_and_website
+    reasoning: "Another Squarespace domain (normally a business cost) — but like this-is-omnia.com (2026-09-02-001), it's an unfamiliar name. Confirm it's YOUR domain and not a client's before I book it."
+    evidence: [{gmail_thread: 1a066e869bf3ae52}]
+    flags: [needs_confirmation_yours_or_client]
+    status: pending
+  - id: 2026-09-05-003
+    date: 2026-09-02
+    source: gmail
+    description: "Google Workspace (Business Starter) — samrosevalley.co.za, €19.25 (payment received 2 Sep, after a 1 Sep decline on Mastercard ••1897)"
+    amount: null
+    currency: EUR
+    proposed_category: office_costs_and_software
+    reasoning: "samrosevalley Workspace is business per your 7 Jul standing ruling. Billed in EUR (€19.25) this cycle, so not converting — approve in principle and I'll pin exact GBP from the card statement. The 1 Sep payment was declined then a retry went through on 2 Sep, so the charge is real."
+    evidence: [{gmail_thread: 1a0619b5aa937403}, {gmail_thread: 1a05e7802c58fcdb}]
+    flags: [non-gbp, awaiting-gbp]
     status: pending
