@@ -2466,3 +2466,18 @@ queue:
     evidence: [{gmail_thread: 1a0619b5aa937403}, {gmail_thread: 1a05e7802c58fcdb}]
     flags: [non-gbp, awaiting-gbp]
     status: pending
+
+  # ---------- 2026-09-06 scan (window since the 5 Sep digest) ----------
+  - id: 2026-09-06-001
+    date: 2026-09-05
+    source: gmail
+    description: "Shopify bill — 'Meds 4 Pets' store, £79.87 (charged 5 Sep)"
+    amount: 79.87
+    currency: GBP
+    proposed_category: exclude
+    reasoning: "Meds 4 Pets is Paul/Ted's store — excluded per your 7 Jul standing ruling. Auto-excluded, logged here for the audit trail; not your cost."
+    evidence: [{gmail_thread: 1a070af539d8a177}]
+    flags: [client-store]
+    status: declined
+    declined_on: 2026-09-06
+    note: "auto-excluded per the Meds 4 Pets standing ruling; no action needed."
