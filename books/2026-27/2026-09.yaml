@@ -1,0 +1,50 @@
+# Ledger 2026-09 — tax year 2026/27. Booked entries only; approvals in chat.
+month: 2026-09
+entries:
+- id: 2026-09-05-002
+  date: '2026-09-03'
+  source: gmail
+  description: Squarespace domain registration — keepmyseatwarm.com
+  amount: 16.00
+  currency: GBP
+  proposed_category: marketing_and_website
+  reasoning: Business domain; approved (Gregg 9 Sep, "squarespace business").
+  evidence:
+  - gmail_thread: 1a066e869bf3ae52
+  flags: []
+  status: booked
+  approved_on: '2026-09-09'
+  booked_on: '2026-09-09'
+- id: 2026-09-07-001
+  date: '2026-09-06'
+  source: gmail
+  description: Anthropic Claude Max 5x — monthly subscription (£75 + £15 VAT), receipt
+    #2821-0572-2312, Sep 6–Oct 6
+  amount: 90.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Claude Max plan, business; approved (Gregg 9 Sep, "anthropic too").
+  evidence:
+  - gmail_thread: 1a077cabe9f2f315
+  flags: []
+  status: booked
+  approved_on: '2026-09-09'
+  booked_on: '2026-09-09'
+- id: 2026-09-09-001
+  date: '2026-09-08'
+  source: gmail
+  description: Lovable Pro — monthly plan (Sep 8–Oct 8), receipt #2860-8929-8837
+  amount: 22.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Lovable Pro subscription, business; approved (Gregg 9 Sep, "Lovable still
+    business").
+  evidence:
+  - gmail_thread: 1a082870bfcf17da
+  flags: []
+  status: booked
+  approved_on: '2026-09-09'
+  booked_on: '2026-09-09'
+totals:
+  income_gbp: 0.0
+  expenses_gbp: 128.00

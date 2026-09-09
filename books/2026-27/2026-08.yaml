@@ -283,6 +283,34 @@ entries:
   status: booked
   approved_on: '2026-08-28'
   booked_on: '2026-08-28'
+- id: 2026-09-02-001
+  date: '2026-08-31'
+  source: gmail
+  description: Squarespace domain registration — this-is-omnia.com
+  amount: 16.00
+  currency: GBP
+  proposed_category: marketing_and_website
+  reasoning: Business domain; approved (Gregg 9 Sep, "squarespace business").
+  evidence:
+  - gmail_thread: 1a066e869bf3ae52
+  flags: []
+  status: booked
+  approved_on: '2026-09-09'
+  booked_on: '2026-09-09'
+- id: 2026-09-02-002
+  date: '2026-08-31'
+  source: gmail
+  description: Lebara SIM-only plan renewal (third business SIM), £1.50
+  amount: 1.50
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: Business SIM; approved (Gregg 9 Sep, "lebara business").
+  evidence:
+  - gmail_note: Lebara SIM-only renewal £1.50, 31 Aug 2026
+  flags: []
+  status: booked
+  approved_on: '2026-09-09'
+  booked_on: '2026-09-09'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 2405.49
+  expenses_gbp: 2422.99

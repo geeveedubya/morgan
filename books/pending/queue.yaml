@@ -2419,7 +2419,10 @@ queue:
     reasoning: "A Squarespace domain (Squarespace domains are business marketing_and_website per the rules). But 'this-is-omnia.com' is a new/unfamiliar domain — need to confirm it's YOUR domain and not a client's before booking."
     evidence: [{gmail_note: "Squarespace domain receipt, this-is-omnia.com, 31 Aug 2026"}]
     flags: [needs_confirmation_yours_or_client]
-    status: pending
+    status: booked
+    approved_on: 2026-09-09
+    booked_on: 2026-09-09
+    note: "business domain (Gregg 9 Sep, 'squarespace business'); £16.00 booked to books/2026-27/2026-08.yaml."
   - id: 2026-09-02-002
     date: 2026-08-31
     source: gmail
@@ -2430,7 +2433,10 @@ queue:
     reasoning: "A Lebara SIM renewal like the two already ruled business — but this is a THIRD number and the receipt doesn't show which SIM. Confirm it's a business line before booking (the standing ruling only names 07884617816, 07555088933, 07368497782)."
     evidence: [{gmail_note: "Lebara SIM-only renewal £1.50, 31 Aug 2026"}]
     flags: [sim_number_unconfirmed]
-    status: pending
+    status: booked
+    approved_on: 2026-09-09
+    booked_on: 2026-09-09
+    note: "business SIM (Gregg 9 Sep, 'lebara business'); £1.50 booked to books/2026-27/2026-08.yaml."
 
   # ---------- 2026-09-05 catch-up scan (covers 2–5 Sep; 3/4 Sep runs were interrupted) ----------
   - id: 2026-09-05-001
@@ -2443,7 +2449,9 @@ queue:
     reasoning: "Anthropic = business per the standing ruling. Billed in USD ($12.01), so not converting — approve in principle and I'll pin exact GBP from the ••4424 card statement (same card as the other Anthropic/Meta foreign charges)."
     evidence: [{gmail_thread: 1a06a65d564d68f1}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    approved_on: 2026-09-09
+    note: "business (Gregg 9 Sep, 'anthropic too'); non-GBP USD $12.01 — books when exact GBP is pinned from the ••4424 statement."
   - id: 2026-09-05-002
     date: 2026-09-03
     source: gmail
@@ -2454,7 +2462,10 @@ queue:
     reasoning: "Another Squarespace domain (normally a business cost) — but like this-is-omnia.com (2026-09-02-001), it's an unfamiliar name. Confirm it's YOUR domain and not a client's before I book it."
     evidence: [{gmail_thread: 1a066e869bf3ae52}]
     flags: [needs_confirmation_yours_or_client]
-    status: pending
+    status: booked
+    approved_on: 2026-09-09
+    booked_on: 2026-09-09
+    note: "business domain (Gregg 9 Sep, 'squarespace business'); £16.00 booked to books/2026-27/2026-09.yaml."
   - id: 2026-09-05-003
     date: 2026-09-02
     source: gmail
@@ -2465,7 +2476,9 @@ queue:
     reasoning: "samrosevalley Workspace is business per your 7 Jul standing ruling. Billed in EUR (€19.25) this cycle, so not converting — approve in principle and I'll pin exact GBP from the card statement. The 1 Sep payment was declined then a retry went through on 2 Sep, so the charge is real."
     evidence: [{gmail_thread: 1a0619b5aa937403}, {gmail_thread: 1a05e7802c58fcdb}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    approved_on: 2026-09-09
+    note: "business (Gregg 9 Sep, 'google workspace business'); non-GBP EUR €19.25 — books when exact GBP is pinned from the card statement."
 
   # ---------- 2026-09-06 scan (window since the 5 Sep digest) ----------
   - id: 2026-09-06-001
@@ -2493,7 +2506,10 @@ queue:
     reasoning: "Claude Max monthly plan — business per the standing ruling (same as the Aug cycle you approved, 2026-08-09-002). Clean GBP, £90.00."
     evidence: [{gmail_thread: 1a077cabe9f2f315}]
     flags: []
-    status: pending
+    status: booked
+    approved_on: 2026-09-09
+    booked_on: 2026-09-09
+    note: "business (Gregg 9 Sep, 'anthropic too'); £90.00 booked to books/2026-27/2026-09.yaml."
 
   # ---------- 2026-09-08 scan (window since the 7 Sep digest) ----------
   - id: 2026-09-08-001
@@ -2506,7 +2522,9 @@ queue:
     reasoning: "A courier/parcel order — can't tell if this is business postage (sending something for a client/the business) or a personal parcel. Your call: if it's business I'd book it to office_costs (postage); if personal I'll decline it."
     evidence: [{gmail_thread: 1a07befb6ec38b46}]
     flags: [needs_your_call]
-    status: pending
+    status: declined
+    declined_on: 2026-09-09
+    note: "personal (Gregg 9 Sep, 'Evri personal'); not booked."
 
   # ---------- 2026-09-09 scan (window since the 8 Sep digest) ----------
   - id: 2026-09-09-001
@@ -2519,7 +2537,10 @@ queue:
     reasoning: "Lovable Pro subscription — business per the standing ruling (same as the Aug cycle you approved, 2026-08-09-001). Clean GBP, £22.00."
     evidence: [{gmail_thread: 1a082870bfcf17da}]
     flags: []
-    status: pending
+    status: booked
+    approved_on: 2026-09-09
+    booked_on: 2026-09-09
+    note: "business (Gregg 9 Sep, 'Lovable still business'); £22.00 booked to books/2026-27/2026-09.yaml."
   - id: 2026-09-09-002
     date: 2026-09-08
     source: gmail
@@ -2530,4 +2551,6 @@ queue:
     reasoning: "IKEA can be either — home-office equipment (a desk/chair/storage would be allowable) or personal home furniture. Tell me which it is; if it's business I'll pin the exact amount from the invoice PDF or the card statement and book to equipment/office_costs."
     evidence: [{gmail_thread: 1a0803b61a42369f}]
     flags: [needs_your_call, awaiting-amount]
-    status: pending
+    status: approved
+    approved_on: 2026-09-09
+    note: "business office furniture / equipment (Gregg 9 Sep, 'IKEA office furniture'); books when the exact amount is pinned from the invoice PDF or card statement."
