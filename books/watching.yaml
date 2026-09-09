@@ -2,9 +2,15 @@
 watching:
 - since: '2026-09-02'
   item: 'Arctic Ape £2,600 invoice payment FAILED (31 Aug, ch_3U9LOFAnusPN3mWR, Craig Nerwich) — the
-    client invoice we''ve watched for since 10 Aug was attempted but NOT paid. No income booked. Watch
-    for a successful retry/settlement in the Stripe pull and book to sales then; chase the client
-    meanwhile.'
+    client invoice we''ve watched for since 10 Aug was attempted but NOT paid. No income booked. UPDATE
+    7 Sep: Gregg is now working around the failed card payment — he''s SPLIT the invoice into smaller
+    separate payment links (to Craig/Dan) AND sent bank-transfer details (IBAN GB54TCCL...) to Mel. So
+    the £2,600 may now settle by BANK TRANSFER (Tide) and/or as several smaller Stripe charges — watch
+    BOTH the Stripe pull and the Tide statement, and book to sales income when it actually lands.
+    UPDATE 8 Sep: Gregg has now VOIDED the original £2,600 invoice (Craig could not pay it due to card
+    transaction restrictions) and issued SMALLER separate invoices/payment links instead. So the
+    £2,600 charge is dead — do NOT expect it; watch for the smaller payments (Stripe and/or Tide bank
+    transfer) to settle and book those to sales income as they arrive.'
 - since: '2026-09-02'
   item: 'Payment-failure cluster (~31 Aug–1 Sep) — a batch of Gregg''s OWN business subscriptions
     bounced. UPDATE 5 Sep: PARTLY RESOLVED — domains.co.za R238 hosting was retried and PAID 2 Sep
@@ -13,6 +19,10 @@ watching:
     9520 declined 1 Sep, no success seen), Google Cloud command-arctic-ape still "at risk of
     suspension", Vercel (card 9520 failed), Amex near credit limit; the Mastercard 1897 behind several
     of these has also EXPIRED (YouTube notice 3 Sep) — a card update would likely clear the rest.
+    UPDATE 8 Sep: ADD Adobe — its payment also FAILED (card ••7135, billing issue 7 Sep). Note card
+    ••7135 still worked for Claude Max £90 (6 Sep) and Lovable £22 (8 Sep), so this looks specific to
+    Adobe''s attempt. Also: the American Express statement (a/c ending 961007) is now READY (8 Sep) —
+    that''s the card the SA-trip car hire ran on; send it and I''ll reconcile any business charges.
     Nothing to book (a failed charge is not a cost); watch for the remaining re-charges.'
 - since: '2026-08-28'
   item: 'Budget car-hire FINAL invoice (rental agreement 122979102) not yet issued — Budget say the
