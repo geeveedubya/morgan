@@ -93,6 +93,24 @@ entries:
   status: booked
   approved_on: '2026-09-09'
   booked_on: '2026-09-09'
+- id: 2026-09-09-004
+  date: '2026-09-02'
+  source: bank
+  description: 'Google Workspace (Squarespace-provisioned, for one of the trAIned domains):
+    £15.98 + £0.47 non-sterling fee, on Lloyds card •4132'
+  amount: 16.45
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business Workspace — a Squarespace-provisioned Google Workspace for one of
+    Gregg's domains (Gregg 9 Sep, "likely a squarespace workspace purchase for one of the
+    domains"); his Workspaces/Squarespace are business. GBP pinned from the •4132 statement;
+    exact domain (ai-trained.com / askorla.ai) still to confirm.
+  evidence:
+  - bank: lloyds-4132-2026-09.csv
+  flags: [domain-unconfirmed]
+  status: booked
+  approved_on: '2026-09-09'
+  booked_on: '2026-09-09'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 165.16
+  expenses_gbp: 181.61

@@ -343,6 +343,22 @@ entries:
   status: booked
   approved_on: '2026-08-28'
   booked_on: '2026-09-09'
+- id: 2026-09-09-003
+  date: '2026-08-01'
+  source: bank
+  description: 'Google Workspace — samrosevalley.co.za (Aug cycle): £15.96 + £0.47 non-sterling
+    fee, on Lloyds card •4132'
+  amount: 16.43
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: samrosevalley Workspace — business; approved (Gregg 9 Sep, "yes"). GBP pinned
+    from the •4132 statement.
+  evidence:
+  - bank: lloyds-4132-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-09'
+  booked_on: '2026-09-09'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 2443.06
+  expenses_gbp: 2459.49

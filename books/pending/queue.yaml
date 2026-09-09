@@ -2576,7 +2576,10 @@ queue:
     reasoning: "The AUGUST samrosevalley Google Workspace charge on the •4132 statement — business per the ruling, but it was never separately queued (the old samro items were Apr/May/Jun). Confirm and I'll book it to August."
     evidence: [{bank: lloyds-4132-2026-09.csv}]
     flags: [needs_your_call]
-    status: pending
+    status: booked
+    booked_on: 2026-09-09
+    approved_on: 2026-09-09
+    pin_note: "£16.43 pinned from the •4132 statement; booked to books/2026-27/2026-08.yaml (Gregg 9 Sep, approved)."
   - id: 2026-09-09-004
     date: 2026-09-02
     source: bank
@@ -2587,4 +2590,7 @@ queue:
     reasoning: "There are TWO Google Workspace 'SAMRO' charges on 2 Sep (£15.98 and £16.52). I booked £16.52 as the samrosevalley €19.25. This £15.98 is a second, unexplained Workspace charge — is it another domain's Workspace (ai-trained.com / askorla.ai / oxfordcircus), a price-change overlap, or a duplicate to query? Tell me and I'll book or flag it."
     evidence: [{bank: lloyds-4132-2026-09.csv}]
     flags: [needs_your_call, possible_duplicate]
-    status: pending
+    status: booked
+    booked_on: 2026-09-09
+    approved_on: 2026-09-09
+    pin_note: "£16.45 pinned from the •4132 statement; booked to books/2026-27/2026-09.yaml as a Squarespace-provisioned Workspace for one of the domains (Gregg 9 Sep); exact domain to confirm."
