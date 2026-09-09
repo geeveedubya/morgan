@@ -1680,7 +1680,9 @@ queue:
     reasoning: "York Fund Management hosting on domains.co.za — business per your 7 Jul standing ruling (covers both oxfordcircus.co.za and samrosevalley.co.za hosting). Billed R238 ZAR, so not converting: exact GBP pinned from the card statement when it charges on 1 Aug."
     evidence: [{gmail_thread: 19f82f38c39fa13e}]
     flags: [non-gbp, awaiting-gbp]
-    status: approved
+    status: booked
+    booked_on: 2026-09-09
+    pin_note: "£11.11 (£10.80 + £0.31 FX) pinned from the •4132 statement; booked to books/2026-27/2026-08.yaml."
     approved_on: 2026-07-24
     note: "business (Gregg 24 Jul): York Fund / domains.co.za hosting is his cost — office_costs_and_software. ZAR, credit-card charge due 1 Aug; pin exact GBP from the card statement when it lands."
   - id: 2026-07-21-002
@@ -1911,7 +1913,9 @@ queue:
     reasoning: "Anthropic is business (office_costs_and_software) per your 10 Jul standing ruling — a one-time API credit top-up. Charged in USD, so I'm not converting: approve and I'll pin the exact GBP from the card statement (roughly £9 at ~$1=£0.75). This is on card •4424, so it lands with the •4424 backlog."
     evidence: [{gmail_thread: 19fc8441759a973a}]
     flags: [non-gbp, awaiting-gbp]
-    status: approved
+    status: booked
+    booked_on: 2026-09-09
+    pin_note: "£8.96 pinned from the Lloyds current-account (•4424) statement; booked to books/2026-27/2026-08.yaml."
     approved_on: 2026-08-28
     note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement."
 
@@ -2218,7 +2222,9 @@ queue:
     reasoning: "York Fund / domains.co.za hosting for both business domains — business per your 7 Jul standing ruling. Billed R238 ZAR, charge due 1 Sep; not converting — I'll pin exact GBP from the card statement when it lands (same as the earlier cycle, 2026-07-21-001)."
     evidence: [{gmail_thread: 1a0229d9f36774c4}, {gmail_thread: 1a0619660fc1c5ee}, {gmail_thread: 1a061965819a18cd}]
     flags: [non-gbp, awaiting-gbp]
-    status: approved
+    status: booked
+    booked_on: 2026-09-09
+    pin_note: "£11.25 (£10.93 + £0.32 FX) pinned from the •4132 statement; booked to books/2026-27/2026-09.yaml."
     approved_on: 2026-08-28
     note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement. UPDATE 2 Sep: the 1 Sep attempt FAILED then a retry SUCCEEDED — PayGate + domains.co.za billing both confirmed payment of R238.00 for invoice 3747902 on 2 Sep. Charge is now real; still just needs the exact GBP from the card statement to book."
   - id: 2026-08-21-002
@@ -2449,7 +2455,9 @@ queue:
     reasoning: "Anthropic = business per the standing ruling. Billed in USD ($12.01), so not converting — approve in principle and I'll pin exact GBP from the ••4424 card statement (same card as the other Anthropic/Meta foreign charges)."
     evidence: [{gmail_thread: 1a06a65d564d68f1}]
     flags: [non-gbp, awaiting-gbp]
-    status: approved
+    status: booked
+    booked_on: 2026-09-09
+    pin_note: "£8.91 pinned from the Lloyds current-account (•4424) statement; booked to books/2026-27/2026-09.yaml."
     approved_on: 2026-09-09
     note: "business (Gregg 9 Sep, 'anthropic too'); non-GBP USD $12.01 — books when exact GBP is pinned from the ••4424 statement."
   - id: 2026-09-05-002
@@ -2476,7 +2484,9 @@ queue:
     reasoning: "samrosevalley Workspace is business per your 7 Jul standing ruling. Billed in EUR (€19.25) this cycle, so not converting — approve in principle and I'll pin exact GBP from the card statement. The 1 Sep payment was declined then a retry went through on 2 Sep, so the charge is real."
     evidence: [{gmail_thread: 1a0619b5aa937403}, {gmail_thread: 1a05e7802c58fcdb}]
     flags: [non-gbp, awaiting-gbp]
-    status: approved
+    status: booked
+    booked_on: 2026-09-09
+    pin_note: "£17.00 (£16.52 + £0.48 FX) pinned from the •4132 statement; booked to books/2026-27/2026-09.yaml."
     approved_on: 2026-09-09
     note: "business (Gregg 9 Sep, 'google workspace business'); non-GBP EUR €19.25 — books when exact GBP is pinned from the card statement."
 
@@ -2554,3 +2564,27 @@ queue:
     status: approved
     approved_on: 2026-09-09
     note: "business office furniture / equipment (Gregg 9 Sep, 'IKEA office furniture'); books when the exact amount is pinned from the invoice PDF or card statement."
+
+  # ---------- 2026-09-09 card-statement recon (Lloyds •4132) — extra Workspace charges ----------
+  - id: 2026-09-09-003
+    date: 2026-08-01
+    source: bank
+    description: "Google Workspace SAMRO — £15.96 + £0.47 non-sterling fee = £16.43 (1 Aug, Lloyds •4132)"
+    amount: 16.43
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "The AUGUST samrosevalley Google Workspace charge on the •4132 statement — business per the ruling, but it was never separately queued (the old samro items were Apr/May/Jun). Confirm and I'll book it to August."
+    evidence: [{bank: lloyds-4132-2026-09.csv}]
+    flags: [needs_your_call]
+    status: pending
+  - id: 2026-09-09-004
+    date: 2026-09-02
+    source: bank
+    description: "Google Workspace SAMRO — a SECOND charge £15.98 + £0.47 fee = £16.45 on 2 Sep (alongside the €19.25/£16.52 samrosevalley one), Lloyds •4132"
+    amount: 16.45
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "There are TWO Google Workspace 'SAMRO' charges on 2 Sep (£15.98 and £16.52). I booked £16.52 as the samrosevalley €19.25. This £15.98 is a second, unexplained Workspace charge — is it another domain's Workspace (ai-trained.com / askorla.ai / oxfordcircus), a price-change overlap, or a duplicate to query? Tell me and I'll book or flag it."
+    evidence: [{bank: lloyds-4132-2026-09.csv}]
+    flags: [needs_your_call, possible_duplicate]
+    status: pending

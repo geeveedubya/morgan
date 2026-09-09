@@ -311,6 +311,38 @@ entries:
   status: booked
   approved_on: '2026-09-09'
   booked_on: '2026-09-09'
+- id: 2026-07-21-001
+  date: '2026-08-01'
+  source: bank
+  description: 'domains.co.za / DiaMatrix — York Fund hosting (invoice #3687176, R238):
+    £10.80 + £0.31 non-sterling fee, on Lloyds card •4132'
+  amount: 11.11
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: York Fund / domains.co.za hosting — business (standing ruling); exact GBP
+    now pinned from the •4132 statement (Gregg sent it 9 Sep).
+  evidence:
+  - bank: lloyds-4132-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-09-09'
+- id: 2026-08-04-001
+  date: '2026-08-04'
+  source: bank
+  description: 'Anthropic API credit purchase — US$12.00 (receipt #2468-9779-5009): settled
+    £8.96 on the Lloyds current account (•4424 debit card)'
+  amount: 8.96
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Anthropic — business (standing ruling); exact GBP now pinned from the Lloyds
+    current-account statement (Gregg sent it 9 Sep).
+  evidence:
+  - bank: lloyds-83682760-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-09-09'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 2422.99
+  expenses_gbp: 2443.06

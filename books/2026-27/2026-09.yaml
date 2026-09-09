@@ -45,6 +45,54 @@ entries:
   status: booked
   approved_on: '2026-09-09'
   booked_on: '2026-09-09'
+- id: 2026-08-21-001
+  date: '2026-09-02'
+  source: bank
+  description: 'domains.co.za / DiaMatrix — York Fund hosting (invoice #3747902, R238):
+    £10.93 + £0.32 non-sterling fee, on Lloyds card •4132'
+  amount: 11.25
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: York Fund / domains.co.za hosting — business (standing ruling); exact GBP
+    now pinned from the •4132 statement (Gregg sent it 9 Sep).
+  evidence:
+  - bank: lloyds-4132-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-09-09'
+- id: 2026-09-05-001
+  date: '2026-09-04'
+  source: bank
+  description: 'Anthropic auto-recharge API credits — US$12.01 (receipt #2941-3554-6482):
+    settled £8.91 on the Lloyds current account (•4424 debit card)'
+  amount: 8.91
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Anthropic — business (Gregg 9 Sep, "anthropic too"); exact GBP now pinned
+    from the Lloyds current-account statement.
+  evidence:
+  - bank: lloyds-83682760-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-09'
+  booked_on: '2026-09-09'
+- id: 2026-09-05-003
+  date: '2026-09-02'
+  source: bank
+  description: Google Workspace — samrosevalley.co.za (€19.25), £16.52 + £0.48 non-sterling
+    fee, on Lloyds card •4132
+  amount: 17.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: samrosevalley Workspace — business (Gregg 9 Sep, "google workspace business");
+    exact GBP now pinned from the •4132 statement.
+  evidence:
+  - bank: lloyds-4132-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-09'
+  booked_on: '2026-09-09'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 128.00
+  expenses_gbp: 165.16
