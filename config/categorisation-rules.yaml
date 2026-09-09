@@ -152,6 +152,11 @@ standing_rulings:
   - ruling: Both Lebara SIMs 07555088933 (Gregg's business mobile) and 07368497782
       are business — phone_and_internet (Gregg 28 Aug; extends the 07884617816 ruling)
     date: 2026-08-28
+  - ruling: All Squarespace charges are business (Gregg 9 Sep, "squarespace will always
+      be business") — domain registrations/renewals → marketing_and_website; Squarespace
+      website/subscription plans → office_costs_and_software. Still queue each for final
+      approval, but propose as business by default (no need to re-ask whose domain it is).
+    date: 2026-09-09
 
 # These ALWAYS go to the pending queue for your decision, regardless of any
 # other match:
