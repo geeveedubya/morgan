@@ -2594,3 +2594,27 @@ queue:
     booked_on: 2026-09-09
     approved_on: 2026-09-09
     pin_note: "£16.45 pinned from the •4132 statement; booked to books/2026-27/2026-09.yaml as a Squarespace-provisioned Workspace for one of the domains (Gregg 9 Sep); exact domain to confirm."
+
+  # ---------- 2026-09-14 catch-up scan (10–14 Sep; several interrupted runs consolidated) ----------
+  - id: 2026-09-14-001
+    date: 2026-09-09
+    source: gmail
+    description: "Anthropic auto-recharge API credits — $12.00 ($10 + $2 UK VAT), receipt #2594-9064-3240, paid 9 Sep on card ••4424"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Anthropic = business per the standing ruling. USD, so approve in principle and I'll pin exact GBP from the ••4424/current-account statement (settles ~£8.90, like the last two)."
+    evidence: [{gmail_thread: 1a087a23168437ac}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+  - id: 2026-09-14-002
+    date: 2026-09-12
+    source: gmail
+    description: "Hertz car hire — Rental Agreement 246454655 (picked up ~10 Sep, returned 12 Sep), statement of charges issued 12 Sep; amount not in the email"
+    amount: null
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Car hire around the 10–12 Sep Glasgow trip. IF that trip was business (Arctic Ape / Omnia / Vini), this + the Winchester–Southampton train are allowable travel. Confirm business and I'll pin amounts from the Hertz statement / card; if personal I'll decline."
+    evidence: [{gmail_thread: 1a09427ae6edb76c}]
+    flags: [needs_your_call, awaiting-amount]
+    status: pending
