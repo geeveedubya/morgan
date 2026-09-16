@@ -2618,3 +2618,16 @@ queue:
     evidence: [{gmail_thread: 1a09427ae6edb76c}]
     flags: [needs_your_call, awaiting-amount]
     status: pending
+
+  # ---------- 2026-09-16 scan (window since the 14 Sep digest) ----------
+  - id: 2026-09-16-001
+    date: 2026-09-13
+    source: gmail
+    description: "Twilio account funding — £20.00 usage credit (charged to card ••9520, 13 Sep)"
+    amount: 20.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "You funded £20 of Twilio credit (your email 13 Sep: 'usage credit (£20) - this is for Harry'). It's a business tool cost — BUT it's tied to client (Arctic Ape) work, so tell me: is it your own cost to book (office_costs), or are you re-billing it to the client (then it's a disbursement, not your expense)?"
+    evidence: [{gmail_thread: 1a09a2e82e1cf227}]
+    flags: [needs_your_call, client-linked]
+    status: pending
