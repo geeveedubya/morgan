@@ -373,6 +373,76 @@ entries:
   status: booked
   approved_on: '2026-08-28'
   booked_on: '2026-09-16'
+- id: recon-2026-08-01-gws-oxfor
+  date: '2026-08-01'
+  source: bank
+  description: 'Google Workspace - oxfordcircus.co.za (July invoice, auto-charged 1 Aug)'
+  amount: 21.63
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business Workspace (standing ruling); Tide recon (Gregg 16 Sep, "all business").
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-16'
+- id: recon-2026-08-08-adobe
+  date: '2026-08-08'
+  source: bank
+  description: 'Adobe monthly subscription'
+  amount: 11.99
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business (standing ruling); Tide recon 8 Aug (Gregg 16 Sep).
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-16'
+- id: recon-2026-08-18-sqsp-websit
+  date: '2026-08-18'
+  source: bank
+  description: 'Squarespace website subscription (SQSP WEBSIT 247250244)'
+  amount: 19.2
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business Squarespace (standing ruling); Tide recon 18 Aug (Gregg 16 Sep).
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-16'
+- id: recon-2026-08-28-vercel
+  date: '2026-08-28'
+  source: bank
+  description: 'Vercel Inc. - app hosting'
+  amount: 35.48
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business app hosting; Tide recon 28 Aug (Gregg 16 Sep). Excludes the £0.98 Tide card fee.
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-16'
+- id: recon-2026-08-31-canva
+  date: '2026-08-31'
+  source: bank
+  description: 'Canva monthly subscription (Canva 04987)'
+  amount: 10.99
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business (standing ruling); Tide recon 31 Aug (Gregg 16 Sep).
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-16'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 2477.85
+  expenses_gbp: 2577.14

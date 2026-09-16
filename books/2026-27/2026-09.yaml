@@ -125,6 +125,62 @@ entries:
   status: booked
   approved_on: '2026-09-09'
   booked_on: '2026-09-16'
+- id: recon-2026-09-01-gws-oxfor
+  date: '2026-09-01'
+  source: bank
+  description: 'Google Workspace - oxfordcircus.co.za (Aug invoice, auto-charged 1 Sep)'
+  amount: 21.44
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business Workspace (standing ruling); Tide recon 1 Sep (Gregg 16 Sep).
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-16'
+- id: recon-2026-09-05-hpi
+  date: '2026-09-05'
+  source: bank
+  description: 'HP Instant Ink - printer ink subscription'
+  amount: 1.79
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business (standing ruling, book in full); Tide recon 5 Sep (Gregg 16 Sep).
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-16'
+- id: recon-2026-09-08-adobe
+  date: '2026-09-08'
+  source: bank
+  description: 'Adobe monthly subscription'
+  amount: 11.99
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business (standing ruling); Tide recon 8 Sep (Gregg 16 Sep).
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-16'
+- id: recon-2026-09-08-arcticape-income
+  date: '2026-09-08'
+  source: bank
+  description: 'Arctic Ape - client income via Stripe (net settlement into Tide, ref SP4miffqTKSE8AWDdw)'
+  amount: 1889.00
+  currency: GBP
+  proposed_category: sales
+  reasoning: 'Arctic Ape income (Gregg 16 Sep: Stripe invoices to Arctic Ape, booked at the net Tide settlement after Stripe fees - same convention as the Stefan settlement). This is the money that replaced the voided £2,600.'
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-16'
 totals:
-  income_gbp: 0.0
-  expenses_gbp: 317.61
+  income_gbp: 1889.0
+  expenses_gbp: 352.83
