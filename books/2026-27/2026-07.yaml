@@ -658,6 +658,34 @@ entries:
   status: booked
   approved_on: '2026-07-31'
   booked_on: '2026-07-31'
+- id: 2026-07-11-003
+  date: '2026-07-10'
+  source: bank
+  description: 'Google Workspace (Squarespace-provisioned) - ai-trained.com Business Starter, first month (ref SQSP WORKSP 242056420)'
+  amount: 8.40
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business Workspace for the trAIned domain; approved (Gregg). GBP pinned from the Tide business statement (10 Jul, PS8.40).
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-11'
+  booked_on: '2026-09-16'
+- id: 2026-07-11-004
+  date: '2026-07-10'
+  source: bank
+  description: 'Google Workspace (Squarespace-provisioned) - askorla.ai Business Starter, first month (ref SQSP WORKSP 242054484)'
+  amount: 8.40
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business Workspace for askorla.ai; approved (Gregg). GBP pinned from the Tide business statement (10 Jul, PS8.40).
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-07-11'
+  booked_on: '2026-09-16'
 totals:
   income_gbp: 1272.0
-  expenses_gbp: 1253.44
+  expenses_gbp: 1270.24

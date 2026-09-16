@@ -359,6 +359,20 @@ entries:
   status: booked
   approved_on: '2026-09-09'
   booked_on: '2026-09-09'
+- id: 2026-08-28-002
+  date: '2026-08-24'
+  source: bank
+  description: 'Supabase Pro (Singapore) - backend/database hosting for the apps (US$25 billed)'
+  amount: 18.36
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: Business backend hosting; approved (Gregg 28 Aug). GBP pinned from the Tide business statement (24 Aug, PS18.36).
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-08-28'
+  booked_on: '2026-09-16'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 2459.49
+  expenses_gbp: 2477.85

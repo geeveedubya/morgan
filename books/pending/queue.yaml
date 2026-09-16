@@ -1538,7 +1538,9 @@ queue:
     reasoning: "A new Workspace for the trAIned trading name — business per the Google rule; first charge not in yet, amount to pin at reconciliation."
     evidence: [{gmail_thread: 19f4b2fdf765b0cc}, {gmail_thread: 19f4b2efd3da6ffd}]
     flags: [amount-unknown]
-    status: approved
+    status: booked
+    booked_on: 2026-09-16
+    pin_note: "£8.40 pinned from the Tide business statement (10 Jul); booked to books/2026-27/2026-07.yaml."
     approved_on: 2026-07-11
     note: "confirmed business (Gregg 11 Jul); Squarespace-provisioned Workspace — no email receipt, amount to pin from Friday's Tide statement"
   - id: 2026-07-11-004
@@ -1551,7 +1553,9 @@ queue:
     reasoning: "Second business Workspace Gregg took out via Squarespace (askorla.ai); business, amount to pin from Friday's bank statement."
     evidence: [{gmail_thread: 19f4b2efd3da6ffd}]
     flags: [amount-unknown]
-    status: approved
+    status: booked
+    booked_on: 2026-09-16
+    pin_note: "£8.40 pinned from the Tide business statement (10 Jul); booked to books/2026-27/2026-07.yaml."
     approved_on: 2026-07-11
     note: "confirmed business (Gregg 11 Jul); no email receipt — pin amount at Friday's Tide recon"
 
@@ -2282,7 +2286,9 @@ queue:
     reasoning: "Supabase Pro monthly — business (office_costs_and_software). Billed US$25; I'll pin exact GBP from the Tide debit when it lands and NOT double-count the USD invoice against the GBP debit (same guard as July). Approve in principle."
     evidence: [{gmail_thread: 1a0334df21ba7f57}]
     flags: [non-gbp, awaiting-gbp]
-    status: approved
+    status: booked
+    booked_on: 2026-09-16
+    pin_note: "£18.36 pinned from the Tide business statement (24 Aug); booked to books/2026-27/2026-08.yaml."
     approved_on: 2026-08-28
     note: "business — approved in principle (Gregg 28 Aug); non-GBP, books when exact GBP is pinned from the card/Tide statement."
   - id: 2026-08-28-003
@@ -2561,7 +2567,9 @@ queue:
     reasoning: "IKEA can be either — home-office equipment (a desk/chair/storage would be allowable) or personal home furniture. Tell me which it is; if it's business I'll pin the exact amount from the invoice PDF or the card statement and book to equipment/office_costs."
     evidence: [{gmail_thread: 1a0803b61a42369f}]
     flags: [needs_your_call, awaiting-amount]
-    status: approved
+    status: booked
+    booked_on: 2026-09-16
+    pin_note: "£136.00 pinned from the Tide business statement (8 Sep); booked to books/2026-27/2026-09.yaml (equipment)."
     approved_on: 2026-09-09
     note: "business office furniture / equipment (Gregg 9 Sep, 'IKEA office furniture'); books when the exact amount is pinned from the invoice PDF or card statement."
 

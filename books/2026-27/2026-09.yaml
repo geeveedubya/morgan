@@ -111,6 +111,20 @@ entries:
   status: booked
   approved_on: '2026-09-09'
   booked_on: '2026-09-09'
+- id: 2026-09-09-002
+  date: '2026-09-08'
+  source: bank
+  description: 'IKEA - home-office furniture / equipment (online order 1628677734)'
+  amount: 136.00
+  currency: GBP
+  proposed_category: equipment
+  reasoning: Office furniture; approved as business (Gregg 9 Sep, "IKEA office furniture"). GBP pinned from the Tide business statement (8 Sep, PS136.00).
+  evidence:
+  - bank: tide-current-2026-09.csv
+  flags: []
+  status: booked
+  approved_on: '2026-09-09'
+  booked_on: '2026-09-16'
 totals:
   income_gbp: 0.0
-  expenses_gbp: 181.61
+  expenses_gbp: 317.61
