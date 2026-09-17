@@ -167,20 +167,64 @@ entries:
   status: booked
   approved_on: '2026-09-16'
   booked_on: '2026-09-16'
-- id: recon-2026-09-08-arcticape-income
-  date: '2026-09-08'
-  source: bank
-  description: 'Arctic Ape - client income via Stripe (net settlement into Tide, ref SP4miffqTKSE8AWDdw)'
-  amount: 1889.00
+- id: 2026-09-07-arcticape-gross
+  date: '2026-09-07'
+  source: stripe
+  description: 'Arctic Ape - client invoice, split payment part 1 of the £2,600 job: 3 Stripe charges £425.00 + £775.00 + £785.00 = £1,985.00 gross (Craig Nerwich)'
+  amount: 1985.00
   currency: GBP
   proposed_category: sales
-  reasoning: 'Arctic Ape income (Gregg 16 Sep: Stripe invoices to Arctic Ape, booked at the net Tide settlement after Stripe fees - same convention as the Stefan settlement). This is the money that replaced the voided £2,600.'
+  reasoning: 'Arctic Ape sales booked GROSS (Gregg 16 Sep); Stripe fees booked separately. Stripe charges ch_3UD7OL/Q0/RM, 7 Sep.'
   evidence:
-  - bank: tide-current-2026-09.csv
+  - stripe: ch_3UD7OLAnusPN3mWR1c6wOC0r
+  - stripe: ch_3UD7Q0AnusPN3mWR1mW00zF0
+  - stripe: ch_3UD7RMAnusPN3mWR1YUlmret
   flags: []
   status: booked
   approved_on: '2026-09-16'
-  booked_on: '2026-09-16'
+  booked_on: '2026-09-17'
+- id: 2026-09-07-stripe-fees-aa
+  date: '2026-09-07'
+  source: stripe
+  description: 'Stripe processing fees on the Arctic Ape split payments (7 Sep): £14.01 + £25.39 + £25.71'
+  amount: 65.11
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: 'Stripe fees on the Arctic Ape income (Gregg 16 Sep, take fees as costs). From the Stripe balance transactions.'
+  evidence:
+  - stripe: txn_3UD7RM_Q0_OL_fees
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-17'
+- id: 2026-09-16-arcticape-balance
+  date: '2026-09-16'
+  source: stripe
+  description: 'Arctic Ape - client invoice BALANCE (final split payment of the £2,600 job): £615.00 gross (Craig Nerwich, ch_3UD7Sb)'
+  amount: 615.00
+  currency: GBP
+  proposed_category: sales
+  reasoning: 'Arctic Ape balance paid 16 Sep, booked GROSS (Gregg 16 Sep). Completes the £2,600 split invoice (£1,985 + £615).'
+  evidence:
+  - stripe: ch_3UD7SbAnusPN3mWR1rJ3ZwtH
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-17'
+- id: 2026-09-16-stripe-fee-aa-balance
+  date: '2026-09-16'
+  source: stripe
+  description: 'Stripe processing fee on the Arctic Ape balance payment (16 Sep): £20.19'
+  amount: 20.19
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: 'Stripe fee on the Arctic Ape balance (Gregg 16 Sep). Stripe balance transaction fee 2019.'
+  evidence:
+  - stripe: txn_3UD7SbAnusPN3mWR1QzPUiIE
+  flags: []
+  status: booked
+  approved_on: '2026-09-16'
+  booked_on: '2026-09-17'
 totals:
-  income_gbp: 1889.0
-  expenses_gbp: 352.83
+  income_gbp: 2600.00
+  expenses_gbp: 438.13

@@ -126,11 +126,10 @@ watching:
   item: 'Arctic Ape income — GROSS vs NET / Stripe fees. The £1,889 that landed in Tide on 8 Sep was
     booked as NET sales income (after Stripe fees), matching the Stefan precedent — profit is correct,
     but the GROSS invoice figure and the Stripe FEE (a bank_and_payment_fees cost) are not yet split
-    out. Gregg (16 Sep) wants Stripe fees booked as costs. Also: Gregg says the BALANCE of the Arctic
-    Ape payment was paid TODAY (16 Sep) — not on the statements supplied (they end 13 Sep) and Stripe
-    is currently unreachable, so its amount + fee are not yet captured. TO DO once Stripe reconnects
-    (or Gregg forwards the Stripe payout/invoice emails): pull the Arctic Ape charges, split each into
-    gross sales income + Stripe fee, adjust the £1,889 entry accordingly, and book today''s balance.'
+    out. RESOLVED 17 Sep: Stripe pull done. The £2,600 job settled as 4 split card payments — 3 on 7 Sep
+    (£425 + £775 + £785 = £1,985 gross, £65.11 Stripe fees) and the balance £615 on 16 Sep (£20.19
+    fee). Re-booked GROSS income £2,600 + Stripe fees £85.30 as bank_and_payment_fees costs; the
+    interim £1,889 net entry was replaced. Arctic Ape £2,600 saga CLOSED.'
 - since: '2026-09-16'
   item: 'Sports Playmaker £900 (18 Jun) landed in the TIDE business account (ref C76BE83D-0055) and is
     already booked as sales income — so it went to Tide''s bank details, not the personal account
