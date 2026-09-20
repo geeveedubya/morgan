@@ -2639,3 +2639,27 @@ queue:
     evidence: [{gmail_thread: 1a09a2e82e1cf227}]
     flags: [needs_your_call, client-linked]
     status: pending
+
+  # ---------- 2026-09-20 scan (window since the 19 Sep digest) ----------
+  - id: 2026-09-20-001
+    date: 2026-09-19
+    source: gmail
+    description: "Anthropic auto-recharge API credits (~$12), receipt #2123-1050-6856, 19 Sep (card ••4424)"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Anthropic = business per the standing ruling. USD; approve in principle and I'll pin the exact GBP (~£8.9) from the ••4424 current-account statement, same as the last few."
+    evidence: [{gmail_thread: 1a0baaf61e51f19c}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+  - id: 2026-09-20-002
+    date: 2026-09-19
+    source: gmail
+    description: "Virgin Media September bill £44.50 — 50% business apportionment = £22.25"
+    amount: 22.25
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "50% business per the standing ruling (same basis as Aug, 2026-08-20-002); other £22.25 personal."
+    evidence: [{gmail_thread: 1a0b88ee7d0839ee}]
+    flags: []
+    status: pending
