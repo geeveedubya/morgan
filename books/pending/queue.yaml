@@ -2663,3 +2663,16 @@ queue:
     evidence: [{gmail_thread: 1a0b88ee7d0839ee}]
     flags: []
     status: pending
+
+  # ---------- 2026-09-21 scan (window since the 20 Sep digest) ----------
+  - id: 2026-09-21-001
+    date: 2026-09-21
+    source: gmail
+    description: "domains.co.za / DiaMatrix hosting — invoice #3807922 (York Fund Management), Oct cycle, credit card; amount in ZAR (~R238)"
+    amount: null
+    currency: ZAR
+    proposed_category: office_costs_and_software
+    reasoning: "York Fund / domains.co.za hosting — business per the standing ruling (same recurring R238 as prior cycles). Invoice generated 21 Sep; charge due ~1 Oct. Non-GBP — approve in principle and I'll pin the exact GBP from the •4132 statement when it charges."
+    evidence: [{gmail_thread: 1a0c1d701c226ecd}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
