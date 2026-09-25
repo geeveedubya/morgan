@@ -311,6 +311,49 @@ entries:
   status: booked
   approved_on: '2026-09-25'
   booked_on: '2026-09-25'
+- id: 2026-08-28-flights-gla
+  date: '2026-08-28'
+  source: gmail
+  description: 'EasyJet flights — Glasgow trip (booking KD8B8WQ), main payment £237.96 by Visa 28 Aug (card ••8009)'
+  amount: 237.96
+  currency: GBP
+  proposed_category: travel
+  reasoning: 'Glasgow trip 100% for the Ben marketing/sponsorship work (Gregg 25 Sep) — allowable business travel; Michelle travelled to assist (she is on a staff Retainer). Main flight payment per the easyJet confirmation (booking KD8B8WQ): £237.96 GBP, 28 Aug, card ••8009. Paid on a card not among the statements provided — evidenced by the easyJet receipt.'
+  evidence:
+  - gmail_thread: 1a082f10ad1496ad
+  flags: [card-8009-unstated]
+  status: booked
+  approved_on: '2026-09-25'
+  booked_on: '2026-09-25'
+- id: 2026-09-08-flights-gla-addon
+  date: '2026-09-08'
+  source: tide_statement
+  description: 'EasyJet flights add-on — same booking KD8B8WQ, £56.48 on the Tide business account (8 Sep)'
+  amount: 56.48
+  currency: GBP
+  proposed_category: travel
+  reasoning: 'Later add-on (bag/seat/change) to the Glasgow flight booking KD8B8WQ; £56.48 on the business account 8 Sep, Tide-tagged Travel. Same 100%-business trip.'
+  evidence:
+  - tide_statement: '8 Sep — EASYJETKD8B8WQ £56.48'
+  flags: []
+  status: booked
+  approved_on: '2026-09-25'
+  booked_on: '2026-09-25'
+- id: 2026-08-28-carhire-gla
+  date: '2026-08-28'
+  source: gmail
+  description: 'Car hire — Glasgow trip (Hertz via easyJet/CarTrawler, ref GB950565950 / rental agreement 246454655), Ford Fiesta 10–12 Sep, prepaid £128.53 on card ••8009 (28 Aug)'
+  amount: 128.53
+  currency: GBP
+  proposed_category: travel
+  reasoning: 'Glasgow trip 100% business (Gregg 25 Sep). Car hire prepaid via easyJet/CarTrawler — Payment Transaction Summary: £128.53 GBP, card ••8009, 28 Aug (statement descriptor "CAR HIRE"). The Hertz E-Print invoice only released the deposit hold (£0 extra owed), so £128.53 is the full cost. Paid on a card not among the statements provided — evidenced by the CarTrawler receipt.'
+  evidence:
+  - gmail_thread: 1a047ed88dc0ea28
+  - gmail_thread: 1a09e50666cb43a7
+  flags: [card-8009-unstated]
+  status: booked
+  approved_on: '2026-09-25'
+  booked_on: '2026-09-25'
 totals:
   income_gbp: 2600.00
-  expenses_gbp: 527.86
+  expenses_gbp: 950.83

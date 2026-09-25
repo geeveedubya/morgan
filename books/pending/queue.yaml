@@ -2624,10 +2624,12 @@ queue:
     amount: null
     currency: GBP
     proposed_category: travel
-    reasoning: "Glasgow trip 10–12 Sep to help Ben on marketing/sponsorship (business); Michelle came along to assist. Gregg: 'business and personal'. My read: if the REASON for the trip was the Ben work, the car hire is allowable business travel at 100% (Michelle riding along adds no cost) — so I'd book the full Hertz amount as travel. It's only disallowed if the trip was primarily personal with the Ben work incidental. Awaiting Gregg's confirmation of primary purpose + the amount from the Hertz statement / card."
-    evidence: [{gmail_thread: 1a09427ae6edb76c}]
-    flags: [needs_your_call, awaiting-amount]
-    status: pending
+    reasoning: "BOOKED £128.53 (Gregg 25 Sep). Glasgow trip 100% business. The car hire was PREPAID via easyJet/CarTrawler (ref GB950565950): £128.53 GBP on card ••8009, 28 Aug — the CarTrawler Payment Transaction Summary is the receipt. The Hertz E-Print invoice (002367389000) only released the deposit hold, £0 extra owed. Booked to travel as 2026-08-28-carhire-gla. Flights also booked: £237.96 main (28 Aug, ••8009) + £56.48 add-on (8 Sep, Tide)."
+    evidence: [{gmail_thread: 1a09427ae6edb76c}, {gmail_thread: 1a047ed88dc0ea28}, {gmail_thread: 1a09e50666cb43a7}]
+    flags: [card-8009-unstated]
+    status: booked
+    approved_on: 2026-09-25
+    booked_on: 2026-09-25
 
   # ---------- 2026-09-16 scan (window since the 14 Sep digest) ----------
   - id: 2026-09-16-001
