@@ -1,15 +1,18 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
 - since: '2026-09-25'
-  item: 'INCOMING £7,000 from Arctic Ape — flagged by Gregg 25 Sep as an INVESTMENT into a business
-    venture, NOT trading income. CRITICAL: do NOT book this to sales/income when it lands. Investment
-    capital (equity subscription or a loan) is a balance-sheet item, not P&L revenue, so it is not
-    taxable turnover — mis-booking it as income would overstate profit and tax. When it arrives in Tide
-    (likely a large FasterPaymentIn / SWIFT from SA, GBP or converted), hold it in the pending queue
-    flagged capital-not-income and get Gregg + the accountant to confirm the structure before booking.
-    Structure is still open (no Ltd yet): if equity, a company must be incorporated first; if a loan,
-    a written loan agreement is the instrument — an INVOICE is wrong either way (an invoice = taxable
-    supply). Watch for a written investment/loan agreement and the accountant''s treatment.'
+  item: 'INCOMING £7,000 (and continuing tranches) from Arctic Ape — CONFIRMED by Gregg 25 Sep as an
+    EQUITY INVESTMENT, NOT a loan and NOT trading income; it continues after the Ltd is set up. CRITICAL:
+    do NOT book to sales/income. Equity capital is a balance-sheet item, not P&L revenue — not taxable
+    turnover; mis-booking it as income would overstate profit and tax. Instrument: NOT an invoice (an
+    invoice = taxable supply). Because no Ltd exists yet, the fit is an ADVANCE SUBSCRIPTION AGREEMENT
+    (ASA) — money paid now, shares issued on incorporation — with a Funding/Drawdown Request (not a sales
+    invoice) to trigger each payment. When funds land in Tide (large SWIFT from SA, GBP or converted),
+    hold in pending flagged capital-not-income until the ASA is signed and the accountant confirms
+    treatment. PRE-INCORPORATION RISK: until the company exists there is no entity to hold shares, so
+    HMRC could try to read money into a personal account as income/loan — the signed ASA is what protects
+    the equity characterisation. Accountant + solicitor should sign off the ASA (cross-border SA investor;
+    check SEIS/EIS relevance). Watch for the signed ASA and the accountant''s treatment.'
 - since: '2026-09-02'
   item: 'Arctic Ape £2,600 invoice payment FAILED (31 Aug, ch_3U9LOFAnusPN3mWR, Craig Nerwich) — the
     client invoice we''ve watched for since 10 Aug was attempted but NOT paid. No income booked. UPDATE
