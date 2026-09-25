@@ -225,6 +225,92 @@ entries:
   status: booked
   approved_on: '2026-09-16'
   booked_on: '2026-09-17'
+- id: 2026-09-14-001
+  date: '2026-09-10'
+  source: gmail
+  description: 'Anthropic auto-recharge API credits — US$12.00, receipt #2594-9064-3240; settled £8.88 on Lloyds ••4424 (10 Sep)'
+  amount: 8.88
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Anthropic = business (standing ruling); approved (Gregg 25 Sep). GBP pinned from the Lloyds 83682760 statement: ANTHROPIC £8.88 on 10 Sep.'
+  evidence:
+  - gmail_thread: 1a087a23168437ac
+  - lloyds_statement: '10 Sep — ANTHROPIC £8.88'
+  flags: []
+  status: booked
+  approved_on: '2026-09-25'
+  booked_on: '2026-09-25'
+- id: 2026-09-16-001
+  date: '2026-09-13'
+  source: gmail
+  description: 'Twilio account funding — £20.00 usage credit (card ••9520, 13 Sep); to be reinvoiced to Arctic Ape'
+  amount: 20.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Business tool cost; approved (Gregg 25 Sep, "I''ll need to reinvoice this to Arctic Ape"). Booked as a rechargeable cost — the matching recharge is on the watch list to book as income once invoiced.'
+  evidence:
+  - gmail_thread: 1a09a2e82e1cf227
+  flags: [rechargeable]
+  status: booked
+  approved_on: '2026-09-25'
+  booked_on: '2026-09-25'
+- id: 2026-09-25-002
+  date: '2026-09-18'
+  source: tide_statement
+  description: 'SQSP WEBSIT#251339812 — Squarespace website/subscription £19.20 (18 Sep, ••7135 business card)'
+  amount: 19.20
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Squarespace = always business (standing ruling); website/subscription plan → office_costs_and_software. Approved (Gregg 25 Sep).'
+  evidence:
+  - tide_statement: '18 Sep — SQSP WEBSIT#251339812 £19.20'
+  flags: []
+  status: booked
+  approved_on: '2026-09-25'
+  booked_on: '2026-09-25'
+- id: 2026-09-20-002
+  date: '2026-09-19'
+  source: gmail
+  description: 'Virgin Media September — 50% business apportionment of £44.50 = £22.25'
+  amount: 22.25
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: '50% business per the standing ruling (same basis as Aug); approved (Gregg 25 Sep).'
+  evidence:
+  - gmail_thread: 1a0b88ee7d0839ee
+  flags: []
+  status: booked
+  approved_on: '2026-09-25'
+  booked_on: '2026-09-25'
+- id: 2026-09-25-001
+  date: '2026-09-24'
+  source: gmail
+  description: 'Supabase Pro — invoice #VVEMGH-00005, US$25.00; settled £18.88 on the ••7135 business card (24 Sep)'
+  amount: 18.88
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Supabase backend hosting = business; approved (Gregg 25 Sep). GBP pinned from the 25 Sep Tide statement.'
+  evidence:
+  - gmail_thread: 1a0d2dd255e6f09c
+  - tide_statement: '24 Sep — Supabase £18.88 + £0.52 fee'
+  flags: []
+  status: booked
+  approved_on: '2026-09-25'
+  booked_on: '2026-09-25'
+- id: 2026-09-25-001-fee
+  date: '2026-09-24'
+  source: tide_statement
+  description: 'Non-sterling transaction fee on the Supabase payment (24 Sep): £0.52'
+  amount: 0.52
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: 'Tide FX fee on the Supabase US$25 charge; approved with the Supabase item (Gregg 25 Sep).'
+  evidence:
+  - tide_statement: '24 Sep — Supabase non-sterling fee £0.52'
+  flags: []
+  status: booked
+  approved_on: '2026-09-25'
+  booked_on: '2026-09-25'
 totals:
   income_gbp: 2600.00
-  expenses_gbp: 438.13
+  expenses_gbp: 527.86

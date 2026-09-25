@@ -113,10 +113,10 @@ watching:
   item: 'Barclaycard monthly statement ready again (16 Sep) — if any business spend ran through
     Barclaycard this cycle (travel, etc.), send it and Morgan will pin those charges; otherwise personal.'
 - since: '2026-09-16'
-  item: 'Twilio is a recurring business tool cost (£20 top-ups on card ••9520) used partly for client
-    (Arctic Ape/Harry) work — clarify once whether Twilio top-ups are Gregg''s own office_costs or
-    re-billed disbursements, then apply that treatment to future top-ups (and note the 1 Oct WhatsApp
-    pricing change already on the watch list).'
+  item: 'RESOLVED (Gregg 25 Sep): the £20 Twilio top-up (13 Sep, 2026-09-16-001) is RECHARGEABLE — Gregg
+    will reinvoice it to Arctic Ape. Booked as a rechargeable cost (office_costs). FOLLOW-UP: when that
+    invoice is raised / the recharge is received, book the matching £20 as income so the disbursement
+    nets out. Apply the same rechargeable treatment to future client-linked Twilio top-ups.'
 - since: '2026-09-16'
   item: 'SOURCE NOTE (Gregg 16 Sep): card ••7135 is an online DEBIT card linked directly to the
     business (Tide) account — so anything on ••7135 is paid straight from the business account

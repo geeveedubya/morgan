@@ -2612,9 +2612,11 @@ queue:
     currency: USD
     proposed_category: office_costs_and_software
     reasoning: "Anthropic = business per the standing ruling. USD, so approve in principle and I'll pin exact GBP from the ••4424/current-account statement (settles ~£8.90, like the last two)."
-    evidence: [{gmail_thread: 1a087a23168437ac}]
-    flags: [non-gbp, awaiting-gbp]
-    status: pending
+    evidence: [{gmail_thread: 1a087a23168437ac}, {lloyds_statement: "10 Sep — ANTHROPIC £8.88"}]
+    flags: []
+    status: booked
+    approved_on: 2026-09-25
+    booked_on: 2026-09-25
   - id: 2026-09-14-002
     date: 2026-09-12
     source: gmail
@@ -2622,7 +2624,7 @@ queue:
     amount: null
     currency: GBP
     proposed_category: travel
-    reasoning: "Car hire around the 10–12 Sep Glasgow trip. IF that trip was business (Arctic Ape / Omnia / Vini), this + the Winchester–Southampton train are allowable travel. Confirm business and I'll pin amounts from the Hertz statement / card; if personal I'll decline."
+    reasoning: "Glasgow trip 10–12 Sep to help Ben on marketing/sponsorship (business); Michelle came along to assist. Gregg: 'business and personal'. My read: if the REASON for the trip was the Ben work, the car hire is allowable business travel at 100% (Michelle riding along adds no cost) — so I'd book the full Hertz amount as travel. It's only disallowed if the trip was primarily personal with the Ben work incidental. Awaiting Gregg's confirmation of primary purpose + the amount from the Hertz statement / card."
     evidence: [{gmail_thread: 1a09427ae6edb76c}]
     flags: [needs_your_call, awaiting-amount]
     status: pending
@@ -2637,8 +2639,11 @@ queue:
     proposed_category: office_costs_and_software
     reasoning: "You funded £20 of Twilio credit (your email 13 Sep: 'usage credit (£20) - this is for Harry'). It's a business tool cost — BUT it's tied to client (Arctic Ape) work, so tell me: is it your own cost to book (office_costs), or are you re-billing it to the client (then it's a disbursement, not your expense)?"
     evidence: [{gmail_thread: 1a09a2e82e1cf227}]
-    flags: [needs_your_call, client-linked]
-    status: pending
+    flags: [rechargeable]
+    status: booked
+    approved_on: 2026-09-25
+    booked_on: 2026-09-25
+    note: "Gregg will reinvoice this £20 to Arctic Ape — booked as a rechargeable cost; recharge income on the watch list."
 
   # ---------- 2026-09-20 scan (window since the 19 Sep digest) ----------
   - id: 2026-09-20-001
@@ -2651,7 +2656,8 @@ queue:
     reasoning: "Anthropic = business per the standing ruling. USD; approve in principle and I'll pin the exact GBP (~£8.9) from the ••4424 current-account statement, same as the last few."
     evidence: [{gmail_thread: 1a0baaf61e51f19c}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    approved_on: 2026-09-25
   - id: 2026-09-20-002
     date: 2026-09-19
     source: gmail
@@ -2662,7 +2668,9 @@ queue:
     reasoning: "50% business per the standing ruling (same basis as Aug, 2026-08-20-002); other £22.25 personal."
     evidence: [{gmail_thread: 1a0b88ee7d0839ee}]
     flags: []
-    status: pending
+    status: booked
+    approved_on: 2026-09-25
+    booked_on: 2026-09-25
 
   # ---------- 2026-09-21 scan (window since the 20 Sep digest) ----------
   - id: 2026-09-21-001
@@ -2675,7 +2683,8 @@ queue:
     reasoning: "York Fund / domains.co.za hosting — business per the standing ruling (same recurring R238 as prior cycles). Invoice generated 21 Sep; charge due ~1 Oct. Non-GBP — approve in principle and I'll pin the exact GBP from the •4132 statement when it charges."
     evidence: [{gmail_thread: 1a0c1d701c226ecd}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    approved_on: 2026-09-25
 
   # ---------- 2026-09-24 scan (22–24 Sep window) ----------
   - id: 2026-09-24-001
@@ -2702,7 +2711,9 @@ queue:
     reasoning: "Supabase backend hosting = business (approved for prior months). GBP pinned from the 25 Sep Tide statement: £18.88 settled 24 Sep on ••7135, plus a £0.52 non-sterling fee (book as bank_and_payment_fees on approval)."
     evidence: [{gmail_thread: 1a0d2dd255e6f09c}, {tide_statement: "24 Sep — Supabase £18.88 + £0.52 fee"}]
     flags: []
-    status: pending
+    status: booked
+    approved_on: 2026-09-25
+    booked_on: 2026-09-25
   - id: 2026-09-25-002
     date: 2026-09-18
     source: tide_statement
@@ -2713,4 +2724,6 @@ queue:
     reasoning: "Squarespace = always business per the standing ruling; a website/subscription plan → office_costs_and_software. Seen only on the 25 Sep Tide statement (18 Sep), not yet in the books — this is the September cycle (Aug cycle already booked)."
     evidence: [{tide_statement: "18 Sep — SQSP WEBSIT#251339812 £19.20"}]
     flags: []
-    status: pending
+    status: booked
+    approved_on: 2026-09-25
+    booked_on: 2026-09-25
