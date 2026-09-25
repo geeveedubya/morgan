@@ -143,3 +143,12 @@ watching:
     Arctic Ape business card (23 Sep, #2410-4371-6887), so it is Arctic Ape''s cost, excluded from
     Gregg''s books (2026-09-24-001). Going forward, check whether an Anthropic receipt was paid by
     Gregg (his cost) or by Craig/Arctic Ape (exclude) before booking.'
+- since: '2026-09-25'
+  item: 'V12 Retail Finance repayments are NOT expenses — do NOT double-book. The London Camera Exchange
+    kit (£1,199.98, order LCE443938F, 13 Apr — Canon 5D IV body + 24-70 f2.8 lens) is booked IN FULL as
+    equipment (books/2026-27/2026-04.yaml). It was part-financed by a V12 loan (£899.98); the monthly
+    "V12 RETAIL FINANCE" direct debits on the bank statements are loan repayments (capital), NOT business
+    costs — exclude them (only a separately-identified V12 interest charge could be a finance cost). Gregg
+    will settle the V12 balance from future income; that settlement is also not a P&L expense. NB there
+    are 2+ V12 agreements (24534289, 24095700) — only this camera is booked; check any other V12-financed
+    item separately.'

@@ -76,6 +76,20 @@ entries:
   approved_on: 2026-07-07
   note: booked at Stripe GBP settlement £332.42 received 6 May (net of Stripe fees), per Tide statement
   booked_on: '2026-07-10'
+- id: 2026-04-13-lce-camera
+  date: '2026-04-13'
+  source: gmail
+  description: 'London Camera Exchange (order LCE443938F) - USED Canon EOS 5D IV + BG-20 grip £799.99 + Canon 24-70mm f2.8 EF L lens £399.99 = £1,199.98 (business camera kit; £300 deposit + £899.98 on V12 finance)'
+  amount: 1199.98
+  currency: GBP
+  proposed_category: equipment
+  reasoning: 'Business camera equipment; Gregg 25 Sep asked to record the full cost as a business expense now (part-financed via V12; the loan balance he will settle later is not a further expense). Over the review threshold - capital equipment, claimable via AIA.'
+  evidence:
+  - gmail_thread: 19d864d5939f9223
+  flags: [financed-v12, over-threshold]
+  status: booked
+  approved_on: '2026-09-25'
+  booked_on: '2026-09-25'
 totals:
   income_gbp: 516.29
-  expenses_gbp: 220.99
+  expenses_gbp: 1420.97
