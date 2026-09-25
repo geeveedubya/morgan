@@ -1,0 +1,3 @@
+
+# Generated documents containing bank details (e.g. investment requests) stay local, not on GitHub
+docs/*.docx
