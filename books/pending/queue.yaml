@@ -2690,3 +2690,16 @@ queue:
     flags: [client-paid]
     status: declined
     declined_on: 2026-09-24
+
+  # ---------- 2026-09-25 scan (window since the 24 Sep digest) ----------
+  - id: 2026-09-25-001
+    date: 2026-09-24
+    source: gmail
+    description: "Supabase Pro — invoice #VVEMGH-00005, US$25.00 paid 24 Sep (on the ••7135 business card)"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Supabase backend hosting = business (approved for prior months). USD $25; I'll pin the exact GBP (~£18.4) from the Tide business statement, same as the Aug cycle (£18.36)."
+    evidence: [{gmail_thread: 1a0d2dd255e6f09c}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
