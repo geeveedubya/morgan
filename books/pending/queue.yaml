@@ -2729,3 +2729,38 @@ queue:
     status: booked
     approved_on: 2026-09-25
     booked_on: 2026-09-25
+
+  # ---------- 2026-09-29 scan (window 24–28 Sep; covers the stalled 26–28 Sep runs) ----------
+  - id: 2026-09-29-001
+    date: 2026-09-26
+    source: gmail
+    description: "Apple iCloud+ 2TB monthly £8.99 (invoice 26 Sep, order MKBB0FFFDV) — 50% business apportionment = £4.50"
+    amount: 4.50
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "50% business per the standing ruling (7 Jul), same basis and category as the Aug entry (£4.50); other £4.49 personal."
+    evidence: [{gmail_thread: 1a0e1279bf3c4ef9}]
+    flags: []
+    status: pending
+  - id: 2026-09-29-002
+    date: 2026-09-26
+    source: gmail
+    description: "Lebara SIM-only plan renewal £1.50 (07368497782, ref WRPKPJDCB38CFCZ3, 26 Sep)"
+    amount: 1.50
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "Both Lebara SIMs 07555088933 and 07368497782 are business per the standing ruling (28 Aug)."
+    evidence: [{gmail_thread: 1a0dcdee10d42aba}]
+    flags: []
+    status: pending
+  - id: 2026-09-29-003
+    date: 2026-09-26
+    source: gmail
+    description: "Booking.com stay paid via Klarna — 1st instalment £6.35 (26 Sep), next £29.78 due 27 Sep; full total and stay details not in the email"
+    amount: null
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Accommodation booking split into Klarna instalments. Business travel only if the stay was for work (e.g. a client trip); otherwise personal. Tell me which and, if business, I'll pin the full total from the Klarna schedule / statement."
+    evidence: [{gmail_thread: 1a0dd084404dccbe}]
+    flags: [needs_your_call, awaiting-amount]
+    status: pending
