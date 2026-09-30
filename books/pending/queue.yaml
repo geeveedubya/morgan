@@ -2764,3 +2764,16 @@ queue:
     evidence: [{gmail_thread: 1a0dd084404dccbe}]
     flags: [needs_your_call, awaiting-amount]
     status: pending
+
+  # ---------- 2026-09-30 scan (window 28–30 Sep) ----------
+  - id: 2026-09-30-001
+    date: 2026-09-28
+    source: gmail
+    description: "Anthropic auto-recharge API credits — US$18.12 ($15.10 + $3.02 UK VAT), receipt #2200-8155-9231, invoice G1RDOXGX-0009, paid 28 Sep on card ending 1508"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Anthropic is business per the standing ruling, BUT card ••1508 is new — your auto-recharges so far were on ••4424, and the 23 Sep Anthropic charge was paid by Craig on the Arctic Ape card (excluded). Tell me whose card ••1508 is: if yours, approve and I'll pin the GBP (~£13.40) from that statement; if Arctic Ape's, I'll exclude it."
+    evidence: [{gmail_thread: 1a0e72d9f5de13b8}]
+    flags: [needs_your_call, non-gbp, awaiting-gbp, new-card-1508]
+    status: pending
