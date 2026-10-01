@@ -2777,3 +2777,27 @@ queue:
     evidence: [{gmail_thread: 1a0e72d9f5de13b8}]
     flags: [needs_your_call, non-gbp, awaiting-gbp, new-card-1508]
     status: pending
+
+  # ---------- 2026-10-01 scan (window 29 Sep – 1 Oct) ----------
+  - id: 2026-10-01-001
+    date: 2026-09-30
+    source: gmail
+    description: "Vercel Pro + 1 extra team seat — US$48.00 ($40 + $8 UK VAT), receipt #2432-5430, invoice PEQ6FDZ2-0004, period 28 Sep–27 Oct, paid 30 Sep on the ••7135 business card"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Business hosting for the OCD projects team (approved in earlier months). This is the retry that cleared the 29 Sep failed payment on ••9520. USD; approve and I'll pin the GBP (~£35.50) from the Tide statement."
+    evidence: [{gmail_thread: 1a0f1d96dfb97f7d}, {gmail_thread: 1a0eed58ce5e9164}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+  - id: 2026-10-01-002
+    date: 2026-09-30
+    source: gmail
+    description: "Lebara SIM-only plan renewal £1.50 (07884617816, 30 Sep)"
+    amount: 1.50
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "07884617816 is the business number per the standing ruling (7 Jul)."
+    evidence: [{gmail_thread: 1a0f1783f7b7074a}]
+    flags: []
+    status: pending

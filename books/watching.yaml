@@ -1,9 +1,8 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
 - since: '2026-09-30'
-  item: 'URGENT — Vercel payment FAILED on card ••9520 for team OCD projects (29 Sep): Vercel warns
-    of shutdown unless billing is updated. Business hosting (Aug charge £35.48). Gregg to update the card
-    / pay in Vercel — Morgan does not act on billing. Queue the charge once it succeeds.'
+  item: 'RESOLVED 30 Sep — Vercel payment that failed on ••9520 (29 Sep) went through on the ••7135
+    business card: $48.00, receipt #2432-5430, queued as 2026-10-01-001. Future Vercel charges are on ••7135.'
 - since: '2026-09-29'
   item: 'Squarespace website subscription auto-renews 12 Oct 2026 (reminder 27 Sep). Business per
     the standing ruling; queue it when the charge lands.'
