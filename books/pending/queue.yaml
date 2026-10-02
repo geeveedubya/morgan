@@ -2687,6 +2687,7 @@ queue:
     flags: [non-gbp, awaiting-gbp]
     status: approved
     approved_on: 2026-09-25
+    note: "Paid 1 Oct 2026: R238.00 (oxfordcircus.co.za R109 + samrosevalley.co.za R129 hosting, Oct), transaction 1253750280 (gmail 1a0f679e00164e2c). GBP still to pin from the ••4132 statement."
 
   # ---------- 2026-09-24 scan (22–24 Sep window) ----------
   - id: 2026-09-24-001
@@ -2764,6 +2765,7 @@ queue:
     evidence: [{gmail_thread: 1a0dd084404dccbe}]
     flags: [needs_your_call, awaiting-amount]
     status: pending
+    note: "Klarna 2nd instalment £29.78 paid 1 Oct; 3rd £36.13 due 27 Oct. Instalments so far add up to £72.26 (£6.35 + £29.78 + £36.13), if that is the whole plan (gmail 1a0f6f7fed5a0078)."
 
   # ---------- 2026-09-30 scan (window 28–30 Sep) ----------
   - id: 2026-09-30-001
@@ -2799,5 +2801,29 @@ queue:
     proposed_category: phone_and_internet
     reasoning: "07884617816 is the business number per the standing ruling (7 Jul)."
     evidence: [{gmail_thread: 1a0f1783f7b7074a}]
+    flags: []
+    status: pending
+
+  # ---------- 2026-10-02 scan (window 30 Sep – 2 Oct) ----------
+  - id: 2026-10-02-001
+    date: 2026-10-02
+    source: gmail
+    description: "Google Workspace — samrosevalley.co.za monthly invoice 5693434417 (2 Oct); amount only in the PDF, charged automatically"
+    amount: null
+    currency: null
+    proposed_category: office_costs_and_software
+    reasoning: "samrosevalley Workspace is business (standing ruling, same as Aug £16.43). The amount isn't in the email body; I'll pin it from the card statement when it charges."
+    evidence: [{gmail_thread: 1a0fa2a9c33650d3}]
+    flags: [awaiting-amount]
+    status: pending
+  - id: 2026-10-02-002
+    date: 2026-10-01
+    source: gmail
+    description: "RingGo parking £2.00 — Jewry Street Car Park, Winchester, Thu 1 Oct 07:43–09:00"
+    amount: 2.00
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Winchester weekday-morning RingGo parking → travel per the standing ruling (7 Jul)."
+    evidence: [{gmail_thread: 1a0f634551d318f6}]
     flags: []
     status: pending

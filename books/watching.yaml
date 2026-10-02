@@ -1,5 +1,9 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
+- since: '2026-10-02'
+  item: 'Virgin Media package changed on 1 Oct (new contract documents; Netflix now included). The
+    50% business apportionment (Sep £22.25 of £44.50) needs the new monthly price; check the next bill, and
+    ask Gregg whether the Netflix add-on should be excluded from the business half.'
 - since: '2026-09-30'
   item: 'RESOLVED 30 Sep — Vercel payment that failed on ••9520 (29 Sep) went through on the ••7135
     business card: $48.00, receipt #2432-5430, queued as 2026-10-01-001. Future Vercel charges are on ••7135.'
