@@ -2890,6 +2890,9 @@ queue:
     proposed_category: professional_fees
     reasoning: "Gregg 6 Oct: the Ask Orla trade mark is a business cost, record it. Found the IPO application (19 May, Right Start: part-fee up front, balance due within 28 days of the examination report) and the payment receipt, but the amount sits in the PDF only. IPO letters followed on 29 May, 5 Jun and 14 Aug; the Right Start balance was probably paid after the 29 May / 5 Jun examination report. Needs the amount(s): the two IPO receipts, or the card statement lines. Accountant to confirm treatment: a new trade mark registration may count as capital rather than a day-to-day expense for a sole trader."
     evidence: [{gmail_thread: 19e3f73817f0ab7b}, {gmail_thread: 19e3f737a7ef5b03}, {gmail_thread: 19e72c82842460f0}, {gmail_thread: 19e9537e958c65b4}, {gmail_thread: 1a001f8035d6d019}]
-    flags: [awaiting-amount, accountant-check]
-    status: approved
+    flags: [accountant-check]
+    amount_booked: 265.00
+    status: booked
     approved_on: 2026-10-06
+    booked_on: 2026-10-06
+    note: "Gregg 6 Oct: £265 on 19 May, tax year 2026/27, from the IPO receipt. Booked as 2026-05-19-ipo-trademark."
