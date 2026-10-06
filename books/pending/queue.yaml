@@ -2851,3 +2851,27 @@ queue:
     evidence: [{gmail_thread: 1a0fb9203ce676b2}]
     flags: [client-paid-precedent]
     status: pending
+
+  # ---------- 2026-10-06 scan (window 4–6 Oct) ----------
+  - id: 2026-10-06-001
+    date: 2026-10-05
+    source: gmail
+    description: "Anthropic auto-recharge API credits — US$12.16 ($10.13 + $2.03 UK VAT), receipt #2231-5823-9545, invoice G1RDOXGX-0010, paid 5 Oct on card ending 1508"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Second auto-recharge on card ••1508 (after 28 Sep, 2026-09-30-001), so ••1508 now looks like the default card on your Anthropic account. Same question: if ••1508 is yours, approve and I'll pin the GBP (~£9) from that statement; if it's Arctic Ape's, I'll exclude both."
+    evidence: [{gmail_thread: 1a10f6a14313db97}]
+    flags: [needs_your_call, non-gbp, awaiting-gbp, new-card-1508]
+    status: pending
+  - id: 2026-10-06-002
+    date: 2026-10-05
+    source: gmail
+    description: "HP Instant Ink 10-page plan £1.79 (incl. £0.30 VAT) — billing cycle ending 25 Sep, subscription 6120718221"
+    amount: 1.79
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Same printer ink subscription booked in September (£1.79, office_costs_and_software). This is the next monthly cycle."
+    evidence: [{gmail_thread: 1a10f7358e6e6a5f}]
+    flags: []
+    status: pending
