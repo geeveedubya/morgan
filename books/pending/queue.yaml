@@ -2761,10 +2761,13 @@ queue:
     amount: null
     currency: GBP
     proposed_category: travel
-    reasoning: "Accommodation booking split into Klarna instalments. Business travel only if the stay was for work (e.g. a client trip); otherwise personal. Tell me which and, if business, I'll pin the full total from the Klarna schedule / statement."
-    evidence: [{gmail_thread: 1a0dd084404dccbe}]
-    flags: [needs_your_call, awaiting-amount]
-    status: pending
+    reasoning: "Gregg 6 Oct: this is the Scotland (Glasgow) trip, so 100% business. Matched to The Abbey Inn, Paisley, 11–12 Sep, £108.38 (Booking.com 6857269633). Booked at the full stay cost as 2026-08-28-hotel-abbey-inn; the Klarna instalments are repayments, not separate expenses."
+    evidence: [{gmail_thread: 1a0dd084404dccbe}, {gmail_thread: 1a04803d1ffb8815}]
+    flags: [paid-via-klarna]
+    amount_booked: 108.38
+    status: booked
+    approved_on: 2026-10-06
+    booked_on: 2026-10-06
     note: "Klarna 2nd instalment £29.78 paid 1 Oct; 3rd £36.13 due 27 Oct. Instalments so far add up to £72.26 (£6.35 + £29.78 + £36.13), if that is the whole plan (gmail 1a0f6f7fed5a0078)."
 
   # ---------- 2026-09-30 scan (window 28–30 Sep) ----------
@@ -2847,10 +2850,11 @@ queue:
     amount: null
     currency: null
     proposed_category: exclude
-    reasoning: "Same Google Ads profile (4999-3046-2651) you declined for April and May on 7 Jul as client-paid ad spend, not your cost. Proposing exclude on that basis; say if this month's spend was your own advertising instead."
+    reasoning: "Same Google Ads profile (4999-3046-2651) declined for April and May as client-paid ad spend. Gregg 6 Oct: exclude."
     evidence: [{gmail_thread: 1a0fb9203ce676b2}]
     flags: [client-paid-precedent]
-    status: pending
+    status: declined
+    declined_on: 2026-10-06
 
   # ---------- 2026-10-06 scan (window 4–6 Oct) ----------
   - id: 2026-10-06-001
@@ -2875,3 +2879,17 @@ queue:
     evidence: [{gmail_thread: 1a10f7358e6e6a5f}]
     flags: []
     status: pending
+
+  # ---------- 2026-10-06 — Gregg's instructions in chat ----------
+  - id: 2026-10-06-003
+    date: 2026-05-19
+    source: gmail
+    description: "UK IPO trade mark application UK00004389457 (Ask Orla), filed 19 May 2026 under Right Start — IPO payment receipt 1026145480; amount is only in the receipt PDF"
+    amount: null
+    currency: GBP
+    proposed_category: professional_fees
+    reasoning: "Gregg 6 Oct: the Ask Orla trade mark is a business cost, record it. Found the IPO application (19 May, Right Start: part-fee up front, balance due within 28 days of the examination report) and the payment receipt, but the amount sits in the PDF only. IPO letters followed on 29 May, 5 Jun and 14 Aug; the Right Start balance was probably paid after the 29 May / 5 Jun examination report. Needs the amount(s): the two IPO receipts, or the card statement lines. Accountant to confirm treatment: a new trade mark registration may count as capital rather than a day-to-day expense for a sole trader."
+    evidence: [{gmail_thread: 19e3f73817f0ab7b}, {gmail_thread: 19e3f737a7ef5b03}, {gmail_thread: 19e72c82842460f0}, {gmail_thread: 19e9537e958c65b4}, {gmail_thread: 1a001f8035d6d019}]
+    flags: [awaiting-amount, accountant-check]
+    status: approved
+    approved_on: 2026-10-06

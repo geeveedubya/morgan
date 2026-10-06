@@ -354,6 +354,37 @@ entries:
   status: booked
   approved_on: '2026-09-25'
   booked_on: '2026-09-25'
+- id: 2026-08-28-hotel-abbey-inn
+  date: '2026-08-28'
+  source: gmail
+  description: 'Hotel — The Abbey Inn, Paisley, 11–12 Sep (Booking.com 6857269633), £108.38; paid 28 Aug via Klarna instalments'
+  amount: 108.38
+  currency: GBP
+  proposed_category: travel
+  reasoning: 'Glasgow trip accommodation; trip is 100% business (Gregg 25 Sep), and Gregg confirmed on 6 Oct that the Klarna Booking.com payments are this trip. Booked at the full stay cost from the Booking.com receipt. The Klarna instalments (6.35 + 29.78 + 36.13 + a likely final 36.12 = 108.38) are repayments of this cost, not separate expenses.'
+  evidence:
+  - gmail_thread: 1a04803d1ffb8815
+  - gmail_thread: 1a0dd084404dccbe
+  - gmail_thread: 1a0f6f7fed5a0078
+  flags: [paid-via-klarna]
+  status: booked
+  approved_on: '2026-10-06'
+  booked_on: '2026-10-06'
+- id: 2026-09-05-hotel-luib
+  date: '2026-09-05'
+  source: gmail
+  description: 'Hotel — The Luib Hotel, Killin, 10–11 Sep (Booking.com 5048431169), £75.00 paid 5 Sep'
+  amount: 75.00
+  currency: GBP
+  proposed_category: travel
+  reasoning: 'First night of the 100%-business Glasgow trip (Gregg 25 Sep; confirmed 6 Oct). Amount from the Booking.com confirmation and payment-successful emails.'
+  evidence:
+  - gmail_thread: 1a047fe48e0dab8b
+  - gmail_thread: 1a0705f038ce5735
+  flags: []
+  status: booked
+  approved_on: '2026-10-06'
+  booked_on: '2026-10-06'
 totals:
   income_gbp: 2600.00
-  expenses_gbp: 950.83
+  expenses_gbp: 1134.21
