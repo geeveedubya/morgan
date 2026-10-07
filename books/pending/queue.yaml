@@ -2896,3 +2896,82 @@ queue:
     approved_on: 2026-10-06
     booked_on: 2026-10-06
     note: "Gregg 6 Oct: £265 on 19 May, tax year 2026/27, from the IPO receipt. Booked as 2026-05-19-ipo-trademark."
+
+  # ---------- 2026-10-07 scan (window 5–7 Oct) ----------
+  - id: 2026-10-07-001
+    date: 2026-10-06
+    source: gmail
+    description: "Anthropic Claude Max 5x — £90.00 (£75 + £15 VAT), receipt #2289-3821-6390, 6 Oct–6 Nov, paid 6 Oct on the ••7135 business card (after a first attempt failed the same day)"
+    amount: 90.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Anthropic is business (standing ruling); same £90 monthly plan booked in September. The failed attempt and 'access paused' emails were resolved by this payment."
+    evidence: [{gmail_thread: 1a1124a814bb6877}, {gmail_thread: 1a1124829949c763}]
+    flags: []
+    status: pending
+  - id: 2026-10-07-002
+    date: 2026-10-06
+    source: gmail
+    description: "Squarespace domain registration — steadyhand.ink (6 Oct); renews 21 Sep 2027 at £41.00; first-year price not in the email"
+    amount: null
+    currency: GBP
+    proposed_category: marketing_and_website
+    reasoning: "All Squarespace domains are business (standing ruling, 9 Sep). I'll pin the amount from the Squarespace receipt or the card statement."
+    evidence: [{gmail_thread: 1a111a8f99161ab1}]
+    flags: [awaiting-amount]
+    status: pending
+  - id: 2026-10-07-003
+    date: 2026-10-06
+    source: gmail
+    description: "Amazon — Plaud Note Pro AI voice recorder (meeting transcription and summaries), £143.00, order 205-8480519-4633954"
+    amount: 143.00
+    currency: GBP
+    proposed_category: equipment
+    reasoning: "A meeting recorder and transcriber, which looks like a work tool for client calls. Business if you use it mainly for work; tell me and I'll book it."
+    evidence: [{gmail_thread: 1a1106c6b8716ce2}]
+    flags: [needs_your_call]
+    status: pending
+  - id: 2026-10-07-004
+    date: 2026-10-06
+    source: gmail
+    description: "Amazon — Logitech MX Keys S keyboard and mouse combo, £150.00, order 204-7450012-1253128"
+    amount: 150.00
+    currency: GBP
+    proposed_category: equipment
+    reasoning: "Keyboard and mouse for the desk; business if it's for your work setup (like the office furniture and iPad you approved). Confirm and I'll book it."
+    evidence: [{gmail_thread: 1a10fff9552cb0ef}]
+    flags: [needs_your_call]
+    status: pending
+  - id: 2026-10-07-005
+    date: 2026-10-06
+    source: gmail
+    description: "INCOME — Stripe invoice C76BE83D-0071 to Penny Mande (M&E Properties), consulting; Penny says paid 6 Oct; amount only in the invoice PDF and Stripe"
+    amount: null
+    currency: null
+    proposed_category: sales
+    reasoning: "Client consulting income, paid by Stripe invoice. Stripe needs re-authorising, so I can't see the amount or the fee yet. I'll book it gross with the Stripe fee as a cost (your rule) once Stripe is reconnected."
+    evidence: [{gmail_thread: 1a11001acdfa12c2}]
+    flags: [awaiting-amount, income, stripe-unreachable]
+    status: pending
+  - id: 2026-10-07-006
+    date: 2026-10-06
+    source: gmail
+    description: "INCOME — Stripe invoice C76BE83D-0072 to Off the Wall (Stefan Brozin and partners), campaign launch and management, 2 hrs; Stefan paid R1,140.00 by card 6 Oct"
+    amount: 1140.00
+    currency: ZAR
+    proposed_category: sales
+    reasoning: "Client marketing income, paid in rand. Non-GBP, so it isn't converted automatically. I'll pin the sterling amount and the Stripe fee once Stripe is reconnected, then book gross with the fee as a cost."
+    evidence: [{gmail_thread: 1a110067197b5ff2}, {gmail_thread: 1a110b8fa24d403b}]
+    flags: [non-gbp, awaiting-gbp, income, stripe-unreachable]
+    status: pending
+  - id: 2026-10-07-007
+    date: 2026-10-06
+    source: gmail
+    description: "Klarna — final Wayfair instalment £143.51 (6 Oct); payment plan now complete"
+    amount: 143.51
+    currency: GBP
+    proposed_category: equipment
+    reasoning: "A July Wayfair Klarna instalment (£47.85) was booked as equipment, but its note says 'personal pattern', which doesn't match. Was the Wayfair purchase business (office furniture) or personal? If business, I'll book this final payment the same way; if personal, I'll take the July one out too."
+    evidence: [{gmail_thread: 1a110c00b85e2f55}]
+    flags: [needs_your_call]
+    status: pending
