@@ -2975,3 +2975,16 @@ queue:
     evidence: [{gmail_thread: 1a110c00b85e2f55}]
     flags: [needs_your_call]
     status: pending
+
+  # ---------- 2026-10-09 scan (window 7–9 Oct) ----------
+  - id: 2026-10-09-001
+    date: 2026-10-08
+    source: gmail
+    description: "Lovable Pro — £22.00 (incl. £3.67 VAT), receipt #2214-2254-1543, 8 Oct–8 Nov, paid on the ••7135 business card"
+    amount: 22.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Lovable is business (Gregg's ruling: 'Lovable still business expense'); same monthly plan as September (£22)."
+    evidence: [{gmail_thread: 1a11d05f73e8e8aa}]
+    flags: []
+    status: pending
