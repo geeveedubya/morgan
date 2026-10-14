@@ -937,7 +937,9 @@ queue:
     reasoning: "Furniture instalment plan, personal pattern."
     evidence: [{gmail_thread: 19f36ea27654c938}]
     flags: []
-    status: booked
+    status: declined
+    decision_note: 'REVERSED 14 Oct: Gregg says the Wayfair purchase was personal; removed from the July ledger'
+    declined_on: 2026-10-14
     approved_on: 2026-07-07
     booked_on: 2026-07-07
   - id: 2026-07-07-071
@@ -2742,7 +2744,10 @@ queue:
     reasoning: "50% business per the standing ruling (7 Jul), same basis and category as the Aug entry (£4.50); other £4.49 personal."
     evidence: [{gmail_thread: 1a0e1279bf3c4ef9}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 14 Oct: yes'
+    approved_on: 2026-10-14
+    booked_on: 2026-10-14
   - id: 2026-09-29-002
     date: 2026-09-26
     source: gmail
@@ -2753,7 +2758,10 @@ queue:
     reasoning: "Both Lebara SIMs 07555088933 and 07368497782 are business per the standing ruling (28 Aug)."
     evidence: [{gmail_thread: 1a0dcdee10d42aba}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 14 Oct: yes'
+    approved_on: 2026-10-14
+    booked_on: 2026-10-14
   - id: 2026-09-29-003
     date: 2026-09-26
     source: gmail
@@ -2781,7 +2789,9 @@ queue:
     reasoning: "Anthropic is business per the standing ruling, BUT card ••1508 is new — your auto-recharges so far were on ••4424, and the 23 Sep Anthropic charge was paid by Craig on the Arctic Ape card (excluded). Tell me whose card ••1508 is: if yours, approve and I'll pin the GBP (~£13.40) from that statement; if Arctic Ape's, I'll exclude it."
     evidence: [{gmail_thread: 1a0e72d9f5de13b8}]
     flags: [needs_your_call, non-gbp, awaiting-gbp, new-card-1508]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 14 Oct: "anything Anthropic is business, always"; awaiting GBP from the card 1508 statement'
+    approved_on: 2026-10-14
 
   # ---------- 2026-10-01 scan (window 29 Sep – 1 Oct) ----------
   - id: 2026-10-01-001
@@ -2794,7 +2804,9 @@ queue:
     reasoning: "Business hosting for the OCD projects team (approved in earlier months). This is the retry that cleared the 29 Sep failed payment on ••9520. USD; approve and I'll pin the GBP (~£35.50) from the Tide statement."
     evidence: [{gmail_thread: 1a0f1d96dfb97f7d}, {gmail_thread: 1a0eed58ce5e9164}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 14 Oct: yes; awaiting GBP from the Tide statement'
+    approved_on: 2026-10-14
   - id: 2026-10-01-002
     date: 2026-09-30
     source: gmail
@@ -2805,7 +2817,10 @@ queue:
     reasoning: "07884617816 is the business number per the standing ruling (7 Jul)."
     evidence: [{gmail_thread: 1a0f1783f7b7074a}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 14 Oct: yes'
+    approved_on: 2026-10-14
+    booked_on: 2026-10-14
 
   # ---------- 2026-10-02 scan (window 30 Sep – 2 Oct) ----------
   - id: 2026-10-02-001
@@ -2818,7 +2833,9 @@ queue:
     reasoning: "samrosevalley Workspace is business (standing ruling, same as Aug £16.43). The amount isn't in the email body; I'll pin it from the card statement when it charges."
     evidence: [{gmail_thread: 1a0fa2a9c33650d3}]
     flags: [awaiting-amount]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 14 Oct: yes; awaiting amount from the statement'
+    approved_on: 2026-10-14
   - id: 2026-10-02-002
     date: 2026-10-01
     source: gmail
@@ -2829,7 +2846,10 @@ queue:
     reasoning: "Winchester weekday-morning RingGo parking → travel per the standing ruling (7 Jul)."
     evidence: [{gmail_thread: 1a0f634551d318f6}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 14 Oct: yes'
+    approved_on: 2026-10-14
+    booked_on: 2026-10-14
 
   # ---------- 2026-10-03 scan (window 1–3 Oct) ----------
   - id: 2026-10-03-001
@@ -2842,7 +2862,9 @@ queue:
     reasoning: "oxfordcircus.co.za Workspace is business (standing ruling; Sep booked £21.44 from the Tide statement). I'll pin the amount from the statement when it charges."
     evidence: [{gmail_thread: 1a0fcf619a428e4d}]
     flags: [awaiting-amount]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 14 Oct: yes; awaiting amount from the statement'
+    approved_on: 2026-10-14
   - id: 2026-10-03-002
     date: 2026-10-02
     source: gmail
@@ -2867,7 +2889,9 @@ queue:
     reasoning: "Second auto-recharge on card ••1508 (after 28 Sep, 2026-09-30-001), so ••1508 now looks like the default card on your Anthropic account. Same question: if ••1508 is yours, approve and I'll pin the GBP (~£9) from that statement; if it's Arctic Ape's, I'll exclude both."
     evidence: [{gmail_thread: 1a10f6a14313db97}]
     flags: [needs_your_call, non-gbp, awaiting-gbp, new-card-1508]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 14 Oct: "anything Anthropic is business, always"; awaiting GBP from the card 1508 statement'
+    approved_on: 2026-10-14
   - id: 2026-10-06-002
     date: 2026-10-05
     source: gmail
@@ -2878,7 +2902,10 @@ queue:
     reasoning: "Same printer ink subscription booked in September (£1.79, office_costs_and_software). This is the next monthly cycle."
     evidence: [{gmail_thread: 1a10f7358e6e6a5f}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 14 Oct: yes'
+    approved_on: 2026-10-14
+    booked_on: 2026-10-14
 
   # ---------- 2026-10-06 — Gregg's instructions in chat ----------
   - id: 2026-10-06-003
@@ -2908,7 +2935,10 @@ queue:
     reasoning: "Anthropic is business (standing ruling); same £90 monthly plan booked in September. The failed attempt and 'access paused' emails were resolved by this payment."
     evidence: [{gmail_thread: 1a1124a814bb6877}, {gmail_thread: 1a1124829949c763}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 14 Oct: yes'
+    approved_on: 2026-10-14
+    booked_on: 2026-10-14
   - id: 2026-10-07-002
     date: 2026-10-06
     source: gmail
@@ -2919,7 +2949,9 @@ queue:
     reasoning: "All Squarespace domains are business (standing ruling, 9 Sep). I'll pin the amount from the Squarespace receipt or the card statement."
     evidence: [{gmail_thread: 1a111a8f99161ab1}]
     flags: [awaiting-amount]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 14 Oct: yes; awaiting first-year amount from the statement'
+    approved_on: 2026-10-14
   - id: 2026-10-07-003
     date: 2026-10-06
     source: gmail
@@ -2930,7 +2962,10 @@ queue:
     reasoning: "A meeting recorder and transcriber, which looks like a work tool for client calls. Business if you use it mainly for work; tell me and I'll book it."
     evidence: [{gmail_thread: 1a1106c6b8716ce2}]
     flags: [needs_your_call]
-    status: pending
+    status: booked
+    decision_note: 'Gregg 14 Oct: "business"'
+    approved_on: 2026-10-14
+    booked_on: 2026-10-14
   - id: 2026-10-07-004
     date: 2026-10-06
     source: gmail
@@ -2941,7 +2976,10 @@ queue:
     reasoning: "Keyboard and mouse for the desk; business if it's for your work setup (like the office furniture and iPad you approved). Confirm and I'll book it."
     evidence: [{gmail_thread: 1a10fff9552cb0ef}]
     flags: [needs_your_call]
-    status: pending
+    status: booked
+    decision_note: 'Gregg 14 Oct: "Business"'
+    approved_on: 2026-10-14
+    booked_on: 2026-10-14
   - id: 2026-10-07-005
     date: 2026-10-06
     source: gmail
@@ -2952,7 +2990,9 @@ queue:
     reasoning: "Client consulting income, paid by Stripe invoice. Stripe needs re-authorising, so I can't see the amount or the fee yet. I'll book it gross with the Stripe fee as a cost (your rule) once Stripe is reconnected."
     evidence: [{gmail_thread: 1a11001acdfa12c2}]
     flags: [awaiting-amount, income, stripe-unreachable]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 14 Oct: "yes, income"; book gross with Stripe fee once Stripe is reconnected'
+    approved_on: 2026-10-14
   - id: 2026-10-07-006
     date: 2026-10-06
     source: gmail
@@ -2963,7 +3003,9 @@ queue:
     reasoning: "Client marketing income, paid in rand. Non-GBP, so it isn't converted automatically. I'll pin the sterling amount and the Stripe fee once Stripe is reconnected, then book gross with the fee as a cost."
     evidence: [{gmail_thread: 1a110067197b5ff2}, {gmail_thread: 1a110b8fa24d403b}]
     flags: [non-gbp, awaiting-gbp, income, stripe-unreachable]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 14 Oct: "Yes, income"; book gross in GBP with Stripe fee once Stripe is reconnected'
+    approved_on: 2026-10-14
   - id: 2026-10-07-007
     date: 2026-10-06
     source: gmail
@@ -2974,7 +3016,9 @@ queue:
     reasoning: "A July Wayfair Klarna instalment (£47.85) was booked as equipment, but its note says 'personal pattern', which doesn't match. Was the Wayfair purchase business (office furniture) or personal? If business, I'll book this final payment the same way; if personal, I'll take the July one out too."
     evidence: [{gmail_thread: 1a110c00b85e2f55}]
     flags: [needs_your_call]
-    status: pending
+    status: declined
+    decision_note: 'Gregg 14 Oct: Wayfair purchase was personal'
+    declined_on: 2026-10-14
 
   # ---------- 2026-10-09 scan (window 7–9 Oct) ----------
   - id: 2026-10-09-001
@@ -2987,7 +3031,10 @@ queue:
     reasoning: "Lovable is business (Gregg's ruling: 'Lovable still business expense'); same monthly plan as September (£22)."
     evidence: [{gmail_thread: 1a11d05f73e8e8aa}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 14 Oct: yes'
+    approved_on: 2026-10-14
+    booked_on: 2026-10-14
 
   # ---------- 2026-10-14 scan (window 12–14 Oct) ----------
   - id: 2026-10-14-001
@@ -3000,7 +3047,10 @@ queue:
     reasoning: "Extra Claude usage on top of the Max plan, paid on the business card; Claude is a business tool. You're not VAT-registered, so the full £12.00 is the cost."
     evidence: [{gmail_thread: 1a1359209e2c64d3}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 14 Oct: yes'
+    approved_on: 2026-10-14
+    booked_on: 2026-10-14
   - id: 2026-10-14-002
     date: 2026-10-13
     source: gmail
@@ -3011,4 +3061,6 @@ queue:
     reasoning: "Third auto-recharge on card ••1508 (after 2026-09-30-001 and 2026-10-06-001). Same question: if ••1508 is yours, approve and I'll pin the GBP (~£9) from that statement; if it's Arctic Ape's, I'll exclude all three."
     evidence: [{gmail_thread: 1a138cc65f837608}]
     flags: [needs_your_call, non-gbp, awaiting-gbp, new-card-1508]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 14 Oct: "anything Anthropic is business, always"; awaiting GBP from the card 1508 statement'
+    approved_on: 2026-10-14

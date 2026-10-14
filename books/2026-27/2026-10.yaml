@@ -1,0 +1,105 @@
+# Ledger 2026-10 — tax year 2026/27. Booked entries only; approvals in chat.
+month: 2026-10
+entries:
+- id: 2026-10-02-002
+  date: '2026-10-01'
+  source: gmail
+  description: 'RingGo parking £2.00 — Jewry Street Car Park, Winchester, Thu 1 Oct 07:43–09:00'
+  amount: 2.00
+  currency: GBP
+  proposed_category: travel
+  reasoning: 'Winchester weekday-morning RingGo parking → travel per the standing ruling (7 Jul). Approved by Gregg 14 Oct.'
+  evidence:
+  - gmail_thread: 1a0f634551d318f6
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-14'
+- id: 2026-10-06-002
+  date: '2026-10-05'
+  source: gmail
+  description: 'HP Instant Ink 10-page plan £1.79 (incl. £0.30 VAT) — billing cycle ending 25 Sep, subscription 6120718221'
+  amount: 1.79
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Same printer ink subscription booked in September (£1.79, office_costs_and_software). This is the next monthly cycle. Approved by Gregg 14 Oct.'
+  evidence:
+  - gmail_thread: 1a10f7358e6e6a5f
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-14'
+- id: 2026-10-07-001
+  date: '2026-10-06'
+  source: gmail
+  description: 'Anthropic Claude Max 5x — £90.00 (£75 + £15 VAT), receipt #2289-3821-6390, 6 Oct–6 Nov, paid 6 Oct on the ••7135 business card (after a first attempt failed the same day)'
+  amount: 90.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Anthropic is business (standing ruling); same £90 monthly plan booked in September. The failed attempt and ''access paused'' emails were resolved by this payment. Approved by Gregg 14 Oct.'
+  evidence:
+  - gmail_thread: 1a1124a814bb6877
+  - gmail_thread: 1a1124829949c763
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-14'
+- id: 2026-10-07-003
+  date: '2026-10-06'
+  source: gmail
+  description: 'Amazon — Plaud Note Pro AI voice recorder (meeting transcription and summaries), £143.00, order 205-8480519-4633954'
+  amount: 143.00
+  currency: GBP
+  proposed_category: equipment
+  reasoning: 'A meeting recorder and transcriber, which looks like a work tool for client calls. Business if you use it mainly for work; tell me and I''ll book it. Approved by Gregg 14 Oct.'
+  evidence:
+  - gmail_thread: 1a1106c6b8716ce2
+  flags: ['needs_your_call']
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-14'
+- id: 2026-10-07-004
+  date: '2026-10-06'
+  source: gmail
+  description: 'Amazon — Logitech MX Keys S keyboard and mouse combo, £150.00, order 204-7450012-1253128'
+  amount: 150.00
+  currency: GBP
+  proposed_category: equipment
+  reasoning: 'Keyboard and mouse for the desk; business if it''s for your work setup (like the office furniture and iPad you approved). Confirm and I''ll book it. Approved by Gregg 14 Oct.'
+  evidence:
+  - gmail_thread: 1a10fff9552cb0ef
+  flags: ['needs_your_call']
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-14'
+- id: 2026-10-09-001
+  date: '2026-10-08'
+  source: gmail
+  description: 'Lovable Pro — £22.00 (incl. £3.67 VAT), receipt #2214-2254-1543, 8 Oct–8 Nov, paid on the ••7135 business card'
+  amount: 22.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Lovable is business (Gregg''s ruling: ''Lovable still business expense''); same monthly plan as September (£22). Approved by Gregg 14 Oct.'
+  evidence:
+  - gmail_thread: 1a11d05f73e8e8aa
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-14'
+- id: 2026-10-14-001
+  date: '2026-10-13'
+  source: gmail
+  description: 'Anthropic — prepaid extra usage, Individual plan, £12.00 (£10.00 + £2.00 UK VAT), receipt #2254-9905-7328, invoice QLCTF7YW-0023, paid 13 Oct on the ••7135 business card'
+  amount: 12.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Extra Claude usage on top of the Max plan, paid on the business card; Claude is a business tool. You''re not VAT-registered, so the full £12.00 is the cost. Approved by Gregg 14 Oct.'
+  evidence:
+  - gmail_thread: 1a1359209e2c64d3
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-14'
+totals:
+  income_gbp: 0.00
+  expenses_gbp: 420.79

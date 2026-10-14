@@ -385,6 +385,48 @@ entries:
   status: booked
   approved_on: '2026-10-06'
   booked_on: '2026-10-06'
+- id: 2026-09-29-001
+  date: '2026-09-26'
+  source: gmail
+  description: 'Apple iCloud+ 2TB monthly £8.99 (invoice 26 Sep, order MKBB0FFFDV) — 50% business apportionment = £4.50'
+  amount: 4.50
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: '50% business per the standing ruling (7 Jul), same basis and category as the Aug entry (£4.50); other £4.49 personal. Approved by Gregg 14 Oct.'
+  evidence:
+  - gmail_thread: 1a0e1279bf3c4ef9
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-14'
+- id: 2026-09-29-002
+  date: '2026-09-26'
+  source: gmail
+  description: 'Lebara SIM-only plan renewal £1.50 (07368497782, ref WRPKPJDCB38CFCZ3, 26 Sep)'
+  amount: 1.50
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: 'Both Lebara SIMs 07555088933 and 07368497782 are business per the standing ruling (28 Aug). Approved by Gregg 14 Oct.'
+  evidence:
+  - gmail_thread: 1a0dcdee10d42aba
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-14'
+- id: 2026-10-01-002
+  date: '2026-09-30'
+  source: gmail
+  description: 'Lebara SIM-only plan renewal £1.50 (07884617816, 30 Sep)'
+  amount: 1.50
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: '07884617816 is the business number per the standing ruling (7 Jul). Approved by Gregg 14 Oct.'
+  evidence:
+  - gmail_thread: 1a0f1783f7b7074a
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-14'
 totals:
   income_gbp: 2600.00
-  expenses_gbp: 1134.21
+  expenses_gbp: 1141.71
