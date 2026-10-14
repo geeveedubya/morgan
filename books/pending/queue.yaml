@@ -2988,3 +2988,27 @@ queue:
     evidence: [{gmail_thread: 1a11d05f73e8e8aa}]
     flags: []
     status: pending
+
+  # ---------- 2026-10-14 scan (window 12–14 Oct) ----------
+  - id: 2026-10-14-001
+    date: 2026-10-13
+    source: gmail
+    description: "Anthropic — prepaid extra usage, Individual plan, £12.00 (£10.00 + £2.00 UK VAT), receipt #2254-9905-7328, invoice QLCTF7YW-0023, paid 13 Oct on the ••7135 business card"
+    amount: 12.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Extra Claude usage on top of the Max plan, paid on the business card; Claude is a business tool. You're not VAT-registered, so the full £12.00 is the cost."
+    evidence: [{gmail_thread: 1a1359209e2c64d3}]
+    flags: []
+    status: pending
+  - id: 2026-10-14-002
+    date: 2026-10-13
+    source: gmail
+    description: "Anthropic auto-recharge API credits — US$12.00 ($10.00 + $2.00 UK VAT), receipt #2528-5341-3867, invoice G1RDOXGX-0011, paid 13 Oct on card ending 1508"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Third auto-recharge on card ••1508 (after 2026-09-30-001 and 2026-10-06-001). Same question: if ••1508 is yours, approve and I'll pin the GBP (~£9) from that statement; if it's Arctic Ape's, I'll exclude all three."
+    evidence: [{gmail_thread: 1a138cc65f837608}]
+    flags: [needs_your_call, non-gbp, awaiting-gbp, new-card-1508]
+    status: pending
