@@ -1,0 +1,26 @@
+# Mileage and car log — tax year 2026/27 (6 Apr 2026 – 5 Apr 2027).
+# Records enough for EITHER method, so Gregg can choose at year end:
+#   - 45p/mile simplified: needs business trips (date, from, to, purpose, miles).
+#   - Actual costs: needs business miles AND total miles (odometer readings) plus every car receipt.
+# Morgan adds trips Gregg reports in chat; nothing here is claimed until the method is chosen.
+vehicle:
+  registration: DG17PUK
+  description: Volkswagen Tiguan 2017 2.0 diesel (grey)
+  owned_by: Gregg (Lloyds car finance, agreement ending 3639)
+  method: undecided   # mileage_45p | actual_costs — once claimed for this car, the method is fixed
+odometer:
+  - date: '2026-10-15'
+    reading: 56224
+    source: Kings Worthy Garage invoice IMC022811
+  # Add a reading on 5 Apr 2027 (year end); a 6 Apr 2026 reading, if Gregg can find one (MOT or service record), makes the total-miles figure exact.
+trips: []
+  # - date: '2026-10-16'
+  #   from: Kings Worthy
+  #   to: <client or site>
+  #   purpose: <who and why>
+  #   miles: <round trip>
+car_costs:
+  - date: '2026-10-15'
+    description: Kings Worthy Garage — engine management light diagnostics
+    amount: 78.00
+    queue_id: 2026-10-15-001

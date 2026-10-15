@@ -3075,5 +3075,7 @@ queue:
     proposed_category: travel
     reasoning: "Business only if the Tiguan is used for work AND you claim actual car costs (not the 45p-a-mile rate). No car method is set in your rules yet, so this needs your call. If personal, the £80 from Tide is a drawing; if business, £78 is a reimbursement and £2 is a drawing."
     evidence: [{upload: Mr_Van_Wyk.pdf (Kings Worthy Garage IMC022811)}]
-    flags: [needs_your_call, car-method-not-set, paid-personally, tide-transfer-80]
-    status: pending
+    flags: [car-method-pending, paid-personally, tide-transfer-80, odometer-56224]
+    status: approved
+    decision_note: 'Gregg 15 Oct: record as a car expense for now; method (45p mileage vs actual costs) to be chosen later. Held as approved, not booked, so the full £78 does not overstate expenses: under mileage it is not claimable, under actual costs only the business share is. Odometer 56,224 on 15 Oct (from the invoice).'
+    approved_on: 2026-10-15
