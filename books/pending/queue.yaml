@@ -3064,3 +3064,16 @@ queue:
     status: approved
     decision_note: 'Gregg 14 Oct: "anything Anthropic is business, always"; awaiting GBP from the card 1508 statement'
     approved_on: 2026-10-14
+
+  # ---------- 2026-10-15 — receipt supplied by Gregg in chat ----------
+  - id: 2026-10-15-001
+    date: 2026-10-15
+    source: chat-upload
+    description: "Kings Worthy Garage invoice IMC022811 — engine management light diagnostics (1 hr), VW Tiguan DG17PUK, £78.00 (£65.00 + £13.00 VAT), paid by card 15 Oct by Michelle; Gregg reimbursed her £80 from his personal account and moved £80 from Tide to personal the same day"
+    amount: 78.00
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Business only if the Tiguan is used for work AND you claim actual car costs (not the 45p-a-mile rate). No car method is set in your rules yet, so this needs your call. If personal, the £80 from Tide is a drawing; if business, £78 is a reimbursement and £2 is a drawing."
+    evidence: [{upload: Mr_Van_Wyk.pdf (Kings Worthy Garage IMC022811)}]
+    flags: [needs_your_call, car-method-not-set, paid-personally, tide-transfer-80]
+    status: pending
