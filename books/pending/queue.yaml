@@ -3079,3 +3079,16 @@ queue:
     status: approved
     decision_note: 'Gregg 15 Oct: record as a car expense for now; method (45p mileage vs actual costs) to be chosen later. Held as approved, not booked, so the full £78 does not overstate expenses: under mileage it is not claimable, under actual costs only the business share is. Odometer 56,224 on 15 Oct (from the invoice).'
     approved_on: 2026-10-15
+
+  # ---------- 2026-10-17 scan (window 15–17 Oct) ----------
+  - id: 2026-10-17-001
+    date: 2026-10-16
+    source: gmail
+    description: "Squarespace domain registration — askhr.work (16 Oct); renews 1 Oct 2027 at £19.00; first-year price not in the email"
+    amount: null
+    currency: GBP
+    proposed_category: marketing_and_website
+    reasoning: "A new business domain, like keepmyseatwarm.com (approved 9 Sep) and steadyhand.ink (approved 14 Oct). The first-year charge isn't in the email, so I'll take it from the statement once you approve."
+    evidence: [{gmail_thread: 1a143c380d9714a0}]
+    flags: [awaiting-amount]
+    status: pending
