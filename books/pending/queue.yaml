@@ -3092,3 +3092,27 @@ queue:
     evidence: [{gmail_thread: 1a143c380d9714a0}]
     flags: [awaiting-amount]
     status: pending
+
+  # ---------- 2026-10-19 scan (window 17–19 Oct) ----------
+  - id: 2026-10-19-001
+    date: 2026-10-17
+    source: gmail
+    description: "Anthropic auto-recharge API credits — US$12.10 ($10.08 + $2.02 UK VAT), receipt #2708-4447-2285, invoice G1RDOXGX-0012, paid 17 Oct on card ending 1508"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Your standing ruling: anything Anthropic is business (14 Oct). Fourth credit top-up on ••1508. In dollars, so I'll take the sterling figure from that card's statement once you approve."
+    evidence: [{gmail_thread: 1a14dc47a540f1d8}]
+    flags: [non-gbp, awaiting-gbp, card-1508]
+    status: pending
+  - id: 2026-10-19-002
+    date: 2026-10-18
+    source: gmail
+    description: "Amazon — 100 assorted grey mailing / postage bags, £4.99, order 205-6818680-9609168 (18 Oct)"
+    amount: 4.99
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Postage packaging is a business cost only if it's for sending business items. If it's for selling your own things (MPB or Vinted), it's personal. Your call."
+    evidence: [{gmail_thread: 1a14f7929ccfa09d}]
+    flags: [needs_your_call]
+    status: pending
