@@ -17,10 +17,10 @@ watching:
   item: 'KLARNA GUARD — The Abbey Inn (Glasgow trip) is booked at its full £108.38. The Klarna
     instalments (£6.35 26 Sep, £29.78 1 Oct, £36.13 27 Oct, likely £36.12 after) are repayments of that
     cost: do NOT book them as expenses. Same treatment as the V12 camera loan.'
-- since: '2026-10-02'
-  item: 'Virgin Media: October bill (19 Oct) shows the new package at £29.00/month (was £44.50); first bill £27.71
-    after an £11.89 change credit, queued 21 Oct at 50% (2026-10-21-003). Open question for Gregg: exclude the
-    Netflix/TV element from the business half?'
+- since: '2026-10-21'
+  item: 'CARD ••1508 = ARCTIC APE (Gregg 21 Oct). Anthropic charges on card ending 1508 are billed to Arctic Ape
+    directly and are excluded; this is the ONLY exception to "anything Anthropic is business". Four charges
+    declined (28 Sep, 5 Oct, 13 Oct, 17 Oct). Virgin Media at 50% of the new £29 package confirmed ("half as usual").'
 - since: '2026-10-21'
   item: 'PLAUD subscription trial (via Stripe, PLAUD LLC) started 20 Oct, ends 23 Oct. If it converts to paid, queue
     it — the Plaud recorder itself is booked as business equipment.'

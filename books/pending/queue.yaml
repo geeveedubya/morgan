@@ -2789,7 +2789,9 @@ queue:
     reasoning: "Anthropic is business per the standing ruling, BUT card ••1508 is new — your auto-recharges so far were on ••4424, and the 23 Sep Anthropic charge was paid by Craig on the Arctic Ape card (excluded). Tell me whose card ••1508 is: if yours, approve and I'll pin the GBP (~£13.40) from that statement; if Arctic Ape's, I'll exclude it."
     evidence: [{gmail_thread: 1a0e72d9f5de13b8}]
     flags: [needs_your_call, non-gbp, awaiting-gbp, new-card-1508]
-    status: approved
+    status: declined
+    decision_note: 'REVERSED 21 Oct (approved 14 Oct). Gregg 21 Oct: card 1508 is charged to Arctic Ape directly; the only exception to the Anthropic-is-business rule. Excluded from these books.'
+    declined_on: 2026-10-21
     decision_note: 'Gregg 14 Oct: "anything Anthropic is business, always"; awaiting GBP from the card 1508 statement'
     approved_on: 2026-10-14
 
@@ -2889,7 +2891,9 @@ queue:
     reasoning: "Second auto-recharge on card ••1508 (after 28 Sep, 2026-09-30-001), so ••1508 now looks like the default card on your Anthropic account. Same question: if ••1508 is yours, approve and I'll pin the GBP (~£9) from that statement; if it's Arctic Ape's, I'll exclude both."
     evidence: [{gmail_thread: 1a10f6a14313db97}]
     flags: [needs_your_call, non-gbp, awaiting-gbp, new-card-1508]
-    status: approved
+    status: declined
+    decision_note: 'REVERSED 21 Oct (approved 14 Oct). Gregg 21 Oct: card 1508 is charged to Arctic Ape directly; the only exception to the Anthropic-is-business rule. Excluded from these books.'
+    declined_on: 2026-10-21
     decision_note: 'Gregg 14 Oct: "anything Anthropic is business, always"; awaiting GBP from the card 1508 statement'
     approved_on: 2026-10-14
   - id: 2026-10-06-002
@@ -3061,7 +3065,9 @@ queue:
     reasoning: "Third auto-recharge on card ••1508 (after 2026-09-30-001 and 2026-10-06-001). Same question: if ••1508 is yours, approve and I'll pin the GBP (~£9) from that statement; if it's Arctic Ape's, I'll exclude all three."
     evidence: [{gmail_thread: 1a138cc65f837608}]
     flags: [needs_your_call, non-gbp, awaiting-gbp, new-card-1508]
-    status: approved
+    status: declined
+    decision_note: 'REVERSED 21 Oct (approved 14 Oct). Gregg 21 Oct: card 1508 is charged to Arctic Ape directly; the only exception to the Anthropic-is-business rule. Excluded from these books.'
+    declined_on: 2026-10-21
     decision_note: 'Gregg 14 Oct: "anything Anthropic is business, always"; awaiting GBP from the card 1508 statement'
     approved_on: 2026-10-14
 
@@ -3091,7 +3097,9 @@ queue:
     reasoning: "A new business domain, like keepmyseatwarm.com (approved 9 Sep) and steadyhand.ink (approved 14 Oct). The first-year charge isn't in the email, so I'll take it from the statement once you approve."
     evidence: [{gmail_thread: 1a143c380d9714a0}]
     flags: [awaiting-amount]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 21 Oct: domain business; awaiting first-year amount from the statement'
+    approved_on: 2026-10-21
 
   # ---------- 2026-10-19 scan (window 17–19 Oct) ----------
   - id: 2026-10-19-001
@@ -3104,7 +3112,9 @@ queue:
     reasoning: "Your standing ruling: anything Anthropic is business (14 Oct). Fourth credit top-up on ••1508. In dollars, so I'll take the sterling figure from that card's statement once you approve."
     evidence: [{gmail_thread: 1a14dc47a540f1d8}]
     flags: [non-gbp, awaiting-gbp, card-1508]
-    status: pending
+    status: declined
+    decision_note: 'Gregg 21 Oct: card 1508 is charged to Arctic Ape directly; the only exception to the Anthropic-is-business rule. Excluded from these books.'
+    declined_on: 2026-10-21
   - id: 2026-10-19-002
     date: 2026-10-18
     source: gmail
@@ -3115,7 +3125,10 @@ queue:
     reasoning: "Postage packaging is a business cost only if it's for sending business items. If it's for selling your own things (MPB or Vinted), it's personal. Your call."
     evidence: [{gmail_thread: 1a14f7929ccfa09d}]
     flags: [needs_your_call]
-    status: pending
+    status: booked
+    decision_note: 'Gregg 21 Oct: postage bags business'
+    approved_on: 2026-10-21
+    booked_on: 2026-10-21
 
   # ---------- 2026-10-21 scan (window 19–21 Oct) ----------
   - id: 2026-10-21-001
@@ -3128,7 +3141,10 @@ queue:
     reasoning: "Your standing ruling: anything Anthropic is business. Extra Claude usage paid on the business card; full £10.20 is the cost (not VAT-registered)."
     evidence: [{gmail_thread: 1a1599c4c09900b9}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 21 Oct: every other Anthropic charge is business'
+    approved_on: 2026-10-21
+    booked_on: 2026-10-21
   - id: 2026-10-21-002
     date: 2026-10-21
     source: gmail
@@ -3150,4 +3166,7 @@ queue:
     reasoning: "Home broadband claimed at 50%, as in September (£22.25 of £44.50). The new package is cheaper (£29 a month). Netflix is now included: if you'd rather leave the TV part out of the business share, tell me and I'll adjust."
     evidence: [{gmail_thread: 1a159a2cd0cf68ac}]
     flags: [apportioned-50]
-    status: pending
+    status: booked
+    decision_note: 'Gregg 21 Oct: include half the bill as usual'
+    approved_on: 2026-10-21
+    booked_on: 2026-10-21

@@ -100,6 +100,48 @@ entries:
   status: booked
   approved_on: '2026-10-14'
   booked_on: '2026-10-14'
+- id: 2026-10-19-002
+  date: '2026-10-18'
+  source: gmail
+  description: 'Amazon — 100 assorted grey mailing / postage bags, £4.99, order 205-6818680-9609168 (18 Oct)'
+  amount: 4.99
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Postage packaging is a business cost only if it''s for sending business items. If it''s for selling your own things (MPB or Vinted), it''s personal. Your call. Approved by Gregg 21 Oct.'
+  evidence:
+  - gmail_thread: 1a14f7929ccfa09d
+  flags: ['needs_your_call']
+  status: booked
+  approved_on: '2026-10-21'
+  booked_on: '2026-10-21'
+- id: 2026-10-21-001
+  date: '2026-10-20'
+  source: gmail
+  description: 'Anthropic — prepaid extra usage, Individual plan, £10.20 (£8.50 + £1.70 UK VAT), receipt #2514-8592-2590, invoice QLCTF7YW-0024, paid 20 Oct on the ••7135 business card'
+  amount: 10.20
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Your standing ruling: anything Anthropic is business. Extra Claude usage paid on the business card; full £10.20 is the cost (not VAT-registered). Approved by Gregg 21 Oct.'
+  evidence:
+  - gmail_thread: 1a1599c4c09900b9
+  flags: []
+  status: booked
+  approved_on: '2026-10-21'
+  booked_on: '2026-10-21'
+- id: 2026-10-21-003
+  date: '2026-10-19'
+  source: gmail
+  description: 'Virgin Media October bill £27.71 (bill date 19 Oct, Direct Debit 3 Nov; package now £29.00/month after a £43 promo discount to Oct 2028, plus a one-off £11.89 credit for the package change) — 50% business share = £13.86'
+  amount: 13.86
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: 'Home broadband claimed at 50%, as in September (£22.25 of £44.50). The new package is cheaper (£29 a month). Netflix is now included: if you''d rather leave the TV part out of the business share, tell me and I''ll adjust. Approved by Gregg 21 Oct.'
+  evidence:
+  - gmail_thread: 1a159a2cd0cf68ac
+  flags: ['apportioned-50']
+  status: booked
+  approved_on: '2026-10-21'
+  booked_on: '2026-10-21'
 totals:
   income_gbp: 0.00
-  expenses_gbp: 420.79
+  expenses_gbp: 449.84
