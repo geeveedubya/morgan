@@ -3116,3 +3116,38 @@ queue:
     evidence: [{gmail_thread: 1a14f7929ccfa09d}]
     flags: [needs_your_call]
     status: pending
+
+  # ---------- 2026-10-21 scan (window 19–21 Oct) ----------
+  - id: 2026-10-21-001
+    date: 2026-10-20
+    source: gmail
+    description: "Anthropic — prepaid extra usage, Individual plan, £10.20 (£8.50 + £1.70 UK VAT), receipt #2514-8592-2590, invoice QLCTF7YW-0024, paid 20 Oct on the ••7135 business card"
+    amount: 10.20
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Your standing ruling: anything Anthropic is business. Extra Claude usage paid on the business card; full £10.20 is the cost (not VAT-registered)."
+    evidence: [{gmail_thread: 1a1599c4c09900b9}]
+    flags: []
+    status: pending
+  - id: 2026-10-21-002
+    date: 2026-10-21
+    source: gmail
+    description: "domains.co.za invoice 3868795 (York Fund Management) — web hosting for November: oxfordcircus.co.za R109 + samrosevalley.co.za R129 = R238.00; taken by credit card on 1 Nov"
+    amount: 238.00
+    currency: ZAR
+    proposed_category: office_costs_and_software
+    reasoning: "Same monthly hosting as October (approved). Standing ruling (7 Jul): domains.co.za hosting under York Fund Management is your cost. In rand, so not converted; I'll pin the sterling figure from the statement."
+    evidence: [{gmail_thread: 1a15c58b067d356c}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+  - id: 2026-10-21-003
+    date: 2026-10-19
+    source: gmail
+    description: "Virgin Media October bill £27.71 (bill date 19 Oct, Direct Debit 3 Nov; package now £29.00/month after a £43 promo discount to Oct 2028, plus a one-off £11.89 credit for the package change) — 50% business share = £13.86"
+    amount: 13.86
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "Home broadband claimed at 50%, as in September (£22.25 of £44.50). The new package is cheaper (£29 a month). Netflix is now included: if you'd rather leave the TV part out of the business share, tell me and I'll adjust."
+    evidence: [{gmail_thread: 1a159a2cd0cf68ac}]
+    flags: [apportioned-50]
+    status: pending

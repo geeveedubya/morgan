@@ -18,15 +18,18 @@ watching:
     instalments (£6.35 26 Sep, £29.78 1 Oct, £36.13 27 Oct, likely £36.12 after) are repayments of that
     cost: do NOT book them as expenses. Same treatment as the V12 camera loan.'
 - since: '2026-10-02'
-  item: 'Virgin Media package changed on 1 Oct (new contract documents; Netflix now included). The
-    50% business apportionment (Sep £22.25 of £44.50) needs the new monthly price; check the next bill, and
-    ask Gregg whether the Netflix add-on should be excluded from the business half.'
+  item: 'Virgin Media: October bill (19 Oct) shows the new package at £29.00/month (was £44.50); first bill £27.71
+    after an £11.89 change credit, queued 21 Oct at 50% (2026-10-21-003). Open question for Gregg: exclude the
+    Netflix/TV element from the business half?'
+- since: '2026-10-21'
+  item: 'PLAUD subscription trial (via Stripe, PLAUD LLC) started 20 Oct, ends 23 Oct. If it converts to paid, queue
+    it — the Plaud recorder itself is booked as business equipment.'
 - since: '2026-09-30'
   item: 'RESOLVED 30 Sep — Vercel payment that failed on ••9520 (29 Sep) went through on the ••7135
     business card: $48.00, receipt #2432-5430, queued as 2026-10-01-001. Future Vercel charges are on ••7135.'
 - since: '2026-09-29'
   item: 'Squarespace website subscription auto-renews 12 Oct 2026 (reminder 27 Sep). Business per
-    the standing ruling; queue it when the charge lands. 12 Oct: due today, no receipt in Gmail yet. 13 Oct: still no receipt; asked Gregg to check it renewed. 14 Oct: still none. 15–20 Oct: still none.'
+    the standing ruling; queue it when the charge lands. 12 Oct: due today, no receipt in Gmail yet. 13 Oct: still no receipt; asked Gregg to check it renewed. 14 Oct: still none. 15–21 Oct: still none.'
 - since: '2026-09-25'
   item: 'INCOMING £7,000 (and continuing tranches) from Arctic Ape — CONFIRMED by Gregg 25 Sep as an
     EQUITY INVESTMENT, NOT a loan and NOT trading income; it continues after the Ltd is set up. CRITICAL:
