@@ -3170,3 +3170,16 @@ queue:
     decision_note: 'Gregg 21 Oct: include half the bill as usual'
     approved_on: 2026-10-21
     booked_on: 2026-10-21
+
+  # ---------- 2026-10-22 scan (window 20–22 Oct) ----------
+  - id: 2026-10-22-001
+    date: 2026-10-21
+    source: gmail
+    description: "Anthropic — prepaid extra usage, Individual plan, £12.00 (£10.00 + £2.00 UK VAT), receipt #2721-3485-6618, invoice QLCTF7YW-0025, paid 21 Oct on the ••7135 business card"
+    amount: 12.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Gregg 21 Oct: every Anthropic charge except card 1508 is business. Paid on the business card."
+    evidence: [{gmail_thread: 1a15e5eae8542d6a}]
+    flags: []
+    status: pending
