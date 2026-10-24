@@ -3183,3 +3183,27 @@ queue:
     evidence: [{gmail_thread: 1a15e5eae8542d6a}]
     flags: []
     status: pending
+
+  # ---------- 2026-10-24 scan (window 22–24 Oct) ----------
+  - id: 2026-10-24-001
+    date: 2026-10-23
+    source: gmail
+    description: "PLAUD LLC — Annual Unlimited Plan, £224.99 (incl. £37.50 UK VAT), 23 Oct 2026 – 23 Oct 2027, receipt #2329-2880, invoice DLLYSVA0-0002, paid on the ••7135 business card (a first attempt on another card failed the same morning)"
+    amount: 224.99
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Transcription and summary service for the Plaud recorder (booked as business equipment 14 Oct); paid on the business card after the free trial ended. Annual plan; the full £224.99 is the cost (not VAT-registered)."
+    evidence: [{gmail_thread: 1a16811bd845ea4c}, {gmail_thread: 1a1680f0dd74f887}]
+    flags: [annual-subscription]
+    status: pending
+  - id: 2026-10-24-002
+    date: 2026-10-23
+    source: gmail
+    description: "RingGo parking £3.60 — Tower Street Multi-Storey, Winchester, Fri 23 Oct 12:27–14:27, vehicle LL69UWJ"
+    amount: 3.60
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Weekday Winchester parking, but at lunchtime rather than morning, and on a different car (LL69UWJ, not the Tiguan). It lines up with a lunch booking for two at Toast Winchester at 12:30. Business only if that was a work meeting."
+    evidence: [{gmail_thread: 1a16883cf877b449}]
+    flags: [needs_your_call]
+    status: pending
