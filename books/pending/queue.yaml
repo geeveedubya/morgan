@@ -3207,3 +3207,27 @@ queue:
     evidence: [{gmail_thread: 1a16883cf877b449}]
     flags: [needs_your_call]
     status: pending
+
+  # ---------- 2026-10-25 scan (window 23–25 Oct) ----------
+  - id: 2026-10-25-001
+    date: 2026-10-24
+    source: gmail
+    description: "Supabase — invoice VVEMGH-00006, US$25.00 paid 24 Oct (Pro plan, billed to media@oxfordcircus.co.za)"
+    amount: 25.00
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Same Supabase plan as September (booked £18.88 plus a £0.52 card fee). In dollars, so not converted; I'll take the sterling figure and any card fee from the statement."
+    evidence: [{gmail_thread: 1a16d9bd03019e71}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+  - id: 2026-10-25-002
+    date: 2026-10-24
+    source: gmail
+    description: "Amazon order 026-8917459-3460322 (24 Oct), charged US$134.09 via Amazon Currency Converter: tomtoc 14-inch MacBook Pro sleeve set £28.99, EooCoo MacBook Pro 14 hard-shell case £21.99, AOGUERBE 10,000mAh MagSafe power bank £23.74, Captain Blues women's tote bag £22.89"
+    amount: null
+    currency: USD
+    proposed_category: equipment
+    reasoning: "The MacBook sleeve and case (£50.98 at Amazon's prices) look like accessories for your work laptop, so business. The power bank could be either. The women's tote bag looks personal. Tell me which lines are business; I'll take the sterling figure from the statement, since it was charged in dollars."
+    evidence: [{gmail_thread: 1a16f817fd1990b5}]
+    flags: [needs_your_call, non-gbp, awaiting-gbp, split-order]
+    status: pending
