@@ -142,6 +142,93 @@ entries:
   status: booked
   approved_on: '2026-10-21'
   booked_on: '2026-10-21'
+- id: 2026-10-22-001
+  date: '2026-10-21'
+  source: gmail
+  description: 'Anthropic — prepaid extra usage, Individual plan, £12.00 (£10.00 + £2.00 UK VAT), receipt #2721-3485-6618, invoice QLCTF7YW-0025, paid 21 Oct on the ••7135 business card'
+  amount: 12.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Gregg 21 Oct: every Anthropic charge except card 1508 is business. Paid on the business card. Approved by Gregg 27 Oct.'
+  evidence:
+  - gmail_thread: 1a15e5eae8542d6a
+  flags: []
+  status: booked
+  approved_on: '2026-10-27'
+  booked_on: '2026-10-27'
+- id: 2026-10-24-001
+  date: '2026-10-23'
+  source: gmail
+  description: 'PLAUD LLC — Annual Unlimited Plan, £224.99 (incl. £37.50 UK VAT), 23 Oct 2026 – 23 Oct 2027, receipt #2329-2880, invoice DLLYSVA0-0002, paid on the ••7135 business card (a first attempt on another card failed the same morning)'
+  amount: 224.99
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Transcription and summary service for the Plaud recorder (booked as business equipment 14 Oct); paid on the business card after the free trial ended. Annual plan; the full £224.99 is the cost (not VAT-registered). Approved by Gregg 27 Oct.'
+  evidence:
+  - gmail_thread: 1a16811bd845ea4c
+  - gmail_thread: 1a1680f0dd74f887
+  flags: ['annual-subscription']
+  status: booked
+  approved_on: '2026-10-27'
+  booked_on: '2026-10-27'
+- id: 2026-10-24-002
+  date: '2026-10-23'
+  source: gmail
+  description: 'RingGo parking £3.60 — Tower Street Multi-Storey, Winchester, Fri 23 Oct 12:27–14:27, vehicle LL69UWJ'
+  amount: 3.60
+  currency: GBP
+  proposed_category: travel
+  reasoning: 'Weekday Winchester parking, but at lunchtime rather than morning, and on a different car (LL69UWJ, not the Tiguan). It lines up with a lunch booking for two at Toast Winchester at 12:30. Business only if that was a work meeting. Approved by Gregg 27 Oct.'
+  evidence:
+  - gmail_thread: 1a16883cf877b449
+  flags: ['needs_your_call']
+  status: booked
+  approved_on: '2026-10-27'
+  booked_on: '2026-10-27'
+- id: 2026-10-27-001
+  date: '2026-10-26'
+  source: gmail
+  description: 'Apple iCloud+ 2TB monthly £8.99 (invoice 26 Oct, order MKBB38S1MV, renews 27 Nov) — 50% business apportionment = £4.50'
+  amount: 4.50
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Standing ruling (7 Jul): iCloud+ claimed at 50%. Same as September (approved 14 Oct). Approved by Gregg 27 Oct.'
+  evidence:
+  - gmail_thread: 1a17b887d77c6b86
+  flags: ['apportioned-50']
+  status: booked
+  approved_on: '2026-10-27'
+  booked_on: '2026-10-27'
+- id: 2026-10-27-002
+  date: '2026-10-26'
+  source: gmail
+  description: 'Lebara 10GB SIM-only plan renewal £5.90 — 07555 088933 (26 Oct)'
+  amount: 5.90
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: 'This is the number in your email signature, so it looks like your business line. The plan has gone up from £1.50 to £5.90. Business? Approved by Gregg 27 Oct.'
+  evidence:
+  - gmail_thread: 1a177858e71feaac
+  - gmail_thread: 1a172d13b9fee788
+  flags: ['needs_your_call']
+  status: booked
+  approved_on: '2026-10-27'
+  booked_on: '2026-10-27'
+- id: 2026-10-27-003
+  date: '2026-10-26'
+  source: gmail
+  description: 'Lebara 10GB SIM-only plan renewal £5.90 — 07368 497782 (26 Oct)'
+  amount: 5.90
+  currency: GBP
+  proposed_category: phone_and_internet
+  reasoning: 'You approved this number''s £1.50 renewal on 14 Oct. Same line, now £5.90 a month. Business again? Approved by Gregg 27 Oct.'
+  evidence:
+  - gmail_thread: 1a177858e71feaac
+  - gmail_thread: 1a172d13b9fee788
+  flags: ['needs_your_call']
+  status: booked
+  approved_on: '2026-10-27'
+  booked_on: '2026-10-27'
 totals:
   income_gbp: 0.00
-  expenses_gbp: 449.84
+  expenses_gbp: 706.73

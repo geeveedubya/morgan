@@ -1,9 +1,9 @@
 # Items Morgan is keeping an eye on — shown on the dashboard and in digests.
 watching:
-- since: '2026-10-26'
-  item: 'LEBARA PRICE CHANGE: both 07555088933 and 07368497782 renew 26 Oct on the 10GB MSE plan at £5.90 each (was
-    £1.50). Standing ruling names 07884617816 as the business number; 07555088933 is the number in Gregg''s email
-    signature. Queue when the charges land and ask which lines are business.'
+- since: '2026-10-27'
+  item: 'GREGG RULINGS 27 Oct (not yet in the rules file): Lebara 07555088933 and 07368497782 are business at £5.90/month;
+    Supabase is always business hosting; domains.co.za hosting is always business; Anthropic is business unless charged
+    to card ••1508 (Arctic Ape). Offer to add these to config/categorisation-rules.yaml when Gregg says yes.'
 - since: '2026-10-22'
   item: 'OMNIA OCTOBER: Investment Request 2 sent 21 Oct to Dan, Craig and Mel, asking for the transfer into the Tide
     business account (personal account as fallback). Gregg also emailed Echo Tax (Jack/Christine) 21 Oct about the
