@@ -3231,3 +3231,38 @@ queue:
     evidence: [{gmail_thread: 1a16f817fd1990b5}]
     flags: [needs_your_call, non-gbp, awaiting-gbp, split-order]
     status: pending
+
+  # ---------- 2026-10-27 scan (window 25–27 Oct) ----------
+  - id: 2026-10-27-001
+    date: 2026-10-26
+    source: gmail
+    description: "Apple iCloud+ 2TB monthly £8.99 (invoice 26 Oct, order MKBB38S1MV, renews 27 Nov) — 50% business apportionment = £4.50"
+    amount: 4.50
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Standing ruling (7 Jul): iCloud+ claimed at 50%. Same as September (approved 14 Oct)."
+    evidence: [{gmail_thread: 1a17b887d77c6b86}]
+    flags: [apportioned-50]
+    status: pending
+  - id: 2026-10-27-002
+    date: 2026-10-26
+    source: gmail
+    description: "Lebara 10GB SIM-only plan renewal £5.90 — 07555 088933 (26 Oct)"
+    amount: 5.90
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "This is the number in your email signature, so it looks like your business line. The plan has gone up from £1.50 to £5.90. Business?"
+    evidence: [{gmail_thread: 1a177858e71feaac}, {gmail_thread: 1a172d13b9fee788}]
+    flags: [needs_your_call]
+    status: pending
+  - id: 2026-10-27-003
+    date: 2026-10-26
+    source: gmail
+    description: "Lebara 10GB SIM-only plan renewal £5.90 — 07368 497782 (26 Oct)"
+    amount: 5.90
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "You approved this number's £1.50 renewal on 14 Oct. Same line, now £5.90 a month. Business again?"
+    evidence: [{gmail_thread: 1a177858e71feaac}, {gmail_thread: 1a172d13b9fee788}]
+    flags: [needs_your_call]
+    status: pending
