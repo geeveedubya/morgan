@@ -2988,28 +2988,32 @@ queue:
     date: 2026-10-06
     source: gmail
     description: "INCOME — Stripe invoice C76BE83D-0071 to Penny Mande (M&E Properties), consulting; Penny says paid 6 Oct; amount only in the invoice PDF and Stripe"
-    amount: null
-    currency: null
+    amount: 50.00
+    currency: GBP
     proposed_category: sales
     reasoning: "Client consulting income, paid by Stripe invoice. Stripe needs re-authorising, so I can't see the amount or the fee yet. I'll book it gross with the Stripe fee as a cost (your rule) once Stripe is reconnected."
     evidence: [{gmail_thread: 1a11001acdfa12c2}]
-    flags: [awaiting-amount, income, stripe-unreachable]
-    status: approved
+    flags: [income]
+    status: booked
     decision_note: 'Gregg 14 Oct: "yes, income"; book gross with Stripe fee once Stripe is reconnected'
     approved_on: 2026-10-14
+    booked_on: 2026-10-29
+    note: "Stripe reconnected 29 Oct: invoice C76BE83D-0071 (Mande Properties, Marketing Services 2 x £25), charge ch_3UNSKGAnusPN3mWR0unV9dvA, £50.00 GBP gross, Stripe fee £1.83, net £48.17. Booked gross; fee booked separately."
   - id: 2026-10-07-006
     date: 2026-10-06
     source: gmail
     description: "INCOME — Stripe invoice C76BE83D-0072 to Off the Wall (Stefan Brozin and partners), campaign launch and management, 2 hrs; Stefan paid R1,140.00 by card 6 Oct"
-    amount: 1140.00
-    currency: ZAR
+    amount: 50.00
+    currency: GBP
     proposed_category: sales
     reasoning: "Client marketing income, paid in rand. Non-GBP, so it isn't converted automatically. I'll pin the sterling amount and the Stripe fee once Stripe is reconnected, then book gross with the fee as a cost."
     evidence: [{gmail_thread: 1a110067197b5ff2}, {gmail_thread: 1a110b8fa24d403b}]
-    flags: [non-gbp, awaiting-gbp, income, stripe-unreachable]
-    status: approved
+    flags: [income]
+    status: booked
     decision_note: 'Gregg 14 Oct: "Yes, income"; book gross in GBP with Stripe fee once Stripe is reconnected'
     approved_on: 2026-10-14
+    booked_on: 2026-10-29
+    note: "Stripe reconnected 29 Oct: invoice C76BE83D-0072 (Middelbro Property Company / Off the Wall, Marketing services 2 x £25) was issued and settled in GBP: charge ch_3UNSPIAnusPN3mWR1XoWObUz, £50.00 gross, Stripe fee £1.83, net £48.17. The R1,140 on Stefan''s receipt was his own bank''s rand conversion; no conversion by Morgan."
   - id: 2026-10-07-007
     date: 2026-10-06
     source: gmail
@@ -3290,3 +3294,16 @@ queue:
     decision_note: 'Gregg 27 Oct: "same as above" — business at the new £5.90 price'
     approved_on: 2026-10-27
     booked_on: 2026-10-27
+
+  # ---------- 2026-10-29 scan (window 27–29 Oct; Stripe reachable again) ----------
+  - id: 2026-10-29-001
+    date: 2026-10-28
+    source: gmail
+    description: "Vercel Pro — US$24.00 ($20 + $4 UK VAT), receipt #2288-4434-3929, invoice PEQ6FDZ2-0005, period 28 Oct–27 Nov, paid 28 Oct on card ••9520"
+    amount: null
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "Vercel hosting is business software (it's on your rules list). Half last month's $48 because the extra team seat has gone. Charged in dollars, so I'll take the sterling figure from the ••9520 statement."
+    evidence: [{gmail_thread: 1a1843c6b36220e8}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending

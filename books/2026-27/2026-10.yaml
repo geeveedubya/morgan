@@ -229,6 +229,51 @@ entries:
   status: booked
   approved_on: '2026-10-27'
   booked_on: '2026-10-27'
+- id: 2026-10-07-005
+  date: '2026-10-06'
+  source: stripe
+  description: 'Mande Properties (Penny Mande) — Stripe invoice C76BE83D-0071, Marketing Services 2 x £25: £50.00 gross'
+  amount: 50.00
+  currency: GBP
+  proposed_category: sales
+  reasoning: 'Client income booked gross (your rule); Stripe fee booked separately. Approved by Gregg 14 Oct; amount from Stripe 29 Oct.'
+  evidence:
+  - stripe: ch_3UNSKGAnusPN3mWR0unV9dvA
+  - gmail_thread: 1a11001acdfa12c2
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-29'
+- id: 2026-10-07-006
+  date: '2026-10-06'
+  source: stripe
+  description: 'Off the Wall (Middelbro Property Company, Stefan Brozin) — Stripe invoice C76BE83D-0072, Marketing services 2 x £25: £50.00 gross'
+  amount: 50.00
+  currency: GBP
+  proposed_category: sales
+  reasoning: 'Client income booked gross (your rule); Stripe fee booked separately. Invoice was in GBP. Approved by Gregg 14 Oct; amount from Stripe 29 Oct.'
+  evidence:
+  - stripe: ch_3UNSPIAnusPN3mWR1XoWObUz
+  - gmail_thread: 1a110067197b5ff2
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-29'
+- id: 2026-10-06-stripe-fees
+  date: '2026-10-06'
+  source: stripe
+  description: 'Stripe processing fees on the two 6 Oct client payments: £1.83 (Mande Properties) + £1.83 (Off the Wall)'
+  amount: 3.66
+  currency: GBP
+  proposed_category: bank_and_payment_fees
+  reasoning: 'Stripe fees on approved income, taken as a cost (Gregg 14 Oct: book gross with the Stripe fee). From the Stripe balance transactions.'
+  evidence:
+  - stripe: ch_3UNSKGAnusPN3mWR0unV9dvA
+  - stripe: ch_3UNSPIAnusPN3mWR1XoWObUz
+  flags: []
+  status: booked
+  approved_on: '2026-10-14'
+  booked_on: '2026-10-29'
 totals:
-  income_gbp: 0.00
-  expenses_gbp: 706.73
+  income_gbp: 100.00
+  expenses_gbp: 710.39
