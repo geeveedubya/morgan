@@ -3,7 +3,9 @@ watching:
 - since: '2026-10-29'
   item: 'STRIPE RECONNECTED 29 Oct. Penny Mande (£50) and Off the Wall (£50) booked gross with £3.66 fees.
     Arctic Ape hosting invoice C76BE83D-0073 sent 28 Oct: £75.07 (App Hosting £50 + Automation cost £25.07),
-    open, due 29 Oct. Book as income when it is paid. Gregg''s email says September hosting was "covered
+    open, due 29 Oct. Book as income when it is paid. 29 Oct: Mel (Arctic Ape) is paying it by bank transfer
+    to Gregg''s PERSONAL Lloyds account, not through Stripe. It is still business income: take the sterling
+    received from the Lloyds statement. Stripe will keep showing it open unless Gregg marks it paid there. Gregg''s email says September hosting was "covered
     through the additional payment on top of the investment payment"; ask how much of that payment was
     hosting, because that part is income, not capital.'
 - since: '2026-10-27'
@@ -43,7 +45,7 @@ watching:
     business card: $48.00, receipt #2432-5430, queued as 2026-10-01-001. 28 Oct: the $24 renewal went on ••9520 again (extra seat dropped), queued 2026-10-29-001.'
 - since: '2026-09-29'
   item: 'Squarespace website subscription auto-renews 12 Oct 2026 (reminder 27 Sep). Business per
-    the standing ruling; queue it when the charge lands. 12 Oct: due today, no receipt in Gmail yet. 13 Oct: still no receipt; asked Gregg to check it renewed. 14 Oct: still none. 15–29 Oct: still none.'
+    the standing ruling; queue it when the charge lands. 12 Oct: due today, no receipt in Gmail yet. 13 Oct: still no receipt; asked Gregg to check it renewed. 14 Oct: still none. 15–30 Oct: still none.'
 - since: '2026-09-25'
   item: 'INCOMING £7,000 (and continuing tranches) from Arctic Ape — CONFIRMED by Gregg 25 Sep as an
     EQUITY INVESTMENT, NOT a loan and NOT trading income; it continues after the Ltd is set up. CRITICAL:
