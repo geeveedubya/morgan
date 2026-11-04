@@ -3307,3 +3307,39 @@ queue:
     evidence: [{gmail_thread: 1a1843c6b36220e8}]
     flags: [non-gbp, awaiting-gbp]
     status: pending
+
+  # ---------- 2026-11-04 scan (window 30 Oct–4 Nov; covers the missed 1–3 Nov runs) ----------
+  - id: 2026-11-04-001
+    date: 2026-11-02
+    source: gmail
+    description: "Squarespace domain renewal (SQSP* DOMAIN#2573187…) £19.20 via PayPal, Amex ••1007 (2 Nov, txn 9DY38172T83514305)"
+    amount: 19.20
+    currency: GBP
+    proposed_category: marketing_and_website
+    reasoning: "The Squarespace domain renewal you were expecting on 2 Nov. All Squarespace charges are business under your standing ruling (9 Sep)."
+    evidence: [{gmail_thread: 1a19e82c9ad3e9ad}]
+    flags: []
+    status: pending
+  - id: 2026-11-04-002
+    date: 2026-11-02
+    source: gmail
+    description: "Google Workspace — oxfordcircus.co.za monthly invoice 5726599882 (2 Nov); amount only in the PDF. The 1 Nov charge to Mastercard ••9520 was DECLINED."
+    amount: null
+    currency: null
+    proposed_category: office_costs_and_software
+    reasoning: "Your business email account. Business under the standing ruling on the Squarespace-provisioned Workspace accounts, same as October. Google says it will charge automatically, but the 1 Nov attempt on ••9520 was declined, so check the card. I'll take the amount from the statement."
+    evidence: [{gmail_thread: 1a19be523a3ead3b}, {gmail_thread: 1a1979e15347f98d}, {gmail_thread: 1a19759a4fa4a523}]
+    flags: [awaiting-amount, payment-declined]
+    status: pending
+  - id: 2026-11-04-003
+    date: 2026-11-01
+    source: gmail
+    description: "Google Workspace — samrosevalley.co.za monthly invoice 5724401418 (1 Nov); amount only in the PDF, charged automatically"
+    amount: null
+    currency: null
+    proposed_category: office_costs_and_software
+    reasoning: "The second Squarespace-provisioned Workspace account. Business under the standing ruling, same as October. I'll take the amount from the statement (it has been about £16 a month)."
+    evidence: [{gmail_thread: 1a198acac4faa40a}]
+    flags: [awaiting-amount]
+    status: pending
+
