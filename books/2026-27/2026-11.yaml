@@ -1,0 +1,20 @@
+# Ledger 2026-11 — tax year 2026/27. Booked entries only; approvals in chat.
+month: 2026-11
+entries:
+- id: 2026-11-04-007
+  date: '2026-11-02'
+  source: gmail
+  description: 'Amazon order 204-5980185-6802711 — LAMY Safari fountain pen £21.96 (2 Nov)'
+  amount: 21.96
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Stationery for the business. Approved by Gregg 4 Nov.'
+  evidence:
+  - gmail_thread: 1a19be57766a45d2
+  flags: []
+  status: booked
+  approved_on: '2026-11-04'
+  booked_on: '2026-11-04'
+totals:
+  income_gbp: 0.00
+  expenses_gbp: 21.96

@@ -3343,3 +3343,70 @@ queue:
     flags: [awaiting-amount]
     status: pending
 
+  # ---------- Gregg 4 Nov: Vegas trip business; Amazon order business ----------
+  - id: 2026-11-04-004
+    date: 2026-10-31
+    source: gmail
+    description: "Virgin Atlantic Flying Club — 10,000 Virgin Points bought (+3,000 bonus) for the Las Vegas flight: £150.00 + £15.00 fee = £165.00 (31 Oct, conf. 5064-2152-3315-4436-8906)"
+    amount: 165.00
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Points bought the day before the Vegas flight was booked (e-ticket CUA8VM, 1 Nov), so this is what the flight cost you. Business travel for the marketing AI conference."
+    evidence: [{gmail_thread: 1a192201c9da1694}, {gmail_thread: 1a197e0d285cc13b}]
+    flags: [vegas-trip]
+    status: booked
+    decision_note: 'Gregg 4 Nov: "Vegas trip is business - I still need to actually book the marketing ai conference there"'
+    approved_on: 2026-11-04
+    booked_on: 2026-11-04
+  - id: 2026-11-04-005
+    date: 2026-11-01
+    source: gmail
+    description: "Virgin Atlantic e-ticket CUA8VM (1 Nov) — Las Vegas flight on points; taxes and carrier charges paid in cash, amount not in the email"
+    amount: null
+    currency: null
+    proposed_category: travel
+    reasoning: "Reward flights still carry cash taxes and charges. The confirmation email doesn't show the amount, so I'll take it from the card statement."
+    evidence: [{gmail_thread: 1a197e0d285cc13b}]
+    flags: [vegas-trip, awaiting-amount]
+    status: approved
+    decision_note: 'Gregg 4 Nov: Vegas trip is business'
+    approved_on: 2026-11-04
+  - id: 2026-11-04-006
+    date: 2027-02-18
+    source: gmail
+    description: "Luxor, Las Vegas — 6 nights 18–24 Feb 2027, Pyramid Premier King, US$645.11 incl. tax and resort fee (Booking.com 6424620011; reserved on Mastercard ••9520, paid at the property)"
+    amount: null
+    currency: USD
+    proposed_category: travel
+    reasoning: "Hotel for the Vegas conference trip. It's charged in dollars, mostly at the hotel in February, so I'll book it from the sterling statement then. Free cancellation until 14 Feb."
+    evidence: [{gmail_thread: 1a198075cc46f67e}]
+    flags: [vegas-trip, non-gbp, awaiting-gbp]
+    status: approved
+    decision_note: 'Gregg 4 Nov: Vegas trip is business'
+    approved_on: 2026-11-04
+  - id: 2026-11-04-007
+    date: 2026-11-02
+    source: gmail
+    description: "Amazon order 204-5980185-6802711 — LAMY Safari fountain pen £21.96 (2 Nov)"
+    amount: 21.96
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Stationery for the business."
+    evidence: [{gmail_thread: 1a19be57766a45d2}]
+    flags: []
+    status: booked
+    decision_note: 'Gregg 4 Nov: "Amazon order both business - stationary and cable"'
+    approved_on: 2026-11-04
+    booked_on: 2026-11-04
+  - id: 2026-11-04-008
+    date: 2026-11-02
+    source: gmail
+    description: "Amazon order 204-5980185-6802711 — USB charger cable £2.79, listed as 'Compatible with Xiaomi Shaver … for Electric Razors' (2 Nov)"
+    amount: 2.79
+    currency: GBP
+    proposed_category: equipment
+    reasoning: "You said business, but Amazon lists this as an electric-shaver charging cable, which HMRC would see as personal. If it's really for business kit, say so and I'll book it; otherwise I'll leave it out."
+    evidence: [{gmail_thread: 1a19be57766a45d2}]
+    flags: [needs_your_call]
+    status: pending
+
