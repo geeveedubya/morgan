@@ -3410,3 +3410,38 @@ queue:
     flags: [needs_your_call]
     status: pending
 
+  # ---------- 2026-11-07 scan (window 4–7 Nov; covers the unfinished 5 and 6 Nov runs) ----------
+  - id: 2026-11-07-001
+    date: 2026-11-04
+    source: gmail
+    description: "ElevenLabs Starter plan — US$7.20 ($6 + $1.20 UK VAT), charged £5.55 on ••7135 business card (4 Nov, receipt #2769-7867-6643, period 4 Nov–4 Dec)"
+    amount: 5.55
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "AI voice tool on your business card; the receipt states the sterling charge (£5.55), so no conversion needed. New subscription, so I'm asking: business?"
+    evidence: [{gmail_thread: 1a1a6229220197c3}]
+    flags: [new-vendor]
+    status: pending
+  - id: 2026-11-07-002
+    date: 2026-11-04
+    source: gmail
+    description: "RingGo parking £4.00 — Tower Street Multi-Storey, Winchester, Wed 4 Nov 15:57–17:57, vehicle LL69UWJ"
+    amount: 4.00
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Weekday Winchester parking, but in the late afternoon and on LL69UWJ rather than the Tiguan. Your standing ruling covers weekday mornings. Business only if this was a work trip."
+    evidence: [{gmail_thread: 1a1a7481108d6478}]
+    flags: [needs_your_call]
+    status: pending
+  - id: 2026-11-07-003
+    date: 2026-11-06
+    source: gmail
+    description: "RingGo parking £2.20 — Middle Brook St Car Park, Winchester, Fri 6 Nov 09:17–10:17, vehicle DG17PUK (Tiguan)"
+    amount: 2.20
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Weekday-morning Winchester parking → travel under your standing ruling (7 Jul). It's the Tiguan, so I'll also note it against the mileage log."
+    evidence: [{gmail_thread: 1a1b02609cd46bbe}]
+    flags: []
+    status: pending
+
