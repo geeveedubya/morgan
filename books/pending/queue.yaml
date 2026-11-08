@@ -3445,3 +3445,16 @@ queue:
     flags: []
     status: pending
 
+  # ---------- 2026-11-08 scan (window 7–8 Nov) ----------
+  - id: 2026-11-08-001
+    date: 2026-11-07
+    source: gmail
+    description: "domains.co.za web hosting — invoice 3868795, R238.00, paid by credit card 7 Nov (after three overdue notices)"
+    amount: null
+    currency: ZAR
+    proposed_category: marketing_and_website
+    reasoning: "Your ruling of 27 Oct says domains.co.za hosting is always business. It's in rand, so I'll take the sterling figure from the card statement."
+    evidence: [{gmail_thread: 1a1b497e90bdf4f4}, {gmail_thread: 1a1b03cd9ff211df}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
+
