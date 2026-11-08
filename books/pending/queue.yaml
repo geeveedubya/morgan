@@ -3306,7 +3306,9 @@ queue:
     reasoning: "Vercel hosting is business software (it's on your rules list). Half last month's $48 because the extra team seat has gone. Charged in dollars, so I'll take the sterling figure from the ••9520 statement."
     evidence: [{gmail_thread: 1a1843c6b36220e8}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 8 Nov: "Everything (usual items as they should be) are business except for shaver cable"'
+    approved_on: 2026-11-08
 
   # ---------- 2026-11-04 scan (window 30 Oct–4 Nov; covers the missed 1–3 Nov runs) ----------
   - id: 2026-11-04-001
@@ -3319,7 +3321,10 @@ queue:
     reasoning: "The Squarespace domain renewal you were expecting on 2 Nov. All Squarespace charges are business under your standing ruling (9 Sep)."
     evidence: [{gmail_thread: 1a19e82c9ad3e9ad}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 8 Nov: "Everything (usual items as they should be) are business except for shaver cable"'
+    approved_on: 2026-11-08
+    booked_on: 2026-11-08
   - id: 2026-11-04-002
     date: 2026-11-02
     source: gmail
@@ -3330,7 +3335,9 @@ queue:
     reasoning: "Your business email account. Business under the standing ruling on the Squarespace-provisioned Workspace accounts, same as October. Google says it will charge automatically, but the 1 Nov attempt on ••9520 was declined, so check the card. I'll take the amount from the statement."
     evidence: [{gmail_thread: 1a19be523a3ead3b}, {gmail_thread: 1a1979e15347f98d}, {gmail_thread: 1a19759a4fa4a523}]
     flags: [awaiting-amount, payment-declined]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 8 Nov: "Everything (usual items as they should be) are business except for shaver cable"'
+    approved_on: 2026-11-08
   - id: 2026-11-04-003
     date: 2026-11-01
     source: gmail
@@ -3341,7 +3348,9 @@ queue:
     reasoning: "The second Squarespace-provisioned Workspace account. Business under the standing ruling, same as October. I'll take the amount from the statement (it has been about £16 a month)."
     evidence: [{gmail_thread: 1a198acac4faa40a}]
     flags: [awaiting-amount]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 8 Nov: "Everything (usual items as they should be) are business except for shaver cable"'
+    approved_on: 2026-11-08
 
   # ---------- Gregg 4 Nov: Vegas trip business; Amazon order business ----------
   - id: 2026-11-04-004
@@ -3408,7 +3417,9 @@ queue:
     reasoning: "You said business, but Amazon lists this as an electric-shaver charging cable, which HMRC would see as personal. If it's really for business kit, say so and I'll book it; otherwise I'll leave it out."
     evidence: [{gmail_thread: 1a19be57766a45d2}]
     flags: [needs_your_call]
-    status: pending
+    status: declined
+    decision_note: 'Gregg 8 Nov: business except for shaver cable; shaver charger cable is personal'
+    declined_on: 2026-11-08
 
   # ---------- 2026-11-07 scan (window 4–7 Nov; covers the unfinished 5 and 6 Nov runs) ----------
   - id: 2026-11-07-001
@@ -3421,7 +3432,10 @@ queue:
     reasoning: "AI voice tool on your business card; the receipt states the sterling charge (£5.55), so no conversion needed. New subscription, so I'm asking: business?"
     evidence: [{gmail_thread: 1a1a6229220197c3}]
     flags: [new-vendor]
-    status: pending
+    status: booked
+    decision_note: 'Gregg 8 Nov: "Everything (usual items as they should be) are business except for shaver cable"'
+    approved_on: 2026-11-08
+    booked_on: 2026-11-08
   - id: 2026-11-07-002
     date: 2026-11-04
     source: gmail
@@ -3432,7 +3446,10 @@ queue:
     reasoning: "Weekday Winchester parking, but in the late afternoon and on LL69UWJ rather than the Tiguan. Your standing ruling covers weekday mornings. Business only if this was a work trip."
     evidence: [{gmail_thread: 1a1a7481108d6478}]
     flags: [needs_your_call]
-    status: pending
+    status: booked
+    decision_note: 'Gregg 8 Nov: "Everything (usual items as they should be) are business except for shaver cable"'
+    approved_on: 2026-11-08
+    booked_on: 2026-11-08
   - id: 2026-11-07-003
     date: 2026-11-06
     source: gmail
@@ -3443,7 +3460,10 @@ queue:
     reasoning: "Weekday-morning Winchester parking → travel under your standing ruling (7 Jul). It's the Tiguan, so I'll also note it against the mileage log."
     evidence: [{gmail_thread: 1a1b02609cd46bbe}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 8 Nov: "Everything (usual items as they should be) are business except for shaver cable"'
+    approved_on: 2026-11-08
+    booked_on: 2026-11-08
 
   # ---------- 2026-11-08 scan (window 7–8 Nov) ----------
   - id: 2026-11-08-001
@@ -3456,5 +3476,7 @@ queue:
     reasoning: "Your ruling of 27 Oct says domains.co.za hosting is always business. It's in rand, so I'll take the sterling figure from the card statement."
     evidence: [{gmail_thread: 1a1b497e90bdf4f4}, {gmail_thread: 1a1b03cd9ff211df}]
     flags: [non-gbp, awaiting-gbp]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 8 Nov: "Everything (usual items as they should be) are business except for shaver cable"'
+    approved_on: 2026-11-08
 

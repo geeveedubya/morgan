@@ -15,6 +15,62 @@ entries:
   status: booked
   approved_on: '2026-11-04'
   booked_on: '2026-11-04'
+- id: 2026-11-04-001
+  date: '2026-11-02'
+  source: gmail
+  description: 'Squarespace domain renewal (SQSP* DOMAIN#2573187…) £19.20 via PayPal, Amex ••1007 (2 Nov, txn 9DY38172T83514305)'
+  amount: 19.20
+  currency: GBP
+  proposed_category: marketing_and_website
+  reasoning: 'The Squarespace domain renewal you were expecting on 2 Nov. All Squarespace charges are business under your standing ruling (9 Sep). Approved by Gregg 8 Nov.'
+  evidence:
+  - gmail_thread: 1a19e82c9ad3e9ad
+  flags: []
+  status: booked
+  approved_on: '2026-11-08'
+  booked_on: '2026-11-08'
+- id: 2026-11-07-001
+  date: '2026-11-04'
+  source: gmail
+  description: 'ElevenLabs Starter plan — US$7.20 ($6 + $1.20 UK VAT), charged £5.55 on ••7135 business card (4 Nov, receipt #2769-7867-6643, period 4 Nov–4 Dec)'
+  amount: 5.55
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'AI voice tool on your business card; the receipt states the sterling charge (£5.55), so no conversion needed. New subscription, so I''m asking: business? Approved by Gregg 8 Nov.'
+  evidence:
+  - gmail_thread: 1a1a6229220197c3
+  flags: ['new-vendor']
+  status: booked
+  approved_on: '2026-11-08'
+  booked_on: '2026-11-08'
+- id: 2026-11-07-002
+  date: '2026-11-04'
+  source: gmail
+  description: 'RingGo parking £4.00 — Tower Street Multi-Storey, Winchester, Wed 4 Nov 15:57–17:57, vehicle LL69UWJ'
+  amount: 4.00
+  currency: GBP
+  proposed_category: travel
+  reasoning: 'Weekday Winchester parking, but in the late afternoon and on LL69UWJ rather than the Tiguan. Your standing ruling covers weekday mornings. Business only if this was a work trip. Approved by Gregg 8 Nov.'
+  evidence:
+  - gmail_thread: 1a1a7481108d6478
+  flags: ['needs_your_call']
+  status: booked
+  approved_on: '2026-11-08'
+  booked_on: '2026-11-08'
+- id: 2026-11-07-003
+  date: '2026-11-06'
+  source: gmail
+  description: 'RingGo parking £2.20 — Middle Brook St Car Park, Winchester, Fri 6 Nov 09:17–10:17, vehicle DG17PUK (Tiguan)'
+  amount: 2.20
+  currency: GBP
+  proposed_category: travel
+  reasoning: 'Weekday-morning Winchester parking → travel under your standing ruling (7 Jul). It''s the Tiguan, so I''ll also note it against the mileage log. Approved by Gregg 8 Nov.'
+  evidence:
+  - gmail_thread: 1a1b02609cd46bbe
+  flags: []
+  status: booked
+  approved_on: '2026-11-08'
+  booked_on: '2026-11-08'
 totals:
   income_gbp: 0.00
-  expenses_gbp: 21.96
+  expenses_gbp: 52.91
