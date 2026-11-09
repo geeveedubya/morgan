@@ -3480,3 +3480,16 @@ queue:
     decision_note: 'Gregg 8 Nov: "Everything (usual items as they should be) are business except for shaver cable"'
     approved_on: 2026-11-08
 
+  # ---------- 2026-11-09 scan (window 8–9 Nov) ----------
+  - id: 2026-11-09-001
+    date: 2026-11-08
+    source: gmail
+    description: "Lovable Pro — £22.00 (incl. £3.67 VAT), receipt #2607-8407-5957, 8 Nov–8 Dec, paid on the ••7135 business card"
+    amount: 22.00
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Your monthly Lovable plan on the business card, the same as September and October (both approved). Software is on your rules list."
+    evidence: [{gmail_thread: 1a1bcaa313b89ea6}]
+    flags: []
+    status: pending
+
