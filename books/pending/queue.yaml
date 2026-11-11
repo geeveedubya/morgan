@@ -3493,3 +3493,16 @@ queue:
     flags: []
     status: pending
 
+  # ---------- 2026-11-11 scan (window 10–11 Nov) ----------
+  - id: 2026-11-11-001
+    date: 2026-11-10
+    source: gmail
+    description: "Amazon order 204-9600628-6395563 — Voova 14–15.6\" laptop bag / messenger briefcase £25.99 (10 Nov)"
+    amount: 25.99
+    currency: GBP
+    proposed_category: equipment
+    reasoning: "Laptop bag for carrying your work laptop to clients and the Vegas trip, so it looks business. You also put this email under a label in Gmail. Business?"
+    evidence: [{gmail_thread: 1a1c60253b09c700}]
+    flags: []
+    status: pending
+
