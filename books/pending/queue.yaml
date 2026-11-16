@@ -3506,3 +3506,14 @@ queue:
     flags: []
     status: pending
 
+  - id: 2026-11-16-001
+    date: 2026-11-15
+    source: gmail
+    description: "Squarespace Domains — new domain registration ifyoudonthearfromme.com (15 Nov); renews 31 Oct 2027 at £17.00. The email doesn't show the amount charged for this first registration."
+    amount: null
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "A new domain bought through Squarespace. Your standing ruling says all Squarespace is business. The first-year price isn't in the email, so I'll take it from the statement or your Squarespace billing page. Business?"
+    evidence: [{gmail_thread: 1a1e09df62cfd1a8}]
+    flags: [awaiting-amount, new-domain]
+    status: pending
