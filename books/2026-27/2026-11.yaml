@@ -71,6 +71,34 @@ entries:
   status: booked
   approved_on: '2026-11-08'
   booked_on: '2026-11-08'
+- id: 2026-11-09-001
+  date: '2026-11-08'
+  source: gmail
+  description: 'Lovable Pro — £22.00 (incl. £3.67 VAT), receipt #2607-8407-5957, 8 Nov–8 Dec, ••7135 business card'
+  amount: 22.00
+  currency: GBP
+  proposed_category: office_costs_and_software
+  reasoning: 'Monthly Lovable plan on the business card; software is on your rules list. Approved by Gregg 18 Nov.'
+  evidence:
+  - gmail_thread: 1a1bcaa313b89ea6
+  flags: []
+  status: booked
+  approved_on: '2026-11-18'
+  booked_on: '2026-11-18'
+- id: 2026-11-11-001
+  date: '2026-11-10'
+  source: gmail
+  description: 'Amazon order 204-9600628-6395563 — Voova 14–15.6" laptop bag / messenger briefcase £25.99 (10 Nov)'
+  amount: 25.99
+  currency: GBP
+  proposed_category: equipment
+  reasoning: 'Laptop bag for carrying the work laptop to clients. Approved by Gregg 18 Nov.'
+  evidence:
+  - gmail_thread: 1a1c60253b09c700
+  flags: []
+  status: booked
+  approved_on: '2026-11-18'
+  booked_on: '2026-11-18'
 totals:
   income_gbp: 0.00
-  expenses_gbp: 52.91
+  expenses_gbp: 100.90

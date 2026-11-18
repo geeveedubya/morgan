@@ -3491,7 +3491,10 @@ queue:
     reasoning: "Your monthly Lovable plan on the business card, the same as September and October (both approved). Software is on your rules list."
     evidence: [{gmail_thread: 1a1bcaa313b89ea6}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 18 Nov: "Loveble business, laptop bag business, squarespace business"'
+    approved_on: 2026-11-18
+    booked_on: 2026-11-18
 
   # ---------- 2026-11-11 scan (window 10–11 Nov) ----------
   - id: 2026-11-11-001
@@ -3504,7 +3507,10 @@ queue:
     reasoning: "Laptop bag for carrying your work laptop to clients and the Vegas trip, so it looks business. You also put this email under a label in Gmail. Business?"
     evidence: [{gmail_thread: 1a1c60253b09c700}]
     flags: []
-    status: pending
+    status: booked
+    decision_note: 'Gregg 18 Nov: "Loveble business, laptop bag business, squarespace business"'
+    approved_on: 2026-11-18
+    booked_on: 2026-11-18
 
   - id: 2026-11-16-001
     date: 2026-11-15
@@ -3516,7 +3522,9 @@ queue:
     reasoning: "A new domain bought through Squarespace. Your standing ruling says all Squarespace is business. The first-year price isn't in the email, so I'll take it from the statement or your Squarespace billing page. Business?"
     evidence: [{gmail_thread: 1a1e09df62cfd1a8}]
     flags: [awaiting-amount, new-domain]
-    status: pending
+    status: approved
+    decision_note: 'Gregg 18 Nov: "Loveble business, laptop bag business, squarespace business"'
+    approved_on: 2026-11-18
   - id: 2026-11-18-001
     date: 2026-11-17
     source: gmail
@@ -3527,4 +3535,6 @@ queue:
     reasoning: "A 2027 daily diary counts as business stationery if you'll use it to plan client work, the way the LAMY pen was. The gift-style design and the timing could also make it a Christmas present, which would be personal. Business?"
     evidence: [{gmail_thread: 1a1eacef922c64f8}]
     flags: []
-    status: pending
+    status: declined
+    decision_note: 'Gregg 18 Nov: "moleskin is on someone elses account so ignore" (not his purchase)'
+    declined_on: 2026-11-18
