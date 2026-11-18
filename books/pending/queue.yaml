@@ -3517,3 +3517,14 @@ queue:
     evidence: [{gmail_thread: 1a1e09df62cfd1a8}]
     flags: [awaiting-amount, new-domain]
     status: pending
+  - id: 2026-11-18-001
+    date: 2026-11-17
+    source: gmail
+    description: "Amazon order 026-4914752-5501904 — Moleskine 2027 12-month daily planner (Alice in Wonderland design, large) £25.79 (17 Nov)"
+    amount: 25.79
+    currency: GBP
+    proposed_category: stationery
+    reasoning: "A 2027 daily diary counts as business stationery if you'll use it to plan client work, the way the LAMY pen was. The gift-style design and the timing could also make it a Christmas present, which would be personal. Business?"
+    evidence: [{gmail_thread: 1a1eacef922c64f8}]
+    flags: []
+    status: pending
