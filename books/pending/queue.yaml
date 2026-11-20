@@ -3538,3 +3538,27 @@ queue:
     status: declined
     decision_note: 'Gregg 18 Nov: "moleskin is on someone elses account so ignore" (not his purchase)'
     declined_on: 2026-11-18
+
+  # ---------- 2026-11-20 scan (window 19–20 Nov) ----------
+  - id: 2026-11-20-001
+    date: 2026-11-19
+    source: gmail
+    description: "RingGo parking £2.20 — Tower Street Multi-Storey, Winchester, Thu 19 Nov 15:30–16:30, vehicle DG17PUK (Tiguan)"
+    amount: 2.20
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Weekday Winchester parking in the Tiguan, but in the afternoon. Your standing ruling covers weekday mornings, so this is business only if it was a work trip (you approved a similar afternoon one on 4 Nov)."
+    evidence: [{gmail_thread: 1a1f46e3dfc5d8f3}]
+    flags: [needs_your_call]
+    status: pending
+  - id: 2026-11-20-002
+    date: 2026-11-19
+    source: gmail
+    description: "Virgin Media November bill £35.00 — 50% business share = £17.50"
+    amount: 17.50
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "Home broadband, which your standing ruling books at 50%. The full bill is £35.00, so the business share is £17.50. This is more than the £29 package price mentioned in October, so it's worth a glance at the bill for any extras."
+    evidence: [{gmail_thread: 1a1f3db4846329e5}]
+    flags: []
+    status: pending
