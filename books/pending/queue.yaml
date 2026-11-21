@@ -3562,3 +3562,27 @@ queue:
     evidence: [{gmail_thread: 1a1f3db4846329e5}]
     flags: []
     status: pending
+
+  # ---------- 2026-11-21 scan (window 20–21 Nov) ----------
+  - id: 2026-11-21-001
+    date: 2026-11-20
+    source: gmail
+    description: "RingGo parking £4.00 — Middle Brook St Car Park, Winchester, Fri 20 Nov 09:48–11:48, vehicle LL69UWJ"
+    amount: 4.00
+    currency: GBP
+    proposed_category: travel
+    reasoning: "Weekday-morning Winchester parking, which your standing ruling counts as travel. It only needs a yes."
+    evidence: [{gmail_thread: 1a1f85b4caed20d7}]
+    flags: []
+    status: pending
+  - id: 2026-11-21-002
+    date: 2026-11-20
+    source: gmail
+    description: "RingGo parking extension £2.20 — Middle Brook St Car Park, Winchester, Fri 20 Nov 11:48–12:48, vehicle LL69UWJ"
+    amount: 2.20
+    currency: GBP
+    proposed_category: travel
+    reasoning: "An extension of the morning session above, running to 12:48 on the same visit. It's travel under the same ruling."
+    evidence: [{gmail_thread: 1a1f85b4caed20d7}]
+    flags: []
+    status: pending
