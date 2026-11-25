@@ -3586,3 +3586,16 @@ queue:
     evidence: [{gmail_thread: 1a1f85b4caed20d7}]
     flags: []
     status: pending
+
+  # ---------- 2026-11-25 scan (window 24–25 Nov) ----------
+  - id: 2026-11-25-001
+    date: 2026-11-24
+    source: gmail
+    description: "Supabase — invoice VVEMGH-00007, US$25.00 paid 24 Nov (Pro plan, billed to media@oxfordcircus.co.za)"
+    amount: 25.00
+    currency: USD
+    proposed_category: office_costs_and_software
+    reasoning: "The monthly Supabase plan, which is business under your standing ruling (September booked at £18.88 plus a £0.52 card fee). It was charged in dollars, so I won't convert it; I'll take the sterling amount and any card fee from the statement. It only needs a yes."
+    evidence: [{gmail_thread: 1a20da843c70aa22}]
+    flags: [non-gbp, awaiting-gbp]
+    status: pending
