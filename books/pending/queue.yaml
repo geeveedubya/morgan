@@ -3623,3 +3623,16 @@ queue:
     evidence: [{gmail_thread: 1a2120ac9c22a29e}, {gmail_thread: 1a20d507ff786c72}]
     flags: []
     status: pending
+  - id: 2026-11-26-003
+    date: 2026-11-26
+    source: gregg_chat
+    description: "Donation to High Impact Athletes (US charity, EIN 87-3955308), £20.00 — donation ID #30711850, receipt R-13763758 (26 Nov)"
+    amount: 20.00
+    currency: GBP
+    proposed_category: personal
+    reasoning: "Charity donations are personal, not a business cost. Recorded at Gregg's request so there's a trail. The PDF receipt is in Gmail. High Impact Athletes is a US charity (tax-deductible in the US only), so it doesn't qualify for UK Gift Aid relief on Self Assessment."
+    evidence: [{gregg_chat: "26 Nov: 'I made a £20 donation today. This is just for your record... it''s in my email on PDF'"}]
+    flags: [personal-record, not-business]
+    status: declined
+    decision_note: 'Gregg 26 Nov: personal donation, record only (not a business expense)'
+    declined_on: 2026-11-26
