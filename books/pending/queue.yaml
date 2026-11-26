@@ -3599,3 +3599,27 @@ queue:
     evidence: [{gmail_thread: 1a20da843c70aa22}]
     flags: [non-gbp, awaiting-gbp]
     status: pending
+
+  # ---------- 2026-11-26 scan (window 25–26 Nov) ----------
+  - id: 2026-11-26-001
+    date: 2026-11-25
+    source: gmail
+    description: "Lebara 10GB SIM-only plan renewal £5.90 — 07555 088933 (25 Nov)"
+    amount: 5.90
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "Business SIM under your standing ruling (all three Lebara numbers at £5.90), the same as October. It only needs a yes."
+    evidence: [{gmail_thread: 1a2120ac9c22a29e}, {gmail_thread: 1a20d507ff786c72}]
+    flags: []
+    status: pending
+  - id: 2026-11-26-002
+    date: 2026-11-25
+    source: gmail
+    description: "Lebara 10GB SIM-only plan renewal £5.90 — 07368 497782 (25 Nov)"
+    amount: 5.90
+    currency: GBP
+    proposed_category: phone_and_internet
+    reasoning: "Business SIM under your standing ruling, the same as October. It only needs a yes."
+    evidence: [{gmail_thread: 1a2120ac9c22a29e}, {gmail_thread: 1a20d507ff786c72}]
+    flags: []
+    status: pending
