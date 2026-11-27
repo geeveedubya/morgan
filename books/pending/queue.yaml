@@ -3636,3 +3636,16 @@ queue:
     status: declined
     decision_note: 'Gregg 26 Nov: personal donation, record only (not a business expense)'
     declined_on: 2026-11-26
+
+  # ---------- 2026-11-27 scan (window 26–27 Nov) ----------
+  - id: 2026-11-27-001
+    date: 2026-11-26
+    source: gmail
+    description: "Apple iCloud+ 2TB monthly £8.99 (invoice 26 Nov, order MKBB68KLJ1, renews 27 Dec) — 50% business apportionment = £4.50"
+    amount: 4.50
+    currency: GBP
+    proposed_category: office_costs_and_software
+    reasoning: "Your standing ruling puts iCloud+ at 50%. This is the same as September and October, both booked at £4.50. It only needs a yes."
+    evidence: [{gmail_thread: 1a21b8d7c42ce457}]
+    flags: []
+    status: pending
